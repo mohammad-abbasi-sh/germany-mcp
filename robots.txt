@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mohammad-abbasi-sh.github.io/germany-mcp/sitemap.xml

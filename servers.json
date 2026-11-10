@@ -521,6 +521,32 @@
      "summary": "Euro-area government bond yields by maturity"
     }
    ]
+  },
+  {
+   "description": "WG-Gesucht flatshare listings from wg-gesucht.de (free, no key, no login): WG rooms and flats in 34 German-speaking cities, with price, size, availability and full listing details.",
+   "name": "wg-gesucht-mcp",
+   "pypi": "wg-gesucht-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp",
+   "title": "WG-Gesucht housing — rooms & flats in German cities",
+   "title_de": "WG-Gesucht — WG-Zimmer & Wohnungen in deutschen Städten",
+   "tools": [
+    {
+     "name": "wg_search_rooms",
+     "summary": "Search WG rooms in a city"
+    },
+    {
+     "name": "wg_search_flats",
+     "summary": "Search flats in a city"
+    },
+    {
+     "name": "wg_listing_detail",
+     "summary": "Full details of one listing"
+    },
+    {
+     "name": "wg_cities",
+     "summary": "List supported cities"
+    }
+   ]
   }
  ]
 }

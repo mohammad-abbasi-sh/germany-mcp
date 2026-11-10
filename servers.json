@@ -223,6 +223,36 @@
      "summary": "Full text of one n-tv article"
     }
    ]
+  },
+  {
+   "description": "Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup.",
+   "name": "dnb-mcp",
+   "pypi": "dnb-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/dnb-mcp",
+   "title": "DNB — Deutsche Nationalbibliothek catalogue: books, authors & ISBN lookup",
+   "title_de": "DNB — Katalog der Deutschen Nationalbibliothek: Bücher, Autoren & ISBN",
+   "tools": [
+    {
+     "name": "dnb_search_books",
+     "summary": "Keyword search across the DNB catalogue"
+    },
+    {
+     "name": "dnb_search_by_title",
+     "summary": "Search the DNB catalogue by title"
+    },
+    {
+     "name": "dnb_search_by_author",
+     "summary": "Search the DNB catalogue by author"
+    },
+    {
+     "name": "dnb_by_isbn",
+     "summary": "Look up one book by ISBN"
+    },
+    {
+     "name": "dnb_get_record",
+     "summary": "Full record by DNB identifier"
+    }
+   ]
   }
  ]
 }

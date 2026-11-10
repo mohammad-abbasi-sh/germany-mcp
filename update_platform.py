@@ -59,6 +59,8 @@ SERVER_META = {
                    "featured": False, "added": 14},
     "billiger-mcp": {"cat": "shopping", "color": "#1D4ED8", "letter": "🛒",
                   "featured": False, "added": 15},
+    "fernsehserien-mcp": {"cat": "media", "color": "#7C2D12", "letter": "📺",
+                       "featured": False, "added": 16},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -130,6 +132,15 @@ TRANSLATIONS = {
   "billiger_search_prices": ("جست‌وجوی محصولات با بهترین قیمت", "Produkte mit Bestpreisen suchen"),
   "billiger_product_offers": ("مقایسهٔ پیشنهادهای فروشگاه‌ها برای یک محصول", "Shop-Angebote für ein Produkt vergleichen"),
   "billiger_best_deals": ("تخفیف‌های روز از صفحهٔ اصلی", "Tagesdeals von der Startseite"),
+ }},
+"fernsehserien-mcp": {
+ "desc_fa": "سریال‌های تلویزیونی آلمان از fernsehserien.de (رایگان، بدون کلید): جست‌وجوی سریال، جزئیات سریال، راهنمای قسمت‌ها و زمان‌های پخش آینده.",
+ "desc_de": "Deutsche TV-Serien von fernsehserien.de (kostenlos, kein Schlüssel, kein Login): Serien suchen, Seriendetails, Episodenguides und Sendetermine.",
+ "tools": {
+  "fs_search_series": ("جست‌وجوی سریال‌های تلویزیونی بر اساس نام", "TV-Serien nach Namen suchen"),
+  "fs_series_detail": ("جزئیات سریال و فصل‌ها", "Seriendetails und Staffeln"),
+  "fs_episodes": ("راهنمای قسمت‌های یک فصل", "Episodenguide einer Staffel"),
+  "fs_air_dates": ("زمان‌های پخش آیندهٔ یک سریال", "Kommende Sendetermine einer Serie"),
  }},
 "dictcc-mcp": {
  "desc_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",

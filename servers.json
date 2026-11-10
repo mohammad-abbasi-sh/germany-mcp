@@ -491,6 +491,36 @@
      "summary": "Full text of a ZDF heute article"
     }
    ]
+  },
+  {
+   "description": "European Central Bank data via the official ECB SDMX API (free, no key, no login): euro exchange rates, key ECB interest rates, HICP inflation, M3 money supply and euro-area bond yields.",
+   "name": "ecb-mcp",
+   "pypi": "ecb-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/ecb-mcp",
+   "title": "ECB euro data — exchange rates, key rates, inflation, money supply & bond yields",
+   "title_de": "EZB-Eurodaten — Wechselkurse, Leitzinsen, Inflation, Geldmenge & Anleiherenditen",
+   "tools": [
+    {
+     "name": "ecb_exchange_rates",
+     "summary": "Euro exchange rates vs major currencies"
+    },
+    {
+     "name": "ecb_interest_rates",
+     "summary": "Key ECB interest rates (MRO, deposit, marginal lending)"
+    },
+    {
+     "name": "ecb_inflation",
+     "summary": "HICP inflation, euro area and Germany"
+    },
+    {
+     "name": "ecb_money_supply",
+     "summary": "Euro-area money supply (M1, M2, M3)"
+    },
+    {
+     "name": "ecb_bond_yields",
+     "summary": "Euro-area government bond yields by maturity"
+    }
+   ]
   }
  ]
 }

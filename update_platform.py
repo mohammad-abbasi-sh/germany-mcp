@@ -57,6 +57,8 @@ SERVER_META = {
                           "featured": False, "added": 13},
     "flixtrain-mcp": {"cat": "transport", "color": "#B45309", "letter": "🚆",
                    "featured": False, "added": 14},
+    "billiger-mcp": {"cat": "shopping", "color": "#1D4ED8", "letter": "🛒",
+                  "featured": False, "added": 15},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -120,6 +122,14 @@ TRANSLATIONS = {
  "tools": {
   "flixtrain_search_trains": ("جست‌وجوی سفرهای فلیکس‌ترین بین دو شهر", "FlixTrain-Verbindungen zwischen zwei Städten suchen"),
   "flixtrain_search_cities": ("یافتن شهرها بر اساس نام", "Städte nach Namen finden"),
+ }},
+"billiger-mcp": {
+ "desc_fa": "مقایسهٔ قیمت آلمان از billiger.de (رایگان، بدون کلید): جست‌وجوی محصولات با بهترین قیمت، مقایسهٔ پیشنهادهای فروشگاه‌ها و تخفیف‌های روز.",
+ "desc_de": "Deutscher Preisvergleich von billiger.de (kostenlos, kein Schlüssel, kein Login): Produkte mit Bestpreisen suchen, Shop-Angebote vergleichen und Tagesdeals.",
+ "tools": {
+  "billiger_search_prices": ("جست‌وجوی محصولات با بهترین قیمت", "Produkte mit Bestpreisen suchen"),
+  "billiger_product_offers": ("مقایسهٔ پیشنهادهای فروشگاه‌ها برای یک محصول", "Shop-Angebote für ein Produkt vergleichen"),
+  "billiger_best_deals": ("تخفیف‌های روز از صفحهٔ اصلی", "Tagesdeals von der Startseite"),
  }},
 "dictcc-mcp": {
  "desc_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",

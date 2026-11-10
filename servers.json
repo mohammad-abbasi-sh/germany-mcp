@@ -369,6 +369,36 @@
      "summary": "Find dict.cc headwords matching a query"
     }
    ]
+  },
+  {
+   "description": "Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025.",
+   "name": "bundeswahlleiter-mcp",
+   "pypi": "bundeswahlleiter-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp",
+   "title": "Bundeswahlleiterin — German federal election results: Bundestag elections 2017–2025",
+   "title_de": "Die Bundeswahlleiterin — Ergebnisse der Bundestagswahlen 2017–2025",
+   "tools": [
+    {
+     "name": "bwl_national_results",
+     "summary": "National results of a Bundestag election"
+    },
+    {
+     "name": "bwl_party_results",
+     "summary": "Results of one party, nationally and by Land"
+    },
+    {
+     "name": "bwl_constituency_results",
+     "summary": "Results of one constituency"
+    },
+    {
+     "name": "bwl_constituencies",
+     "summary": "List constituencies with winner and turnout"
+    },
+    {
+     "name": "bwl_turnout",
+     "summary": "Voter turnout by Land and nationally"
+    }
+   ]
   }
  ]
 }

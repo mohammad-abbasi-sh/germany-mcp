@@ -63,6 +63,8 @@ SERVER_META = {
                        "featured": False, "added": 16},
     "zdf-mcp": {"cat": "media", "color": "#C8102E", "letter": "📺",
              "featured": False, "added": 17},
+    "ecb-mcp": {"cat": "finance", "color": "#003399", "letter": "💶",
+             "featured": False, "added": 18},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -152,6 +154,16 @@ TRANSLATIONS = {
   "zdf_news_by_topic": ("اخبار ZDF heute بر اساس موضوع", "ZDF-heute-Nachrichten nach Thema"),
   "zdf_search_news": ("جست‌وجوی تیترهای ZDF heute با کلیدواژه", "ZDF-heute-Schlagzeilen nach Stichwort suchen"),
   "zdf_get_article": ("متن کامل مقالهٔ ZDF heute", "Volltext eines ZDF-heute-Artikels"),
+ }},
+"ecb-mcp": {
+ "desc_fa": "داده‌های بانک مرکزی اروپا از API رسمی SDMX (رایگان، بدون کلید): نرخ‌های ارز یورو، نرخ‌های کلیدی بهره، تورم HICP، عرضهٔ پول M3 و بازده اوراق قرضهٔ منطقهٔ یورو.",
+ "desc_de": "Daten der Europäischen Zentralbank über die offizielle SDMX-API (kostenlos, kein Schlüssel, kein Login): Euro-Wechselkurse, EZB-Leitzinsen, HVPI-Inflation, Geldmenge M3 und Anleiherenditen des Euroraums.",
+ "tools": {
+  "ecb_exchange_rates": ("نرخ‌های ارز یورو در برابر ارزهای اصلی", "Euro-Wechselkurse gegenüber wichtigen Währungen"),
+  "ecb_interest_rates": ("نرخ‌های کلیدی بهرهٔ بانک مرکزی اروپا", "EZB-Leitzinsen (Hauptrefinanzierung, Einlage, Spitzenrefinanzierung)"),
+  "ecb_inflation": ("تورم HICP منطقهٔ یورو و آلمان", "HVPI-Inflation, Euroraum und Deutschland"),
+  "ecb_money_supply": ("عرضهٔ پول منطقهٔ یورو (M1، M2، M3)", "Geldmenge des Euroraums (M1, M2, M3)"),
+  "ecb_bond_yields": ("بازده اوراق قرضهٔ دولتی منطقهٔ یورو بر اساس سررسید", "Staatsanleiherenditen des Euroraums nach Laufzeit"),
  }},
 "dictcc-mcp": {
  "desc_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",

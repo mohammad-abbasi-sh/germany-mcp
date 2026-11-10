@@ -41,6 +41,8 @@ SERVER_META = {
                      "featured": False, "added": 5},
     "dw-mcp": {"cat": "news", "color": "#0E7490", "letter": "📰",
                "featured": False, "added": 6},
+    "ntv-mcp": {"cat": "news", "color": "#B91C1C", "letter": "📺",
+               "featured": False, "added": 7},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -87,6 +89,16 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"ntv-mcp": {
+ "desc_fa": "اخبار n-tv از فیدهای RSS رسمی (بدون کلید): تازه‌ترین تیترها بر اساس بخش، اخبار بازار، تازه‌ترین ویدیوها، جست‌وجوی کلیدواژه و متن کامل مقاله.",
+ "desc_de": "n-tv-Nachrichten über die offiziellen RSS-Feeds (kein Schlüssel): neueste Schlagzeilen nach Ressort, Börsennachrichten, neueste Videos, Stichwortsuche und Volltexte.",
+ "tools": {
+  "ntv_headlines": ("تازه‌ترین تیترهای n-tv بر اساس بخش", "Neueste n-tv-Schlagzeilen nach Ressort"),
+  "ntv_markets": ("تازه‌ترین اخبار بازار n-tv", "Neueste n-tv-Börsennachrichten"),
+  "ntv_videos": ("تازه‌ترین ویدیوهای n-tv", "Neueste n-tv-Videos"),
+  "ntv_search_news": ("جست‌وجوی تیترهای اخیر n-tv با کلیدواژه", "Neueste n-tv-Schlagzeilen nach Stichwort suchen"),
+  "ntv_get_article": ("متن کامل یک مقالهٔ n-tv", "Volltext eines n-tv-Artikels"),
  }},
 "dw-mcp": {
  "desc_fa": "اخبار دویچه‌وله به ۳۱ زبان از سایت‌مپ‌های رسمی DW (بدون کلید): تازه‌ترین تیترها، جست‌وجوی کلیدواژه، تازه‌ترین مقاله‌ها، متن کامل مقاله و صفحه‌های موضوعی.",

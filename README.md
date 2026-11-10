@@ -19,6 +19,7 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [dw-mcp](https://github.com/mohammad-abbasi-sh/dw-mcp) | Deutsche Welle — DW news in 31 languages: headlines, search, articles & topics | 5 | `uvx dw-mcp==0.1.0` |
 | [ntv-mcp](https://github.com/mohammad-abbasi-sh/ntv-mcp) | n-tv — German TV news: headlines by section, markets, videos & articles | 5 | `uvx ntv-mcp==0.1.0` |
 | [dnb-mcp](https://github.com/mohammad-abbasi-sh/dnb-mcp) | DNB — Deutsche Nationalbibliothek catalogue: books, authors & ISBN lookup | 5 | `uvx dnb-mcp==0.1.0` |
+| [govdata-mcp](https://github.com/mohammad-abbasi-sh/govdata-mcp) | GovData — Germany's open-data portal: search 163,000+ datasets, publishers & resources | 5 | `uvx govdata-mcp==0.1.0` |
 
 *One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*
 

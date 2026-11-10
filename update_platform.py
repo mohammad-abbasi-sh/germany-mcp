@@ -33,6 +33,10 @@ SERVER_META = {
                        "featured": True, "added": 1},
     "mediathek-mcp": {"cat": "media", "color": "#9F1239", "letter": "📺",
                       "featured": False, "added": 2},
+    "tagesschau-mcp": {"cat": "news", "color": "#1E40AF", "letter": "📰",
+                       "featured": False, "added": 3},
+    "dwd-mcp": {"cat": "weather", "color": "#0284C7", "letter": "🌤️",
+                 "featured": False, "added": 4},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -58,6 +62,27 @@ TRANSLATIONS = {
   "mediathek_by_topic": ("همهٔ قسمت‌های یک برنامه یا سریال", "Alle Folgen einer Sendung oder Serie"),
   "mediathek_programme_detail": ("جزئیات کامل یک برنامه (لینک ویدیو، زیرنویس)", "Vollständige Details einer Sendung (Video-URLs, Untertitel)"),
   "mediathek_list_channels": ("شبکه‌های فهرست فیلم", "Sender der Filmliste"),
+ }},
+"tagesschau-mcp": {
+ "desc_fa": "tagesschau.de (ARD) با فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار بخش‌ها، اخبار منطقه‌ای هر ۱۶ ایالت، جدیدترین ویدیوها و متن کامل مقاله‌ها.",
+ "desc_de": "tagesschau.de (ARD) über offizielle RSS-Feeds (kein Schlüssel): Schlagzeilen, Nachrichten nach Ressort, Regionalnachrichten aller 16 Bundesländer, neueste Videos und Volltexte.",
+ "tools": {
+  "tagesschau_headlines": ("تیترهای برتر tagesschau.de", "Top-Schlagzeilen von tagesschau.de"),
+  "tagesschau_news_by_section": ("جدیدترین اخبار یک بخش", "Neueste Nachrichten eines Ressorts"),
+  "tagesschau_search_news": ("جست‌وجوی اخبار با کلیدواژه", "Nachrichten nach Stichwort suchen"),
+  "tagesschau_get_article": ("متن کامل یک مقاله", "Volltext eines Artikels"),
+  "tagesschau_latest_videos": ("جدیدترین ویدیوها", "Neueste Videos"),
+  "tagesschau_regional_news": ("اخبار منطقه‌ای یک ایالت", "Regionalnachrichten eines Bundeslandes"),
+ }},
+"dwd-mcp": {
+ "desc_fa": "هواشناسی آلمان از سرویس ملی هواشناسی آلمان (DWD): پیش‌بینی و وضعیت فعلی با مدل ICON از طریق Open-Meteo، هشدارهای رسمی آب‌وهوای DWD و شمارش گرده.",
+ "desc_de": "Deutsches Wetter vom Deutschen Wetterdienst (DWD): ICON-Vorhersagen und aktuelles Wetter über Open-Meteo, amtliche Unwetterwarnungen und Pollenflug.",
+ "tools": {
+  "dwd_forecast": ("پیش‌بینی مدل ICON برای یک شهر آلمان (ساعتی + روزانه)", "ICON-Vorhersage für einen deutschen Ort (stündlich + täglich)"),
+  "dwd_current_weather": ("وضعیت فعلی هوا برای یک شهر آلمان", "Aktuelles Wetter für einen deutschen Ort"),
+  "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
+  "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
+  "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
  }},
 }
 

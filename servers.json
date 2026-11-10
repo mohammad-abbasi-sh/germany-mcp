@@ -163,6 +163,36 @@
      "summary": "EV charging stations on one motorway"
     }
    ]
+  },
+  {
+   "description": "Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages.",
+   "name": "dw-mcp",
+   "pypi": "dw-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/dw-mcp",
+   "title": "Deutsche Welle — DW news in 31 languages: headlines, search, articles & topics",
+   "title_de": "Deutsche Welle — DW-Nachrichten in 31 Sprachen: Schlagzeilen, Suche, Artikel & Themen",
+   "tools": [
+    {
+     "name": "dw_headlines",
+     "summary": "Latest DW headlines in one language"
+    },
+    {
+     "name": "dw_search_news",
+     "summary": "Search recent DW headlines by keyword"
+    },
+    {
+     "name": "dw_latest_articles",
+     "summary": "Latest DW articles in one language"
+    },
+    {
+     "name": "dw_get_article",
+     "summary": "Full text of one DW article"
+    },
+    {
+     "name": "dw_topics",
+     "summary": "DW topic pages matching a word"
+    }
+   ]
   }
  ]
 }

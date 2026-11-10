@@ -253,6 +253,36 @@
      "summary": "Full record by DNB identifier"
     }
    ]
+  },
+  {
+   "description": "Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details.",
+   "name": "govdata-mcp",
+   "pypi": "govdata-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/govdata-mcp",
+   "title": "GovData — Germany's open-data portal: search 163,000+ datasets, publishers & resources",
+   "title_de": "GovData — Deutschlands Open-Data-Portal: 163.000+ Datensätze, Herausgeber & Ressourcen",
+   "tools": [
+    {
+     "name": "govdata_search_datasets",
+     "summary": "Search govdata.de datasets"
+    },
+    {
+     "name": "govdata_get_dataset",
+     "summary": "Full details of one dataset"
+    },
+    {
+     "name": "govdata_list_publishers",
+     "summary": "Publishing organisations, most datasets first"
+    },
+    {
+     "name": "govdata_recent_datasets",
+     "summary": "Most recently updated datasets"
+    },
+    {
+     "name": "govdata_get_resource",
+     "summary": "Details of one dataset resource"
+    }
+   ]
   }
  ]
 }

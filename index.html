@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Germany MCP — Connect AI to the World</title>
-<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 3 servers, 18 tools, in English, Deutsch and فارسی.">
+<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 4 servers, 23 tools, in English, Deutsch and فارسی.">
 <link rel="canonical" href="https://mohammad-abbasi-sh.github.io/germany-mcp/">
 <link rel="icon" href="favicon.ico">
 <link rel="alternate" hreflang="fa" href="#/fa/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="#/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Germany MCP — Connect AI to the World">
-<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 3 servers, 18 tools. English, Deutsch, فارسی.">
+<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 4 servers, 23 tools. English, Deutsch, فارسی.">
 <meta property="og:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta name="twitter:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta property="og:locale" content="fa_IR">
@@ -21,12 +21,12 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Germany MCP — Connect AI to the World">
-<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 3 servers, 18 tools. EN / DE / FA.">
+<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 4 servers, 23 tools. EN / DE / FA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 3 servers, 18 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 4 servers, 23 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
 </script>
 <style>
 :root{
@@ -342,6 +342,20 @@ const SERVERS = [
    {n:"tagesschau_get_article",s:"Full text of one article",sf:"متن کامل یک مقاله",st:"Volltext eines Artikels"},
    {n:"tagesschau_latest_videos",s:"Latest videos, newest first",sf:"جدیدترین ویدیوها",st:"Neueste Videos"},
    {n:"tagesschau_regional_news",s:"Regional news of one Bundesland",sf:"اخبار منطقه‌ای یک ایالت",st:"Regionalnachrichten eines Bundeslandes"}
+  ]},
+{ id:"dwd-mcp", cat:"weather", color:"#0284C7", letter:"🌤️", featured:false, added:4,
+  title:"DWD — German weather: DWD ICON forecasts, current conditions, official warnings & pollen",
+  title_de:"DWD — Deutsches Wetter: ICON-Vorhersagen, aktuelles Wetter, amtliche Warnungen & Pollen",
+  desc:"DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen.",
+  desc_fa:"هواشناسی آلمان از سرویس ملی هواشناسی آلمان (DWD): پیش‌بینی و وضعیت فعلی با مدل ICON از طریق Open-Meteo، هشدارهای رسمی آب‌وهوای DWD و شمارش گرده.",
+  desc_de:"Deutsches Wetter vom Deutschen Wetterdienst (DWD): ICON-Vorhersagen und aktuelles Wetter über Open-Meteo, amtliche Unwetterwarnungen und Pollenflug.",
+  repo:"https://github.com/mohammad-abbasi-sh/dwd-mcp", pypi:"dwd-mcp",
+  tools:[
+   {n:"dwd_forecast",s:"ICON-model forecast for a German place (hourly + daily)",sf:"پیش‌بینی مدل ICON برای یک شهر آلمان (ساعتی + روزانه)",st:"ICON-Vorhersage für einen deutschen Ort (stündlich + täglich)"},
+   {n:"dwd_current_weather",s:"Current conditions for a German place",sf:"وضعیت فعلی هوا برای یک شهر آلمان",st:"Aktuelles Wetter für einen deutschen Ort"},
+   {n:"dwd_warnings",s:"Official DWD severe-weather warnings, filterable by state",sf:"هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت",st:"Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"},
+   {n:"dwd_pollen",s:"Pollen counts for a German place (CAMS via Open-Meteo)",sf:"شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)",st:"Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"},
+   {n:"dwd_find_place",s:"Find German places (name → coordinates)",sf:"یافتن شهرهای آلمان (نام → مختصات)",st:"Deutsche Orte finden (Name → Koordinaten)"}
   ]}
 ];
 const TOTAL_TOOLS = SERVERS.reduce((a,s)=>a+s.tools.length,0);
@@ -350,7 +364,7 @@ const CATEGORIES = [
  {id:"sports",icon:"⚽",color:"#15803D",soon:false},
  {id:"news",icon:"📰",color:"#1E40AF",soon:false},
  {id:"media",icon:"📺",color:"#9F1239",soon:false},
- {id:"weather",icon:"🌤️",color:"#0284C7",soon:true},
+ {id:"weather",icon:"🌤️",color:"#0284C7",soon:false},
  {id:"transport",icon:"🚌",color:"#0369A1",soon:true},
  {id:"open-data",icon:"📊",color:"#F59E0B",soon:true},
  {id:"dictionary",icon:"📖",color:"#7C3AED",soon:true},
@@ -585,7 +599,7 @@ fa:{
  about_title:"دربارهٔ Germany MCP", about_sub:"یک کاتالوگ مستقل و متن‌باز — مرجع کامل سرورهای MCP آلمان.",
  about_mission_t:"مأموریت ما", about_mission_d:"ساختن مرجع کامل و قابل‌اعتماد برای سرویس‌های وب آلمان: هر سرویس مهم یک سرور MCP فقط‌خواندنی، سه‌زبانه و آزمایش‌شده داشته باشد — بدون ادعای تأییدنشده و بدون دادهٔ ساختگی.",
  about_builder_t:"سازنده", about_builder_d:"محمد عباسی — مدیر سئو و محصول در بن‌باما، و سازندهٔ ابزارهای متن‌باز برای اکوسیستم Claude. این کاتالوگ را مثل پروژهٔ iran-mcp سپهر ساخت: یک مرجع کامل، نه مجموعه‌ای از نمونه‌کارها.",
- about_catalog_t:"کاتالوگ", about_catalog_d:"۳ سرور، ۱۸ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
+ about_catalog_t:"کاتالوگ", about_catalog_d:"۴ سرور، ۲۳ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
  contact_title:"تماس با ما", contact_sub:"برای سؤال، پیشنهاد یا گزارش مشکل از راه‌های زیر استفاده کن — پیام مستقیم به گیت‌هاب می‌رسد.", contact_gh_issue:"ثبت Issue در گیت‌هاب", contact_gh_profile:"پروفایل گیت‌هاب",
  dash_go:"رفتن به بازارچه",
  fav_title:"علاقه‌مندی‌ها", fav_sub:"سرورها و مهارت‌هایی که ستاره‌دار کرده‌ای — در همین مرورگر ذخیره می‌شوند.",
@@ -671,7 +685,7 @@ de:{
  about_title:"Über Germany MCP", about_sub:"Ein unabhängiger Open-Source-Katalog — die vollständige Referenz für Deutschland-MCP-Server.",
  about_mission_t:"Unsere Mission", about_mission_d:"Die vollständige, vertrauenswürdige Referenz für deutsche Webdienste zu bauen: Jeder wichtige Dienst bekommt einen Nur-Lesen-, dreisprachigen und getesteten MCP-Server — keine ungeprüften Behauptungen und keine erfundenen Daten.",
  about_builder_t:"Der Erbauer", about_builder_d:"Mohammad Abbasi — SEO- und Produktmanager bei Bonbama und Erbauer von Open-Source-Tools für das Claude-Ökosystem. Er hat diesen Katalog so aufgebaut, wie Sepehr iran-mcp aufgebaut hat: als vollständige Referenz, nicht als Schaufenster.",
- about_catalog_t:"Der Katalog", about_catalog_d:"3 Server, 18 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
+ about_catalog_t:"Der Katalog", about_catalog_d:"4 Server, 23 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
  contact_title:"Kontakt", contact_sub:"Für Fragen, Vorschläge oder Fehlermeldungen nutze die Links unten — deine Nachricht geht direkt an GitHub.",
  contact_gh_issue:"Issue auf GitHub öffnen", contact_gh_profile:"GitHub-Profil",
  dash_go:"Zum Marktplatz",
@@ -760,7 +774,7 @@ en:{
  about_title:"About Germany MCP", about_sub:"An independent, open-source catalog — the complete reference for Germany MCP servers.",
  about_mission_t:"Our mission", about_mission_d:"To build the complete, trustworthy reference for German web services: every major service gets a read-only, trilingual, tested MCP server — no unverified claims and no fabricated data.",
  about_builder_t:"The builder", about_builder_d:"Mohammad Abbasi — SEO and Product Manager at Bonbama, and builder of open-source tools for the Claude ecosystem. He built this catalog the way Sepehr built iran-mcp: a complete reference, not a showcase.",
- about_catalog_t:"The catalog", about_catalog_d:"3 servers, 18 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
+ about_catalog_t:"The catalog", about_catalog_d:"4 servers, 23 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
  contact_title:"Contact Us", contact_sub:"For questions, suggestions or bug reports, use the links below — your message goes straight to GitHub.", contact_gh_issue:"Open an issue on GitHub", contact_gh_profile:"GitHub profile",
  dash_go:"Go to marketplace",
  fav_title:"Favorites", fav_sub:"Servers and skills you starred — stored in this browser.",

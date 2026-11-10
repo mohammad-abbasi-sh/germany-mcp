@@ -16,6 +16,7 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [tagesschau-mcp](https://github.com/mohammad-abbasi-sh/tagesschau-mcp) | tagesschau — Germany's most-watched TV news | 6 | `uvx tagesschau-mcp==0.1.0` |
 | [dwd-mcp](https://github.com/mohammad-abbasi-sh/dwd-mcp) | DWD — German weather: DWD ICON forecasts, current conditions, official warnings & pollen | 5 | `uvx dwd-mcp==0.1.0` |
 | [autobahn-mcp](https://github.com/mohammad-abbasi-sh/autobahn-mcp) | Autobahn — German motorway roadworks, closures, warnings, parking & EV charging | 5 | `uvx autobahn-mcp==0.1.0` |
+| [dw-mcp](https://github.com/mohammad-abbasi-sh/dw-mcp) | Deutsche Welle — DW news in 31 languages: headlines, search, articles & topics | 5 | `uvx dw-mcp==0.1.0` |
 
 *One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*
 

@@ -49,6 +49,8 @@ SERVER_META = {
                    "featured": False, "added": 9},
     "deutschlandfunk-mcp": {"cat": "news", "color": "#1E3A8A", "letter": "📻",
                           "featured": False, "added": 10},
+    "duden-mcp": {"cat": "language", "color": "#7C3AED", "letter": "📖",
+               "featured": False, "added": 11},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -95,6 +97,17 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"duden-mcp": {
+ "desc_fa": "جست‌وجو در فرهنگ لغت دودن از duden.de (رایگان، بدون کلید): معانی واژه، مترادف‌ها، املا با جداسازی هجاها، نکات دستوری و صرف کامل فعل.",
+ "desc_de": "Duden-Nachschlagen auf duden.de (kostenlos, kein Schlüssel, kein Login): Bedeutungen, Synonyme, Rechtschreibung mit Worttrennung, Grammatik und vollständige Verbkonjugation.",
+ "tools": {
+  "duden_lookup_word": ("جست‌وجوی واژهٔ آلمانی در دودن: معانی، نوع کلمه و دستور زبان", "Ein deutsches Wort im Duden nachschlagen: Bedeutungen, Wortart & Grammatik"),
+  "duden_synonyms": ("مترادف‌های یک واژهٔ آلمانی", "Synonyme eines deutschen Wortes"),
+  "duden_spelling": ("املا و جداسازی هجاهای یک واژهٔ آلمانی", "Rechtschreibung & Worttrennung eines deutschen Wortes"),
+  "duden_grammar": ("نکات دستوری یک واژهٔ آلمانی", "Grammatiknotizen zu einem deutschen Wort"),
+  "duden_conjugate": ("جدول کامل صرف یک فعل آلمانی", "Vollständige Konjugationstabelle eines deutschen Verbs"),
+  "duden_search": ("جست‌وجوی سرخط‌های دودن", "Duden-Stichwörter suchen"),
  }},
 "deutschlandfunk-mcp": {
  "desc_fa": "اخبار و رادیوی دویچلندفونک از فیدهای RSS رسمی (بدون کلید): اخبار جاری، تازه‌ترین مطالب، فیدهای موضوعی، جست‌وجوی کلیدواژه، متن کامل مقاله و لینک پخش زنده.",

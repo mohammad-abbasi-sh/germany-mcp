@@ -283,6 +283,40 @@
      "summary": "Details of one dataset resource"
     }
    ]
+  },
+  {
+   "description": "Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link.",
+   "name": "deutschlandfunk-mcp",
+   "pypi": "deutschlandfunk-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/deutschlandfunk-mcp",
+   "title": "Deutschlandfunk — German public radio news: rolling news, topics, articles & live stream",
+   "title_de": "Deutschlandfunk — Nachrichten des deutschen öffentlich-rechtlichen Radios: Meldungen, Themen, Artikel & Livestream",
+   "tools": [
+    {
+     "name": "dlf_latest_news",
+     "summary": "Rolling DLF news headlines"
+    },
+    {
+     "name": "dlf_latest_contributions",
+     "summary": "Latest DLF contributions"
+    },
+    {
+     "name": "dlf_news_by_topic",
+     "summary": "DLF news by topic"
+    },
+    {
+     "name": "dlf_search_news",
+     "summary": "Search recent DLF items by keyword"
+    },
+    {
+     "name": "dlf_get_article",
+     "summary": "Full text of one DLF article"
+    },
+    {
+     "name": "dlf_listen_live",
+     "summary": "Deutschlandfunk live stream link"
+    }
+   ]
   }
  ]
 }

@@ -61,6 +61,8 @@ SERVER_META = {
                   "featured": False, "added": 15},
     "fernsehserien-mcp": {"cat": "media", "color": "#7C2D12", "letter": "📺",
                        "featured": False, "added": 16},
+    "zdf-mcp": {"cat": "media", "color": "#C8102E", "letter": "📺",
+             "featured": False, "added": 17},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -141,6 +143,15 @@ TRANSLATIONS = {
   "fs_series_detail": ("جزئیات سریال و فصل‌ها", "Seriendetails und Staffeln"),
   "fs_episodes": ("راهنمای قسمت‌های یک فصل", "Episodenguide einer Staffel"),
   "fs_air_dates": ("زمان‌های پخش آیندهٔ یک سریال", "Kommende Sendetermine einer Serie"),
+ }},
+"zdf-mcp": {
+ "desc_fa": "اخبار ZDF heute از zdfheute.de (رایگان، بدون کلید): تازه‌ترین تیترها، اخبار بر اساس موضوع، جست‌وجوی کلیدواژه و متن کامل مقاله. فقط اخبار — مدیاتک ZDF در این سرور نیست.",
+ "desc_de": "ZDF-heute-Nachrichten von zdfheute.de (kostenlos, kein Schlüssel, kein Login): aktuelle Schlagzeilen, Nachrichten nach Thema, Stichwortsuche und Volltext. Nur Nachrichten — keine Mediathek.",
+ "tools": {
+  "zdf_headlines": ("تازه‌ترین تیترهای ZDF heute", "Aktuelle ZDF-heute-Schlagzeilen"),
+  "zdf_news_by_topic": ("اخبار ZDF heute بر اساس موضوع", "ZDF-heute-Nachrichten nach Thema"),
+  "zdf_search_news": ("جست‌وجوی تیترهای ZDF heute با کلیدواژه", "ZDF-heute-Schlagzeilen nach Stichwort suchen"),
+  "zdf_get_article": ("متن کامل مقالهٔ ZDF heute", "Volltext eines ZDF-heute-Artikels"),
  }},
 "dictcc-mcp": {
  "desc_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",

@@ -15,6 +15,7 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [mediathek-mcp](https://github.com/mohammad-abbasi-sh/mediathek-mcp) | Mediathek — German public broadcasters' programmes | 6 | `uvx mediathek-mcp==0.1.1` |
 | [tagesschau-mcp](https://github.com/mohammad-abbasi-sh/tagesschau-mcp) | tagesschau — Germany's most-watched TV news | 6 | `uvx tagesschau-mcp==0.1.0` |
 | [dwd-mcp](https://github.com/mohammad-abbasi-sh/dwd-mcp) | DWD — German weather: DWD ICON forecasts, current conditions, official warnings & pollen | 5 | `uvx dwd-mcp==0.1.0` |
+| [autobahn-mcp](https://github.com/mohammad-abbasi-sh/autobahn-mcp) | Autobahn — German motorway roadworks, closures, warnings, parking & EV charging | 5 | `uvx autobahn-mcp==0.1.0` |
 
 *One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*
 

@@ -417,6 +417,28 @@
      "summary": "Find cities by name"
     }
    ]
+  },
+  {
+   "description": "German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals.",
+   "name": "billiger-mcp",
+   "pypi": "billiger-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/billiger-mcp",
+   "title": "billiger.de — German price comparison: best prices, shop offers & deals",
+   "title_de": "billiger.de — Deutscher Preisvergleich: Bestpreise, Shop-Angebote & Deals",
+   "tools": [
+    {
+     "name": "billiger_search_prices",
+     "summary": "Search products with best prices"
+    },
+    {
+     "name": "billiger_product_offers",
+     "summary": "Compare shop offers for a product"
+    },
+    {
+     "name": "billiger_best_deals",
+     "summary": "Today's deals from the home page"
+    }
+   ]
   }
  ]
 }

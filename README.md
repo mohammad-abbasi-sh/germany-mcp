@@ -28,6 +28,7 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [billiger-mcp](https://github.com/mohammad-abbasi-sh/billiger-mcp) | billiger.de — German price comparison: best prices, shop offers & deals | 3 | `uvx billiger-mcp==0.1.0` |
 | [fernsehserien-mcp](https://github.com/mohammad-abbasi-sh/fernsehserien-mcp) | fernsehserien.de — German TV series: search, details, episodes & air dates | 4 | `uvx fernsehserien-mcp==0.1.0` |
 | [zdf-mcp](https://github.com/mohammad-abbasi-sh/zdf-mcp) | ZDF heute news — headlines, topics, search & articles | 4 | `uvx zdf-mcp==0.1.0` |
+| [ecb-mcp](https://github.com/mohammad-abbasi-sh/ecb-mcp) | ECB euro data — exchange rates, key rates, inflation, money supply & bond yields | 5 | `uvx ecb-mcp==0.1.0` |
 
 *One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*
 

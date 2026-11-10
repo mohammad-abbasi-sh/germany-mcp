@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Germany MCP — Connect AI to the World</title>
-<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 2 servers, 12 tools, in English, Deutsch and فارسی.">
+<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 3 servers, 18 tools, in English, Deutsch and فارسی.">
 <link rel="canonical" href="https://mohammad-abbasi-sh.github.io/germany-mcp/">
 <link rel="icon" href="favicon.ico">
 <link rel="alternate" hreflang="fa" href="#/fa/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="#/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Germany MCP — Connect AI to the World">
-<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 2 servers, 12 tools. English, Deutsch, فارسی.">
+<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 3 servers, 18 tools. English, Deutsch, فارسی.">
 <meta property="og:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta name="twitter:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta property="og:locale" content="fa_IR">
@@ -21,12 +21,12 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Germany MCP — Connect AI to the World">
-<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 2 servers, 12 tools. EN / DE / FA.">
+<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 3 servers, 18 tools. EN / DE / FA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 2 servers, 12 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 3 servers, 18 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
 </script>
 <style>
 :root{
@@ -327,13 +327,28 @@ const SERVERS = [
    {n:"mediathek_by_topic",s:"All episodes of one show or series",sf:"همهٔ قسمت‌های یک برنامه یا سریال",st:"Alle Folgen einer Sendung oder Serie"},
    {n:"mediathek_programme_detail",s:"Full detail of one programme (video URLs, subtitles)",sf:"جزئیات کامل یک برنامه (لینک ویدیو، زیرنویس)",st:"Vollständige Details einer Sendung (Video-URLs, Untertitel)"},
    {n:"mediathek_list_channels",s:"Channels in the film list",sf:"شبکه‌های فهرست فیلم",st:"Sender der Filmliste"}
+  ]},
+{ id:"tagesschau-mcp", cat:"news", color:"#1E40AF", letter:"📰", featured:false, added:3,
+  title:"tagesschau — Germany's most-watched TV news",
+  title_de:"tagesschau — Deutschlands meistgesehene Fernsehnachrichten",
+  desc:"tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text.",
+  desc_fa:"tagesschau.de (ARD) با فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار بخش‌ها، اخبار منطقه‌ای هر ۱۶ ایالت، جدیدترین ویدیوها و متن کامل مقاله‌ها.",
+  desc_de:"tagesschau.de (ARD) über offizielle RSS-Feeds (kein Schlüssel): Schlagzeilen, Nachrichten nach Ressort, Regionalnachrichten aller 16 Bundesländer, neueste Videos und Volltexte.",
+  repo:"https://github.com/mohammad-abbasi-sh/tagesschau-mcp", pypi:"tagesschau-mcp",
+  tools:[
+   {n:"tagesschau_headlines",s:"Top headlines, newest first",sf:"تیترهای برتر tagesschau.de",st:"Top-Schlagzeilen von tagesschau.de"},
+   {n:"tagesschau_news_by_section",s:"Newest news of one section",sf:"جدیدترین اخبار یک بخش",st:"Neueste Nachrichten eines Ressorts"},
+   {n:"tagesschau_search_news",s:"Search news by keyword",sf:"جست‌وجوی اخبار با کلیدواژه",st:"Nachrichten nach Stichwort suchen"},
+   {n:"tagesschau_get_article",s:"Full text of one article",sf:"متن کامل یک مقاله",st:"Volltext eines Artikels"},
+   {n:"tagesschau_latest_videos",s:"Latest videos, newest first",sf:"جدیدترین ویدیوها",st:"Neueste Videos"},
+   {n:"tagesschau_regional_news",s:"Regional news of one Bundesland",sf:"اخبار منطقه‌ای یک ایالت",st:"Regionalnachrichten eines Bundeslandes"}
   ]}
 ];
 const TOTAL_TOOLS = SERVERS.reduce((a,s)=>a+s.tools.length,0);
 
 const CATEGORIES = [
  {id:"sports",icon:"⚽",color:"#15803D",soon:false},
- {id:"news",icon:"📰",color:"#1E40AF",soon:true},
+ {id:"news",icon:"📰",color:"#1E40AF",soon:false},
  {id:"media",icon:"📺",color:"#9F1239",soon:false},
  {id:"weather",icon:"🌤️",color:"#0284C7",soon:true},
  {id:"transport",icon:"🚌",color:"#0369A1",soon:true},
@@ -570,7 +585,7 @@ fa:{
  about_title:"دربارهٔ Germany MCP", about_sub:"یک کاتالوگ مستقل و متن‌باز — مرجع کامل سرورهای MCP آلمان.",
  about_mission_t:"مأموریت ما", about_mission_d:"ساختن مرجع کامل و قابل‌اعتماد برای سرویس‌های وب آلمان: هر سرویس مهم یک سرور MCP فقط‌خواندنی، سه‌زبانه و آزمایش‌شده داشته باشد — بدون ادعای تأییدنشده و بدون دادهٔ ساختگی.",
  about_builder_t:"سازنده", about_builder_d:"محمد عباسی — مدیر سئو و محصول در بن‌باما، و سازندهٔ ابزارهای متن‌باز برای اکوسیستم Claude. این کاتالوگ را مثل پروژهٔ iran-mcp سپهر ساخت: یک مرجع کامل، نه مجموعه‌ای از نمونه‌کارها.",
- about_catalog_t:"کاتالوگ", about_catalog_d:"۲ سرور، ۱۲ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
+ about_catalog_t:"کاتالوگ", about_catalog_d:"۳ سرور، ۱۸ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
  contact_title:"تماس با ما", contact_sub:"برای سؤال، پیشنهاد یا گزارش مشکل از راه‌های زیر استفاده کن — پیام مستقیم به گیت‌هاب می‌رسد.", contact_gh_issue:"ثبت Issue در گیت‌هاب", contact_gh_profile:"پروفایل گیت‌هاب",
  dash_go:"رفتن به بازارچه",
  fav_title:"علاقه‌مندی‌ها", fav_sub:"سرورها و مهارت‌هایی که ستاره‌دار کرده‌ای — در همین مرورگر ذخیره می‌شوند.",
@@ -656,7 +671,7 @@ de:{
  about_title:"Über Germany MCP", about_sub:"Ein unabhängiger Open-Source-Katalog — die vollständige Referenz für Deutschland-MCP-Server.",
  about_mission_t:"Unsere Mission", about_mission_d:"Die vollständige, vertrauenswürdige Referenz für deutsche Webdienste zu bauen: Jeder wichtige Dienst bekommt einen Nur-Lesen-, dreisprachigen und getesteten MCP-Server — keine ungeprüften Behauptungen und keine erfundenen Daten.",
  about_builder_t:"Der Erbauer", about_builder_d:"Mohammad Abbasi — SEO- und Produktmanager bei Bonbama und Erbauer von Open-Source-Tools für das Claude-Ökosystem. Er hat diesen Katalog so aufgebaut, wie Sepehr iran-mcp aufgebaut hat: als vollständige Referenz, nicht als Schaufenster.",
- about_catalog_t:"Der Katalog", about_catalog_d:"2 Server, 12 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
+ about_catalog_t:"Der Katalog", about_catalog_d:"3 Server, 18 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
  contact_title:"Kontakt", contact_sub:"Für Fragen, Vorschläge oder Fehlermeldungen nutze die Links unten — deine Nachricht geht direkt an GitHub.",
  contact_gh_issue:"Issue auf GitHub öffnen", contact_gh_profile:"GitHub-Profil",
  dash_go:"Zum Marktplatz",
@@ -745,7 +760,7 @@ en:{
  about_title:"About Germany MCP", about_sub:"An independent, open-source catalog — the complete reference for Germany MCP servers.",
  about_mission_t:"Our mission", about_mission_d:"To build the complete, trustworthy reference for German web services: every major service gets a read-only, trilingual, tested MCP server — no unverified claims and no fabricated data.",
  about_builder_t:"The builder", about_builder_d:"Mohammad Abbasi — SEO and Product Manager at Bonbama, and builder of open-source tools for the Claude ecosystem. He built this catalog the way Sepehr built iran-mcp: a complete reference, not a showcase.",
- about_catalog_t:"The catalog", about_catalog_d:"2 servers, 12 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
+ about_catalog_t:"The catalog", about_catalog_d:"3 servers, 18 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
  contact_title:"Contact Us", contact_sub:"For questions, suggestions or bug reports, use the links below — your message goes straight to GitHub.", contact_gh_issue:"Open an issue on GitHub", contact_gh_profile:"GitHub profile",
  dash_go:"Go to marketplace",
  fav_title:"Favorites", fav_sub:"Servers and skills you starred — stored in this browser.",

@@ -55,6 +55,8 @@ SERVER_META = {
                 "featured": False, "added": 12},
     "bundeswahlleiter-mcp": {"cat": "open-data", "color": "#92400E", "letter": "🗳️",
                           "featured": False, "added": 13},
+    "flixtrain-mcp": {"cat": "transport", "color": "#B45309", "letter": "🚆",
+                   "featured": False, "added": 14},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -111,6 +113,13 @@ TRANSLATIONS = {
   "bwl_constituency_results": ("نتایج یک حوزهٔ انتخابیه", "Ergebnis eines Wahlkreises"),
   "bwl_constituencies": ("فهرست حوزه‌ها با برنده و میزان مشارکت", "Wahlkreise mit Gewinner und Wahlbeteiligung auflisten"),
   "bwl_turnout": ("میزان مشارکت به تفکیک ایالت و کشوری", "Wahlbeteiligung nach Ländern und bundesweit"),
+ }},
+"flixtrain-mcp": {
+ "desc_fa": "زمان‌بندی و قیمت فلیکس‌ترین از API جست‌وجوی فروشگاه فلیکس‌بوس (رایگان، بدون کلید): فقط سفرهای قطار بین شهرهای آلمان، با ایستگاه‌ها، مدت سفر، قیمت و صندلی‌های موجود.",
+ "desc_de": "FlixTrain-Zeiten & Preise über die FlixBus-Shop-Suche (kostenlos, kein Schlüssel, kein Login): nur Zugverbindungen zwischen deutschen Städten, mit Bahnhöfen, Fahrzeit, Preis und Sitzplatzverfügbarkeit.",
+ "tools": {
+  "flixtrain_search_trains": ("جست‌وجوی سفرهای فلیکس‌ترین بین دو شهر", "FlixTrain-Verbindungen zwischen zwei Städten suchen"),
+  "flixtrain_search_cities": ("یافتن شهرها بر اساس نام", "Städte nach Namen finden"),
  }},
 "dictcc-mcp": {
  "desc_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",

@@ -51,6 +51,8 @@ SERVER_META = {
                           "featured": False, "added": 10},
     "duden-mcp": {"cat": "language", "color": "#7C3AED", "letter": "📖",
                "featured": False, "added": 11},
+    "dictcc-mcp": {"cat": "language", "color": "#0E7490", "letter": "🌐",
+                "featured": False, "added": 12},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -97,6 +99,13 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"dictcc-mcp": {
+ "desc_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",
+ "desc_de": "dict.cc-Übersetzungen von dict.cc (kostenlos, kein Schlüssel, kein Login): Deutsch-Englisch plus 22 weitere Sprachenpaare, mit Wortart, Genus, Gebrauchshinweisen und Community-Stimmen.",
+ "tools": {
+  "dictcc_translate": ("ترجمهٔ واژه با dict.cc (۲۳ زبان)", "Ein Wort mit dict.cc übersetzen (23 Sprachenpaare)"),
+  "dictcc_search": ("یافتن سرخط‌های dict.cc مطابق پرس‌وجو", "dict.cc-Stichwörter zu einer Suchanfrage finden"),
  }},
 "duden-mcp": {
  "desc_fa": "جست‌وجو در فرهنگ لغت دودن از duden.de (رایگان، بدون کلید): معانی واژه، مترادف‌ها، املا با جداسازی هجاها، نکات دستوری و صرف کامل فعل.",

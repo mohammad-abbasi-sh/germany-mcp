@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Germany MCP — Connect AI to the World</title>
+<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 15 servers, 72 tools, in English, Deutsch and فارسی.">
+<link rel="canonical" href="https://mohammad-abbasi-sh.github.io/germany-mcp/">
+<link rel="icon" href="favicon.ico">
+<link rel="alternate" hreflang="fa" href="#/fa/">
+<link rel="alternate" hreflang="de" href="#/de/">
+<link rel="alternate" hreflang="en" href="#/en/">
+<link rel="alternate" hreflang="x-default" href="#/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Germany MCP — Connect AI to the World">
+<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 15 servers, 72 tools. English, Deutsch, فارسی.">
+<meta property="og:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
+<meta name="twitter:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Germany MCP — Connect AI to the World">
+<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 15 servers, 72 tools. EN / DE / FA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 15 servers, 72 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
+</script>
+<style>
+:root{
+  --bg:#F5F7FC; --card:#FFFFFF; --elev:#FFFFFF; --text:#101B35; --muted:#5A6B8C;
+  --line:#E4E9F4; --primary:#6657E8; --primary-2:#7C6FF0; --primary-soft:#EFEDFD;
+  --secondary:#19C6B3; --secondary-soft:#E2F8F5; --accent:#FFB86B; --accent-soft:#FFF3E2;
+  --navy:#101B35; --danger:#E5484D; --ok:#0E9F6E;
+  --shadow:0 10px 30px rgba(16,27,53,.08); --shadow-lg:0 24px 60px rgba(16,27,53,.14);
+  --radius:18px; --radius-sm:12px;
+  --font-fa:"Vazirmatn",system-ui,Tahoma,sans-serif;
+  --font-lat:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+[data-theme="dark"]{
+  --bg:#0B1120; --card:#141E32; --elev:#1B2940; --text:#F5F7FC; --muted:#9AA8C7;
+  --line:#24314F; --primary:#8B80FF; --primary-2:#A39CFF; --primary-soft:#23264D;
+  --secondary:#32DCC7; --secondary-soft:#123B38; --accent:#FFB86B; --accent-soft:#3A2B17;
+  --shadow:0 10px 30px rgba(0,0,0,.35); --shadow-lg:0 24px 60px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+  html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);line-height:1.75;font-family:var(--font-lat);transition:background .35s ease,color .35s ease}
+[dir="rtl"] body,[lang="fa"] body{font-family:var(--font-fa)}
+h1,h2,h3,h4{line-height:1.35;margin:0 0 .5em;font-weight:800}
+p{margin:0 0 1em}
+a{color:var(--primary);text-decoration:none}
+a:hover{text-decoration:underline}
+img,svg{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer}
+input,select,textarea{font-family:inherit;font-size:15px;color:var(--text);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 14px;width:100%;outline:none;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-soft)}
+label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--primary-soft);border-radius:6px;padding:1px 6px;direction:ltr;unicode-bidi:isolate}
+pre{background:var(--navy);color:#E6EBF7;border-radius:14px;padding:16px 18px;overflow-x:auto;font-size:13px;line-height:1.7;direction:ltr;text-align:left;margin:0}
+pre code{background:none;padding:0;color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:20px}
+.section{padding:72px 0 8px}
+.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.section-head h2{font-size:30px;margin:0}
+.section-head p{color:var(--muted);margin:6px 0 0;max-width:640px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--primary);background:var(--primary-soft);border-radius:999px;padding:5px 14px;margin-bottom:14px}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--secondary)}
+/* ---------- header / nav ---------- */
+header.site{position:sticky;top:0;z-index:60;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:14px;height:66px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--text);text-decoration:none;white-space:nowrap}
+.brand:hover{text-decoration:none}
+.brand .mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#9B8CFF 55%,var(--secondary));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:19px;box-shadow:0 6px 16px rgba(102,87,232,.35)}
+.brand small{display:block;font-size:11px;font-weight:600;color:var(--muted);line-height:1}
+nav.main{display:flex;gap:2px;margin-inline-start:8px}
+nav.main a{color:var(--muted);font-size:14.5px;font-weight:600;padding:8px 12px;border-radius:999px;text-decoration:none;white-space:nowrap}
+nav.main a:hover{color:var(--text);background:var(--primary-soft);text-decoration:none}
+nav.main a.active{color:var(--primary);background:var(--primary-soft)}
+.nav-right{margin-inline-start:auto;display:flex;align-items:center;gap:8px}
+.icon-btn{width:40px;height:40px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--text);display:inline-flex;align-items:center;justify-content:center;font-size:17px}
+.icon-btn:hover{border-color:var(--primary)}
+.lang-select{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:0 8px;height:40px;width:auto;font-weight:700;font-size:13px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 26px;font-size:15px;font-weight:700;border:1px solid transparent;text-decoration:none;transition:transform .15s,box-shadow .2s,background .2s;white-space:nowrap}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;box-shadow:0 10px 24px rgba(102,87,232,.35)}
+.btn-ghost{background:var(--card);border-color:var(--line);color:var(--text)}
+.btn-mint{background:var(--secondary);color:#06231F;box-shadow:0 10px 24px rgba(25,198,179,.3)}
+.btn-sm{padding:9px 18px;font-size:14px}
+.btn-block{width:100%}
+.burger{display:none}
+.mobile-menu{display:none;border-top:1px solid var(--line);padding:12px 20px 18px;background:var(--bg)}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:11px 4px;font-weight:600;color:var(--text);border-bottom:1px solid var(--line)}
+.mobile-menu a:last-child{border-bottom:none}
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:64px 0 40px}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;background:
+  radial-gradient(560px 380px at 88% -5%,color-mix(in srgb,var(--primary) 16%,transparent),transparent 70%),
+  radial-gradient(520px 360px at 4% 30%,color-mix(in srgb,var(--secondary) 14%,transparent),transparent 70%),
+  radial-gradient(420px 300px at 55% 110%,color-mix(in srgb,var(--accent) 12%,transparent),transparent 70%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:52px;line-height:1.18;letter-spacing:-.01em}
+.hero h1 .grad{background:linear-gradient(120deg,var(--primary),var(--secondary));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{color:var(--muted);font-size:17.5px;max-width:560px}
+.hero-search{display:flex;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 6px 6px 16px;box-shadow:var(--shadow);max-width:560px;margin:22px 0 14px}
+[dir="ltr"] .hero-search{padding:6px 16px 6px 6px}
+.hero-search input{border:none;background:transparent;box-shadow:none;padding:8px 4px}
+.hero-search input:focus{box-shadow:none}
+.hero-search .btn{flex-shrink:0}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.hero-stats{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.hero-stats b{display:block;font-size:24px}
+.hero-stats span{color:var(--muted);font-size:13.5px}
+/* demo card */
+.demo{background:linear-gradient(160deg,#141B31,#0B1120);border:1px solid #26304D;border-radius:22px;box-shadow:var(--shadow-lg);overflow:hidden;color:#E6EBF7}
+.demo-tabs{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid #22304F;flex-wrap:wrap}
+.demo-tabs button{background:transparent;border:none;color:#8EA0C4;border-radius:999px;padding:7px 13px;font-size:13px;font-weight:600}
+.demo-tabs button.active{background:#232C47;color:#fff}
+.demo-body{padding:20px 22px;min-height:250px}
+.demo-body .q{font-weight:700;color:#fff;font-size:16px;margin-bottom:12px;min-height:52px}
+.demo-body pre{background:#1A2340;border:1px solid #2A3557}
+.demo-body .fn{color:#32DCC7}.demo-body .str{color:#FFB86B}.demo-body .arg{color:#C3CFE8}
+.demo-body .status{color:#32DCC7;font-size:13px;font-weight:700;margin:12px 0 4px}
+.demo-body .a{color:#C3CFE8;font-size:14px;margin:0 0 12px}
+.demo-body .ask{font-size:13px;color:#8EA0C4;margin:0}
+.demo-body .ask a{color:#9DB4FF}
+.demo-body .cursor{display:inline-block;width:2px;height:1em;background:#32DCC7;vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.demo-foot{display:flex;align-items:center;gap:12px;border-top:1px solid #22304F;padding:14px 22px}
+.demo-foot span{color:#8EA0C4;font-size:13px}
+.demo-foot .btn{padding:9px 20px;font-size:14px}
+/* ---------- cards / grids ---------- */
+.grid{display:grid;gap:18px}
+  .grid>*,.plat-grid>*,.steps>*{min-width:0}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;display:flex;flex-direction:column;transition:transform .18s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.card h3{font-size:17.5px;margin:0}
+.card .desc{color:var(--muted);font-size:14px;margin:8px 0 14px;flex:1}
+.tile{width:48px;height:48px;min-width:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:21px;font-weight:800;color:#fff}
+.card-top{display:flex;gap:12px;align-items:flex-start}
+.card-top .latin{color:var(--muted);font-size:12.5px;margin:2px 0 0;direction:ltr;text-align:start;overflow-wrap:anywhere}
+.meta-row{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted);margin:0 0 4px}
+.meta-row .ic{font-size:14px}
+.card-bottom{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.card-bottom .count{color:var(--muted);font-size:13px}
+.card-bottom .btn{margin-inline-start:auto}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px}
+.badge-feat{background:var(--accent-soft);color:#B26A00}
+[data-theme="dark"] .badge-feat{color:var(--accent)}
+.badge-ok{background:var(--secondary-soft);color:#0B7A6E}
+[data-theme="dark"] .badge-ok{color:var(--secondary)}
+.badge-soon{background:var(--primary-soft);color:var(--primary)}
+.badge-verified{background:var(--secondary-soft);color:#0B7A6E}
+[data-theme="dark"] .badge-verified{color:var(--secondary)}
+.badge-unverified{background:#FDECEC;color:#B42318}
+[data-theme="dark"] .badge-unverified{background:#3A1D1D;color:#FF9A94}
+.chip{display:inline-flex;align-items:center;gap:6px;background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;white-space:nowrap}
+.chip.mint{background:var(--secondary-soft);color:#0B7A6E}
+[data-theme="dark"] .chip.mint{color:var(--secondary)}
+.star-btn{border:1px solid var(--line);background:var(--card);border-radius:10px;width:36px;height:36px;font-size:17px;color:var(--muted);display:inline-flex;align-items:center;justify-content:center}
+.star-btn.on{color:#F5A623;border-color:#F5A623;background:var(--accent-soft)}
+/* category cards */
+.cat-card{cursor:pointer;text-align:start}
+.cat-card .ic{width:52px;height:52px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:14px}
+.cat-card h3{font-size:17px}
+.cat-card p{color:var(--muted);font-size:13.5px;margin:6px 0 12px;flex:1}
+/* platforms */
+.plat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.plat-card{text-align:center;align-items:center;padding:28px 18px}
+.plat-card .logo{width:60px;height:60px;border-radius:18px;background:var(--primary-soft);display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;margin-bottom:12px}
+.plat-card h3{font-size:17px}
+.plat-card p{color:var(--muted);font-size:13.5px;flex:1}
+/* how it works */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{position:relative}
+.step .n{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;margin-bottom:14px;box-shadow:0 8px 18px rgba(102,87,232,.3)}
+.step h3{font-size:18px}
+.step p{color:var(--muted);font-size:14.5px}
+/* toolbar: search + filters */
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.toolbar .search-box{flex:1;min-width:220px;position:relative}
+.toolbar .search-box input{padding-inline-start:40px}
+.toolbar .search-box .mag{position:absolute;inset-inline-start:13px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.toolbar select{width:auto;min-width:160px}
+.empty{text-align:center;padding:56px 20px;background:var(--card);border:1px dashed var(--line);border-radius:var(--radius)}
+.empty .big{font-size:44px;margin-bottom:8px}
+.empty h3{font-size:19px}
+.empty p{color:var(--muted)}
+/* tool detail */
+.detail-head{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;margin-bottom:8px}
+.detail-head .tile{width:64px;height:64px;border-radius:18px;font-size:28px}
+.detail-head h1{font-size:30px;margin:0}
+.detail-head .latin{color:var(--muted);direction:ltr;text-align:start}
+.table-scroll{overflow-x:auto}
+  .tools-table{width:100%;border-collapse:collapse;font-size:14px}
+.tools-table th,.tools-table td{text-align:start;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.tools-table th{color:var(--muted);font-size:13px}
+.tools-table code{white-space:nowrap}
+.install-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:18px}
+.install-box h3{font-size:16px;margin-bottom:10px}
+.copy-row{display:flex;gap:8px;align-items:stretch}
+  .copy-row>*{min-width:0}
+.copy-row pre{flex:1;margin:0}
+.copy-btn{border:1px solid var(--line);background:var(--elev);border-radius:12px;padding:0 16px;font-weight:700;color:var(--text)}
+/* forms */
+.form-card{max-width:480px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);padding:32px}
+.form-card h1{font-size:24px;text-align:center}
+.form-card .sub{text-align:center;color:var(--muted);font-size:14.5px}
+.field{margin-bottom:16px}
+.field .err{color:var(--danger);font-size:13px;margin-top:5px;display:none}
+.field.invalid input,.field.invalid textarea{border-color:var(--danger)}
+.field.invalid .err{display:block}
+.alert{border-radius:12px;padding:12px 16px;font-size:14px;margin-bottom:16px}
+.alert-ok{background:var(--secondary-soft);color:#0B7A6E}
+[data-theme="dark"] .alert-ok{color:var(--secondary)}
+.alert-err{background:#FDECEC;color:#B42318}
+[data-theme="dark"] .alert-err{background:#3A1D1D;color:#FF9A94}
+.alert-info{background:var(--primary-soft);color:var(--primary)}
+.note{font-size:13px;color:var(--muted);background:var(--primary-soft);border-radius:12px;padding:12px 14px;margin-top:16px}
+/* blog / tutorial */
+.article-body{max-width:760px}
+.article-body h2{font-size:22px;margin:28px 0 10px}
+.article-body p{color:var(--muted);font-size:16px}
+.article-body ol,.article-body ul{color:var(--muted);font-size:16px;line-height:1.9}
+.post-meta{display:flex;gap:14px;color:var(--muted);font-size:13.5px;flex-wrap:wrap;margin-bottom:18px}
+.cover{height:180px;border-radius:16px 16px 0 0;margin:-22px -22px 18px;display:flex;align-items:center;justify-content:center;font-size:52px;color:#fff}
+.cover.g1{background:linear-gradient(135deg,#6657E8,#9B8CFF)}
+.cover.g2{background:linear-gradient(135deg,#19C6B3,#5EEAD4)}
+.cover.g3{background:linear-gradient(135deg,#F59E0B,#FFB86B)}
+.cover.g4{background:linear-gradient(135deg,#0EA5E9,#38BDF8)}
+.cover.g5{background:linear-gradient(135deg,#EC4899,#F9A8D4)}
+/* dashboard */
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:26px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.stat b{font-size:28px;display:block}
+.stat span{color:var(--muted);font-size:13.5px}
+/* footer */
+footer.site{margin-top:90px;border-top:1px solid var(--line);background:var(--card)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;padding:56px 0 32px}
+.foot-grid h4{font-size:15px;margin:0 0 14px}
+.foot-grid a{display:block;color:var(--muted);font-size:14px;margin-bottom:9px}
+.foot-grid p{color:var(--muted);font-size:14px}
+.foot-bottom{border-top:1px solid var(--line);padding:18px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+.socials{display:flex;gap:8px;margin-top:14px}
+.socials a{width:38px;height:38px;border-radius:11px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:16px}
+.socials a:hover{color:var(--primary);border-color:var(--primary);text-decoration:none}
+/* toast */
+#toast{position:fixed;bottom:22px;inset-inline-start:50%;transform:translateX(50%);background:var(--navy);color:#fff;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;box-shadow:var(--shadow-lg);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:100}
+[dir="ltr"] #toast{transform:translateX(-50%)}
+#toast.show{opacity:1}
+[dir="rtl"] #toast{transform:translateX(50%)}
+.skip{position:absolute;inset-inline-start:-9999px}
+.skip:focus{position:fixed;inset-inline-start:16px;top:16px;z-index:200;background:var(--primary);color:#fff;padding:10px 18px;border-radius:999px}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:6px}
+/* responsive */
+@media (max-width:1020px){
+  nav.main{display:none}
+  .burger{display:inline-flex}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero h1{font-size:40px}
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .plat-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .stat-grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .section{padding:48px 0 4px}
+  .hero{padding:40px 0 24px}
+  .hero h1{font-size:32px}
+  .section-head h2{font-size:24px}
+  .grid-4,.grid-3,.grid-2,.plat-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-search{flex-direction:column;border-radius:20px;padding:10px}
+  .hero-search .btn{width:100%}
+  .brand{font-size:16px;gap:8px}
+  .brand .mark{width:34px;height:34px}
+  .brand small{display:none}
+  .nav-right{gap:6px}
+  .icon-btn{width:36px;height:36px;font-size:15px}
+  .lang-select{padding:0 4px;font-size:12px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#app" data-i18n="a11y_skip">Skip to content</a>
+<div id="app"></div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script>
+"use strict";
+/* ---------------- DATA (real catalog) ---------------- */
+const SERVERS = [
+{ id:"bundesliga-mcp", cat:"sports", color:"#15803D", letter:"⚽", featured:true, added:1,
+  title:"Bundesliga — German football fixtures, tables & scorers",
+  title_de:"Bundesliga — Spielpläne, Tabellen & Torschützen",
+  desc:"Bundesliga, 2./3. Liga, DFB-Pokal & DEL via OpenLigaDB (free API, no key): fixtures, live scores, tables, top scorers.",
+  desc_fa:"بوندس‌لیگا، لیگ ۲ و ۳، جام حذفی و DEL با OpenLigaDB (API رایگان، بدون کلید): بازی‌ها، نتایج زنده، جدول‌ها و گلزنان برتر.",
+  desc_de:"Bundesliga, 2. und 3. Liga, DFB-Pokal und DEL über OpenLigaDB (kostenlose API, kein Schlüssel): Spielpläne, Live-Ergebnisse, Tabellen und Torschützen.",
+  repo:"https://github.com/mohammad-abbasi-sh/bundesliga-mcp", pypi:"bundesliga-mcp",
+  tools:[
+   {n:"bundesliga_list_leagues",s:"Leagues with their current season",sf:"لیگ‌ها با فصل جاری",st:"Ligen mit ihrer aktuellen Saison"},
+   {n:"bundesliga_get_fixtures",s:"One matchday's fixtures and results",sf:"بازی‌های یک هفتهٔ مشخص با نتایج",st:"Spiele eines Spieltags mit Ergebnissen"},
+   {n:"bundesliga_get_live_scores",s:"Current matchday scores and status",sf:"نتایج زندهٔ هفتهٔ جاری",st:"Aktuelle Live-Ergebnisse des Spieltags"},
+   {n:"bundesliga_get_table",s:"League table",sf:"جدول لیگ",st:"Tabelle der Liga"},
+   {n:"bundesliga_get_top_scorers",s:"Top scorers of a season",sf:"گلزنان برتر یک فصل",st:"Torschützen einer Saison"},
+   {n:"bundesliga_get_match_detail",s:"Full detail of one match",sf:"جزئیات کامل یک مسابقه",st:"Vollständige Details eines Spiels"}
+  ]},
+{ id:"mediathek-mcp", cat:"media", color:"#9F1239", letter:"📺", featured:false, added:2,
+  title:"Mediathek — German public broadcasters' programmes",
+  title_de:"Mediathek — Sendungen der öffentlich-rechtlichen Sender",
+  desc:"ARD, ZDF, 3sat, ARTE, Phoenix & more via MediathekViewWeb (free API, no key): search programmes, latest broadcasts, by channel/topic, programme detail.",
+  desc_fa:"ARD، ZDF، 3sat، ARTE، Phoenix و بیشتر با MediathekViewWeb (API رایگان، بدون کلید): جست‌وجوی برنامه‌ها، جدیدترین پخش‌ها، بر اساس شبکه/موضوع و جزئیات برنامه.",
+  desc_de:"ARD, ZDF, 3sat, ARTE, Phoenix und mehr über MediathekViewWeb (kostenlose API, kein Schlüssel): Sendungen suchen, neueste Sendungen, nach Sender/Thema, Sendedetails.",
+  repo:"https://github.com/mohammad-abbasi-sh/mediathek-mcp", pypi:"mediathek-mcp",
+  tools:[
+   {n:"mediathek_search_programmes",s:"Search programmes by title, topic or description",sf:"جست‌وجوی برنامه‌ها با عنوان، موضوع یا توضیح",st:"Sendungen nach Titel, Thema oder Beschreibung suchen"},
+   {n:"mediathek_latest_broadcasts",s:"Newest programmes across all channels",sf:"جدیدترین برنامه‌های همهٔ شبکه‌ها",st:"Neueste Sendungen aller Sender"},
+   {n:"mediathek_by_channel",s:"Newest programmes of one channel",sf:"جدیدترین برنامه‌های یک شبکه",st:"Neueste Sendungen eines Senders"},
+   {n:"mediathek_by_topic",s:"All episodes of one show or series",sf:"همهٔ قسمت‌های یک برنامه یا سریال",st:"Alle Folgen einer Sendung oder Serie"},
+   {n:"mediathek_programme_detail",s:"Full detail of one programme (video URLs, subtitles)",sf:"جزئیات کامل یک برنامه (لینک ویدیو، زیرنویس)",st:"Vollständige Details einer Sendung (Video-URLs, Untertitel)"},
+   {n:"mediathek_list_channels",s:"Channels in the film list",sf:"شبکه‌های فهرست فیلم",st:"Sender der Filmliste"}
+  ]},
+{ id:"tagesschau-mcp", cat:"news", color:"#1E40AF", letter:"📰", featured:false, added:3,
+  title:"tagesschau — Germany's most-watched TV news",
+  title_de:"tagesschau — Deutschlands meistgesehene Fernsehnachrichten",
+  desc:"tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text.",
+  desc_fa:"tagesschau.de (ARD) با فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار بخش‌ها، اخبار منطقه‌ای هر ۱۶ ایالت، جدیدترین ویدیوها و متن کامل مقاله‌ها.",
+  desc_de:"tagesschau.de (ARD) über offizielle RSS-Feeds (kein Schlüssel): Schlagzeilen, Nachrichten nach Ressort, Regionalnachrichten aller 16 Bundesländer, neueste Videos und Volltexte.",
+  repo:"https://github.com/mohammad-abbasi-sh/tagesschau-mcp", pypi:"tagesschau-mcp",
+  tools:[
+   {n:"tagesschau_headlines",s:"Top headlines, newest first",sf:"تیترهای برتر tagesschau.de",st:"Top-Schlagzeilen von tagesschau.de"},
+   {n:"tagesschau_news_by_section",s:"Newest news of one section",sf:"جدیدترین اخبار یک بخش",st:"Neueste Nachrichten eines Ressorts"},
+   {n:"tagesschau_search_news",s:"Search news by keyword",sf:"جست‌وجوی اخبار با کلیدواژه",st:"Nachrichten nach Stichwort suchen"},
+   {n:"tagesschau_get_article",s:"Full text of one article",sf:"متن کامل یک مقاله",st:"Volltext eines Artikels"},
+   {n:"tagesschau_latest_videos",s:"Latest videos, newest first",sf:"جدیدترین ویدیوها",st:"Neueste Videos"},
+   {n:"tagesschau_regional_news",s:"Regional news of one Bundesland",sf:"اخبار منطقه‌ای یک ایالت",st:"Regionalnachrichten eines Bundeslandes"}
+  ]},
+{ id:"dwd-mcp", cat:"weather", color:"#0284C7", letter:"🌤️", featured:false, added:4,
+  title:"DWD — German weather: DWD ICON forecasts, current conditions, official warnings & pollen",
+  title_de:"DWD — Deutsches Wetter: ICON-Vorhersagen, aktuelles Wetter, amtliche Warnungen & Pollen",
+  desc:"DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen.",
+  desc_fa:"هواشناسی آلمان از سرویس ملی هواشناسی آلمان (DWD): پیش‌بینی و وضعیت فعلی با مدل ICON از طریق Open-Meteo، هشدارهای رسمی آب‌وهوای DWD و شمارش گرده.",
+  desc_de:"Deutsches Wetter vom Deutschen Wetterdienst (DWD): ICON-Vorhersagen und aktuelles Wetter über Open-Meteo, amtliche Unwetterwarnungen und Pollenflug.",
+  repo:"https://github.com/mohammad-abbasi-sh/dwd-mcp", pypi:"dwd-mcp",
+  tools:[
+   {n:"dwd_forecast",s:"ICON-model forecast for a German place (hourly + daily)",sf:"پیش‌بینی مدل ICON برای یک شهر آلمان (ساعتی + روزانه)",st:"ICON-Vorhersage für einen deutschen Ort (stündlich + täglich)"},
+   {n:"dwd_current_weather",s:"Current conditions for a German place",sf:"وضعیت فعلی هوا برای یک شهر آلمان",st:"Aktuelles Wetter für einen deutschen Ort"},
+   {n:"dwd_warnings",s:"Official DWD severe-weather warnings, filterable by state",sf:"هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت",st:"Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"},
+   {n:"dwd_pollen",s:"Pollen counts for a German place (CAMS via Open-Meteo)",sf:"شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)",st:"Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"},
+   {n:"dwd_find_place",s:"Find German places (name → coordinates)",sf:"یافتن شهرهای آلمان (نام → مختصات)",st:"Deutsche Orte finden (Name → Koordinaten)"}
+  ]},
+{ id:"autobahn-mcp", cat:"transport", color:"#0369A1", letter:"🛣️", featured:false, added:5,
+  title:"Autobahn — German motorway roadworks, closures, warnings, parking & EV charging",
+  title_de:"Autobahn — Baustellen, Sperrungen, Warnungen, Parken & E-Laden",
+  desc:"German Autobahn data from the official verkehr.autobahn.de API (no key): roadworks, closures, warnings, truck/car parking and EV charging stations per motorway.",
+  desc_fa:"داده‌های اتوبان آلمان از API رسمی verkehr.autobahn.de (بدون کلید): کارهای جاده‌ای، بسته‌شدن‌ها، هشدارها، پارکینگ کامیون/خودرو و ایستگاه‌های شارژ خودروی برقی برای هر اتوبان.",
+  desc_de:"Deutsche Autobahn-Daten über die offizielle API verkehr.autobahn.de (kein Schlüssel): Baustellen, Sperrungen, Warnungen, LKW-/PKW-Parkplätze und E-Ladesäulen je Autobahn.",
+  repo:"https://github.com/mohammad-abbasi-sh/autobahn-mcp", pypi:"autobahn-mcp",
+  tools:[
+   {n:"autobahn_roadworks",s:"Roadworks on one motorway",sf:"کارهای جاده‌ای یک اتوبان",st:"Baustellen auf einer Autobahn"},
+   {n:"autobahn_closures",s:"Closures on one motorway",sf:"بسته‌شدن‌های یک اتوبان",st:"Sperrungen auf einer Autobahn"},
+   {n:"autobahn_warnings",s:"Warnings on one motorway",sf:"هشدارهای یک اتوبان",st:"Warnungen auf einer Autobahn"},
+   {n:"autobahn_parking",s:"Truck/car parking areas on one motorway",sf:"پارکینگ‌های یک اتوبان",st:"Parkplätze auf einer Autobahn"},
+   {n:"autobahn_ev_charging",s:"EV charging stations on one motorway",sf:"ایستگاه‌های شارژ خودروی برقی یک اتوبان",st:"E-Ladesäulen auf einer Autobahn"}
+  ]},
+{ id:"dw-mcp", cat:"news", color:"#0E7490", letter:"📰", featured:false, added:6,
+  title:"Deutsche Welle — DW news in 31 languages: headlines, search, articles & topics",
+  title_de:"Deutsche Welle — DW-Nachrichten in 31 Sprachen: Schlagzeilen, Suche, Artikel & Themen",
+  desc:"Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages.",
+  desc_fa:"اخبار دویچه‌وله به ۳۱ زبان از سایت‌مپ‌های رسمی DW (بدون کلید): تازه‌ترین تیترها، جست‌وجوی کلیدواژه، تازه‌ترین مقاله‌ها، متن کامل مقاله و صفحه‌های موضوعی.",
+  desc_de:"Deutsche-Welle-Nachrichten in 31 Sprachen über die offiziellen DW-Sitemaps (kein Schlüssel): neueste Schlagzeilen, Stichwortsuche, neueste Artikel, Volltexte und Themenseiten.",
+  repo:"https://github.com/mohammad-abbasi-sh/dw-mcp", pypi:"dw-mcp",
+  tools:[
+   {n:"dw_headlines",s:"Latest DW headlines in one language",sf:"تازه‌ترین تیترهای DW به یک زبان",st:"Neueste DW-Schlagzeilen in einer Sprache"},
+   {n:"dw_search_news",s:"Search recent DW headlines by keyword",sf:"جست‌وجوی تیترهای اخیر DW با کلیدواژه",st:"Neueste DW-Schlagzeilen nach Stichwort suchen"},
+   {n:"dw_latest_articles",s:"Latest DW articles in one language",sf:"تازه‌ترین مقاله‌های DW به یک زبان",st:"Neueste DW-Artikel in einer Sprache"},
+   {n:"dw_get_article",s:"Full text of one DW article",sf:"متن کامل یک مقالهٔ DW",st:"Volltext eines DW-Artikels"},
+   {n:"dw_topics",s:"DW topic pages matching a word",sf:"صفحه‌های موضوعی DW برای یک واژه",st:"DW-Themenseiten zu einem Stichwort"}
+  ]},
+{ id:"ntv-mcp", cat:"news", color:"#B91C1C", letter:"📺", featured:false, added:7,
+  title:"n-tv — German TV news: headlines by section, markets, videos & articles",
+  title_de:"n-tv — Deutsche Fernsehnachrichten: Schlagzeilen, Börse, Videos & Artikel",
+  desc:"n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text.",
+  desc_fa:"اخبار n-tv از فیدهای RSS رسمی (بدون کلید): تازه‌ترین تیترها بر اساس بخش، اخبار بازار، تازه‌ترین ویدیوها، جست‌وجوی کلیدواژه و متن کامل مقاله.",
+  desc_de:"n-tv-Nachrichten über die offiziellen RSS-Feeds (kein Schlüssel): neueste Schlagzeilen nach Ressort, Börsennachrichten, neueste Videos, Stichwortsuche und Volltexte.",
+  repo:"https://github.com/mohammad-abbasi-sh/ntv-mcp", pypi:"ntv-mcp",
+  tools:[
+   {n:"ntv_headlines",s:"Latest n-tv headlines by section",sf:"تازه‌ترین تیترهای n-tv بر اساس بخش",st:"Neueste n-tv-Schlagzeilen nach Ressort"},
+   {n:"ntv_markets",s:"Latest n-tv market news",sf:"تازه‌ترین اخبار بازار n-tv",st:"Neueste n-tv-Börsennachrichten"},
+   {n:"ntv_videos",s:"Latest n-tv videos",sf:"تازه‌ترین ویدیوهای n-tv",st:"Neueste n-tv-Videos"},
+   {n:"ntv_search_news",s:"Search recent n-tv headlines by keyword",sf:"جست‌وجوی تیترهای اخیر n-tv با کلیدواژه",st:"Neueste n-tv-Schlagzeilen nach Stichwort suchen"},
+   {n:"ntv_get_article",s:"Full text of one n-tv article",sf:"متن کامل یک مقالهٔ n-tv",st:"Volltext eines n-tv-Artikels"}
+  ]},
+{ id:"dnb-mcp", cat:"open-data", color:"#7C3AED", letter:"📚", featured:false, added:8,
+  title:"DNB — Deutsche Nationalbibliothek catalogue: books, authors & ISBN lookup",
+  title_de:"DNB — Katalog der Deutschen Nationalbibliothek: Bücher, Autoren & ISBN",
+  desc:"Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup.",
+  desc_fa:"کاتالوگ کتابخانه ملی آلمان از طریق API رسمی SRU (بدون کلید): جست‌وجوی کلیدواژه، عنوان و نویسنده، جست‌وجو با ISBN و شناسهٔ DNB.",
+  desc_de:"Katalog der Deutschen Nationalbibliothek über die offizielle SRU-API (kein Schlüssel): Stichwort-, Titel- und Autorensuche, ISBN- und DNB-ID-Abfrage.",
+  repo:"https://github.com/mohammad-abbasi-sh/dnb-mcp", pypi:"dnb-mcp",
+  tools:[
+   {n:"dnb_search_books",s:"Keyword search across the DNB catalogue",sf:"جست‌وجوی کلیدواژه در کاتالوگ DNB",st:"Stichwortsuche im DNB-Katalog"},
+   {n:"dnb_search_by_title",s:"Search the DNB catalogue by title",sf:"جست‌وجو در کاتالوگ DNB با عنوان",st:"Titelsuche im DNB-Katalog"},
+   {n:"dnb_search_by_author",s:"Search the DNB catalogue by author",sf:"جست‌وجو در کاتالوگ DNB با نویسنده",st:"Autorensuche im DNB-Katalog"},
+   {n:"dnb_by_isbn",s:"Look up one book by ISBN",sf:"یافتن یک کتاب با ISBN",st:"Ein Buch per ISBN nachschlagen"},
+   {n:"dnb_get_record",s:"Full record by DNB identifier",sf:"رکورد کامل با شناسهٔ DNB",st:"Vollständiger Datensatz per DNB-ID"}
+  ]},
+{ id:"govdata-mcp", cat:"open-data", color:"#065F46", letter:"🗃️", featured:false, added:9,
+  title:"GovData — Germany's open-data portal: search 163,000+ datasets, publishers & resources",
+  title_de:"GovData — Deutschlands Open-Data-Portal: 163.000+ Datensätze, Herausgeber & Ressourcen",
+  desc:"Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details.",
+  desc_fa:"پورتال ملی داده‌های باز آلمان govdata.de از طریق API رسمی CKAN (بدون کلید): جست‌وجو در بیش از ۱۶۳٬۰۰۰ مجموعه‌داده، جزئیات مجموعه‌داده، ناشران، تازه‌ترین مجموعه‌داده‌ها و جزئیات منبع.",
+  desc_de:"Deutschlands nationales Open-Data-Portal govdata.de über die offizielle CKAN-API (kein Schlüssel): über 163.000 Datensätze durchsuchen, Datensatzdetails, Herausgeber, neueste Datensätze und Ressourcendetails.",
+  repo:"https://github.com/mohammad-abbasi-sh/govdata-mcp", pypi:"govdata-mcp",
+  tools:[
+   {n:"govdata_search_datasets",s:"Search govdata.de datasets",sf:"جست‌وجوی مجموعه‌داده‌ها در govdata.de",st:"Datensätze auf govdata.de suchen"},
+   {n:"govdata_get_dataset",s:"Full details of one dataset",sf:"جزئیات کامل یک مجموعه‌داده",st:"Vollständige Details eines Datensatzes"},
+   {n:"govdata_list_publishers",s:"Publishing organisations, most datasets first",sf:"ناشران، به ترتیب بیشترین مجموعه‌داده",st:"Herausgeber, nach Datensatzzahl sortiert"},
+   {n:"govdata_recent_datasets",s:"Most recently updated datasets",sf:"تازه‌ترین مجموعه‌داده‌های به‌روز شده",st:"Zuletzt aktualisierte Datensätze"},
+   {n:"govdata_get_resource",s:"Details of one dataset resource",sf:"جزئیات یک منبع مجموعه‌داده",st:"Details einer Datensatz-Ressource"}
+  ]},
+{ id:"deutschlandfunk-mcp", cat:"news", color:"#1E3A8A", letter:"📻", featured:false, added:10,
+  title:"Deutschlandfunk — German public radio news: rolling news, topics, articles & live stream",
+  title_de:"Deutschlandfunk — Nachrichten des deutschen öffentlich-rechtlichen Radios: Meldungen, Themen, Artikel & Livestream",
+  desc:"Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link.",
+  desc_fa:"اخبار و رادیوی دویچلندفونک از فیدهای RSS رسمی (بدون کلید): اخبار جاری، تازه‌ترین مطالب، فیدهای موضوعی، جست‌وجوی کلیدواژه، متن کامل مقاله و لینک پخش زنده.",
+  desc_de:"Deutschlandfunk-Nachrichten & Radio über die offiziellen RSS-Feeds (kein Schlüssel): laufende Nachrichten, neueste Beiträge, Ressort-Feeds, Stichwortsuche, Volltexte und Livestream-Link.",
+  repo:"https://github.com/mohammad-abbasi-sh/deutschlandfunk-mcp", pypi:"deutschlandfunk-mcp",
+  tools:[
+   {n:"dlf_latest_news",s:"Rolling DLF news headlines",sf:"تیترهای خبری جاری DLF",st:"Laufende DLF-Nachrichten"},
+   {n:"dlf_latest_contributions",s:"Latest DLF contributions",sf:"تازه‌ترین مطالب DLF",st:"Neueste DLF-Beiträge"},
+   {n:"dlf_news_by_topic",s:"DLF news by topic",sf:"اخبار DLF بر اساس موضوع",st:"DLF-Nachrichten nach Ressort"},
+   {n:"dlf_search_news",s:"Search recent DLF items by keyword",sf:"جست‌وجوی مطالب اخیر DLF با کلیدواژه",st:"Neueste DLF-Beiträge nach Stichwort suchen"},
+   {n:"dlf_get_article",s:"Full text of one DLF article",sf:"متن کامل یک مقالهٔ DLF",st:"Volltext eines DLF-Artikels"},
+   {n:"dlf_listen_live",s:"Deutschlandfunk live stream link",sf:"لینک پخش زندهٔ دویچلندفونک",st:"Livestream-Link des Deutschlandfunks"}
+  ]},
+{ id:"duden-mcp", cat:"language", color:"#7C3AED", letter:"📖", featured:false, added:11,
+  title:"Duden — Germany's standard dictionary: word meanings, synonyms, spelling & grammar",
+  title_de:"Duden — Das Standardwörterbuch der deutschen Sprache: Bedeutungen, Synonyme, Rechtschreibung & Grammatik",
+  desc:"Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation.",
+  desc_fa:"جست‌وجو در فرهنگ لغت دودن از duden.de (رایگان، بدون کلید): معانی واژه، مترادف‌ها، املا با جداسازی هجاها، نکات دستوری و صرف کامل فعل.",
+  desc_de:"Duden-Nachschlagen auf duden.de (kostenlos, kein Schlüssel, kein Login): Bedeutungen, Synonyme, Rechtschreibung mit Worttrennung, Grammatik und vollständige Verbkonjugation.",
+  repo:"https://github.com/mohammad-abbasi-sh/duden-mcp", pypi:"duden-mcp",
+  tools:[
+   {n:"duden_lookup_word",s:"Look up a German word: meanings, word type & grammar",sf:"جست‌وجوی واژهٔ آلمانی در دودن: معانی، نوع کلمه و دستور زبان",st:"Ein deutsches Wort im Duden nachschlagen: Bedeutungen, Wortart & Grammatik"},
+   {n:"duden_synonyms",s:"Synonyms of a German word",sf:"مترادف‌های یک واژهٔ آلمانی",st:"Synonyme eines deutschen Wortes"},
+   {n:"duden_spelling",s:"Spelling & hyphenation of a German word",sf:"املا و جداسازی هجاهای یک واژهٔ آلمانی",st:"Rechtschreibung & Worttrennung eines deutschen Wortes"},
+   {n:"duden_grammar",s:"Grammar notes for a German word",sf:"نکات دستوری یک واژهٔ آلمانی",st:"Grammatiknotizen zu einem deutschen Wort"},
+   {n:"duden_conjugate",s:"Full conjugation table of a German verb",sf:"جدول کامل صرف یک فعل آلمانی",st:"Vollständige Konjugationstabelle eines deutschen Verbs"},
+   {n:"duden_search",s:"Search Duden headwords",sf:"جست‌وجوی سرخط‌های دودن",st:"Duden-Stichwörter suchen"}
+  ]},
+{ id:"dictcc-mcp", cat:"language", color:"#0E7490", letter:"🌐", featured:false, added:12,
+  title:"dict.cc — German-English & 22 more pairs: translations with word class, gender & votes",
+  title_de:"dict.cc — Deutsch-Englisch und 22 weitere Sprachenpaare: Übersetzungen mit Wortart, Genus & Stimmen",
+  desc:"dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes.",
+  desc_fa:"ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",
+  desc_de:"dict.cc-Übersetzungen von dict.cc (kostenlos, kein Schlüssel, kein Login): Deutsch-Englisch plus 22 weitere Sprachenpaare, mit Wortart, Genus, Gebrauchshinweisen und Community-Stimmen.",
+  repo:"https://github.com/mohammad-abbasi-sh/dictcc-mcp", pypi:"dictcc-mcp",
+  tools:[
+   {n:"dictcc_translate",s:"Translate a word with dict.cc (23 pairs)",sf:"ترجمهٔ واژه با dict.cc (۲۳ زبان)",st:"Ein Wort mit dict.cc übersetzen (23 Sprachenpaare)"},
+   {n:"dictcc_search",s:"Find dict.cc headwords matching a query",sf:"یافتن سرخط‌های dict.cc مطابق پرس‌وجو",st:"dict.cc-Stichwörter zu einer Suchanfrage finden"}
+  ]},
+{ id:"bundeswahlleiter-mcp", cat:"open-data", color:"#92400E", letter:"🗳️", featured:false, added:13,
+  title:"Bundeswahlleiterin — German federal election results: Bundestag elections 2017–2025",
+  title_de:"Die Bundeswahlleiterin — Ergebnisse der Bundestagswahlen 2017–2025",
+  desc:"Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025.",
+  desc_fa:"نتایج رسمی انتخابات بوندستاگ از bundeswahlleiterin.de (داده‌های باز رایگان، بدون کلید): نتایج کشوری، نتایج احزاب، حوزه‌های انتخابیه و میزان مشارکت برای ۲۰۱۷، ۲۰۲۱ و ۲۰۲۵.",
+  desc_de:"Amtliche Bundestagswahlergebnisse von bundeswahlleiterin.de (freie offene Daten, kein Schlüssel, kein Login): Bundesergebnisse, Parteiergebnisse, Wahlkreise und Wahlbeteiligung für 2017, 2021 und 2025.",
+  repo:"https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp", pypi:"bundeswahlleiter-mcp",
+  tools:[
+   {n:"bwl_national_results",s:"National results of a Bundestag election",sf:"نتایج کشوری یک انتخابات بوندستاگ",st:"Bundesergebnis einer Bundestagswahl"},
+   {n:"bwl_party_results",s:"Results of one party, nationally and by Land",sf:"نتایج یک حزب، کشوری و به تفکیک ایالت",st:"Ergebnis einer Partei, bundesweit und nach Ländern"},
+   {n:"bwl_constituency_results",s:"Results of one constituency",sf:"نتایج یک حوزهٔ انتخابیه",st:"Ergebnis eines Wahlkreises"},
+   {n:"bwl_constituencies",s:"List constituencies with winner and turnout",sf:"فهرست حوزه‌ها با برنده و میزان مشارکت",st:"Wahlkreise mit Gewinner und Wahlbeteiligung auflisten"},
+   {n:"bwl_turnout",s:"Voter turnout by Land and nationally",sf:"میزان مشارکت به تفکیک ایالت و کشوری",st:"Wahlbeteiligung nach Ländern und bundesweit"}
+  ]},
+{ id:"flixtrain-mcp", cat:"transport", color:"#B45309", letter:"🚆", featured:false, added:14,
+  title:"FlixTrain — train times, stations & prices between German cities",
+  title_de:"FlixTrain — Zugzeiten, Bahnhöfe & Preise zwischen deutschen Städten",
+  desc:"FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability.",
+  desc_fa:"زمان‌بندی و قیمت فلیکس‌ترین از API جست‌وجوی فروشگاه فلیکس‌بوس (رایگان، بدون کلید): فقط سفرهای قطار بین شهرهای آلمان، با ایستگاه‌ها، مدت سفر، قیمت و صندلی‌های موجود.",
+  desc_de:"FlixTrain-Zeiten & Preise über die FlixBus-Shop-Suche (kostenlos, kein Schlüssel, kein Login): nur Zugverbindungen zwischen deutschen Städten, mit Bahnhöfen, Fahrzeit, Preis und Sitzplatzverfügbarkeit.",
+  repo:"https://github.com/mohammad-abbasi-sh/flixtrain-mcp", pypi:"flixtrain-mcp",
+  tools:[
+   {n:"flixtrain_search_trains",s:"Search FlixTrain departures between two cities",sf:"جست‌وجوی سفرهای فلیکس‌ترین بین دو شهر",st:"FlixTrain-Verbindungen zwischen zwei Städten suchen"},
+   {n:"flixtrain_search_cities",s:"Find cities by name",sf:"یافتن شهرها بر اساس نام",st:"Städte nach Namen finden"}
+  ]},
+{ id:"billiger-mcp", cat:"shopping", color:"#1D4ED8", letter:"🛒", featured:false, added:15,
+  title:"billiger.de — German price comparison: best prices, shop offers & deals",
+  title_de:"billiger.de — Deutscher Preisvergleich: Bestpreise, Shop-Angebote & Deals",
+  desc:"German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals.",
+  desc_fa:"مقایسهٔ قیمت آلمان از billiger.de (رایگان، بدون کلید): جست‌وجوی محصولات با بهترین قیمت، مقایسهٔ پیشنهادهای فروشگاه‌ها و تخفیف‌های روز.",
+  desc_de:"Deutscher Preisvergleich von billiger.de (kostenlos, kein Schlüssel, kein Login): Produkte mit Bestpreisen suchen, Shop-Angebote vergleichen und Tagesdeals.",
+  repo:"https://github.com/mohammad-abbasi-sh/billiger-mcp", pypi:"billiger-mcp",
+  tools:[
+   {n:"billiger_search_prices",s:"Search products with best prices",sf:"جست‌وجوی محصولات با بهترین قیمت",st:"Produkte mit Bestpreisen suchen"},
+   {n:"billiger_product_offers",s:"Compare shop offers for a product",sf:"مقایسهٔ پیشنهادهای فروشگاه‌ها برای یک محصول",st:"Shop-Angebote für ein Produkt vergleichen"},
+   {n:"billiger_best_deals",s:"Today's deals from the home page",sf:"تخفیف‌های روز از صفحهٔ اصلی",st:"Tagesdeals von der Startseite"}
+  ]}
+];
+const TOTAL_TOOLS = SERVERS.reduce((a,s)=>a+s.tools.length,0);
+
+const CATEGORIES = [
+ {id:"sports",icon:"⚽",color:"#15803D",soon:false},
+ {id:"news",icon:"📰",color:"#1E40AF",soon:false},
+ {id:"media",icon:"📺",color:"#9F1239",soon:false},
+ {id:"weather",icon:"🌤️",color:"#0284C7",soon:false},
+ {id:"transport",icon:"🚌",color:"#0369A1",soon:false},
+ {id:"open-data",icon:"📊",color:"#F59E0B",soon:false},
+ {id:"dictionary",icon:"📖",color:"#7C3AED",soon:true},
+ {id:"education",icon:"🎓",color:"#1D4ED8",soon:true},
+ {id:"shopping",icon:"🛒",color:"#EA580C",soon:false},
+ {id:"health",icon:"💊",color:"#059669",soon:true},
+ {id:"finance",icon:"💱",color:"#0D9488",soon:true},
+ {id:"housing",icon:"🏠",color:"#DB2777",soon:true},
+ {id:"travel",icon:"🏨",color:"#0E7490",soon:true},
+];
+const catCount = id => SERVERS.filter(s=>s.cat===id).length;
+
+const PLATFORMS_VERIFIED = [
+ {id:"claude-code",name:"Claude Code",icon:"⌘",desc:{fa:"ایجنت خط فرمان — با یک دستور ترمینال وصل می‌شود.",de:"Kommandozeilen-Agent — mit einem einzigen Terminal-Befehl verbinden.",en:"CLI agent — connect with one terminal command."}},
+ {id:"cursor",name:"Cursor",icon:"▸",desc:{fa:"ویرایشگر کد هوش مصنوعی — سرور را در تنظیمات MCP اضافه کنید.",de:"KI-Code-Editor — Server in den MCP-Einstellungen hinzufügen.",en:"AI code editor — add the server in MCP settings."}},
+ {id:"claude-desktop",name:"Claude Desktop",icon:"▣",desc:{fa:"برنامهٔ دسکتاپ — سرور را به فایل تنظیماتش اضافه کنید.",de:"Desktop-App — Server zur Konfigurationsdatei hinzufügen.",en:"Desktop app — add the server to its config file."}},
+ {id:"vscode",name:"VS Code",icon:"◈",desc:{fa:"هر ویرایشگر سازگار با MCP، با یک تنظیم stdio.",de:"Jeder MCP-kompatible Editor mit einer stdio-Konfiguration.",en:"Any MCP-compatible editor via a stdio config."}}
+];
+const PLATFORMS_UNVERIFIED = [
+ {id:"chatgpt",name:"ChatGPT",icon:"✦",desc:{fa:"وب‌اپ — سرورهای stdio محلی اینجا تأیید نشده‌اند.",de:"Web-App — lokale stdio-Server sind hier nicht geprüft.",en:"Web app — local stdio servers are not verified here."}},
+ {id:"gemini",name:"Gemini",icon:"✧",desc:{fa:"وب‌اپ — سرورهای stdio محلی اینجا تأیید نشده‌اند.",de:"Web-App — lokale stdio-Server sind hier nicht geprüft.",en:"Web app — local stdio servers are not verified here."}}
+];
+
+const SKILLS = [
+ {id:"bidi-skills",cat:"language",repo:"https://github.com/mohammad-abbasi-sh/bidi-skills",tests:"—",
+  tag:"Agent skill that stops AI from corrupting RTL text: ZWNJ, bidi order, Arabic-vs-Persian codepoints and digit mixing.",
+  tag_fa:"مهارتی که جلوی خراب‌شدن متن راست‌به‌چپ توسط هوش مصنوعی را می‌گیرد: نیم‌فاصله، ترتیب دوجهته، کدهای عربی در برابر فارسی و ترکیب ارقام.",
+  tag_de:"Agent-Fähigkeit, die verhindert, dass KI RTL-Text beschädigt: ZWNJ, bidirektionale Reihenfolge, arabische vs. persische Codepoints und Ziffernmischung.",
+  gap:"No RTL skill pack existed for Persian, Arabic, Urdu or Hebrew among hundreds of English-centric agent skills.",
+  gap_fa:"در میان صدها مهارت انگلیسی‌محور، هیچ بستهٔ مهارتی برای متن راست‌به‌چپ فارسی، عربی، اردو یا عبری وجود نداشت.",
+  gap_de:"Unter hunderten englischsprachigen Agent-Fähigkeiten gab es kein RTL-Fähigkeitspaket für Persisch, Arabisch, Urdu oder Hebräisch."},
+ {id:"agent-seo-skills",cat:"seo",repo:"https://github.com/mohammad-abbasi-sh/agent-seo-skills",tests:"—",
+  tag:"Agent Skills + MCP server that give AI agents real SEO tools — local-first, zero API keys, zero dependencies.",
+  tag_fa:"مهارت‌های ایجنت + سرور MCP که ابزارهای واقعی سئو را به هوش مصنوعی می‌دهند — محلی، بدون کلید API و بدون وابستگی.",
+  tag_de:"Agent Skills und MCP-Server, die KI-Agenten echte SEO-Tools geben — lokal, ohne API-Schlüssel, ohne Abhängigkeiten.",
+  gap:"SEO skills existed only as prompts and checklists; agents had no deterministic, runnable SEO tools.",
+  gap_fa:"مهارت‌های سئو فقط در حد پرامپت و چک‌لیست بودند؛ ایجنت‌ها ابزار سئوی قطعی و اجراشدنی نداشتند.",
+  gap_de:"SEO-Fähigkeiten gab es nur als Prompts und Checklisten; Agenten hatten keine deterministischen, ausführbaren SEO-Tools."},
+ {id:"rtl-i18n-check",cat:"language",repo:"https://github.com/mohammad-abbasi-sh/rtl-i18n-check",tests:"59",
+  tag:"Checks translated fa/ar/ur locale files for the RTL layer — bidi isolation, ZWNJ, letter variants and digit scripts — that other i18n checkers miss.",
+  tag_fa:"فایل‌های ترجمه‌شدهٔ فارسی/عربی/اردو را از نظر لایهٔ راست‌به‌چپ بررسی می‌کند: ایزولاسیون دوجهته، نیم‌فاصله، گونه‌های حروف و خط ارقام — چیزهایی که بقیهٔ ابزارها نمی‌بینند.",
+  tag_de:"Prüft übersetzte fa/ar/ur-Locale-Dateien auf die RTL-Ebene — bidirektionale Isolation, ZWNJ, Buchstabenvarianten und Ziffernsysteme — die andere i18n-Prüfer übersehen.",
+  gap:"Generic i18n checkers verify keys and placeholders, but none checks the RTL layer of translated files.",
+  gap_fa:"ابزارهای عمومی i18n کلیدها و جای‌بان‌ها را بررسی می‌کنند، اما هیچ‌کدام لایهٔ راست‌به‌چپ فایل‌های ترجمه‌شده را نمی‌سنجند.",
+  gap_de:"Allgemeine i18n-Prüfer verifizieren Schlüssel und Platzhalter, aber keiner prüft die RTL-Ebene übersetzter Dateien."},
+ {id:"flaky-repro",cat:"devtools",repo:"https://github.com/mohammad-abbasi-sh/flaky-repro",tests:"—",
+  tag:"Enforces a reproduce-first contract for flaky tests: a failing seed, a replay command and seeded stress proof before any fix.",
+  tag_fa:"قرارداد «اول بازتولید، بعد رفع» را برای تست‌های ناپایدار اعمال می‌کند: بذرِ خطا، دستور بازپخش و اثبات استرس با بذر، پیش از هر اصلاحی.",
+  tag_de:"Setzt einen Zuerst-Reproduzieren-Vertrag für flaky Tests durch: ein fehlschlagender Seed, ein Replay-Befehl und Seed-Stress-Beweis vor jeder Korrektur.",
+  gap:"Flaky-test tools only detect and analyze; none records a failing seed or gives a replay command.",
+  gap_fa:"ابزارهای تست ناپایدار فقط تشخیص و تحلیل می‌دهند؛ هیچ‌کدام بذرِ خطا را ثبت نمی‌کنند و دستور بازپخش نمی‌دهند.",
+  gap_de:"Flaky-Test-Tools erkennen und analysieren nur; keines speichert einen fehlschlagenden Seed oder liefert einen Replay-Befehl."},
+ {id:"mail-auth",cat:"devtools",repo:"https://github.com/mohammad-abbasi-sh/mail-auth",tests:"—",
+  tag:"Deterministic SPF / DKIM / DMARC checker with the exact DNS fix and a recheck loop — built on a from-scratch stdlib DNS client.",
+  tag_fa:"بررسی‌کنندهٔ قطعی SPF و DKIM و DMARC با راه‌حل دقیق DNS و چرخهٔ بررسی دوباره — ساخته‌شده با کلاینت DNS دست‌ساز و بدون وابستگی.",
+  tag_de:"Deterministischer SPF-/DKIM-/DMARC-Prüfer mit der genauen DNS-Korrektur und einer erneuten Prüfschleife — gebaut auf einem selbst geschriebenen Stdlib-DNS-Client.",
+  gap:"'Emails going to spam' is a daily complaint, but nobody shipped the check + exact fix + recheck as one skill.",
+  gap_fa:"«ایمیل‌ها به اسپم می‌روند» شکایت روزانه است، اما هیچ‌کس بررسی + راه‌حل دقیق + بررسی دوباره را در قالب یک مهارت عرضه نکرده بود.",
+  gap_de:"„E-Mails landen im Spam“ ist eine tägliche Beschwerde, aber niemand hat Prüfung plus genaue Korrektur plus erneute Prüfung als eine Fähigkeit geliefert."},
+ {id:"talking-avatar",cat:"media",repo:"https://github.com/mohammad-abbasi-sh/talking-avatar",tests:"60",
+  tag:"One router skill across free local SadTalker, rented-GPU SadTalker, Hedra and HeyGen — with a deterministic preflight that stops wasted paid renders.",
+  tag_fa:"یک مهارت مسیریاب برای SadTalker محلی رایگان، SadTalker با GPU اجاره‌ای، Hedra و HeyGen — با پیش‌بررسی قطعی که جلوی هدررفتن رندرهای پولی را می‌گیرد.",
+  tag_de:"Eine Router-Fähigkeit für kostenlosen lokalen SadTalker, gemietete GPU-SadTalker, Hedra und HeyGen — mit einem deterministischen Preflight, der verschwendete bezahlte Renders stoppt.",
+  gap:"Every avatar skill was single-vendor; no router existed across free local and paid API backends, and no preflight stopped bad assets.",
+  gap_fa:"همهٔ مهارت‌های آواتار تک‌فروشنده بودند؛ هیچ مسیریابی میان بک‌اندهای محلی رایگان و API پولی وجود نداشت و پیش‌بررسی‌ای برای فایل‌های خراب نبود.",
+  gap_de:"Jede Avatar-Fähigkeit war an einen Anbieter gebunden; es gab keinen Router über kostenlose lokale und bezahlte API-Backends, und kein Preflight stoppte schlechte Assets."},
+ {id:"deutsch-fa",cat:"language",repo:"https://github.com/mohammad-abbasi-sh/deutsch-fa",tests:"59",
+  tag:"German declension for Persian speakers: a deterministic engine for der/die/das and the four cases, with 199 hand-checked A1 nouns, quiz and Anki export.",
+  tag_fa:"صرف اسم آلمانی برای فارسی‌زبان‌ها: موتور قطعی برای der/die/das و چهار حالت، با ۱۹۹ اسم دست‌بررسی‌شدهٔ A1، کوئیز و خروجی Anki.",
+  tag_de:"Deutsche Deklination für Persischsprachige: eine deterministische Engine für der/die/das und die vier Fälle, mit 199 handgeprüften A1-Nomen, Quiz und Anki-Export.",
+  gap:"Persian learners' daily blocker is gender + cases (Persian has no grammatical gender); agents answering from memory get articles wrong.",
+  gap_fa:"مشکل روزانهٔ فارسی‌زبان‌ها جنسیت و حالت‌هاست (فارسی جنس دستوری ندارد)؛ پاسخ‌های حفظی ایجنت‌ها آرتیکل را اشتباه می‌دهند.",
+  gap_de:"Die tägliche Hürde für Persischlernende ist Genus plus Fälle (Persisch hat kein grammatisches Genus); Agenten, die aus dem Gedächtnis antworten, geben den Artikel falsch an."},
+ {id:"deutsch-verbs-fa",cat:"language",repo:"https://github.com/mohammad-abbasi-sh/deutsch-verbs-fa",tests:"48",
+  tag:"German verb conjugation for Persian speakers: 183 hand-checked A1–B1 verbs across 6 tenses, with sentence checker, quiz and 2,196 Anki cards.",
+  tag_fa:"صرف فعل آلمانی برای فارسی‌زبان‌ها: ۱۸۳ فعل دست‌بررسی‌شدهٔ A1 تا B1 در ۶ زمان، با بررسی‌کنندهٔ جمله، کوئیز و ۲٬۱۹۶ کارت Anki.",
+  tag_de:"Deutsche Verbkonjugation für Persischsprachige: 183 handgeprüfte A1–B1-Verben in 6 Zeiten, mit Satzprüfer, Quiz und 2.196 Anki-Karten.",
+  gap:"After der/die/das, verb conjugation is the other daily blocker — and no Persian-glossed conjugation skill, CLI or MCP existed.",
+  gap_fa:"بعد از der/die/das، صرف فعل دیگر مانع روزانه است — و هیچ مهارت، CLI یا MCP صرف فعل با توضیح فارسی وجود نداشت.",
+  gap_de:"Nach der/die/das ist die Verbkonjugation die andere tägliche Hürde — und es gab keine Konjugations-Fähigkeit, kein CLI und kein MCP mit persischen Erklärungen."}
+];
+const SKILL_CATS = ["language","seo","devtools","media"];
+
+/* Live-verified demo values (checked 6 Nov 2026 — do not present as live data) */
+const DEMOS = [
+
+ {tab:{fa:"بوندس‌لیگا",de:"Bundesliga",en:"Bundesliga"},
+  q:{fa:"صدر جدول بوندس‌لیگا کیه؟",de:"Wer führt die Bundesliga-Tabelle an?",en:"Who tops the Bundesliga table?"},
+  code:'bundesliga_get_table(league="bl1", season="2025")',
+  status:{fa:"✓ جدول برگشت",de:"✓ Tabelle geliefert",en:"✓ Table returned"},
+  a:{fa:"بایرن مونیخ با ۲۱ امتیاز در صدر است — ۱۸ آبان ۱۴۰۵.",de:"Bayern München führt mit 21 Punkten — 9. November 2026.",en:"Bayern Munich top with 21 points — 9 Nov 2026."}},
+ {tab:{fa:"گلزنان",de:"Torschützen",en:"Top scorers"},
+  q:{fa:"بهترین گلزن بوندس‌لیگا کیه؟",de:"Wer ist der beste Torschütze der Bundesliga?",en:"Who is the Bundesliga top scorer?"},
+  code:'bundesliga_get_top_scorers(league="bl1", season="2025")',
+  status:{fa:"✓ گلزنان برگشت",de:"✓ Torschützen geliefert",en:"✓ Scorers returned"},
+  a:{fa:"ان. فولکروگ با ۹ گل در صدر گلزنان است — ۱۸ آبان ۱۴۰۵.",de:"N. Füllkrug führt mit 9 Toren — 9. November 2026.",en:"N. Füllkrug leads with 9 goals — 9 Nov 2026."}},
+ {tab:{fa:"بازی‌ها",de:"Spiele",en:"Fixtures"},
+  q:{fa:"هامبورگ و گلادباخ هفتهٔ نهم چه نتیجه‌ای گرفتند؟",de:"Wie spielte Hamburg gegen Gladbach am 9. Spieltag?",en:"How did Hamburg vs Gladbach end on matchday 9?"},
+  code:'bundesliga_get_fixtures(league="bl1", season="2025", matchday=9)',
+  status:{fa:"✓ بازی‌ها برگشت",de:"✓ Spiele geliefert",en:"✓ Fixtures returned"},
+  a:{fa:"هامبورگ ۳–۱ گلادباخ را در هفتهٔ نهم برد — ۱۸ آبان ۱۴۰۵.",de:"Hamburg schlug Gladbach 3:1 am 9. Spieltag — 9. November 2026.",en:"Hamburg beat Gladbach 3–1 on matchday 9 — 9 Nov 2026."}}
+
+];
+
+const TUTORIALS = [
+
+ {id:"install-uvx",level:"beginner",mins:5,cat:"setup",
+  title:{fa:"نصب uvx و اجرای اولین سرور",de:"uvx installieren und ersten Server starten",en:"Install uvx and run your first server"},
+  ex:{fa:"در پنج دقیقه uvx را نصب کن و جدول بوندس‌لیگا را بگیر.",de:"Installiere uvx in fünf Minuten und hole dir die Bundesliga-Tabelle.",en:"Install uvx in five minutes and get the Bundesliga table."},
+  steps:{fa:["پایتون ۳٫۹ یا جدیدتر را نصب کن (python.org).","در ترمینال اجرا کن: pip install uv","با این دستور سرور را آزمایش کن: uvx bundesliga-mcp","اگر سرور بدون خطا بالا آمد، آماده‌ای — ادامه را در آموزش Claude Code ببین."],
+         de:["Installiere Python 3.9 oder neuer (python.org).","Führe im Terminal aus: pip install uv","Teste den Server mit: uvx bundesliga-mcp","Wenn der Server ohne Fehler startet, bist du bereit — weiter geht es in der Claude-Code-Anleitung."],
+         en:["Install Python 3.9 or newer (python.org).","In your terminal run: pip install uv","Test the server with: uvx bundesliga-mcp","If the server starts without errors, you are ready — see the Claude Code tutorial next."]}},
+ {id:"claude-code",level:"beginner",mins:5,cat:"setup",
+  title:{fa:"اتصال سرور به Claude Code",de:"Server in Claude Code verbinden",en:"Connect a server in Claude Code"},
+  ex:{fa:"با یک دستور ترمینال، سرور بوندس‌لیگا را به Claude Code اضافه کن.",de:"Füge den Bundesliga-Server mit einem einzigen Terminal-Befehl zu Claude Code hinzu.",en:"Add the Bundesliga server to Claude Code with a single terminal command."},
+  steps:{fa:["ترمینال را باز کن و مطمئن شو uvx نصب است (uvx --version).","این دستور را اجرا کن: claude mcp add --transport stdio --scope user bundesliga -- uvx bundesliga-mcp","در Claude Code بپرس: «جدول بوندس‌لیگا چیه؟»","اگر جواب با عدد برگشت، اتصال برقرار است. برای سرورهای دیگر، همین دستور را با نام سرور عوض کن."],
+         de:["Öffne ein Terminal und stelle sicher, dass uvx installiert ist (uvx --version).","Führe aus: claude mcp add --transport stdio --scope user bundesliga -- uvx bundesliga-mcp","Frag in Claude Code: „Wer führt die Bundesliga-Tabelle an?“","Wenn die Antwort mit Zahlen kommt, steht die Verbindung. Für andere Server ändere einfach den Servernamen im Befehl."],
+         en:["Open a terminal and make sure uvx is installed (uvx --version).","Run: claude mcp add --transport stdio --scope user bundesliga -- uvx bundesliga-mcp","In Claude Code ask: “Who tops the Bundesliga table?”","If the answer comes back with numbers, the connection works. For other servers, use the same command with the server name changed."]}},
+ {id:"cursor",level:"beginner",mins:6,cat:"setup",
+  title:{fa:"اتصال سرور به Cursor",de:"Server in Cursor verbinden",en:"Connect a server in Cursor"},
+  ex:{fa:"از تنظیمات MCP در Cursor، سرور را اضافه کن و از چت استفاده کن.",de:"Füge den Server über die MCP-Einstellungen in Cursor hinzu und nutze ihn im Chat.",en:"Add the server from Cursor's MCP settings and use it from the chat."},
+  steps:{fa:["در Cursor مسیر Settings → MCP → Add new MCP server را باز کن.","Command را uvx و Args را [\"bundesliga-mcp\"] بگذار.","ذخیره کن و مطمئن شو وضعیت سرور سبز است.","در چت Cursor بپرس: «بهترین گلزن بوندس‌لیگا کیه؟»"],
+         de:["Öffne in Cursor Settings → MCP → Add new MCP server.","Setze Command auf uvx und Args auf [\"bundesliga-mcp\"].","Speichere und stelle sicher, dass der Serverstatus grün ist.","Frag im Cursor-Chat: „Wer ist der beste Torschütze der Bundesliga?“"],
+         en:["In Cursor open Settings → MCP → Add new MCP server.","Set Command to uvx and Args to [\"bundesliga-mcp\"].","Save and make sure the server status is green.","In the Cursor chat ask: “Who is the Bundesliga top scorer?”"]}},
+ {id:"claude-desktop",level:"intermediate",mins:8,cat:"setup",
+  title:{fa:"پیکربندی Claude Desktop",de:"Claude Desktop konfigurieren",en:"Configure Claude Desktop"},
+  ex:{fa:"با ویرایش فایل پیکربندی، سرور را به برنامهٔ دسکتاپ Claude اضافه کن.",de:"Füge den Server hinzu, indem du die Konfigurationsdatei der Claude-Desktop-App bearbeitest.",en:"Add the server to the Claude desktop app by editing its config file."},
+  steps:{fa:["فایل پیکربندی را باز کن: در macOS مسیر ~/Library/Application Support/Claude/claude_desktop_config.json و در ویندوز %APPDATA%\Claude\claude_desktop_config.json","این بخش را اضافه کن: {\"mcpServers\": {\"bundesliga\": {\"command\": \"uvx\", \"args\": [\"bundesliga-mcp\"]}}}","فایل را ذخیره کن و Claude Desktop را کاملاً ببند و دوباره باز کن.","اگر سرور در چت ظاهر نشد، مسیر نصب uvx را بررسی کن (which uvx)."],
+         de:["Öffne die Konfigurationsdatei: unter macOS ~/Library/Application Support/Claude/claude_desktop_config.json, unter Windows %APPDATA%\Claude\claude_desktop_config.json","Füge diesen Abschnitt hinzu: {\"mcpServers\": {\"bundesliga\": {\"command\": \"uvx\", \"args\": [\"bundesliga-mcp\"]}}}","Speichere die Datei, beende Claude Desktop vollständig und öffne es erneut.","Wenn der Server im Chat nicht erscheint, prüfe den uvx-Installationspfad (which uvx)."],
+         en:["Open the config file: on macOS ~/Library/Application Support/Claude/claude_desktop_config.json, on Windows %APPDATA%\Claude\claude_desktop_config.json","Add this section: {\"mcpServers\": {\"bundesliga\": {\"command\": \"uvx\", \"args\": [\"bundesliga-mcp\"]}}}","Save the file, fully quit Claude Desktop and reopen it.","If the server does not appear in chat, check your uvx install path (which uvx)."]}},
+ {id:"troubleshooting",level:"intermediate",mins:7,cat:"fix",
+  title:{fa:"عیب‌یابی: وقتی سرور بالا نمی‌آید",de:"Fehlerbehebung: Wenn der Server nicht startet",en:"Troubleshooting: when a server won't start"},
+  ex:{fa:"رایج‌ترین خطاها و راه‌حل آن‌ها: uvx پیدا نمی‌شود، سرور متصل نمی‌شود، پاسخ خالی برمی‌گردد.",de:"Die häufigsten Fehler und ihre Lösungen: uvx nicht gefunden, Server verbindet sich nicht, leere Antworten.",en:"The most common errors and their fixes: uvx not found, server won't connect, empty replies."},
+  steps:{fa:["«uvx: command not found» یعنی uv نصب نیست: pip install uv را اجرا کن و ترمینال را دوباره باز کن.","اگر سرور در Claude Code لیست نمی‌شود، دستور add را دوباره با --scope user اجرا کن.","اگر پاسخ خالی برگشت، اتصال اینترنت را بررسی کن — سرورها داده را زنده از سایت‌ها می‌خوانند.","اگر خطا ادامه داشت، با دستور uvx bundesliga-mcp سرور را مستقیم اجرا کن و متن خطا را در گیت‌هاب سرور گزارش کن."],
+         de:["„uvx: command not found“ heißt: uv ist nicht installiert. Führe pip install uv aus und öffne das Terminal erneut.","Wenn der Server in Claude Code nicht aufgelistet wird, führe den add-Befehl erneut mit --scope user aus.","Wenn leere Antworten kommen, prüfe die Internetverbindung — die Server lesen Daten live von den Seiten.","Wenn der Fehler bleibt, starte den Server direkt mit uvx bundesliga-mcp und melde den Fehlertext auf der GitHub-Seite des Servers."],
+         en:["“uvx: command not found” means uv is not installed: run pip install uv and reopen the terminal.","If the server is not listed in Claude Code, run the add command again with --scope user.","If replies come back empty, check your internet connection — the servers read data live from the sites.","If the error persists, run the server directly with uvx bundesliga-mcp and report the error text on the server's GitHub page."]}}
+
+];
+
+const ARTICLES = [
+
+ {id:"what-is-mcp",cat:"basics",date:"2026-11-09",mins:6,cover:"g1",icon:"🔌",
+  title:{fa:"MCP چیست؟ به زبان ساده",de:"Was ist MCP? Einfach erklärt",en:"What is MCP, in plain language"},
+  ex:{fa:"پروتکل اتصال هوش مصنوعی به دنیای واقعی — بدون اصطلاحات پیچیده، با مثال‌های واقعی.",de:"Das Protokoll, das KI mit der echten Welt verbindet — ohne Fachjargon, mit echten Beispielen.",en:"The protocol that connects AI to the real world — no jargon, with real examples."},
+  body:{fa:["مدل‌های هوش مصنوعی متن می‌نویسند، اما به‌تنهایی به دنیای بیرون دسترسی ندارند: نمی‌دانند جدول بوندس‌لیگا امروز چطور است، بهترین گلزن کیست یا فردا چه بازی‌هایی برگزار می‌شود. MCP یا «پروتکل زمینهٔ مدل» (Model Context Protocol) یک قرارداد استاندارد است که به دستیار هوش مصنوعی اجازه می‌دهد با ابزارهای بیرونی صحبت کند.","به زبان ساده: MCP یک «پریز استاندارد» است. هر سرویس — لیگ فوتبال، سایت خبری، ادارهٔ هواشناسی — یک «دوشاخه» می‌سازد و دستیار شما می‌تواند آن را وصل کند و سؤال شما را به یک فراخوانی ابزار تبدیل کند. بدون MCP، هر اتصال یک کار سفارشی و یک‌باره بود؛ با MCP، یک بار وصل می‌شوی و همه‌جا کار می‌کند.","سرورهای این کاتالوگ دقیقاً همین کار را می‌کنند: هر کدام یک سرویس آلمان را — مثلاً بوندس‌لیگا از طریق OpenLigaDB — به دستیار شما وصل می‌کنند. همه فقط‌خواندنی‌اند: داده می‌خوانند، اما هرگز وارد حساب شما نمی‌شوند، خرید نمی‌کنند و چیزی را تغییر نمی‌دهند.","برای شروع، کافی است یک سرور را با uvx نصب کنی و آن را به Claude Code یا Cursor وصل کنی. از آن لحظه، به‌جای باز کردن ده تب مرورگر، از دستیارت می‌پرسی — و جواب را با عدد و منبع می‌گیری."],
+         de:["KI-Modelle schreiben Texte, aber allein erreichen sie die Außenwelt nicht: Sie wissen nicht, wie die Bundesliga-Tabelle heute aussieht, wer der beste Torschütze ist oder welche Spiele morgen stattfinden. MCP — das Model Context Protocol — ist ein Standardvertrag, der es einem KI-Assistenten erlaubt, mit externen Tools zu sprechen.","Einfach gesagt: MCP ist eine Standard-„Steckdose“. Jeder Dienst — Fußball-Liga, Nachrichtenseite, Wetteramt — baut einen „Stecker“, und dein Assistent kann ihn einstecken und deine Frage in einen Tool-Aufruf verwandeln. Ohne MCP war jede Verbindung eine einmalige Sonderanfertigung; mit MCP verbindest du dich einmal und es funktioniert überall.","Die Server in diesem Katalog tun genau das: Jeder verbindet einen deutschen Dienst — zum Beispiel die Bundesliga über OpenLigaDB — mit deinem Assistenten. Alle sind nur lesend: Sie lesen Daten, melden sich aber nie in deinem Konto an, kaufen nichts und ändern nichts.","Zum Start installierst du einfach einen Server mit uvx und verbindest ihn mit Claude Code oder Cursor. Von da an fragst du, statt zehn Browser-Tabs zu öffnen, deinen Assistenten — und bekommst die Antwort mit Zahlen und Quelle."],
+         en:["AI models write text, but on their own they cannot reach the outside world: they don't know what the Bundesliga table looks like today, who the top scorer is, or which matches are played tomorrow. MCP — the Model Context Protocol — is a standard contract that lets an AI assistant talk to outside tools.","Simply put, MCP is a standard “socket”. Every service — a football league, a news site, a weather office — builds a “plug”, and your assistant can connect it and turn your question into a tool call. Without MCP, every connection was a custom one-off job; with MCP, you connect once and it works everywhere.","The servers in this catalog do exactly that: each one connects a German service — the Bundesliga via OpenLigaDB, for example — to your assistant. All of them are read-only: they read data but never log in to your account, never buy anything and never change anything.","To start, just install a server with uvx and connect it to Claude Code or Cursor. From then on, instead of opening ten browser tabs, you ask your assistant — and get the answer with numbers and a source."]}},
+ {id:"choose-client",cat:"guides",date:"2026-11-09",mins:5,cover:"g2",icon:"🧭",
+  title:{fa:"کدام کلاینت MCP برای شما مناسب است؟",de:"Welcher MCP-Client passt zu dir?",en:"Which MCP client is right for you?"},
+  ex:{fa:"Claude Code، Cursor، Claude Desktop یا VS Code — انتخاب درست به روش کارت بستگی دارد.",de:"Claude Code, Cursor, Claude Desktop oder VS Code — die richtige Wahl hängt davon ab, wie du arbeitest.",en:"Claude Code, Cursor, Claude Desktop or VS Code — the right choice depends on how you work."},
+  body:{fa:["اگر بیشتر در ترمینال کار می‌کنی، Claude Code سریع‌ترین راه است: یک دستور، و سرور وصل است. برای کسانی که با خط فرمان راحت‌اند، هیچ راه ساده‌تری نیست.","اگر برنامه‌نویس هستی و در ویرایشگر کد زندگی می‌کنی، Cursor یا VS Code انتخاب طبیعی است؛ سرور در کنار کدت قرار می‌گیرد و می‌توانی از دستیار بخواهی هم‌زمان کد و دادهٔ واقعی را ببیند.","اگر فقط می‌خواهی گفت‌وگو کنی و سؤال بپرسی، Claude Desktop ساده‌ترین گزینه است: یک بار فایل پیکربندی را ویرایش می‌کنی و بعد همه‌چیز در چت است.","یک نکتهٔ مهم: سرورهای محلی (stdio) فقط روی کامپیوتر خودت اجرا می‌شوند. نسخهٔ وب ChatGPT و Gemini فعلاً با این سرورها تأیید نشده‌اند — پس اگر از نسخهٔ وب استفاده می‌کنی، سراغ کلاینت‌های دسکتاپ یا خط فرمان برو."],
+         de:["Wenn du hauptsächlich im Terminal arbeitest, ist Claude Code der schnellste Weg: ein Befehl und der Server ist verbunden. Für alle, die sich mit der Kommandozeile wohlfühlen, gibt es nichts Einfacheres.","Wenn du programmierst und in einem Code-Editor lebst, sind Cursor oder VS Code die natürliche Wahl; der Server sitzt neben deinem Code und du kannst den Assistenten bitten, Code und echte Daten gleichzeitig zu sehen.","Wenn du nur chatten und Fragen stellen willst, ist Claude Desktop die einfachste Option: Du bearbeitest die Konfigurationsdatei einmal, und danach läuft alles im Chat.","Ein wichtiger Hinweis: Lokale (stdio-)Server laufen nur auf deinem eigenen Computer. Die Webversionen von ChatGPT und Gemini sind mit diesen Servern noch nicht geprüft — wenn du die Webversion nutzt, nimm Desktop- oder Kommandozeilen-Clients."],
+         en:["If you mostly live in the terminal, Claude Code is the fastest path: one command and the server is connected. For anyone comfortable with the command line, there is nothing simpler.","If you are a programmer who lives in a code editor, Cursor or VS Code is the natural choice; the server sits next to your code and you can ask the assistant to see code and real data at the same time.","If you only want to chat and ask questions, Claude Desktop is the simplest option: you edit the config file once, and afterwards everything happens in the chat.","One important note: local (stdio) servers run only on your own computer. The web versions of ChatGPT and Gemini are not yet verified with these servers — so if you use the web version, pick a desktop or command-line client instead."]}},
+ {id:"germany-servers",cat:"guides",date:"2026-11-09",mins:7,cover:"g3",icon:"🇩🇪",
+  title:{fa:"سرورهای آلمان چطور کار می‌کنند؟",de:"Wie funktionieren die Deutschland-Server?",en:"How do the Germany servers work?"},
+  ex:{fa:"پشت صحنهٔ سرورهای فقط‌خواندنی: از کجا داده می‌خوانند، چه چیزی را نمی‌توانند انجام دهند و چرا امن‌اند.",de:"Hinter den Kulissen der Nur-Lesen-Server: woher sie Daten lesen, was sie nicht können und warum sie sicher sind.",en:"Behind the scenes of the read-only servers: where they read data, what they cannot do, and why they are safe."},
+  body:{fa:["هر سرور این کاتالوگ یک برنامهٔ کوچک پایتون است که با uvx اجرا می‌شود. وقتی دستیارت سؤالی می‌پرسد — مثلاً «صدر جدول بوندس‌لیگا کیه؟» — سرور به منبع مربوطه سر می‌زند، داده را می‌خواند و جواب ساخت‌یافته برمی‌گرداند.","داده‌ها همیشه زنده‌اند: جدول و نتایج بوندس‌لیگا از API رایگان OpenLigaDB خوانده می‌شوند. هیچ پایگاه دادهٔ قدیمی و هیچ عدد حدسی در میان نیست.","مهم‌ترین اصل طراحی این سرورها «فقط‌خواندنی» بودن است. آن‌ها هیچ حساب کاربری، رمز عبور یا توکنی ندارند؛ نمی‌توانند وارد حسابت شوی، خرید کنند یا رزرو انجام دهند. بدترین کاری که یک سرور خراب می‌تواند بکند، برگرداندن یک جواب اشتباه است — و تو همیشه می‌توانی آن را با باز کردن منبع بررسی کنی.","همهٔ سرورها متن‌باز‌اند و کدشان در گیت‌هاب است. اگر کنجکاوی، می‌توانی دقیقاً ببینی هر ابزار چه درخواستی می‌فرستد و چه چیزی برمی‌گرداند. شفافیت، به‌جای اعتماد کورکورانه، اصل این پروژه است."],
+         de:["Jeder Server in diesem Katalog ist ein kleines Python-Programm, das mit uvx läuft. Wenn dein Assistent eine Frage stellt — zum Beispiel „Wer führt die Bundesliga-Tabelle an?“ — geht der Server zur entsprechenden Quelle, liest die Daten und gibt eine strukturierte Antwort zurück.","Die Daten sind immer live: Tabelle und Ergebnisse der Bundesliga kommen aus der kostenlosen OpenLigaDB-API. Es gibt keine veraltete Datenbank und keine geratenen Zahlen.","Das wichtigste Designprinzip dieser Server ist, dass sie nur lesend sind. Sie haben kein Benutzerkonto, kein Passwort und kein Token; sie können sich nicht in deinem Konto anmelden, nichts kaufen und nichts reservieren. Das Schlimmste, was ein defekter Server tun kann, ist eine falsche Antwort zurückzugeben — und das kannst du jederzeit überprüfen, indem du die Quelle öffnest.","Alle Server sind Open Source und ihr Code ist auf GitHub. Wenn du neugierig bist, kannst du genau sehen, welche Anfrage jedes Tool sendet und was es zurückgibt. Transparenz statt blindem Vertrauen ist das Prinzip dieses Projekts."],
+         en:["Each server in this catalog is a small Python program that runs with uvx. When your assistant asks a question — “Who tops the Bundesliga table?” — the server visits the relevant source, reads the data and returns a structured answer.","The data is always live: the Bundesliga table and results come from the free OpenLigaDB API. There is no stale database and no guessed numbers.","The most important design principle of these servers is that they are read-only. They have no user account, no password and no token; they cannot log in to your account, buy anything or make a reservation. The worst thing a broken server can do is return a wrong answer — and you can always check it by opening the source.","All servers are open source and their code is on GitHub. If you are curious, you can see exactly what request each tool sends and what it returns. Transparency, instead of blind trust, is this project's principle."]}}
+
+];
+
+
+/* ---------------- I18N ---------------- */
+const I18N = {
+fa:{
+ a11y_skip:"پرش به محتوا", brand_tag:"کاتالوگ MCP آلمان",
+ nav_home:"خانه", nav_marketplace:"بازارچه MCP", nav_categories:"دسته‌بندی‌ها", nav_skills:"مهارت‌ها",
+ nav_tutorials:"آموزش‌ها", nav_blog:"وبلاگ", nav_about:"درباره ما", nav_contact:"تماس",
+ nav_favorites:"علاقه‌مندی‌ها", nav_ask:"بپرس",
+ nav_menu:"منو",
+ hero_title:"هوش مصنوعی را به دنیای واقعی متصل کن",
+ hero_sub:"سرورهای MCP فقط‌خواندنی برای سرویس‌های آلمان: فوتبال، خبر، رسانه، هواشناسی، حمل‌ونقل و دیتای باز — وصل‌شونده به Claude Code، Cursor و Claude Desktop. بدون کلید API، بدون حساب.",
+ hero_search_ph:"نام سرویس یا ابزار را جستجو کن؛ مثلاً بوندس‌لیگا…",
+ hero_cta1:"کاوش ابزارهای MCP", hero_cta2:"چطور کار می‌کند؟",
+ stat_servers:"سرور MCP", stat_tools:"ابزار", stat_skills:"مهارت ایجنت", stat_langs:"زبان",
+ demo_title:"زنده امتحان کن", demo_note:"مقادیر زیر در ۱۸ آبان ۱۴۰۵ به‌صورت زنده بررسی شده‌اند؛ دادهٔ زنده نیستند.",
+ demo_ask:"این سؤال را خودتان بپرسید", demo_nosignup:"بدون ثبت‌نام", demo_footer:"اجرا روی کامپیوتر شما با uvx؛ بدون کلید API.",
+ cats_title:"دسته‌بندی‌های پلتفرم", cats_sub:"هر دسته یک سرویس واقعی آلمان را در دسترس دستیار هوش مصنوعی‌ات می‌گذارد.",
+ cat_sports:"ورزش", cat_sports_d:"نتایج و جدول بوندس‌لیگا",
+ cat_news:"اخبار", cat_news_d:"اخبار تاگس‌شاو، DW و n-tv",
+ cat_media:"رسانه", cat_media_d:"آرشیو ARD و ZDF، رادیو و تلویزیون",
+ cat_weather:"هواشناسی", cat_weather_d:"پیش‌بینی و هشدارهای DWD",
+ cat_transport:"حمل‌ونقل", cat_transport_d:"وضعیت جاده‌های اتوبان و قطار فلیکس‌ترین",
+ cat_open_data:"دیتای باز", cat_open_data_d:"دیتای رسمی دولت آلمان",
+ cat_dictionary:"دیکشنری", cat_dictionary_d:"معنی و صرف واژه‌های آلمانی",
+ cat_education:"آموزش", cat_education_d:"دانشگاه‌ها و رشته‌ها در آلمان",
+ cat_shopping:"خرید و قیمت", cat_shopping_d:"مقایسهٔ قیمت فروشگاه‌های آلمان",
+ cat_health:"سلامت", cat_health_d:"داروخانه‌ها و خدمات سلامت",
+ cat_finance:"مالی", cat_finance_d:"نرخ‌ها و داده‌های بانک مرکزی اروپا",
+ cat_housing:"مسکن", cat_housing_d:"آگهی‌های اجاره و اتاق در آلمان",
+ cat_travel:"سفر", cat_travel_d:"پرواز لوفت‌هانزا و رهگیری DHL",
+ cat_coming:"به‌زودی", cat_servers:"سرور", cat_server_one:"سرور", view_all:"مشاهدهٔ همه",
+ feat_title:"سرورهای منتخب MCP", feat_sub:"سرورهای فقط‌خواندنی که با آزمون واقعی ساخته شده‌اند — بدون ادعای تأییدنشده.",
+ feat_badge:"منتخب", status_available:"در دسترس", tools_count:"ابزار",
+ details:"جزئیات", docs:"مستندات", connect:"اتصال", add_fav:"افزودن به علاقه‌مندی‌ها", remove_fav:"حذف از علاقه‌مندی‌ها",
+ plat_title:"با کدام دستیار هوش مصنوعی کار می‌کند؟", plat_sub:"سرورها روی کامپیوتر شما با uvx اجرا می‌شوند و از راه stdio وصل می‌شوند.",
+ plat_verified:"سازگاری تأییدشده", plat_unverified:"تأییدنشده / برنامه‌ریزی‌شده",
+ plat_verified_note:"این کلاینت‌ها با سرورهای stdio محلی آزمایش شده‌اند.",
+ plat_unverified_note:"نسخهٔ وب این سرویس‌ها با سرورهای محلی stdio تأیید نشده است — ادعای سازگاری نمی‌کنیم.",
+ how_title:"چطور کار می‌کند؟", how_sub:"سه قدم تا اولین سؤال واقعی از دستیارت.",
+ how_s1_t:"۱. یک سرور MCP پیدا کن", how_s1_d:"در بازارچه بگرد؛ هر سرور یک سرویس آلمان را پوشش می‌دهد و فهرست ابزارهایش مشخص است.",
+ how_s2_t:"۲. آن را به دستیارت وصل کن", how_s2_d:"با یک دستور uvx در Claude Code، یا با چند کلیک در Cursor و Claude Desktop.",
+ how_s3_t:"۳. از هوش مصنوعی استفاده کن", how_s3_d:"به‌جای باز کردن ده تب، بپرس — جواب را با عدد، قیمت و منبع می‌گیری.",
+ skills_title:"بازارچهٔ مهارت‌ها", skills_sub:"مهارت‌های واقعی ایجنت که یک خلأ اثبات‌شده در اکوسیستم Claude را پر می‌کنند.",
+ skill_compat:"سازگار با", skill_gap:"خلأیی که پر می‌کند", skill_repo:"گیت‌هاب", skill_tests:"تست",
+ tut_title:"آموزش‌ها و مرکز یادگیری", tut_sub:"راهنمای قدم‌به‌قدم نصب و اتصال — همه با دستورهای واقعی و آزمایش‌شده.",
+ tut_level:"سطح", tut_beginner:"مبتدی", tut_intermediate:"متوسط", tut_steps:"مراحل",
+ blog_title:"وبلاگ و مقاله‌ها", blog_sub:"یادداشت‌های آموزشی دربارهٔ MCP، کلاینت‌ها و سرورهای آلمان.",
+ read_time:"دقیقه خواندن", featured_art:"منتخب",
+ foot_about:"Germany MCP مرجع کامل سرورهای MCP غیررسمی و فقط‌خواندنی برای سرویس‌های وب آلمان است — ساختهٔ محمد عباسی. سه‌زبانه، متن‌باز و بدون کلید API.",
+ foot_platform:"پلتفرم", foot_resources:"منابع", foot_company:"پروژه", foot_legal:"قانونی",
+ foot_privacy:"حریم خصوصی", foot_terms:"شرایط استفاده", foot_rights:"همهٔ حقوق محفوظ است.",
+ foot_follow:"ما را دنبال کن",
+ mp_title:"بازارچهٔ MCP", mp_sub:"همهٔ سرورهای کاتالوگ — جست‌وجو، فیلتر و مرتب‌سازی.",
+ mp_search_ph:"جستجو در سرورها، مهارت‌ها، آموزش‌ها و مقاله‌ها…",
+ f_category:"دسته‌بندی", f_platform:"پلتفرم", f_connection:"نوع اتصال", f_status:"وضعیت",
+ f_all:"همه", f_stdio:"stdio (محلی)", f_available:"در دسترس",
+ sort:"مرتب‌سازی", sort_popular:"بیشترین ابزار (نمایندهٔ محبوبیت)", sort_newest:"جدیدترین در کاتالوگ", sort_alpha:"الفبایی",
+ results:"نتیجه", no_results:"چیزی پیدا نشد", no_results_hint:"فیلترها را بردار یا عبارت دیگری امتحان کن — مثلاً «بوندس‌لیگا»، «جدول» یا «گلزن».",
+ sugg:"پیشنهادها",
+ tool_tools:"ابزارهای سرور", tool_install:"نصب و اتصال", tool_repo:"ریپوی گیت‌هاب", tool_pypi:"صفحهٔ PyPI",
+ tool_version:"نسخه", tool_last:"آخرین بررسی", tool_copy:"کپی", tool_copied:"کپی شد",
+ tool_conn:"روش اتصال", tool_conn_d:"سرور محلی stdio — با uvx اجرا می‌شود، بدون کلید API و بدون حساب.",
+ tool_cat:"دسته‌بندی", tool_status:"وضعیت", tool_platforms:"پلتفرم‌های تأییدشده",
+ back:"بازگشت",
+ cats_page_title:"دسته‌بندی‌ها", cats_page_sub:"دسته‌های کاتالوگ — دسته‌های دارای سرور زنده و دسته‌هایی که هنوز نیامده‌اند.",
+ skills_page_title:"بازارچهٔ مهارت‌ها", skills_page_sub:"مهارت‌های ایجنت ساخته‌شده برای خلأهای واقعی اکوسیستم Claude.",
+ skills_search_ph:"جستجو در مهارت‌ها…",
+ tut_page_title:"آموزش‌ها", tut_page_sub:"از نصب تا عیب‌یابی — همه با دستورهای واقعی.",
+ blog_page_title:"وبلاگ", blog_page_sub:"مقاله‌های آموزشی دربارهٔ MCP و سرورهای آلمان.",
+ about_title:"دربارهٔ Germany MCP", about_sub:"یک کاتالوگ مستقل و متن‌باز — مرجع کامل سرورهای MCP آلمان.",
+ about_mission_t:"مأموریت ما", about_mission_d:"ساختن مرجع کامل و قابل‌اعتماد برای سرویس‌های وب آلمان: هر سرویس مهم یک سرور MCP فقط‌خواندنی، سه‌زبانه و آزمایش‌شده داشته باشد — بدون ادعای تأییدنشده و بدون دادهٔ ساختگی.",
+ about_builder_t:"سازنده", about_builder_d:"محمد عباسی — مدیر سئو و محصول در بن‌باما، و سازندهٔ ابزارهای متن‌باز برای اکوسیستم Claude. این کاتالوگ را مثل پروژهٔ iran-mcp سپهر ساخت: یک مرجع کامل، نه مجموعه‌ای از نمونه‌کارها.",
+ about_catalog_t:"کاتالوگ", about_catalog_d:"۱۵ سرور، ۷۲ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
+ contact_title:"تماس با ما", contact_sub:"برای سؤال، پیشنهاد یا گزارش مشکل از راه‌های زیر استفاده کن — پیام مستقیم به گیت‌هاب می‌رسد.", contact_gh_issue:"ثبت Issue در گیت‌هاب", contact_gh_profile:"پروفایل گیت‌هاب",
+ dash_go:"رفتن به بازارچه",
+ fav_title:"علاقه‌مندی‌ها", fav_sub:"سرورها و مهارت‌هایی که ستاره‌دار کرده‌ای — در همین مرورگر ذخیره می‌شوند.",
+ fav_empty:"هنوز علاقه‌مندی نداری.", fav_empty_hint:"روی ستارهٔ هر سرور یا مهارت بزن تا اینجا ذخیره شود.",
+ nf_title:"صفحه پیدا نشد", nf_sub:"نشانی‌ای که باز کردی در این کاتالوگ وجود ندارد.", nf_home:"رفتن به خانه",
+ theme_light:"روشن", theme_dark:"تیره", lang_name:"زبان",
+ fav_added:"به علاقه‌مندی‌ها اضافه شد.", fav_removed:"از علاقه‌مندی‌ها حذف شد.",
+ search_in:"جستجو در", match_servers:"سرورها", match_skills:"مهارت‌ها", match_tuts:"آموزش‌ها", match_arts:"مقاله‌ها",
+ ask_title:"بپرس — سرور درست را پیدا کن", ask_sub:"سؤالت را به فارسی، آلمانی یا انگلیسی بپرس؛ ما از بین سرورهای کاتالوگ، سروری را پیدا می‌کنیم که جواب سؤال تو را می‌داند.",
+ ask_ph:"مثلاً: جدول بوندسلیگا…", ask_btn:"پیدا کن", ask_examples:"مثلاً:", ask_start:"سؤالت را بالا بنویس یا روی یکی از مثال‌ها بزن.",
+ ask_top:"بهترین سرورها برای سؤال شما", ask_why:"چرا این سرور؟", ask_install:"نصب با uvx",
+ ask_hint:"⚠️ این صفحه فقط سرور درست را برای سؤال شما پیدا می‌کند — قیمت یا جواب زنده نمی‌دهد. برای دادهٔ زنده، سرور را با uvx نصب کن یا سایت اصلی را باز کن.",
+ ask_no_match:"برای این سؤال سروری پیدا نشد", ask_no_match_hint:"کاتالوگ آلمان هنوز کوچک است — {n} سرور دارد. دسته‌بندی‌ها را ببین.",
+ ask_browse:"مرور کاتالوگ", ask_browse_chip:"همهٔ سرورها را ببین", ask_cross:"بپرس در سایت‌های دیگر شبکه:",
+ ask_x_turkey:"🇹🇷 turkey-mcp",
+},
+de:{
+ a11y_skip:"Zum Inhalt springen", brand_tag:"Deutschland MCP Katalog",
+ nav_home:"Startseite", nav_marketplace:"MCP-Marktplatz", nav_categories:"Kategorien", nav_skills:"Fähigkeiten",
+ nav_tutorials:"Anleitungen", nav_blog:"Blog", nav_about:"Über uns", nav_contact:"Kontakt",
+ nav_favorites:"Favoriten", nav_ask:"Frag",
+ nav_menu:"Menü",
+ hero_title:"Verbinde KI mit der echten Welt",
+ hero_sub:"Nur-Lesen-MCP-Server für deutsche Dienste: Fußball, Nachrichten, Medien, Wetter, Verkehr und offene Daten — für Claude Code, Cursor und Claude Desktop. Kein API-Schlüssel, kein Konto.",
+ hero_search_ph:"Dienst oder Tool suchen; z. B. Bundesliga…",
+ hero_cta1:"MCP-Tools entdecken", hero_cta2:"Wie funktioniert es?",
+ stat_servers:"MCP-Server", stat_tools:"Tools", stat_skills:"Agent-Fähigkeiten", stat_langs:"Sprachen",
+ demo_title:"Live ausprobieren", demo_note:"Die untenstehenden Werte wurden am 9. November 2026 live geprüft; es sind keine Live-Daten.",
+ demo_ask:"Frag das selbst", demo_nosignup:"Keine Anmeldung", demo_footer:"Läuft mit uvx auf deinem Computer; kein API-Schlüssel.",
+ cats_title:"Plattform-Kategorien", cats_sub:"Jede Kategorie bringt einen echten deutschen Dienst in die Hände deines KI-Assistenten.",
+ cat_sports:"Sport", cat_sports_d:"Bundesliga-Ergebnisse und Tabellen",
+ cat_news:"Nachrichten", cat_news_d:"Nachrichten von Tagesschau, DW und n-tv",
+ cat_media:"Medien", cat_media_d:"ARD- und ZDF-Mediathek, Radio und TV",
+ cat_weather:"Wetter", cat_weather_d:"DWD-Vorhersagen und Warnungen",
+ cat_transport:"Verkehr", cat_transport_d:"Autobahn-Lage und FlixTrain",
+ cat_open_data:"Offene Daten", cat_open_data_d:"Offizielle Daten der deutschen Regierung",
+ cat_dictionary:"Wörterbuch", cat_dictionary_d:"Bedeutungen und Formen deutscher Wörter",
+ cat_education:"Bildung", cat_education_d:"Universitäten und Studiengänge in Deutschland",
+ cat_shopping:"Einkaufen und Preise", cat_shopping_d:"Preisvergleich deutscher Shops",
+ cat_health:"Gesundheit", cat_health_d:"Apotheken und Gesundheitsdienste",
+ cat_finance:"Finanzen", cat_finance_d:"EZB-Kurse und Daten",
+ cat_housing:"Wohnen", cat_housing_d:"Miet- und Zimmerangebote in Deutschland",
+ cat_travel:"Reisen", cat_travel_d:"Lufthansa-Flüge und DHL-Sendungsverfolgung",
+ cat_coming:"Bald", cat_servers:"Server", cat_server_one:"Server", view_all:"Alle ansehen",
+ feat_title:"Empfohlene MCP-Server", feat_sub:"Nur-Lesen-Server, die mit echten Tests gebaut wurden — keine ungeprüften Behauptungen.",
+ feat_badge:"Empfohlen", status_available:"Verfügbar", tools_count:"Tools",
+ details:"Details", docs:"Doku", connect:"Verbinden", add_fav:"Zu Favoriten hinzufügen", remove_fav:"Aus Favoriten entfernen",
+ plat_title:"Mit welchem KI-Assistenten funktioniert es?", plat_sub:"Die Server laufen mit uvx auf deinem Computer und verbinden sich über stdio.",
+ plat_verified:"Geprüfte Kompatibilität", plat_unverified:"Ungeprüft / geplant",
+ plat_verified_note:"Diese Clients wurden mit lokalen stdio-Servern getestet.",
+ plat_unverified_note:"Die Webversionen dieser Dienste sind mit lokalen stdio-Servern nicht geprüft — wir geben keine Kompatibilitätsversprechen.",
+ how_title:"Wie funktioniert es?", how_sub:"Drei Schritte zu deiner ersten echten Frage.",
+ how_s1_t:"1. Einen MCP-Server finden", how_s1_d:"Stöbere auf dem Marktplatz; jeder Server deckt einen deutschen Dienst ab und seine Tool-Liste ist sichtbar.",
+ how_s2_t:"2. Mit deinem Assistenten verbinden", how_s2_d:"Ein einziger uvx-Befehl in Claude Code oder ein paar Klicks in Cursor und Claude Desktop.",
+ how_s3_t:"3. KI nutzen", how_s3_d:"Statt zehn Tabs zu öffnen, frag einfach — und erhalte die Antwort mit Zahlen, Preisen und Quelle.",
+ skills_title:"Fähigkeiten-Marktplatz", skills_sub:"Echte Agent-Fähigkeiten, die eine nachgewiesene Lücke im Claude-Ökosystem schließen.",
+ skill_compat:"Kompatibel mit", skill_gap:"Die Lücke, die sie schließt", skill_repo:"GitHub", skill_tests:"Tests",
+ tut_title:"Anleitungen und Lernzentrum", tut_sub:"Schritt-für-Schritt-Anleitungen für Einrichtung und Verbindung — alle mit echten, getesteten Befehlen.",
+ tut_level:"Level", tut_beginner:"Anfänger", tut_intermediate:"Fortgeschritten", tut_steps:"Schritte",
+ blog_title:"Blog und Artikel", blog_sub:"Lernbeiträge über MCP, Clients und die Deutschland-Server.",
+ read_time:"Min. Lesezeit", featured_art:"Empfohlen",
+ foot_about:"Germany MCP ist die vollständige Referenz für inoffizielle Nur-Lesen-MCP-Server für deutsche Webdienste — gebaut von Mohammad Abbasi. Dreisprachig, Open Source, kein API-Schlüssel.",
+ foot_platform:"Plattform", foot_resources:"Ressourcen", foot_company:"Projekt", foot_legal:"Rechtliches",
+ foot_privacy:"Datenschutz", foot_terms:"Nutzungsbedingungen", foot_rights:"Alle Rechte vorbehalten.",
+ foot_follow:"Folge uns",
+ mp_title:"MCP-Marktplatz", mp_sub:"Alle Server im Katalog — suchen, filtern, sortieren.",
+ mp_search_ph:"Server, Fähigkeiten, Anleitungen und Artikel durchsuchen…",
+ f_category:"Kategorie", f_platform:"Plattform", f_connection:"Verbindungsart", f_status:"Status",
+ f_all:"Alle", f_stdio:"stdio (lokal)", f_available:"Verfügbar",
+ sort:"Sortieren", sort_popular:"Meiste Tools (Beliebtheits-Indikator)", sort_newest:"Neueste im Katalog", sort_alpha:"Alphabetisch",
+ results:"Ergebnisse", no_results:"Nichts gefunden", no_results_hint:"Filter zurücksetzen oder einen anderen Begriff versuchen — z. B. „Bundesliga“, „Tabelle“ oder „Torschütze“.",
+ sugg:"Vorschläge",
+ tool_tools:"Server-Tools", tool_install:"Installation und Verbindung", tool_repo:"GitHub-Repo", tool_pypi:"PyPI-Seite",
+ tool_version:"Version", tool_last:"Zuletzt geprüft", tool_copy:"Kopieren", tool_copied:"Kopiert",
+ tool_conn:"Verbindungsmethode", tool_conn_d:"Lokaler stdio-Server — läuft mit uvx, kein API-Schlüssel und kein Konto nötig.",
+ tool_cat:"Kategorie", tool_status:"Status", tool_platforms:"Geprüfte Plattformen",
+ back:"Zurück",
+ cats_page_title:"Kategorien", cats_page_sub:"Kategorien des Katalogs — die mit Live-Servern und die, die noch kommen.",
+ skills_page_title:"Fähigkeiten-Marktplatz", skills_page_sub:"Agent-Fähigkeiten für echte Lücken im Claude-Ökosystem.",
+ skills_search_ph:"Fähigkeiten durchsuchen…",
+ tut_page_title:"Anleitungen", tut_page_sub:"Von der Einrichtung bis zur Fehlerbehebung — alles mit echten Befehlen.",
+ blog_page_title:"Blog", blog_page_sub:"Lernartikel über MCP und die Deutschland-Server.",
+ about_title:"Über Germany MCP", about_sub:"Ein unabhängiger Open-Source-Katalog — die vollständige Referenz für Deutschland-MCP-Server.",
+ about_mission_t:"Unsere Mission", about_mission_d:"Die vollständige, vertrauenswürdige Referenz für deutsche Webdienste zu bauen: Jeder wichtige Dienst bekommt einen Nur-Lesen-, dreisprachigen und getesteten MCP-Server — keine ungeprüften Behauptungen und keine erfundenen Daten.",
+ about_builder_t:"Der Erbauer", about_builder_d:"Mohammad Abbasi — SEO- und Produktmanager bei Bonbama und Erbauer von Open-Source-Tools für das Claude-Ökosystem. Er hat diesen Katalog so aufgebaut, wie Sepehr iran-mcp aufgebaut hat: als vollständige Referenz, nicht als Schaufenster.",
+ about_catalog_t:"Der Katalog", about_catalog_d:"15 Server, 72 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
+ contact_title:"Kontakt", contact_sub:"Für Fragen, Vorschläge oder Fehlermeldungen nutze die Links unten — deine Nachricht geht direkt an GitHub.",
+ contact_gh_issue:"Issue auf GitHub öffnen", contact_gh_profile:"GitHub-Profil",
+ dash_go:"Zum Marktplatz",
+ fav_title:"Favoriten", fav_sub:"Server und Fähigkeiten, die du markiert hast — in diesem Browser gespeichert.",
+ fav_empty:"Noch keine Favoriten.", fav_empty_hint:"Tippe auf den Stern eines Servers oder einer Fähigkeit, um ihn hier zu speichern.",
+ nf_title:"Seite nicht gefunden", nf_sub:"Die geöffnete Adresse gibt es in diesem Katalog nicht.",
+ nf_home:"Zur Startseite",
+ theme_light:"Hell", theme_dark:"Dunkel", lang_name:"Sprache",
+ fav_added:"Zu Favoriten hinzugefügt.", fav_removed:"Aus Favoriten entfernt.",
+ search_in:"Suchen in", match_servers:"Server", match_skills:"Fähigkeiten", match_tuts:"Anleitungen", match_arts:"Artikel",
+ ask_title:"Frag — finde den richtigen Server", ask_sub:"Frag auf Deutsch, Persisch oder Englisch — wir finden den Katalog-Server, der deine Frage beantworten kann.",
+ ask_ph:"Z. B.: Bundesliga-Tabelle…", ask_btn:"Finden", ask_examples:"Zum Beispiel:", ask_start:"Schreib deine Frage oben oder tippe auf ein Beispiel.",
+ ask_top:"Die besten Server für deine Frage", ask_why:"Warum dieser Server?", ask_install:"Mit uvx installieren",
+ ask_hint:"⚠️ Diese Seite findet nur den richtigen Server für deine Frage — keine Live-Preise oder Antworten. Für Live-Daten installiere den Server mit uvx oder öffne die Seite des Dienstes.",
+ ask_no_match:"Kein Server für diese Frage gefunden", ask_no_match_hint:"Der Deutschland-Katalog ist noch klein — erst {n} Server. Sieh dir die Kategorien an.",
+ ask_browse:"Katalog durchsuchen", ask_browse_chip:"Alle Server ansehen", ask_cross:"Auf anderen Seiten des Netzwerks fragen:",
+ ask_x_turkey:"🇹🇷 turkey-mcp",
+
+},
+en:{
+ a11y_skip:"Skip to content", brand_tag:"Germany MCP Catalog",
+ nav_home:"Home", nav_marketplace:"MCP Marketplace", nav_categories:"Categories", nav_skills:"Skills",
+ nav_tutorials:"Tutorials", nav_blog:"Blog", nav_about:"About Us", nav_contact:"Contact",
+ nav_favorites:"Favorites", nav_ask:"Ask",
+ nav_menu:"Menu",
+ hero_title:"Connect AI to the World",
+ hero_sub:"Read-only MCP servers for German services: football, news, media, weather, transport and open data — connecting to Claude Code, Cursor and Claude Desktop. No API key, no account.",
+ hero_search_ph:"Search a service or tool; e.g. Bundesliga…",
+ hero_cta1:"Explore MCP Tools", hero_cta2:"How It Works",
+ stat_servers:"MCP servers", stat_tools:"tools", stat_skills:"agent skills", stat_langs:"languages",
+ demo_title:"Try it live", demo_note:"Values below were verified live on 9 Nov 2026; they are not live data.",
+ demo_ask:"Ask this yourself", demo_nosignup:"No sign-up", demo_footer:"Runs on your computer with uvx; no API key.",
+ cats_title:"Platform Categories", cats_sub:"Every category puts one real German service in your AI assistant's hands.",
+ cat_sports:"Sports", cat_sports_d:"Bundesliga results and tables",
+ cat_news:"News", cat_news_d:"News from Tagesschau, DW and n-tv",
+ cat_media:"Media", cat_media_d:"ARD and ZDF mediathek, radio and TV",
+ cat_weather:"Weather", cat_weather_d:"DWD forecasts and warnings",
+ cat_transport:"Transport", cat_transport_d:"Autobahn conditions and FlixTrain",
+ cat_open_data:"Open Data", cat_open_data_d:"Official German government data",
+ cat_dictionary:"Dictionary", cat_dictionary_d:"Meanings and forms of German words",
+ cat_education:"Education", cat_education_d:"Universities and degree programmes in Germany",
+ cat_shopping:"Shopping & Prices", cat_shopping_d:"Price comparison from German shops",
+ cat_health:"Health", cat_health_d:"Pharmacies and health services",
+ cat_finance:"Finance", cat_finance_d:"ECB rates and data",
+ cat_housing:"Housing", cat_housing_d:"Rental and room listings in Germany",
+ cat_travel:"Travel", cat_travel_d:"Lufthansa flights and DHL tracking",
+ cat_coming:"Coming soon", cat_servers:"servers", cat_server_one:"server", view_all:"View All",
+ feat_title:"Featured MCP Servers", feat_sub:"Read-only servers built with real tests — no unverified claims.",
+ feat_badge:"Featured", status_available:"Available", tools_count:"tools",
+ details:"Details", docs:"Docs", connect:"Connect", add_fav:"Add to favorites", remove_fav:"Remove from favorites",
+ plat_title:"Which AI assistant does it work with?", plat_sub:"Servers run on your computer with uvx and connect over stdio.",
+ plat_verified:"Verified compatibility", plat_unverified:"Unverified / planned",
+ plat_verified_note:"These clients were tested with local stdio servers.",
+ plat_unverified_note:"The web versions of these services are not verified with local stdio servers — we make no compatibility claim.",
+ how_title:"How It Works", how_sub:"Three steps to your first real question to your assistant.",
+ how_s1_t:"1. Find an MCP server", how_s1_d:"Browse the marketplace; each server covers one German service and its tool list is shown.",
+ how_s2_t:"2. Connect it to your assistant", how_s2_d:"One uvx command in Claude Code, or a few clicks in Cursor and Claude Desktop.",
+ how_s3_t:"3. Use AI", how_s3_d:"Instead of opening ten tabs, ask — and get the answer with numbers, prices and a source.",
+ skills_title:"Skills Marketplace", skills_sub:"Real agent skills that fill a proven gap in the Claude ecosystem.",
+ skill_compat:"Compatible with", skill_gap:"The gap it fills", skill_repo:"GitHub", skill_tests:"tests",
+ tut_title:"Tutorials & Learning Center", tut_sub:"Step-by-step setup and connection guides — all with real, tested commands.",
+ tut_level:"Level", tut_beginner:"Beginner", tut_intermediate:"Intermediate", tut_steps:"Steps",
+ blog_title:"Blog & Articles", blog_sub:"Educational notes on MCP, clients and the Germany servers.",
+ read_time:"min read", featured_art:"Featured",
+ foot_about:"Germany MCP is the complete reference for unofficial, read-only MCP servers for German web services — built by Mohammad Abbasi. Trilingual, open source, no API key.",
+ foot_platform:"Platform", foot_resources:"Resources", foot_company:"Project", foot_legal:"Legal",
+ foot_privacy:"Privacy Policy", foot_terms:"Terms of Service", foot_rights:"All rights reserved.",
+ foot_follow:"Follow us",
+ mp_title:"MCP Marketplace", mp_sub:"Every server in the catalog — search, filter and sort.",
+ mp_search_ph:"Search servers, skills, tutorials and articles…",
+ f_category:"Category", f_platform:"Platform", f_connection:"Connection type", f_status:"Status",
+ f_all:"All", f_stdio:"stdio (local)", f_available:"Available",
+ sort:"Sort", sort_popular:"Most tools (popularity proxy)", sort_newest:"Newest in catalog", sort_alpha:"Alphabetical",
+ results:"results", no_results:"Nothing found", no_results_hint:"Clear the filters or try another phrase — e.g. “Bundesliga”, “table” or “scorer”.",
+ sugg:"Suggestions",
+ tool_tools:"Server tools", tool_install:"Install & connect", tool_repo:"GitHub repo", tool_pypi:"PyPI page",
+ tool_version:"Version", tool_last:"Last checked", tool_copy:"Copy", tool_copied:"Copied",
+ tool_conn:"Connection method", tool_conn_d:"Local stdio server — runs with uvx, no API key and no account.",
+ tool_cat:"Category", tool_status:"Status", tool_platforms:"Verified platforms",
+ back:"Back",
+ cats_page_title:"Categories", cats_page_sub:"Catalog categories — those with live servers and those still to come.",
+ skills_page_title:"Skills Marketplace", skills_page_sub:"Agent skills built for real gaps in the Claude ecosystem.",
+ skills_search_ph:"Search skills…",
+ tut_page_title:"Tutorials", tut_page_sub:"From setup to troubleshooting — all with real commands.",
+ blog_page_title:"Blog", blog_page_sub:"Educational articles about MCP and the Germany servers.",
+ about_title:"About Germany MCP", about_sub:"An independent, open-source catalog — the complete reference for Germany MCP servers.",
+ about_mission_t:"Our mission", about_mission_d:"To build the complete, trustworthy reference for German web services: every major service gets a read-only, trilingual, tested MCP server — no unverified claims and no fabricated data.",
+ about_builder_t:"The builder", about_builder_d:"Mohammad Abbasi — SEO and Product Manager at Bonbama, and builder of open-source tools for the Claude ecosystem. He built this catalog the way Sepehr built iran-mcp: a complete reference, not a showcase.",
+ about_catalog_t:"The catalog", about_catalog_d:"15 servers, 72 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
+ contact_title:"Contact Us", contact_sub:"For questions, suggestions or bug reports, use the links below — your message goes straight to GitHub.", contact_gh_issue:"Open an issue on GitHub", contact_gh_profile:"GitHub profile",
+ dash_go:"Go to marketplace",
+ fav_title:"Favorites", fav_sub:"Servers and skills you starred — stored in this browser.",
+ fav_empty:"No favorites yet.", fav_empty_hint:"Tap the star on any server or skill to save it here.",
+ nf_title:"Page not found", nf_sub:"The address you opened does not exist in this catalog.", nf_home:"Go home",
+ theme_light:"Light", theme_dark:"Dark", lang_name:"Language",
+ fav_added:"Added to favorites.", fav_removed:"Removed from favorites.",
+ search_in:"Search in", match_servers:"Servers", match_skills:"Skills", match_tuts:"Tutorials", match_arts:"Articles",
+ ask_title:"Ask — find the right server", ask_sub:"Ask in Persian, German or English — we find the catalog server that can answer your question.",
+ ask_ph:"E.g.: Bundesliga table…", ask_btn:"Find", ask_examples:"Try:", ask_start:"Type your question above or tap an example.",
+ ask_top:"Best servers for your question", ask_why:"Why this server?", ask_install:"Install with uvx",
+ ask_hint:"⚠️ This page only finds the right server for your question — it does not fetch live prices or answers. For live data, install the server with uvx or open the service's own site.",
+ ask_no_match:"No server found for this question", ask_no_match_hint:"The Germany catalog is still small — only {n} servers. Browse the categories.",
+ ask_browse:"Browse the catalog", ask_browse_chip:"Browse all servers", ask_cross:"Ask on the network's other sites:",
+ ask_x_turkey:"🇹🇷 turkey-mcp",
+}};
+const LANGS = {fa:{name:"فارسی",dir:"rtl",locale:"fa-IR"},de:{name:"Deutsch",dir:"ltr",locale:"de-DE"},en:{name:"English",dir:"ltr",locale:"en-US"}};
+
+/* ---------------- state & helpers ---------------- */
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v==null?d:JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+const state = {
+  lang: store.get("tmp_lang", null) || ((navigator.language||"fa").slice(0,2)==="de"?"de":(navigator.language||"").slice(0,2)==="en"?"en":"fa"),
+  theme: store.get("tmp_theme", null) || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"),
+  page: "home", param: null, anchor: null
+};
+if(!["fa","de","en"].includes(state.lang)) state.lang = "fa";
+function t(k){ const d = I18N[state.lang]||I18N.en; return d[k]!==undefined?d[k]:(I18N.en[k]!==undefined?I18N.en[k]:k); }
+function L(obj){ return obj ? (obj[state.lang]!==undefined?obj[state.lang]:obj.en) : ""; }
+function esc(s){ return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;"); }
+function loc(){ return LANGS[state.lang].locale; }
+function fmtNum(n){ try{ return new Intl.NumberFormat(loc()).format(n); }catch(e){ return String(n); } }
+function fmtDate(iso){ try{ return new Intl.DateTimeFormat(loc(),{year:"numeric",month:"long",day:"numeric"}).format(new Date(iso+"T00:00:00")); }catch(e){ return iso; } }
+function hashFor(page, param){ return "#/" + state.lang + "/" + page + (param?"/"+param:""); }
+function catName(id){ return t("cat_"+id.replace("-","_")) || id; }
+function catDesc(id){ return t("cat_"+id.replace("-","_")+"_d") || ""; }
+function serverDesc(s){ return state.lang==="fa"?s.desc_fa:state.lang==="de"?s.desc_de:s.desc; }
+function toolSum(tl){ return state.lang==="fa"?tl.sf:state.lang==="de"?tl.st:tl.s; }
+function skillTag(k){ return state.lang==="fa"?k.tag_fa:state.lang==="de"?k.tag_de:k.tag; }
+function skillGap(k){ return state.lang==="fa"?k.gap_fa:state.lang==="de"?k.gap_de:k.gap; }
+function favs(){ return store.get("tmp_favs_v1", []); }
+function isFav(type,id){ return favs().some(f=>f.type===type&&f.id===id); }
+function recent(){ return store.get("tmp_recent_v1", []); }
+function pushRecent(type,id){ let r = recent().filter(x=>!(x.type===type&&x.id===id)); r.unshift({type,id,at:Date.now()}); store.set("tmp_recent_v1", r.slice(0,8)); }
+function toast(msg){ const el=document.getElementById("toast"); if(!el) return; el.textContent=msg; el.classList.add("show"); clearTimeout(el._t); el._t=setTimeout(()=>el.classList.remove("show"),2600); }
+function copyText(txt, msg){ const done=()=>toast(msg||t("tool_copied"));
+  if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(txt).then(done).catch(()=>fallbackCopy(txt,done)); }
+  else fallbackCopy(txt,done); }
+function fallbackCopy(txt, done){ const ta=document.createElement("textarea"); ta.value=txt; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); try{ document.execCommand("copy"); }catch(e){} document.body.removeChild(ta); done(); }
+
+/* ---------------- router ---------------- */
+const PAGES = ["home","marketplace","tool","categories","skills","skill","tutorials","tutorial","blog","article","about","contact","favorites","ask"];
+function parseHash(){
+  const raw = location.hash||"";
+  if(raw && !raw.startsWith("#/")){
+    const id = raw.slice(1);
+    if(/^[A-Za-z][\w-]*$/.test(id)){ state.anchor = id; return; }
+  }
+  const h = raw.replace(/^#\/?/,"");
+  const parts = h.split("/").filter(Boolean);
+  let lang = parts[0], page = parts[1]||"home", param = parts[2]||null;
+  if(!["fa","de","en"].includes(lang)){ lang = state.lang; page = parts[0]||"home"; param = parts[1]||null; }
+  if(!PAGES.includes(page)){ state.page="404"; state.param=page; state.lang=lang; return; }
+  state.lang = lang; state.page = page; state.param = param;
+}
+function go(page, param){ location.hash = hashFor(page, param); window.scrollTo({top:0}); }
+
+/* ---------------- shared components ---------------- */
+function headerHTML(){
+  const navItems = [["home","nav_home"],["marketplace","nav_marketplace"],["categories","nav_categories"],["skills","nav_skills"],["tutorials","nav_tutorials"],["blog","nav_blog"],["about","nav_about"],["contact","nav_contact"],["ask","nav_ask"]];
+  const nav = navItems.map(([p,k])=>`<a href="${hashFor(p)}" class="${state.page===p||(p==="marketplace"&&state.page==="tool")||(p==="skills"&&state.page==="skill")||(p==="tutorials"&&state.page==="tutorial")||(p==="blog"&&state.page==="article")?"active":""}">${t(k)}</a>`).join("");
+  return `<header class="site"><div class="wrap nav">
+    <a class="brand" href="${hashFor("home")}"><span class="mark">G</span><span>Germany MCP<small>${t("brand_tag")}</small></span></a>
+    <nav class="main" aria-label="main">${nav}</nav>
+    <div class="nav-right">
+      <select class="lang-select" aria-label="${t("lang_name")}" onchange="App.setLang(this.value)">
+        ${Object.keys(LANGS).map(l=>`<option value="${l}" ${l===state.lang?"selected":""}>${LANGS[l].name}</option>`).join("")}
+      </select>
+      <button class="icon-btn" onclick="App.toggleTheme()" aria-label="${state.theme==="dark"?t("theme_light"):t("theme_dark")}" title="${state.theme==="dark"?t("theme_light"):t("theme_dark")}">${state.theme==="dark"?"☀️":"🌙"}</button>
+      <a class="icon-btn" href="${hashFor("favorites")}" title="${t("nav_favorites")}" aria-label="${t("nav_favorites")}">★</a>
+      <button class="icon-btn burger" onclick="App.toggleMenu()" aria-label="${t("nav_menu")}">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">${navItems.map(([p,k])=>`<a href="${hashFor(p)}">${t(k)}</a>`).join("")}
+    <a href="${hashFor("favorites")}">${t("nav_favorites")}</a>
+  </div></header>`;
+}
+function footerHTML(){
+  const col = (title, links)=>`<div><h4>${title}</h4>${links.map(([href,label])=>`<a href="${href}">${label}</a>`).join("")}</div>`;
+  return `<footer class="site"><div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="${hashFor("home")}"><span class="mark">G</span><span>Germany MCP<small>${t("brand_tag")}</small></span></a>
+        <p style="margin-top:14px">${t("foot_about")}</p>
+        <div class="socials">
+          <a href="https://github.com/mohammad-abbasi-sh/germany-mcp" target="_blank" rel="noopener" aria-label="GitHub">⌥</a>
+          <a href="https://github.com/mohammad-abbasi-sh" target="_blank" rel="noopener" aria-label="GitHub profile">◉</a>
+          <a href="https://www.linkedin.com/in/mohammad-abbasi-sh/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      ${col(t("foot_platform"), [[hashFor("marketplace"),t("nav_marketplace")],[hashFor("categories"),t("nav_categories")],[hashFor("skills"),t("nav_skills")],[hashFor("tutorials"),t("nav_tutorials")]])}
+      ${col(t("foot_resources"), [[hashFor("blog"),t("nav_blog")],[hashFor("tutorials"),t("tut_title")],["https://github.com/mohammad-abbasi-sh/germany-mcp",t("tool_repo")],["https://pypi.org/user/mohammad-abbasi-sh/","PyPI"]])}
+      ${col(t("foot_company"), [[hashFor("about"),t("nav_about")],[hashFor("contact"),t("nav_contact")],["https://almanibama.ir","Almanibama"],["https://mabbasi.ir","mabbasi.ir"],["#",t("foot_privacy")],["#",t("foot_terms")]])}
+    </div>
+    <div class="foot-bottom">
+      <span>© ${new Date().getFullYear()} Germany MCP — ${t("foot_rights")}</span>
+      <span><a href="${hashFor("home")}" style="color:var(--muted)">Germany MCP</a> · EN / DE / FA</span>
+    </div>
+  </div></footer>`;
+}
+function starBtn(type,id){
+  const on = isFav(type,id);
+  return `<button class="star-btn ${on?"on":""}" onclick="App.toggleFav('${type}','${id}',event)" aria-label="${on?t("remove_fav"):t("add_fav")}" title="${on?t("remove_fav"):t("add_fav")}">${on?"★":"☆"}</button>`;
+}
+function serverCard(s){
+  return `<article class="card">
+    <div class="card-top">
+      <span class="tile" style="background:${s.color}">${s.letter}</span>
+      <div style="flex:1;min-width:0"><h3>${esc(s.title.split(" — ")[0])}</h3><p class="latin">${esc(s.id)}</p></div>
+      ${starBtn("server", s.id)}
+    </div>
+    <p class="desc">${esc(serverDesc(s))}</p>
+    <p class="meta-row"><span class="ic">▦</span> ${esc(catName(s.cat))} · ${fmtNum(s.tools.length)} ${t("tools_count")}</p>
+    <p class="meta-row"><span class="ic">✓</span> ${t("status_available")} · stdio · uvx</p>
+    <div class="card-bottom">
+      ${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span>`:`<span class="chip">${esc(catName(s.cat))}</span>`}
+      <a class="btn btn-primary btn-sm" href="${hashFor("tool", s.id)}">${t("details")}</a>
+    </div>
+  </article>`;
+}
+function skillCard(k){
+  return `<article class="card">
+    <div class="card-top">
+      <span class="tile" style="background:linear-gradient(135deg,#6657E8,#19C6B3)">✦</span>
+      <div style="flex:1;min-width:0"><h3>${esc(k.id)}</h3><p class="latin">github.com/mohammad-abbasi-sh/${esc(k.id)}</p></div>
+      ${starBtn("skill", k.id)}
+    </div>
+    <p class="desc">${esc(skillTag(k))}</p>
+    <p class="meta-row"><span class="ic">✓</span> ${t("skill_compat")}: Claude Code · Claude.ai · Cursor</p>
+    ${k.tests!=="—"?`<p class="meta-row"><span class="ic">✓</span> ${fmtNum(parseInt(k.tests,10))} ${t("skill_tests")}</p>`:""}
+    <div class="card-bottom">
+      <span class="chip">${esc(k.cat)}</span>
+      <a class="btn btn-primary btn-sm" href="${hashFor("skill", k.id)}">${t("details")}</a>
+    </div>
+  </article>`;
+}
+function catCard(c){
+  const n = catCount(c.id);
+  return `<article class="card cat-card" onclick="App.openCategory('${c.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')App.openCategory('${c.id}')">
+    <span class="ic" style="background:${c.color}22;color:${c.color}">${c.icon}</span>
+    <h3>${esc(catName(c.id))}</h3>
+    <p>${esc(catDesc(c.id))}</p>
+    ${c.soon?`<span class="badge badge-soon">${t("cat_coming")}</span>`:`<span class="chip">${fmtNum(n)} ${n===1?t("cat_server_one"):t("cat_servers")}</span>`}
+  </article>`;
+}
+function emptyHTML(hint){
+  return `<div class="empty"><div class="big">🔍</div><h3>${t("no_results")}</h3><p>${hint||t("no_results_hint")}</p></div>`;
+}
+function sectionHead(eyebrow, title, sub, link){
+  return `<div class="section-head"><div><span class="eyebrow"><span class="dot"></span>${eyebrow}</span><h2>${title}</h2><p>${sub||""}</p></div>${link||""}</div>`;
+}
+
+/* ---------------- page renderers ---------------- */
+function heroHTML(){
+  const featured = SERVERS.filter(s=>s.featured);
+  return `<section class="hero"><div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>Germany MCP · ${fmtNum(SERVERS.length)} ${t("stat_servers")} · ${fmtNum(TOTAL_TOOLS)} ${t("stat_tools")}</span>
+      <h1>${t("hero_title").replace("World","<span class=\"grad\">World</span>").replace("دنیای واقعی","<span class=\"grad\">دنیای واقعی</span>").replace("echten Welt","<span class=\"grad\">echten Welt</span>")}</h1>
+      <p class="sub">${t("hero_sub")}</p>
+      <form class="hero-search" onsubmit="return App.heroSearch(event)">
+        <input id="hero-q" type="search" placeholder="${esc(t("hero_search_ph"))}" aria-label="${esc(t("hero_search_ph"))}">
+        <button class="btn btn-primary" type="submit">🔍 ${t("search_in")}</button>
+      </form>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="${hashFor("marketplace")}">${t("hero_cta1")}</a>
+        <a class="btn btn-ghost" href="#how">${t("hero_cta2")}</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>${fmtNum(SERVERS.length)}</b><span>${t("stat_servers")}</span></div>
+        <div><b>${fmtNum(TOTAL_TOOLS)}</b><span>${t("stat_tools")}</span></div>
+        <div><b>${fmtNum(SKILLS.length)}</b><span>${t("stat_skills")}</span></div>
+        <div><b>${fmtNum(3)}</b><span>${t("stat_langs")}</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="demo" id="demo-card">
+        <div class="demo-tabs" id="demo-tabs"></div>
+        <div class="demo-body" id="demo-body"></div>
+        <div class="demo-foot">
+          <a class="btn btn-primary" href="${hashFor("marketplace")}">${t("connect")}</a>
+          <span>${t("demo_footer")}</span>
+        </div>
+      </div>
+      <p style="color:var(--muted);font-size:12.5px;margin-top:10px">${t("demo_note")}</p>
+    </div>
+  </div></section>`;
+}
+function homeHTML(){
+  const feat = SERVERS.filter(s=>s.featured).concat(SERVERS.filter(s=>!s.featured).slice(0,2));
+  return heroHTML() + `
+  <section class="section"><div class="wrap">
+    ${sectionHead("●", t("cats_title"), t("cats_sub"), `<a class="btn btn-ghost btn-sm" href="${hashFor("categories")}">${t("view_all")}</a>`)}
+    <div class="grid grid-4">${CATEGORIES.map(catCard).join("")}</div>
+  </div></section>
+  <section class="section"><div class="wrap">
+    ${sectionHead("★", t("feat_title"), t("feat_sub"), `<a class="btn btn-ghost btn-sm" href="${hashFor("marketplace")}">${t("view_all")}</a>`)}
+    <div class="grid grid-4">${feat.map(serverCard).join("")}</div>
+  </div></section>
+  <section class="section"><div class="wrap">
+    ${sectionHead("◆", t("plat_title"), t("plat_sub"))}
+    <h3 style="font-size:16px;margin-bottom:12px"><span class="badge badge-verified">✓ ${t("plat_verified")}</span></h3>
+    <div class="plat-grid">${PLATFORMS_VERIFIED.map(p=>`<article class="card plat-card"><span class="logo">${p.icon}</span><h3>${esc(p.name)}</h3><p>${esc(p.desc[state.lang]||p.desc.en)}</p><span class="badge badge-verified">✓ ${t("plat_verified")}</span></article>`).join("")}</div>
+    <p style="color:var(--muted);font-size:13.5px;margin:14px 0 8px">${t("plat_verified_note")}</p>
+    <h3 style="font-size:16px;margin:18px 0 12px"><span class="badge badge-unverified">! ${t("plat_unverified")}</span></h3>
+    <div class="plat-grid">${PLATFORMS_UNVERIFIED.map(p=>`<article class="card plat-card"><span class="logo" style="opacity:.55">${p.icon}</span><h3>${esc(p.name)}</h3><p>${esc(p.desc[state.lang]||p.desc.en)}</p><span class="badge badge-unverified">! ${t("plat_unverified")}</span></article>`).join("")}</div>
+    <p style="color:var(--muted);font-size:13.5px;margin-top:14px">${t("plat_unverified_note")}</p>
+  </div></section>
+  <section class="section" id="how"><div class="wrap">
+    ${sectionHead("→", t("how_title"), t("how_sub"))}
+    <div class="steps">
+      <article class="card step"><span class="n">1</span><h3>${t("how_s1_t")}</h3><p>${t("how_s1_d")}</p></article>
+      <article class="card step"><span class="n">2</span><h3>${t("how_s2_t")}</h3><p>${t("how_s2_d")}</p></article>
+      <article class="card step"><span class="n">3</span><h3>${t("how_s3_t")}</h3><p>${t("how_s3_d")}</p></article>
+    </div>
+  </div></section>
+  <section class="section"><div class="wrap">
+    ${sectionHead("✦", t("skills_title"), t("skills_sub"), `<a class="btn btn-ghost btn-sm" href="${hashFor("skills")}">${t("view_all")}</a>`)}
+    <div class="grid grid-3">${SKILLS.slice(0,3).map(skillCard).join("")}</div>
+  </div></section>
+  <section class="section"><div class="wrap">
+    ${sectionHead("▤", t("tut_title"), t("tut_sub"), `<a class="btn btn-ghost btn-sm" href="${hashFor("tutorials")}">${t("view_all")}</a>`)}
+    <div class="grid grid-3">${TUTORIALS.slice(0,3).map(tutCard).join("")}</div>
+  </div></section>
+  <section class="section"><div class="wrap">
+    ${sectionHead("✎", t("blog_title"), t("blog_sub"), `<a class="btn btn-ghost btn-sm" href="${hashFor("blog")}">${t("view_all")}</a>`)}
+    <div class="grid grid-3">${ARTICLES.map(artCard).join("")}</div>
+  </div></section>`;
+}
+function tutCard(x){
+  return `<article class="card">
+    <div class="cover ${x.id==="install-uvx"?"g4":x.id==="claude-code"?"g1":x.id==="cursor"?"g2":x.id==="claude-desktop"?"g5":"g3"}">${x.id==="install-uvx"?"⬇":x.id==="claude-code"?"⌘":x.id==="cursor"?"▸":x.id==="claude-desktop"?"▣":"🛠"}</div>
+    <h3>${esc(L(x.title))}</h3>
+    <p class="desc">${esc(L(x.ex))}</p>
+    <p class="meta-row"><span class="ic">◷</span> ${fmtNum(x.mins)} ${t("read_time")} · ${x.level==="beginner"?t("tut_beginner"):t("tut_intermediate")}</p>
+    <div class="card-bottom"><span class="chip">${esc(x.cat)}</span><a class="btn btn-primary btn-sm" href="${hashFor("tutorial", x.id)}">${t("details")}</a></div>
+  </article>`;
+}
+function artCard(a, i){
+  return `<article class="card">
+    <div class="cover ${a.cover}">${a.icon}</div>
+    <h3>${esc(L(a.title))}</h3>
+    <p class="desc">${esc(L(a.ex))}</p>
+    <p class="meta-row"><span class="ic">📅</span> ${fmtDate(a.date)} · ${fmtNum(a.mins)} ${t("read_time")}</p>
+    <div class="card-bottom">${i===0?`<span class="badge badge-feat">★ ${t("featured_art")}</span>`:`<span class="chip">${esc(a.cat)}</span>`}<a class="btn btn-primary btn-sm" href="${hashFor("article", a.id)}">${t("details")}</a></div>
+  </article>`;
+}
+
+/* marketplace state */
+const mp = { q:"", cat:"all", platform:"all", conn:"all", status:"all", sort:"popular" };
+function mpFiltered(){
+  let list = SERVERS.slice();
+  const q = mp.q.trim().toLowerCase();
+  if(q) list = list.filter(s => (s.id+" "+s.title+" "+s.title_de+" "+serverDesc(s)+" "+s.tools.map(x=>x.n+" "+toolSum(x)).join(" ")).toLowerCase().includes(q));
+  if(mp.cat!=="all") list = list.filter(s=>s.cat===mp.cat);
+  if(mp.status==="available") list = list.filter(()=>true);
+  if(mp.sort==="popular") list.sort((a,b)=>b.tools.length-a.tools.length || a.id.localeCompare(b.id));
+  if(mp.sort==="newest") list.sort((a,b)=>b.added-a.added);
+  if(mp.sort==="alpha") list.sort((a,b)=>a.id.localeCompare(b.id));
+  return list;
+}
+function mpMatches(q){
+  const s = q.trim().toLowerCase(); if(!s) return {skills:[],tuts:[],arts:[]};
+  return {
+    skills: SKILLS.filter(k=>(k.id+" "+skillTag(k)).toLowerCase().includes(s)),
+    tuts: TUTORIALS.filter(x=>(L(x.title)+" "+L(x.ex)).toLowerCase().includes(s)),
+    arts: ARTICLES.filter(a=>(L(a.title)+" "+L(a.ex)).toLowerCase().includes(s))
+  };
+}
+function mpResultsHTML(){
+  const list = mpFiltered();
+  const m = mpMatches(mp.q);
+  let h = `<p style="color:var(--muted);font-size:14px;margin-bottom:16px">${fmtNum(list.length)} ${t("results")}</p>`;
+  if(!list.length && !m.skills.length && !m.tuts.length && !m.arts.length) return h + emptyHTML();
+  if(list.length) h += `<div class="grid grid-4">${list.map(serverCard).join("")}</div>`;
+  const extra = [];
+  if(m.skills.length) extra.push(`<h3 style="margin:26px 0 12px">${t("match_skills")} (${fmtNum(m.skills.length)})</h3><div class="grid grid-3">${m.skills.map(skillCard).join("")}</div>`);
+  if(m.tuts.length) extra.push(`<h3 style="margin:26px 0 12px">${t("match_tuts")} (${fmtNum(m.tuts.length)})</h3><div class="grid grid-3">${m.tuts.map(tutCard).join("")}</div>`);
+  if(m.arts.length) extra.push(`<h3 style="margin:26px 0 12px">${t("match_arts")} (${fmtNum(m.arts.length)})</h3><div class="grid grid-3">${m.arts.map(artCard).join("")}</div>`);
+  return h + extra.join("");
+}
+function marketplaceHTML(){
+  const opt = (v,cur,label)=>`<option value="${v}" ${v===cur?"selected":""}>${label}</option>`;
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("▦", t("mp_title"), t("mp_sub"))}
+    <div class="toolbar">
+      <div class="search-box"><span class="mag">🔍</span><input id="mp-q" type="search" placeholder="${esc(t("mp_search_ph"))}" value="${esc(mp.q)}" oninput="App.mpSearch(this.value)" aria-label="${esc(t("mp_search_ph"))}"></div>
+      <select id="mp-cat" onchange="App.mpFilter('cat',this.value)" aria-label="${t("f_category")}">${opt("all",mp.cat,t("f_all"))}${CATEGORIES.filter(c=>!c.soon).map(c=>opt(c.id,mp.cat,catName(c.id))).join("")}</select>
+      <select onchange="App.mpFilter('platform',this.value)" aria-label="${t("f_platform")}">${opt("all",mp.platform,t("f_all"))}${PLATFORMS_VERIFIED.map(p=>opt(p.id,mp.platform,p.name)).join("")}</select>
+      <select onchange="App.mpFilter('conn',this.value)" aria-label="${t("f_connection")}">${opt("all",mp.conn,t("f_all"))}${opt("stdio",mp.conn,t("f_stdio"))}</select>
+      <select onchange="App.mpFilter('status',this.value)" aria-label="${t("f_status")}">${opt("all",mp.status,t("f_all"))}${opt("available",mp.status,t("f_available"))}</select>
+      <select onchange="App.mpFilter('sort',this.value)" aria-label="${t("sort")}">${opt("popular",mp.sort,t("sort_popular"))}${opt("newest",mp.sort,t("sort_newest"))}${opt("alpha",mp.sort,t("sort_alpha"))}</select>
+    </div>
+    <div id="mp-results">${mpResultsHTML()}</div>
+  </div></section>`;
+}
+function toolHTML(id){
+  const s = SERVERS.find(x=>x.id===id);
+  if(!s) return notFoundHTML();
+  pushRecent("server", id);
+  const cmd = `claude mcp add --transport stdio --scope user ${s.id.replace("-mcp","")} -- uvx ${s.pypi}`;
+  const cfg = `{\n  "mcpServers": {\n    "${s.id.replace("-mcp","")}": {\n      "command": "uvx",\n      "args": ["${s.pypi}"]\n    }\n  }\n}`;
+  return `<section class="section"><div class="wrap">
+    <p><a href="${hashFor("marketplace")}">← ${t("back")}</a></p>
+    <div class="detail-head">
+      <span class="tile" style="background:${s.color}">${s.letter}</span>
+      <div style="flex:1;min-width:240px">
+        <h1>${esc(s.title)}</h1>
+        <p class="latin">${esc(s.id)} · v0.1.0</p>
+        <p>${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span> `:""}<span class="badge badge-ok">✓ ${t("status_available")}</span> <span class="chip">${esc(catName(s.cat))}</span></p>
+      </div>
+      ${starBtn("server", s.id)}
+    </div>
+    <p style="color:var(--muted);max-width:760px">${esc(serverDesc(s))}</p>
+    <div class="grid grid-2" style="margin-top:26px">
+      <div>
+        <h2 style="font-size:20px">${t("tool_tools")} (${fmtNum(s.tools.length)})</h2>
+        <div class="card" style="padding:8px 18px"><div class="table-scroll"><table class="tools-table"><thead><tr><th>Tool</th><th>${t("details")}</th></tr></thead><tbody>
+        ${s.tools.map(x=>`<tr><td><code>${esc(x.n)}</code></td><td>${esc(toolSum(x))}</td></tr>`).join("")}
+        </tbody></table></div></div>
+        <h2 style="font-size:20px;margin-top:26px">${t("tool_platforms")}</h2>
+        <p>${PLATFORMS_VERIFIED.map(p=>`<span class="chip" style="margin:0 6px 6px 0">✓ ${esc(p.name)}</span>`).join("")}</p>
+        <p style="color:var(--muted);font-size:13.5px">${t("plat_unverified_note")}</p>
+      </div>
+      <div>
+        <h2 style="font-size:20px">${t("tool_install")}</h2>
+        <div class="install-box"><h3>Claude Code</h3><div class="copy-row"><pre><code>${esc(cmd)}</code></pre><button class="copy-btn" onclick="App.copy('${esc(cmd)}')">${t("tool_copy")}</button></div></div>
+        <div class="install-box"><h3>Cursor / Claude Desktop</h3><div class="copy-row"><pre><code>${esc(cfg)}</code></pre><button class="copy-btn" onclick="App.copy(${JSON.stringify(cfg).replace(/"/g,"&quot;")})">${t("tool_copy")}</button></div></div>
+        <div class="install-box"><h3>${t("tool_conn")}</h3><p style="color:var(--muted);font-size:14px;margin:0">${t("tool_conn_d")}</p></div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-primary btn-sm" href="${s.repo}" target="_blank" rel="noopener">${t("tool_repo")} ↗</a>
+          <a class="btn btn-ghost btn-sm" href="https://pypi.org/project/${s.pypi}/" target="_blank" rel="noopener">${t("tool_pypi")} ↗</a>
+        </div>
+        <p style="color:var(--muted);font-size:13px;margin-top:14px">${t("tool_last")}: ${fmtDate("2026-11-09")}</p>
+      </div>
+    </div>
+  </div></section>`;
+}
+function categoriesHTML(){
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("▦", t("cats_page_title"), t("cats_page_sub"))}
+    <div class="grid grid-4">${CATEGORIES.map(catCard).join("")}</div>
+  </div></section>`;
+}
+function skillsHTML(){
+  const q = (skillsHTML._q||"").trim().toLowerCase();
+  const cat = skillsHTML._cat||"all";
+  let list = SKILLS.filter(k => (!q || (k.id+" "+skillTag(k)+" "+skillGap(k)).toLowerCase().includes(q)) && (cat==="all"||k.cat===cat));
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("✦", t("skills_page_title"), t("skills_page_sub"))}
+    <div class="toolbar">
+      <div class="search-box"><span class="mag">🔍</span><input type="search" placeholder="${esc(t("skills_search_ph"))}" value="${esc(skillsHTML._q||"")}" oninput="App.skillSearch(this.value)"></div>
+      <select onchange="App.skillFilter(this.value)" aria-label="${t("f_category")}">
+        <option value="all">${t("f_all")}</option>
+        ${SKILL_CATS.map(c=>`<option value="${c}" ${c===cat?"selected":""}>${esc(c)}</option>`).join("")}
+      </select>
+    </div>
+    <div id="skills-results">${list.length?`<div class="grid grid-3">${list.map(skillCard).join("")}</div>`:emptyHTML()}</div>
+  </div></section>`;
+}
+function skillHTML(id){
+  const k = SKILLS.find(x=>x.id===id);
+  if(!k) return notFoundHTML();
+  pushRecent("skill", id);
+  return `<section class="section"><div class="wrap">
+    <p><a href="${hashFor("skills")}">← ${t("back")}</a></p>
+    <div class="detail-head">
+      <span class="tile" style="background:linear-gradient(135deg,#6657E8,#19C6B3)">✦</span>
+      <div style="flex:1;min-width:240px"><h1>${esc(k.id)}</h1><p class="latin">github.com/mohammad-abbasi-sh/${esc(k.id)}</p></div>
+      ${starBtn("skill", k.id)}
+    </div>
+    <p style="color:var(--muted);max-width:760px">${esc(skillTag(k))}</p>
+    <div class="grid grid-2" style="margin-top:26px">
+      <div class="card"><h3 style="margin-bottom:10px">${t("skill_gap")}</h3><p style="color:var(--muted)">${esc(skillGap(k))}</p>
+        <p class="meta-row"><span class="ic">✓</span> ${t("skill_compat")}: Claude Code · Claude.ai · Cursor</p>
+        ${k.tests!=="—"?`<p class="meta-row"><span class="ic">✓</span> ${fmtNum(parseInt(k.tests,10))} ${t("skill_tests")}</p>`:""}
+      </div>
+      <div class="card"><h3 style="margin-bottom:10px">${t("skill_repo")}</h3>
+        <p style="color:var(--muted)">SKILL.md · ${t("tool_install")} · Cursor .mdc · Claude.ai zip</p>
+        <a class="btn btn-primary btn-sm" href="${k.repo}" target="_blank" rel="noopener">${k.repo.replace("https://github.com/","")} ↗</a>
+      </div>
+    </div>
+  </div></section>`;
+}
+
+function tutorialsHTML(){
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("▤", t("tut_page_title"), t("tut_page_sub"))}
+    <div class="grid grid-3">${TUTORIALS.map(tutCard).join("")}</div>
+  </div></section>`;
+}
+function tutorialHTML(id){
+  const x = TUTORIALS.find(v=>v.id===id);
+  if(!x) return notFoundHTML();
+  pushRecent("tutorial", id);
+  return `<section class="section"><div class="wrap">
+    <p><a href="${hashFor("tutorials")}">← ${t("back")}</a></p>
+    <div class="article-body">
+      <span class="eyebrow"><span class="dot"></span>${x.level==="beginner"?t("tut_beginner"):t("tut_intermediate")} · ${fmtNum(x.mins)} ${t("read_time")}</span>
+      <h1>${esc(L(x.title))}</h1>
+      <p style="color:var(--muted);font-size:17px">${esc(L(x.ex))}</p>
+      <h2>${t("tut_steps")}</h2>
+      <ol>${L(x.steps).map(s=>`<li>${esc(s)}</li>`).join("")}</ol>
+      <p style="margin-top:26px"><a class="btn btn-primary btn-sm" href="${hashFor("marketplace")}">${t("hero_cta1")}</a></p>
+    </div>
+  </div></section>`;
+}
+function blogHTML(){
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("✎", t("blog_page_title"), t("blog_page_sub"))}
+    <div class="grid grid-3">${ARTICLES.map(artCard).join("")}</div>
+  </div></section>`;
+}
+function articleHTML(id){
+  const a = ARTICLES.find(v=>v.id===id);
+  if(!a) return notFoundHTML();
+  pushRecent("article", id);
+  return `<section class="section"><div class="wrap">
+    <p><a href="${hashFor("blog")}">← ${t("back")}</a></p>
+    <div class="article-body">
+      <div class="cover ${a.cover}" style="margin:0 0 22px;border-radius:18px">${a.icon}</div>
+      <h1>${esc(L(a.title))}</h1>
+      <div class="post-meta"><span>📅 ${fmtDate(a.date)}</span><span>◷ ${fmtNum(a.mins)} ${t("read_time")}</span><span>✎ Mohammad Abbasi</span></div>
+      ${L(a.body).map(p=>`<p>${esc(p)}</p>`).join("")}
+      <p style="margin-top:26px"><a class="btn btn-primary btn-sm" href="${hashFor("marketplace")}">${t("hero_cta1")}</a></p>
+    </div>
+  </div></section>`;
+}
+function aboutHTML(){
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("◉", t("about_title"), t("about_sub"))}
+    <div class="grid grid-3">
+      <article class="card"><h3>${t("about_mission_t")}</h3><p class="desc">${t("about_mission_d")}</p></article>
+      <article class="card"><h3>${t("about_builder_t")}</h3><p class="desc">${t("about_builder_d")}</p></article>
+      <article class="card"><h3>${t("about_catalog_t")}</h3><p class="desc">${t("about_catalog_d")}</p></article>
+    </div>
+    <div class="stat-grid" style="margin-top:26px">
+      <div class="stat"><b>${fmtNum(SERVERS.length)}</b><span>${t("stat_servers")}</span></div>
+      <div class="stat"><b>${fmtNum(TOTAL_TOOLS)}</b><span>${t("stat_tools")}</span></div>
+      <div class="stat"><b>${fmtNum(SKILLS.length)}</b><span>${t("stat_skills")}</span></div>
+    </div>
+  </div></section>`;
+}
+function contactHTML(){
+  return `<section class="section"><div class="wrap">
+    <div class="form-card" style="max-width:620px">
+      <h1>${t("contact_title")}</h1>
+      <p class="sub">${t("contact_sub")}</p>
+      <p style="display:grid;gap:12px;margin-top:24px">
+        <a class="btn btn-primary btn-block" href="https://github.com/mohammad-abbasi-sh/germany-mcp/issues/new" target="_blank" rel="noopener">${t("contact_gh_issue")}</a>
+        <a class="btn btn-ghost btn-block" href="https://github.com/mohammad-abbasi-sh" target="_blank" rel="noopener">${t("contact_gh_profile")}</a>
+        <a class="btn btn-ghost btn-block" href="https://www.linkedin.com/in/mohammad-abbasi-sh/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+  </div></section>`;
+}
+function favItemsHTML(){
+  const f = favs();
+  if(!f.length) return `<div class="empty"><div class="big">☆</div><h3>${t("fav_empty")}</h3><p>${t("fav_empty_hint")}</p><a class="btn btn-primary btn-sm" href="${hashFor("marketplace")}">${t("dash_go")}</a></div>`;
+  const cards = f.map(x=>{
+    if(x.type==="server"){ const s=SERVERS.find(v=>v.id===x.id); return s?serverCard(s):""; }
+    const k=SKILLS.find(v=>v.id===x.id); return k?skillCard(k):"";
+  }).join("");
+  return `<div class="grid grid-3">${cards}</div>`;
+}
+function favoritesHTML(){
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("★", t("fav_title"), t("fav_sub"))}
+    ${favItemsHTML()}
+  </div></section>`;
+}
+function notFoundHTML(){
+  return `<section class="section"><div class="wrap" style="text-align:center;padding:60px 0">
+    <div style="font-size:72px">🧭</div>
+    <h1>${t("nf_title")}</h1><p style="color:var(--muted)">${t("nf_sub")}</p>
+    <a class="btn btn-primary" href="${hashFor("home")}">${t("nf_home")}</a>
+  </div></section>`;
+}
+
+/* ---------------- demo typing ---------------- */
+let demoIdx = 0, demoTimer = null, typeToken = 0;
+function typeText(el, text, speed, token){
+  return new Promise(res=>{
+    let i=0;
+    (function tick(){
+      if(token!==typeToken || !document.body.contains(el)) return res();
+      el.textContent = text.slice(0, ++i);
+      if(i<text.length) setTimeout(tick, speed); else res();
+    })();
+  });
+}
+function hlCode(code){
+  const m = code.match(/^([a-z0-9_]+)(\(.*\))$/);
+  if(!m) return esc(code);
+  let args = esc(m[2]).replace(/(&quot;|")([^"]*)(&quot;|")/g, '<span class="str">"$2"</span>');
+  return '<span class="fn">'+esc(m[1])+'</span><span class="arg">'+args+'</span>';
+}
+async function showDemo(){
+  const token = ++typeToken;
+  const body = document.getElementById("demo-body");
+  const tabs = document.getElementById("demo-tabs");
+  if(!body || !tabs) return;
+  const d = DEMOS[demoIdx];
+  tabs.innerHTML = DEMOS.map((x,i)=>`<button data-i="${i}" class="${i===demoIdx?"active":""}" onclick="App.demoTab(${i})">${esc(x.tab[state.lang])}</button>`).join("");
+  body.innerHTML = `<p class="q"><span class="typed"></span><span class="cursor"></span></p><pre style="visibility:hidden"><code></code></pre><p class="status"></p><p class="a"></p><p class="ask"></p>`;
+  await typeText(body.querySelector(".typed"), d.q[state.lang], 26, token);
+  if(token!==typeToken || !document.body.contains(body)) return;
+  const pre = body.querySelector("pre");
+  pre.style.visibility = "visible";
+  pre.querySelector("code").innerHTML = hlCode(d.code);
+  body.querySelector(".status").textContent = d.status[state.lang];
+  body.querySelector(".a").textContent = d.a[state.lang];
+  body.querySelector(".ask").innerHTML = `<a href="${hashFor("marketplace")}">${esc(t("demo_ask"))}</a> · ${esc(t("demo_nosignup"))}`;
+}
+function startDemo(){
+  clearInterval(demoTimer);
+  demoTimer = setInterval(()=>{ demoIdx = (demoIdx+1)%DEMOS.length; showDemo(); }, 11000);
+  showDemo();
+}
+function stopDemo(){ clearInterval(demoTimer); typeToken++; }
+
+/* ---------------- render ---------------- */
+/* ---------------- Ask — find the right server ---------------- */
+const ASK_STATE = {q:""};
+const ASK_CHIPS = {
+ fa:["جدول بوندسلیگا","نتایج زنده بوندسلیگا","گلزنان برتر بوندسلیگا","برنامه‌های تلویزیونی امشب","جدیدترین برنامه‌های ZDF"],
+ de:["Bundesliga-Tabelle","Bundesliga Live-Ergebnisse","Bundesliga Torschützen","TV-Programm heute Abend","Neueste ZDF-Sendungen"],
+ en:["Bundesliga table","Bundesliga live scores","Bundesliga top scorers","Tonight's TV programmes","Latest ZDF programmes"]
+};
+const ASK_INTENTS = [
+ {cats:["sports"], kw:{fa:["فوتبال","بوندسلیگا","لیگ","جدول","گلزن","نتیجه بازی"],de:["fußball","bundesliga","liga","tabelle","torschütze","ergebnis","spiel","live"],en:["football","soccer","bundesliga","league","table","scorer","score","match","live"]}},
+ {cats:["media"], kw:{fa:["تلویزیون","برنامه","سریال","فیلم","پخش","مدیاتک"],de:["fernsehen","sendung","serie","film","programm","mediathek","ard","zdf"],en:["tv","television","programme","show","series","broadcast","mediathek"]}},
+ {cats:["weather"], kw:{fa:["هوا","آب و هوا","باران","دما"],de:["wetter","regen","temperatur","vorhersage"],en:["weather","rain","temperature","forecast"]}},
+ {cats:["transport"], kw:{fa:["قطار","بلیت","سفر","اتوبوس"],de:["bahn","zug","ticket","bus","reise","flixtrain"],en:["train","ticket","bus","travel"]}},
+ {cats:["shopping"], kw:{fa:["خرید","گوشی","موبایل","تخفیف","فروشگاه"],de:["shop","handy","kaufen","preis","rabatt","einkaufen"],en:["shop","phone","buy","discount","store"]}},
+ {cats:["finance"], kw:{fa:["دلار","یورو","طلا","ارز","نرخ"],de:["dollar","euro","gold","währung","kurs","ezb"],en:["dollar","euro","gold","currency","exchange","rate"]}},
+ {cats:["news"], kw:{fa:["خبر","اخبار","روزنامه"],de:["nachrichten","news","schlagzeile","tagesschau"],en:["news","headline"]}},
+ {cats:["jobs"], kw:{fa:["شغل","استخدام","کار"],de:["job","karriere","stellenangebot","arbeit"],en:["job","career","hiring","employment"]}},
+ {cats:["travel"], kw:{fa:["هتل","سفر","بلیت هواپیما"],de:["hotel","reise","flug"],en:["hotel","travel","flight"]}},
+ {cats:["dictionary"], kw:{fa:["دیکشنری","لغت","معنی","ترجمه"],de:["wörterbuch","wort","bedeutung","übersetzung"],en:["dictionary","word","meaning","translate"]}},
+ {cats:["education"], kw:{fa:["دانشگاه","تحصیل","رشته"],de:["universität","studium","hochschule"],en:["university","study","degree"]}},
+ {cats:["health"], kw:{fa:["دارو","داروخانه","دکتر","پزشک"],de:["apotheke","medizin","arzt","medikament"],en:["pharmacy","medicine","doctor"]}}
+];
+function askNorm(s){
+  return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/ي/g,"ی").replace(/ك/g,"ک").replace(/ة/g,"ه")
+    .replace(/[۰-۹]/g,d=>"۰۱۲۳۴۵۶۷۸۹".indexOf(d))
+    .replace(/[^a-z0-9\u0600-\u06FF ]/g," ").replace(/\s+/g," ").trim();
+}
+function askTokens(q){ return askNorm(q).split(" ").filter(w=>w.length>1); }
+function askHay(s){
+  return askNorm([s.id, s.title, s.title_de||"", s.desc, s.desc_fa, s.desc_de||"", s.cat,
+    s.tools.map(x=>x.n+" "+x.s+" "+(x.sf||"")+" "+(x.st||"")).join(" ")].join(" "));
+}
+function askScore(q){
+  const toks = askTokens(q);
+  if(!toks.length) return [];
+  const intents = ASK_INTENTS.map(it=>{
+    const kws = Object.keys(it.kw).reduce((a,k)=>a.concat(it.kw[k].map(askNorm)),[]);
+    const hit = [];
+    toks.forEach(w=>{
+      kws.forEach(k=>{
+        k.split(" ").forEach(kw=>{
+          if(kw && (kw===w || (kw.length>=3 && w.indexOf(kw)>=0) || (w.length>3 && kw.indexOf(w)>=0)) && hit.indexOf(kw)<0) hit.push(kw);
+        });
+      });
+    });
+    return {cats:it.cats, hit};
+  }).filter(x=>x.hit.length);
+  return SERVERS.map(s=>{
+    const hay = askHay(s);
+    let score = 0; const matched = [];
+    toks.forEach(w=>{ if(hay.indexOf(w)>=0){ score += 2; if(matched.indexOf(w)<0) matched.push(w); } });
+    intents.forEach(it=>{
+      if(it.cats.indexOf(s.cat)>=0){ score += 3*it.hit.length; it.hit.forEach(kw=>{ if(matched.indexOf(kw)<0) matched.push(kw); }); }
+    });
+    return {s, score, matched};
+  }).filter(r=>r.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+}
+function askCard(r){
+  const s = r.s;
+  const cmd = "uvx " + s.pypi;
+  const tools = s.tools.slice(0,3).map(x=>`<code>${esc(x.n)}</code>`).join(" · ");
+  return `<article class="card" style="margin-bottom:16px">
+    <div class="card-top">
+      <span class="tile" style="background:${s.color}">${s.letter}</span>
+      <div style="flex:1;min-width:0"><h3>${esc(s.title.split(" — ")[0])}</h3><p class="latin">${esc(s.id)}</p></div>
+      ${starBtn("server", s.id)}
+    </div>
+    <p class="desc">${esc(serverDesc(s))}</p>
+    <p class="meta-row"><span class="ic">🎯</span> ${t("ask_why")}: ${r.matched.map(m=>`<span class="chip">${esc(m)}</span>`).join(" ")}</p>
+    <p class="meta-row"><span class="ic">▦</span> ${esc(catName(s.cat))} · ${fmtNum(s.tools.length)} ${t("tools_count")}</p>
+    <p style="font-size:13.5px;color:var(--muted)">${tools}${s.tools.length>3?` · +${fmtNum(s.tools.length-3)}`:""}</p>
+    <div class="install-box" style="margin-top:14px"><h3>${t("ask_install")}</h3><div class="copy-row"><pre><code>${esc(cmd)}</code></pre><button class="copy-btn" onclick="App.copy('${esc(cmd)}')">${t("tool_copy")}</button></div></div>
+    <div class="card-bottom">
+      <a class="btn btn-primary btn-sm" href="${hashFor("tool", s.id)}">${t("details")}</a>
+      <a class="btn btn-ghost btn-sm" href="${s.repo}" target="_blank" rel="noopener">${t("tool_repo")} ↗</a>
+      <a class="btn btn-ghost btn-sm" href="https://pypi.org/project/${s.pypi}/" target="_blank" rel="noopener">${t("tool_pypi")} ↗</a>
+    </div>
+  </article>`;
+}
+function askNoMatchHTML(){
+  const liveCats = CATEGORIES.filter(c=>!c.soon);
+  const hint = t("ask_no_match_hint").replace("{n}", fmtNum(SERVERS.length));
+  return `<div class="empty"><div class="big">🧭</div><h3>${t("ask_no_match")}</h3><p>${hint}</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px">${liveCats.map(c=>`<a class="chip" href="${hashFor("categories")}">${esc(c.icon)} ${esc(catName(c.id))}</a>`).join("")}</div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px">
+    <a class="btn btn-primary btn-sm" href="${hashFor("marketplace")}">${t("ask_browse")}</a>
+  </div></div>`;
+}
+function askResultsHTML(q, res){
+  if(!q || !askTokens(q).length) return `<p style="color:var(--muted)">${t("ask_start")}</p>`;
+  if(!res.length) return askNoMatchHTML();
+  return `<h2 style="font-size:20px">${t("ask_top")}</h2><div style="margin-top:14px">${res.map(askCard).join("")}</div>`;
+}
+function askHTML(){
+  const q = ASK_STATE.q;
+  const chips = ASK_CHIPS[state.lang]||ASK_CHIPS.en;
+  const res = q ? askScore(q) : [];
+  return `<section class="section"><div class="wrap">
+    <p><a href="${hashFor("home")}">← ${t("back")}</a></p>
+    <h1>${t("ask_title")}</h1>
+    <p style="color:var(--muted);max-width:760px">${t("ask_sub")}</p>
+    <div class="note">${t("ask_hint")}</div>
+    <form onsubmit="return App.askSubmit(event)" style="margin-top:22px">
+      <div class="toolbar"><div class="search-box"><span class="mag">🔍</span><input id="ask-q" type="search" placeholder="${esc(t("ask_ph"))}" value="${esc(q)}" oninput="App.askSearch(this.value)" aria-label="${esc(t("ask_ph"))}"></div>
+      <button class="btn btn-primary" type="submit">${t("ask_btn")}</button></div>
+    </form>
+    <p style="margin-top:4px"><strong>${t("ask_examples")}</strong></p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">${chips.map(c=>`<button type="button" class="chip" style="cursor:pointer" onclick="App.askChip(this.textContent)">${esc(c)}</button>`).join("")} <a class="chip" style="cursor:pointer" href="${hashFor("marketplace")}">${t("ask_browse_chip")} →</a></div>
+    <div id="ask-results" style="margin-top:26px">${askResultsHTML(q,res)}</div>
+    <div class="note">${t("ask_cross")} <a href="https://mohammad-abbasi-sh.github.io/turkey-mcp/#/ask/" target="_blank" rel="noopener">${t("ask_x_turkey")}</a></div>
+  </div></section>`;
+}
+
+function pageHTML(){
+  switch(state.page){
+    case "home": return homeHTML();
+    case "marketplace": return marketplaceHTML();
+    case "tool": return toolHTML(state.param);
+    case "categories": return categoriesHTML();
+    case "skills": return skillsHTML();
+    case "skill": return skillHTML(state.param);
+    case "tutorials": return tutorialsHTML();
+    case "tutorial": return tutorialHTML(state.param);
+    case "blog": return blogHTML();
+    case "article": return articleHTML(state.param);
+    case "about": return aboutHTML();
+    case "contact": return contactHTML();
+    case "favorites": return favoritesHTML();
+    case "ask": return askHTML();
+    default: return notFoundHTML();
+  }
+}
+function pageTitle(){
+  const base = "Germany MCP";
+  const map = {home:t("hero_title"),marketplace:t("mp_title"),categories:t("cats_page_title"),skills:t("skills_page_title"),tutorials:t("tut_page_title"),blog:t("blog_page_title"),about:t("about_title"),contact:t("contact_title"),favorites:t("fav_title"),ask:t("ask_title"),"404":t("nf_title")};
+  if(state.page==="tool"){ const s=SERVERS.find(x=>x.id===state.param); return s? s.title+" — "+base : base; }
+  if(state.page==="skill"){ const k=SKILLS.find(x=>x.id===state.param); return k? k.id+" — "+base : base; }
+  if(state.page==="tutorial"){ const x=TUTORIALS.find(v=>v.id===state.param); return x? L(x.title)+" — "+base : base; }
+  if(state.page==="article"){ const a=ARTICLES.find(v=>v.id===state.param); return a? L(a.title)+" — "+base : base; }
+  return (map[state.page]||t("hero_title"))+" — "+base;
+}
+function render(){
+  parseHash();
+  stopDemo();
+  document.documentElement.lang = state.lang;
+  document.documentElement.dir = LANGS[state.lang].dir;
+  document.documentElement.setAttribute("data-theme", state.theme);
+  document.title = pageTitle();
+  const md = document.querySelector('meta[name="description"]');
+  if(md) md.setAttribute("content", t("hero_sub"));
+  const app = document.getElementById("app");
+  app.innerHTML = headerHTML() + '<main id="main">' + pageHTML() + '</main>' + footerHTML();
+  const skip = document.querySelector(".skip"); if(skip) skip.textContent = t("a11y_skip");
+  if(state.anchor){ const el=document.getElementById(state.anchor); if(el) el.scrollIntoView(); state.anchor=null; }
+  if(state.page==="home") startDemo();
+}
+
+/* ---------------- App actions ---------------- */
+window.App = {
+  setLang(l){ if(!LANGS[l]) return; state.lang=l; store.set("tmp_lang", l);
+    const h=(location.hash||"").replace(/^#\/?/,""); const parts=h.split("/").filter(Boolean);
+    if(["fa","de","en"].includes(parts[0])) parts[0]=l; else parts.unshift(l);
+    location.hash = "#/"+parts.join("/"); render(); },
+  toggleTheme(){ state.theme = state.theme==="dark"?"light":"dark"; store.set("tmp_theme", state.theme); document.documentElement.setAttribute("data-theme", state.theme); const b=document.querySelector('button[onclick="App.toggleTheme()"]'); if(b){ const l=t(state.theme==="dark"?"theme_light":"theme_dark"); b.textContent=state.theme==="dark"?"☀️":"🌙"; b.setAttribute("aria-label",l); b.setAttribute("title",l); } },
+  toggleMenu(){ const m=document.getElementById("mobile-menu"); if(m) m.classList.toggle("open"); },
+  toggleFav(type,id,ev){ if(ev) ev.stopPropagation();
+    let f = favs(); const i = f.findIndex(x=>x.type===type&&x.id===id);
+    if(i>=0){ f.splice(i,1); toast(t("fav_removed")); } else { f.push({type,id}); toast(t("fav_added")); }
+    store.set("tmp_favs_v1", f); render(); },
+  copy(txt){ copyText(txt); },
+  demoTab(i){ demoIdx=i; showDemo(); },
+  heroSearch(ev){ ev.preventDefault(); const q=document.getElementById("hero-q"); mp.q=q?q.value:""; mp.cat="all"; go("marketplace"); render(); return false; },
+  askSearch(v){ ASK_STATE.q=v; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(v,askScore(v)); },
+  askChip(txt){ ASK_STATE.q=txt.trim(); const inp=document.getElementById("ask-q"); if(inp) inp.value=ASK_STATE.q; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(ASK_STATE.q,askScore(ASK_STATE.q)); },
+  askSubmit(ev){ ev.preventDefault(); const inp=document.getElementById("ask-q"); ASK_STATE.q=inp?inp.value:""; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(ASK_STATE.q,askScore(ASK_STATE.q)); return false; },
+  openCategory(id){ mp.cat=id; mp.q=""; go("marketplace"); render(); },
+  mpSearch(v){ mp.q=v; const el=document.getElementById("mp-results"); if(el) el.innerHTML=mpResultsHTML(); },
+  mpFilter(k,v){ mp[k]=v; const el=document.getElementById("mp-results"); if(el) el.innerHTML=mpResultsHTML(); },
+  skillSearch(v){ skillsHTML._q=v; const el=document.getElementById("skills-results"); if(!el) return;
+    const q=v.trim().toLowerCase(); const cat=skillsHTML._cat||"all";
+    const list=SKILLS.filter(k=>(!q||(k.id+" "+skillTag(k)+" "+skillGap(k)).toLowerCase().includes(q))&&(cat==="all"||k.cat===cat));
+    el.innerHTML = list.length?`<div class="grid grid-3">${list.map(skillCard).join("")}</div>`:emptyHTML(); },
+  skillFilter(v){ skillsHTML._cat=v; App.skillSearch(skillsHTML._q||""); },
+};
+
+/* ---------------- init ---------------- */
+window.addEventListener("hashchange", ()=>{ render(); const h=location.hash||""; if(h.startsWith("#/") || !h) window.scrollTo({top:0}); });
+if(!location.hash) location.hash = "#/"+state.lang+"/";
+render();
+</script>
+</body>
+</html>

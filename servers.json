@@ -317,6 +317,40 @@
      "summary": "Deutschlandfunk live stream link"
     }
    ]
+  },
+  {
+   "description": "Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation.",
+   "name": "duden-mcp",
+   "pypi": "duden-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/duden-mcp",
+   "title": "Duden — Germany's standard dictionary: word meanings, synonyms, spelling & grammar",
+   "title_de": "Duden — Das Standardwörterbuch der deutschen Sprache: Bedeutungen, Synonyme, Rechtschreibung & Grammatik",
+   "tools": [
+    {
+     "name": "duden_lookup_word",
+     "summary": "Look up a German word: meanings, word type & grammar"
+    },
+    {
+     "name": "duden_synonyms",
+     "summary": "Synonyms of a German word"
+    },
+    {
+     "name": "duden_spelling",
+     "summary": "Spelling & hyphenation of a German word"
+    },
+    {
+     "name": "duden_grammar",
+     "summary": "Grammar notes for a German word"
+    },
+    {
+     "name": "duden_conjugate",
+     "summary": "Full conjugation table of a German verb"
+    },
+    {
+     "name": "duden_search",
+     "summary": "Search Duden headwords"
+    }
+   ]
   }
  ]
 }

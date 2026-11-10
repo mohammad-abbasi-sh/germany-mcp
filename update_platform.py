@@ -47,6 +47,8 @@ SERVER_META = {
                "featured": False, "added": 8},
     "govdata-mcp": {"cat": "open-data", "color": "#065F46", "letter": "🗃️",
                    "featured": False, "added": 9},
+    "deutschlandfunk-mcp": {"cat": "news", "color": "#1E3A8A", "letter": "📻",
+                          "featured": False, "added": 10},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -93,6 +95,17 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"deutschlandfunk-mcp": {
+ "desc_fa": "اخبار و رادیوی دویچلندفونک از فیدهای RSS رسمی (بدون کلید): اخبار جاری، تازه‌ترین مطالب، فیدهای موضوعی، جست‌وجوی کلیدواژه، متن کامل مقاله و لینک پخش زنده.",
+ "desc_de": "Deutschlandfunk-Nachrichten & Radio über die offiziellen RSS-Feeds (kein Schlüssel): laufende Nachrichten, neueste Beiträge, Ressort-Feeds, Stichwortsuche, Volltexte und Livestream-Link.",
+ "tools": {
+  "dlf_latest_news": ("تیترهای خبری جاری DLF", "Laufende DLF-Nachrichten"),
+  "dlf_latest_contributions": ("تازه‌ترین مطالب DLF", "Neueste DLF-Beiträge"),
+  "dlf_news_by_topic": ("اخبار DLF بر اساس موضوع", "DLF-Nachrichten nach Ressort"),
+  "dlf_search_news": ("جست‌وجوی مطالب اخیر DLF با کلیدواژه", "Neueste DLF-Beiträge nach Stichwort suchen"),
+  "dlf_get_article": ("متن کامل یک مقالهٔ DLF", "Volltext eines DLF-Artikels"),
+  "dlf_listen_live": ("لینک پخش زندهٔ دویچلندفونک", "Livestream-Link des Deutschlandfunks"),
  }},
 "govdata-mcp": {
  "desc_fa": "پورتال ملی داده‌های باز آلمان govdata.de از طریق API رسمی CKAN (بدون کلید): جست‌وجو در بیش از ۱۶۳٬۰۰۰ مجموعه‌داده، جزئیات مجموعه‌داده، ناشران، تازه‌ترین مجموعه‌داده‌ها و جزئیات منبع.",

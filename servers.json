@@ -351,6 +351,24 @@
      "summary": "Search Duden headwords"
     }
    ]
+  },
+  {
+   "description": "dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes.",
+   "name": "dictcc-mcp",
+   "pypi": "dictcc-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/dictcc-mcp",
+   "title": "dict.cc — German-English & 22 more pairs: translations with word class, gender & votes",
+   "title_de": "dict.cc — Deutsch-Englisch und 22 weitere Sprachenpaare: Übersetzungen mit Wortart, Genus & Stimmen",
+   "tools": [
+    {
+     "name": "dictcc_translate",
+     "summary": "Translate a word with dict.cc (23 pairs)"
+    },
+    {
+     "name": "dictcc_search",
+     "summary": "Find dict.cc headwords matching a query"
+    }
+   ]
   }
  ]
 }

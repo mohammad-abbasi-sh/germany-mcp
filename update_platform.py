@@ -53,6 +53,8 @@ SERVER_META = {
                "featured": False, "added": 11},
     "dictcc-mcp": {"cat": "language", "color": "#0E7490", "letter": "🌐",
                 "featured": False, "added": 12},
+    "bundeswahlleiter-mcp": {"cat": "open-data", "color": "#92400E", "letter": "🗳️",
+                          "featured": False, "added": 13},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -99,6 +101,16 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"bundeswahlleiter-mcp": {
+ "desc_fa": "نتایج رسمی انتخابات بوندستاگ از bundeswahlleiterin.de (داده‌های باز رایگان، بدون کلید): نتایج کشوری، نتایج احزاب، حوزه‌های انتخابیه و میزان مشارکت برای ۲۰۱۷، ۲۰۲۱ و ۲۰۲۵.",
+ "desc_de": "Amtliche Bundestagswahlergebnisse von bundeswahlleiterin.de (freie offene Daten, kein Schlüssel, kein Login): Bundesergebnisse, Parteiergebnisse, Wahlkreise und Wahlbeteiligung für 2017, 2021 und 2025.",
+ "tools": {
+  "bwl_national_results": ("نتایج کشوری یک انتخابات بوندستاگ", "Bundesergebnis einer Bundestagswahl"),
+  "bwl_party_results": ("نتایج یک حزب، کشوری و به تفکیک ایالت", "Ergebnis einer Partei, bundesweit und nach Ländern"),
+  "bwl_constituency_results": ("نتایج یک حوزهٔ انتخابیه", "Ergebnis eines Wahlkreises"),
+  "bwl_constituencies": ("فهرست حوزه‌ها با برنده و میزان مشارکت", "Wahlkreise mit Gewinner und Wahlbeteiligung auflisten"),
+  "bwl_turnout": ("میزان مشارکت به تفکیک ایالت و کشوری", "Wahlbeteiligung nach Ländern und bundesweit"),
  }},
 "dictcc-mcp": {
  "desc_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",

@@ -465,6 +465,32 @@
      "summary": "Upcoming air dates for a series"
     }
    ]
+  },
+  {
+   "description": "ZDF heute news from zdfheute.de (free, no key, no login): latest headlines, news by topic, keyword search and full article text.",
+   "name": "zdf-mcp",
+   "pypi": "zdf-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/zdf-mcp",
+   "title": "ZDF heute news — headlines, topics, search & articles",
+   "title_de": "ZDF heute — Nachrichten, Themen, Suche & Artikel",
+   "tools": [
+    {
+     "name": "zdf_headlines",
+     "summary": "Latest ZDF heute headlines"
+    },
+    {
+     "name": "zdf_news_by_topic",
+     "summary": "ZDF heute news by topic"
+    },
+    {
+     "name": "zdf_search_news",
+     "summary": "Search ZDF heute headlines by keyword"
+    },
+    {
+     "name": "zdf_get_article",
+     "summary": "Full text of a ZDF heute article"
+    }
+   ]
   }
  ]
 }

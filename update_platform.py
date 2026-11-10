@@ -45,6 +45,8 @@ SERVER_META = {
                "featured": False, "added": 7},
     "dnb-mcp": {"cat": "open-data", "color": "#7C3AED", "letter": "📚",
                "featured": False, "added": 8},
+    "govdata-mcp": {"cat": "open-data", "color": "#065F46", "letter": "🗃️",
+                   "featured": False, "added": 9},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -91,6 +93,16 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"govdata-mcp": {
+ "desc_fa": "پورتال ملی داده‌های باز آلمان govdata.de از طریق API رسمی CKAN (بدون کلید): جست‌وجو در بیش از ۱۶۳٬۰۰۰ مجموعه‌داده، جزئیات مجموعه‌داده، ناشران، تازه‌ترین مجموعه‌داده‌ها و جزئیات منبع.",
+ "desc_de": "Deutschlands nationales Open-Data-Portal govdata.de über die offizielle CKAN-API (kein Schlüssel): über 163.000 Datensätze durchsuchen, Datensatzdetails, Herausgeber, neueste Datensätze und Ressourcendetails.",
+ "tools": {
+  "govdata_search_datasets": ("جست‌وجوی مجموعه‌داده‌ها در govdata.de", "Datensätze auf govdata.de suchen"),
+  "govdata_get_dataset": ("جزئیات کامل یک مجموعه‌داده", "Vollständige Details eines Datensatzes"),
+  "govdata_list_publishers": ("ناشران، به ترتیب بیشترین مجموعه‌داده", "Herausgeber, nach Datensatzzahl sortiert"),
+  "govdata_recent_datasets": ("تازه‌ترین مجموعه‌داده‌های به‌روز شده", "Zuletzt aktualisierte Datensätze"),
+  "govdata_get_resource": ("جزئیات یک منبع مجموعه‌داده", "Details einer Datensatz-Ressource"),
  }},
 "dnb-mcp": {
  "desc_fa": "کاتالوگ کتابخانه ملی آلمان از طریق API رسمی SRU (بدون کلید): جست‌وجوی کلیدواژه، عنوان و نویسنده، جست‌وجو با ISBN و شناسهٔ DNB.",

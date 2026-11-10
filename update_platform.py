@@ -39,6 +39,8 @@ SERVER_META = {
                  "featured": False, "added": 4},
     "autobahn-mcp": {"cat": "transport", "color": "#0369A1", "letter": "🛣️",
                      "featured": False, "added": 5},
+    "dw-mcp": {"cat": "news", "color": "#0E7490", "letter": "📰",
+               "featured": False, "added": 6},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -85,6 +87,16 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"dw-mcp": {
+ "desc_fa": "اخبار دویچه‌وله به ۳۱ زبان از سایت‌مپ‌های رسمی DW (بدون کلید): تازه‌ترین تیترها، جست‌وجوی کلیدواژه، تازه‌ترین مقاله‌ها، متن کامل مقاله و صفحه‌های موضوعی.",
+ "desc_de": "Deutsche-Welle-Nachrichten in 31 Sprachen über die offiziellen DW-Sitemaps (kein Schlüssel): neueste Schlagzeilen, Stichwortsuche, neueste Artikel, Volltexte und Themenseiten.",
+ "tools": {
+  "dw_headlines": ("تازه‌ترین تیترهای DW به یک زبان", "Neueste DW-Schlagzeilen in einer Sprache"),
+  "dw_search_news": ("جست‌وجوی تیترهای اخیر DW با کلیدواژه", "Neueste DW-Schlagzeilen nach Stichwort suchen"),
+  "dw_latest_articles": ("تازه‌ترین مقاله‌های DW به یک زبان", "Neueste DW-Artikel in einer Sprache"),
+  "dw_get_article": ("متن کامل یک مقالهٔ DW", "Volltext eines DW-Artikels"),
+  "dw_topics": ("صفحه‌های موضوعی DW برای یک واژه", "DW-Themenseiten zu einem Stichwort"),
  }},
 "autobahn-mcp": {
  "desc_fa": "داده‌های اتوبان آلمان از API رسمی verkehr.autobahn.de (بدون کلید): کارهای جاده‌ای، بسته‌شدن‌ها، هشدارها، پارکینگ کامیون/خودرو و ایستگاه‌های شارژ خودروی برقی برای هر اتوبان.",

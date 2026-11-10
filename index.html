@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Germany MCP — Connect AI to the World</title>
-<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 11 servers, 60 tools, in English, Deutsch and فارسی.">
+<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 12 servers, 62 tools, in English, Deutsch and فارسی.">
 <link rel="canonical" href="https://mohammad-abbasi-sh.github.io/germany-mcp/">
 <link rel="icon" href="favicon.ico">
 <link rel="alternate" hreflang="fa" href="#/fa/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="#/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Germany MCP — Connect AI to the World">
-<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 11 servers, 60 tools. English, Deutsch, فارسی.">
+<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 12 servers, 62 tools. English, Deutsch, فارسی.">
 <meta property="og:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta name="twitter:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta property="og:locale" content="fa_IR">
@@ -21,12 +21,12 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Germany MCP — Connect AI to the World">
-<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 11 servers, 60 tools. EN / DE / FA.">
+<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 12 servers, 62 tools. EN / DE / FA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 11 servers, 60 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 12 servers, 62 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
 </script>
 <style>
 :root{
@@ -456,6 +456,17 @@ const SERVERS = [
    {n:"duden_grammar",s:"Grammar notes for a German word",sf:"نکات دستوری یک واژهٔ آلمانی",st:"Grammatiknotizen zu einem deutschen Wort"},
    {n:"duden_conjugate",s:"Full conjugation table of a German verb",sf:"جدول کامل صرف یک فعل آلمانی",st:"Vollständige Konjugationstabelle eines deutschen Verbs"},
    {n:"duden_search",s:"Search Duden headwords",sf:"جست‌وجوی سرخط‌های دودن",st:"Duden-Stichwörter suchen"}
+  ]},
+{ id:"dictcc-mcp", cat:"language", color:"#0E7490", letter:"🌐", featured:false, added:12,
+  title:"dict.cc — German-English & 22 more pairs: translations with word class, gender & votes",
+  title_de:"dict.cc — Deutsch-Englisch und 22 weitere Sprachenpaare: Übersetzungen mit Wortart, Genus & Stimmen",
+  desc:"dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes.",
+  desc_fa:"ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",
+  desc_de:"dict.cc-Übersetzungen von dict.cc (kostenlos, kein Schlüssel, kein Login): Deutsch-Englisch plus 22 weitere Sprachenpaare, mit Wortart, Genus, Gebrauchshinweisen und Community-Stimmen.",
+  repo:"https://github.com/mohammad-abbasi-sh/dictcc-mcp", pypi:"dictcc-mcp",
+  tools:[
+   {n:"dictcc_translate",s:"Translate a word with dict.cc (23 pairs)",sf:"ترجمهٔ واژه با dict.cc (۲۳ زبان)",st:"Ein Wort mit dict.cc übersetzen (23 Sprachenpaare)"},
+   {n:"dictcc_search",s:"Find dict.cc headwords matching a query",sf:"یافتن سرخط‌های dict.cc مطابق پرس‌وجو",st:"dict.cc-Stichwörter zu einer Suchanfrage finden"}
   ]}
 ];
 const TOTAL_TOOLS = SERVERS.reduce((a,s)=>a+s.tools.length,0);
@@ -699,7 +710,7 @@ fa:{
  about_title:"دربارهٔ Germany MCP", about_sub:"یک کاتالوگ مستقل و متن‌باز — مرجع کامل سرورهای MCP آلمان.",
  about_mission_t:"مأموریت ما", about_mission_d:"ساختن مرجع کامل و قابل‌اعتماد برای سرویس‌های وب آلمان: هر سرویس مهم یک سرور MCP فقط‌خواندنی، سه‌زبانه و آزمایش‌شده داشته باشد — بدون ادعای تأییدنشده و بدون دادهٔ ساختگی.",
  about_builder_t:"سازنده", about_builder_d:"محمد عباسی — مدیر سئو و محصول در بن‌باما، و سازندهٔ ابزارهای متن‌باز برای اکوسیستم Claude. این کاتالوگ را مثل پروژهٔ iran-mcp سپهر ساخت: یک مرجع کامل، نه مجموعه‌ای از نمونه‌کارها.",
- about_catalog_t:"کاتالوگ", about_catalog_d:"۱۱ سرور، ۶۰ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
+ about_catalog_t:"کاتالوگ", about_catalog_d:"۱۲ سرور، ۶۲ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
  contact_title:"تماس با ما", contact_sub:"برای سؤال، پیشنهاد یا گزارش مشکل از راه‌های زیر استفاده کن — پیام مستقیم به گیت‌هاب می‌رسد.", contact_gh_issue:"ثبت Issue در گیت‌هاب", contact_gh_profile:"پروفایل گیت‌هاب",
  dash_go:"رفتن به بازارچه",
  fav_title:"علاقه‌مندی‌ها", fav_sub:"سرورها و مهارت‌هایی که ستاره‌دار کرده‌ای — در همین مرورگر ذخیره می‌شوند.",
@@ -785,7 +796,7 @@ de:{
  about_title:"Über Germany MCP", about_sub:"Ein unabhängiger Open-Source-Katalog — die vollständige Referenz für Deutschland-MCP-Server.",
  about_mission_t:"Unsere Mission", about_mission_d:"Die vollständige, vertrauenswürdige Referenz für deutsche Webdienste zu bauen: Jeder wichtige Dienst bekommt einen Nur-Lesen-, dreisprachigen und getesteten MCP-Server — keine ungeprüften Behauptungen und keine erfundenen Daten.",
  about_builder_t:"Der Erbauer", about_builder_d:"Mohammad Abbasi — SEO- und Produktmanager bei Bonbama und Erbauer von Open-Source-Tools für das Claude-Ökosystem. Er hat diesen Katalog so aufgebaut, wie Sepehr iran-mcp aufgebaut hat: als vollständige Referenz, nicht als Schaufenster.",
- about_catalog_t:"Der Katalog", about_catalog_d:"11 Server, 60 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
+ about_catalog_t:"Der Katalog", about_catalog_d:"12 Server, 62 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
  contact_title:"Kontakt", contact_sub:"Für Fragen, Vorschläge oder Fehlermeldungen nutze die Links unten — deine Nachricht geht direkt an GitHub.",
  contact_gh_issue:"Issue auf GitHub öffnen", contact_gh_profile:"GitHub-Profil",
  dash_go:"Zum Marktplatz",
@@ -874,7 +885,7 @@ en:{
  about_title:"About Germany MCP", about_sub:"An independent, open-source catalog — the complete reference for Germany MCP servers.",
  about_mission_t:"Our mission", about_mission_d:"To build the complete, trustworthy reference for German web services: every major service gets a read-only, trilingual, tested MCP server — no unverified claims and no fabricated data.",
  about_builder_t:"The builder", about_builder_d:"Mohammad Abbasi — SEO and Product Manager at Bonbama, and builder of open-source tools for the Claude ecosystem. He built this catalog the way Sepehr built iran-mcp: a complete reference, not a showcase.",
- about_catalog_t:"The catalog", about_catalog_d:"11 servers, 60 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
+ about_catalog_t:"The catalog", about_catalog_d:"12 servers, 62 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
  contact_title:"Contact Us", contact_sub:"For questions, suggestions or bug reports, use the links below — your message goes straight to GitHub.", contact_gh_issue:"Open an issue on GitHub", contact_gh_profile:"GitHub profile",
  dash_go:"Go to marketplace",
  fav_title:"Favorites", fav_sub:"Servers and skills you starred — stored in this browser.",

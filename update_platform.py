@@ -43,6 +43,8 @@ SERVER_META = {
                "featured": False, "added": 6},
     "ntv-mcp": {"cat": "news", "color": "#B91C1C", "letter": "📺",
                "featured": False, "added": 7},
+    "dnb-mcp": {"cat": "open-data", "color": "#7C3AED", "letter": "📚",
+               "featured": False, "added": 8},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -89,6 +91,16 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"dnb-mcp": {
+ "desc_fa": "کاتالوگ کتابخانه ملی آلمان از طریق API رسمی SRU (بدون کلید): جست‌وجوی کلیدواژه، عنوان و نویسنده، جست‌وجو با ISBN و شناسهٔ DNB.",
+ "desc_de": "Katalog der Deutschen Nationalbibliothek über die offizielle SRU-API (kein Schlüssel): Stichwort-, Titel- und Autorensuche, ISBN- und DNB-ID-Abfrage.",
+ "tools": {
+  "dnb_search_books": ("جست‌وجوی کلیدواژه در کاتالوگ DNB", "Stichwortsuche im DNB-Katalog"),
+  "dnb_search_by_title": ("جست‌وجو در کاتالوگ DNB با عنوان", "Titelsuche im DNB-Katalog"),
+  "dnb_search_by_author": ("جست‌وجو در کاتالوگ DNB با نویسنده", "Autorensuche im DNB-Katalog"),
+  "dnb_by_isbn": ("یافتن یک کتاب با ISBN", "Ein Buch per ISBN nachschlagen"),
+  "dnb_get_record": ("رکورد کامل با شناسهٔ DNB", "Vollständiger Datensatz per DNB-ID"),
  }},
 "ntv-mcp": {
  "desc_fa": "اخبار n-tv از فیدهای RSS رسمی (بدون کلید): تازه‌ترین تیترها بر اساس بخش، اخبار بازار، تازه‌ترین ویدیوها، جست‌وجوی کلیدواژه و متن کامل مقاله.",

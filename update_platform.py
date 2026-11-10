@@ -65,6 +65,8 @@ SERVER_META = {
              "featured": False, "added": 17},
     "ecb-mcp": {"cat": "finance", "color": "#003399", "letter": "💶",
              "featured": False, "added": 18},
+    "wg-gesucht-mcp": {"cat": "housing", "color": "#0E7490", "letter": "🏠",
+                    "featured": False, "added": 19},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -164,6 +166,15 @@ TRANSLATIONS = {
   "ecb_inflation": ("تورم HICP منطقهٔ یورو و آلمان", "HVPI-Inflation, Euroraum und Deutschland"),
   "ecb_money_supply": ("عرضهٔ پول منطقهٔ یورو (M1، M2، M3)", "Geldmenge des Euroraums (M1, M2, M3)"),
   "ecb_bond_yields": ("بازده اوراق قرضهٔ دولتی منطقهٔ یورو بر اساس سررسید", "Staatsanleiherenditen des Euroraums nach Laufzeit"),
+ }},
+"wg-gesucht-mcp": {
+ "desc_fa": "آگهی‌های مسکن WG-Gesucht از wg-gesucht.de (رایگان، بدون کلید): اتاق‌های اشتراکی و آپارتمان در ۳۴ شهر آلمانی‌زبان، با قیمت، متراژ، تاریخ در دسترس بودن و جزئیات کامل آگهی.",
+ "desc_de": "WG-Gesucht-Angebote von wg-gesucht.de (kostenlos, kein Schlüssel, kein Login): WG-Zimmer und Wohnungen in 34 deutschsprachigen Städten, mit Preis, Größe, Verfügbarkeit und vollständigen Anzeigendetails.",
+ "tools": {
+  "wg_search_rooms": ("جست‌وجوی اتاق اشتراکی در یک شهر", "WG-Zimmer in einer Stadt suchen"),
+  "wg_search_flats": ("جست‌وجوی آپارتمان در یک شهر", "Wohnungen in einer Stadt suchen"),
+  "wg_listing_detail": ("جزئیات کامل یک آگهی", "Vollständige Details einer Anzeige"),
+  "wg_cities": ("فهرست شهرهای پشتیبانی‌شده", "Unterstützte Städte auflisten"),
  }},
 "dictcc-mcp": {
  "desc_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",

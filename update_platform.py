@@ -37,6 +37,8 @@ SERVER_META = {
                        "featured": False, "added": 3},
     "dwd-mcp": {"cat": "weather", "color": "#0284C7", "letter": "🌤️",
                  "featured": False, "added": 4},
+    "autobahn-mcp": {"cat": "transport", "color": "#0369A1", "letter": "🛣️",
+                     "featured": False, "added": 5},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -83,6 +85,16 @@ TRANSLATIONS = {
   "dwd_warnings": ("هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت", "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"),
   "dwd_pollen": ("شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)", "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"),
   "dwd_find_place": ("یافتن شهرهای آلمان (نام → مختصات)", "Deutsche Orte finden (Name → Koordinaten)"),
+ }},
+"autobahn-mcp": {
+ "desc_fa": "داده‌های اتوبان آلمان از API رسمی verkehr.autobahn.de (بدون کلید): کارهای جاده‌ای، بسته‌شدن‌ها، هشدارها، پارکینگ کامیون/خودرو و ایستگاه‌های شارژ خودروی برقی برای هر اتوبان.",
+ "desc_de": "Deutsche Autobahn-Daten über die offizielle API verkehr.autobahn.de (kein Schlüssel): Baustellen, Sperrungen, Warnungen, LKW-/PKW-Parkplätze und E-Ladesäulen je Autobahn.",
+ "tools": {
+  "autobahn_roadworks": ("کارهای جاده‌ای یک اتوبان", "Baustellen auf einer Autobahn"),
+  "autobahn_closures": ("بسته‌شدن‌های یک اتوبان", "Sperrungen auf einer Autobahn"),
+  "autobahn_warnings": ("هشدارهای یک اتوبان", "Warnungen auf einer Autobahn"),
+  "autobahn_parking": ("پارکینگ‌های یک اتوبان", "Parkplätze auf einer Autobahn"),
+  "autobahn_ev_charging": ("ایستگاه‌های شارژ خودروی برقی یک اتوبان", "E-Ladesäulen auf einer Autobahn"),
  }},
 }
 

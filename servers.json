@@ -439,6 +439,32 @@
      "summary": "Today's deals from the home page"
     }
    ]
+  },
+  {
+   "description": "German TV series from fernsehserien.de (free, no key, no login): search series, series details, episode guides and upcoming air dates.",
+   "name": "fernsehserien-mcp",
+   "pypi": "fernsehserien-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/fernsehserien-mcp",
+   "title": "fernsehserien.de — German TV series: search, details, episodes & air dates",
+   "title_de": "fernsehserien.de — Deutsche TV-Serien: Suche, Details, Episoden & Sendetermine",
+   "tools": [
+    {
+     "name": "fs_search_series",
+     "summary": "Search TV series by name"
+    },
+    {
+     "name": "fs_series_detail",
+     "summary": "Series details and seasons"
+    },
+    {
+     "name": "fs_episodes",
+     "summary": "Episode guide for one season"
+    },
+    {
+     "name": "fs_air_dates",
+     "summary": "Upcoming air dates for a series"
+    }
+   ]
   }
  ]
 }

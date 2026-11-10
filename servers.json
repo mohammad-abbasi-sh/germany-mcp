@@ -193,6 +193,36 @@
      "summary": "DW topic pages matching a word"
     }
    ]
+  },
+  {
+   "description": "n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text.",
+   "name": "ntv-mcp",
+   "pypi": "ntv-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/ntv-mcp",
+   "title": "n-tv — German TV news: headlines by section, markets, videos & articles",
+   "title_de": "n-tv — Deutsche Fernsehnachrichten: Schlagzeilen, Börse, Videos & Artikel",
+   "tools": [
+    {
+     "name": "ntv_headlines",
+     "summary": "Latest n-tv headlines by section"
+    },
+    {
+     "name": "ntv_markets",
+     "summary": "Latest n-tv market news"
+    },
+    {
+     "name": "ntv_videos",
+     "summary": "Latest n-tv videos"
+    },
+    {
+     "name": "ntv_search_news",
+     "summary": "Search recent n-tv headlines by keyword"
+    },
+    {
+     "name": "ntv_get_article",
+     "summary": "Full text of one n-tv article"
+    }
+   ]
   }
  ]
 }

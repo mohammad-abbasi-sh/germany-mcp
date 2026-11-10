@@ -399,6 +399,24 @@
      "summary": "Voter turnout by Land and nationally"
     }
    ]
+  },
+  {
+   "description": "FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability.",
+   "name": "flixtrain-mcp",
+   "pypi": "flixtrain-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/flixtrain-mcp",
+   "title": "FlixTrain — train times, stations & prices between German cities",
+   "title_de": "FlixTrain — Zugzeiten, Bahnhöfe & Preise zwischen deutschen Städten",
+   "tools": [
+    {
+     "name": "flixtrain_search_trains",
+     "summary": "Search FlixTrain departures between two cities"
+    },
+    {
+     "name": "flixtrain_search_cities",
+     "summary": "Find cities by name"
+    }
+   ]
   }
  ]
 }

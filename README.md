@@ -25,6 +25,7 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [dictcc-mcp](https://github.com/mohammad-abbasi-sh/dictcc-mcp) | dict.cc — German-English & 22 more pairs: translations with word class, gender & votes | 2 | `uvx dictcc-mcp==0.1.0` |
 | [bundeswahlleiter-mcp](https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp) | Bundeswahlleiterin — German federal election results: Bundestag elections 2017–2025 | 5 | `uvx bundeswahlleiter-mcp==0.1.0` |
 | [flixtrain-mcp](https://github.com/mohammad-abbasi-sh/flixtrain-mcp) | FlixTrain — train times, stations & prices between German cities | 2 | `uvx flixtrain-mcp==0.1.0` |
+| [billiger-mcp](https://github.com/mohammad-abbasi-sh/billiger-mcp) | billiger.de — German price comparison: best prices, shop offers & deals | 3 | `uvx billiger-mcp==0.1.0` |
 
 *One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*
 

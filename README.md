@@ -11,8 +11,8 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 
 | Server | Service | Tools | Install |
 |--------|---------|-------|---------|
-| [bundesliga-mcp](https://github.com/mohammad-abbasi-sh/bundesliga-mcp) | Bundesliga — German football fixtures, tables & scorers | 6 | `uvx bundesliga-mcp==0.1.0` |
-| [mediathek-mcp](https://github.com/mohammad-abbasi-sh/mediathek-mcp) | Mediathek — German public broadcasters' programmes | 6 | `uvx mediathek-mcp==0.1.0` |
+| [bundesliga-mcp](https://github.com/mohammad-abbasi-sh/bundesliga-mcp) | Bundesliga — German football fixtures, tables & scorers | 6 | `uvx bundesliga-mcp==0.1.1` |
+| [mediathek-mcp](https://github.com/mohammad-abbasi-sh/mediathek-mcp) | Mediathek — German public broadcasters' programmes | 6 | `uvx mediathek-mcp==0.1.1` |
 | [tagesschau-mcp](https://github.com/mohammad-abbasi-sh/tagesschau-mcp) | tagesschau — Germany's most-watched TV news | 6 | `uvx tagesschau-mcp==0.1.0` |
 
 *One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*

@@ -67,6 +67,8 @@ SERVER_META = {
              "featured": False, "added": 18},
     "wg-gesucht-mcp": {"cat": "housing", "color": "#0E7490", "letter": "🏠",
                     "featured": False, "added": 19},
+    "uba-mcp": {"cat": "health", "color": "#059669", "letter": "🌬️",
+                "featured": False, "added": 20},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -254,6 +256,17 @@ TRANSLATIONS = {
   "autobahn_warnings": ("هشدارهای یک اتوبان", "Warnungen auf einer Autobahn"),
   "autobahn_parking": ("پارکینگ‌های یک اتوبان", "Parkplätze auf einer Autobahn"),
   "autobahn_ev_charging": ("ایستگاه‌های شارژ خودروی برقی یک اتوبان", "E-Ladesäulen auf einer Autobahn"),
+ }},
+"uba-mcp": {
+ "desc_fa": "کیفیت هوای آلمان از API نسخهٔ ۴ داده‌های هوای UBA (بدون کلید): اندازه‌گیری‌های ساعتی از بیش از ۴۰۰ ایستگاه آلمان، آلاینده‌ها، شاخص LQI و شبکه‌های اندازه‌گیری.",
+ "desc_de": "Deutsche Luftqualität über die UBA Air Data API v4 (kein Schlüssel): stündliche Messwerte von über 400 deutschen Stationen, Schadstoffe, LQI-Klassen und Messnetze.",
+ "tools": {
+  "uba_list_stations": ("ایستگاه‌های اندازه‌گیری، قابل فیلتر بر اساس شهر، ایالت، نوع، منطقه یا نام", "Messstationen, filterbar nach Stadt, Bundesland, Typ, Gebiet oder Name"),
+  "uba_station_detail": ("جزئیات یک ایستگاه: آدرس، مختصات، نوع، بازهٔ داده‌ها، آلاینده‌های اخیر", "Details einer Station: Adresse, Koordinaten, Typ, Datenzeitraum, aktuelle Schadstoffe"),
+  "uba_current_air_quality": ("آخرین مقادیر ساعتی + شاخص LQI در یک ایستگاه", "Aktuelle Stundenwerte + LQI an einer Station"),
+  "uba_measurements": ("مقادیر ساعتی در یک بازه + کمینه/بیشینه/میانگین و میانگین روزانه", "Stundenwerte über einen Zeitraum + Min/Max/Mittel & Tagesmittel"),
+  "uba_list_components": ("هر ۱۲ آلاینده: کد، نماد، واحد، نام", "Alle 12 Schadstoffe: Code, Symbol, Einheit, Name"),
+  "uba_list_networks": ("شبکه‌های اندازه‌گیری (۱۶ ایالت + UBA)", "Die Messnetze (16 Bundesländer + UBA)"),
  }},
 }
 

@@ -547,6 +547,40 @@
      "summary": "List supported cities"
     }
    ]
+  },
+  {
+   "description": "UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks.",
+   "name": "uba-mcp",
+   "pypi": "uba-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/uba-mcp",
+   "title": "UBA — German air quality: hourly PM10, NO2, O3 values + LQI from 400+ stations",
+   "title_de": "UBA — Deutsche Luftqualität: stündliche PM10-, NO2-, O3-Werte + LQI von über 400 Stationen",
+   "tools": [
+    {
+     "name": "uba_list_stations",
+     "summary": "Measuring stations, filterable by city, state, type, area or name"
+    },
+    {
+     "name": "uba_station_detail",
+     "summary": "One station: address, coordinates, type, data window, recent pollutants"
+    },
+    {
+     "name": "uba_current_air_quality",
+     "summary": "Latest hourly values + LQI at a station (code, id or city name)"
+    },
+    {
+     "name": "uba_measurements",
+     "summary": "Hourly values over a date range (max 31 days) + min/max/mean & daily means"
+    },
+    {
+     "name": "uba_list_components",
+     "summary": "All 12 pollutants: code, symbol, unit, name"
+    },
+    {
+     "name": "uba_list_networks",
+     "summary": "The 17 measuring networks (16 Länder + UBA)"
+    }
+   ]
   }
  ]
 }

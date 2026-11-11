@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Germany MCP — Connect AI to the World</title>
-<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 19 servers, 89 tools, in English, Deutsch and فارسی.">
+<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 20 servers, 95 tools, in English, Deutsch and فارسی.">
 <link rel="canonical" href="https://mohammad-abbasi-sh.github.io/germany-mcp/">
 <link rel="icon" href="favicon.ico">
 <link rel="alternate" hreflang="fa" href="#/fa/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="#/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Germany MCP — Connect AI to the World">
-<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 19 servers, 89 tools. English, Deutsch, فارسی.">
+<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 20 servers, 95 tools. English, Deutsch, فارسی.">
 <meta property="og:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta name="twitter:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta property="og:locale" content="fa_IR">
@@ -21,12 +21,12 @@
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Germany MCP — Connect AI to the World">
-<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 19 servers, 89 tools. EN / DE / FA.">
+<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 20 servers, 95 tools. EN / DE / FA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 19 servers, 89 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 20 servers, 95 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
 </script>
 <style>
 :root{
@@ -557,6 +557,21 @@ const SERVERS = [
    {n:"wg_search_flats",s:"Search flats in a city",sf:"جست‌وجوی آپارتمان در یک شهر",st:"Wohnungen in einer Stadt suchen"},
    {n:"wg_listing_detail",s:"Full details of one listing",sf:"جزئیات کامل یک آگهی",st:"Vollständige Details einer Anzeige"},
    {n:"wg_cities",s:"List supported cities",sf:"فهرست شهرهای پشتیبانی‌شده",st:"Unterstützte Städte auflisten"}
+  ]},
+{ id:"uba-mcp", cat:"health", color:"#059669", letter:"🌬️", featured:false, added:20,
+  title:"UBA — German air quality: hourly PM10, NO2, O3 values + LQI from 400+ stations",
+  title_de:"UBA — Deutsche Luftqualität: stündliche PM10-, NO2-, O3-Werte + LQI von über 400 Stationen",
+  desc:"UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks.",
+  desc_fa:"کیفیت هوای آلمان از API نسخهٔ ۴ داده‌های هوای UBA (بدون کلید): اندازه‌گیری‌های ساعتی از بیش از ۴۰۰ ایستگاه آلمان، آلاینده‌ها، شاخص LQI و شبکه‌های اندازه‌گیری.",
+  desc_de:"Deutsche Luftqualität über die UBA Air Data API v4 (kein Schlüssel): stündliche Messwerte von über 400 deutschen Stationen, Schadstoffe, LQI-Klassen und Messnetze.",
+  repo:"https://github.com/mohammad-abbasi-sh/uba-mcp", pypi:"uba-mcp",
+  tools:[
+   {n:"uba_list_stations",s:"Measuring stations, filterable by city, state, type, area or name",sf:"ایستگاه‌های اندازه‌گیری، قابل فیلتر بر اساس شهر، ایالت، نوع، منطقه یا نام",st:"Messstationen, filterbar nach Stadt, Bundesland, Typ, Gebiet oder Name"},
+   {n:"uba_station_detail",s:"One station: address, coordinates, type, data window, recent pollutants",sf:"جزئیات یک ایستگاه: آدرس، مختصات، نوع، بازهٔ داده‌ها، آلاینده‌های اخیر",st:"Details einer Station: Adresse, Koordinaten, Typ, Datenzeitraum, aktuelle Schadstoffe"},
+   {n:"uba_current_air_quality",s:"Latest hourly values + LQI at a station (code, id or city name)",sf:"آخرین مقادیر ساعتی + شاخص LQI در یک ایستگاه",st:"Aktuelle Stundenwerte + LQI an einer Station"},
+   {n:"uba_measurements",s:"Hourly values over a date range (max 31 days) + min/max/mean & daily means",sf:"مقادیر ساعتی در یک بازه + کمینه/بیشینه/میانگین و میانگین روزانه",st:"Stundenwerte über einen Zeitraum + Min/Max/Mittel & Tagesmittel"},
+   {n:"uba_list_components",s:"All 12 pollutants: code, symbol, unit, name",sf:"هر ۱۲ آلاینده: کد، نماد، واحد، نام",st:"Alle 12 Schadstoffe: Code, Symbol, Einheit, Name"},
+   {n:"uba_list_networks",s:"The 17 measuring networks (16 Länder + UBA)",sf:"شبکه‌های اندازه‌گیری (۱۶ ایالت + UBA)",st:"Die Messnetze (16 Bundesländer + UBA)"}
   ]}
 ];
 const TOTAL_TOOLS = SERVERS.reduce((a,s)=>a+s.tools.length,0);
@@ -571,7 +586,7 @@ const CATEGORIES = [
  {id:"dictionary",icon:"📖",color:"#7C3AED",soon:true},
  {id:"education",icon:"🎓",color:"#1D4ED8",soon:true},
  {id:"shopping",icon:"🛒",color:"#EA580C",soon:false},
- {id:"health",icon:"💊",color:"#059669",soon:true},
+ {id:"health",icon:"💊",color:"#059669",soon:false},
  {id:"finance",icon:"💱",color:"#0D9488",soon:false},
  {id:"housing",icon:"🏠",color:"#DB2777",soon:false},
  {id:"travel",icon:"🏨",color:"#0E7490",soon:true},
@@ -800,7 +815,7 @@ fa:{
  about_title:"دربارهٔ Germany MCP", about_sub:"یک کاتالوگ مستقل و متن‌باز — مرجع کامل سرورهای MCP آلمان.",
  about_mission_t:"مأموریت ما", about_mission_d:"ساختن مرجع کامل و قابل‌اعتماد برای سرویس‌های وب آلمان: هر سرویس مهم یک سرور MCP فقط‌خواندنی، سه‌زبانه و آزمایش‌شده داشته باشد — بدون ادعای تأییدنشده و بدون دادهٔ ساختگی.",
  about_builder_t:"سازنده", about_builder_d:"محمد عباسی — مدیر سئو و محصول در بن‌باما، و سازندهٔ ابزارهای متن‌باز برای اکوسیستم Claude. این کاتالوگ را مثل پروژهٔ iran-mcp سپهر ساخت: یک مرجع کامل، نه مجموعه‌ای از نمونه‌کارها.",
- about_catalog_t:"کاتالوگ", about_catalog_d:"۱۹ سرور، ۸۹ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
+ about_catalog_t:"کاتالوگ", about_catalog_d:"۲۰ سرور، ۹۵ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
  contact_title:"تماس با ما", contact_sub:"برای سؤال، پیشنهاد یا گزارش مشکل از راه‌های زیر استفاده کن — پیام مستقیم به گیت‌هاب می‌رسد.", contact_gh_issue:"ثبت Issue در گیت‌هاب", contact_gh_profile:"پروفایل گیت‌هاب",
  dash_go:"رفتن به بازارچه",
  fav_title:"علاقه‌مندی‌ها", fav_sub:"سرورها و مهارت‌هایی که ستاره‌دار کرده‌ای — در همین مرورگر ذخیره می‌شوند.",
@@ -886,7 +901,7 @@ de:{
  about_title:"Über Germany MCP", about_sub:"Ein unabhängiger Open-Source-Katalog — die vollständige Referenz für Deutschland-MCP-Server.",
  about_mission_t:"Unsere Mission", about_mission_d:"Die vollständige, vertrauenswürdige Referenz für deutsche Webdienste zu bauen: Jeder wichtige Dienst bekommt einen Nur-Lesen-, dreisprachigen und getesteten MCP-Server — keine ungeprüften Behauptungen und keine erfundenen Daten.",
  about_builder_t:"Der Erbauer", about_builder_d:"Mohammad Abbasi — SEO- und Produktmanager bei Bonbama und Erbauer von Open-Source-Tools für das Claude-Ökosystem. Er hat diesen Katalog so aufgebaut, wie Sepehr iran-mcp aufgebaut hat: als vollständige Referenz, nicht als Schaufenster.",
- about_catalog_t:"Der Katalog", about_catalog_d:"19 Server, 89 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
+ about_catalog_t:"Der Katalog", about_catalog_d:"20 Server, 95 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
  contact_title:"Kontakt", contact_sub:"Für Fragen, Vorschläge oder Fehlermeldungen nutze die Links unten — deine Nachricht geht direkt an GitHub.",
  contact_gh_issue:"Issue auf GitHub öffnen", contact_gh_profile:"GitHub-Profil",
  dash_go:"Zum Marktplatz",
@@ -975,7 +990,7 @@ en:{
  about_title:"About Germany MCP", about_sub:"An independent, open-source catalog — the complete reference for Germany MCP servers.",
  about_mission_t:"Our mission", about_mission_d:"To build the complete, trustworthy reference for German web services: every major service gets a read-only, trilingual, tested MCP server — no unverified claims and no fabricated data.",
  about_builder_t:"The builder", about_builder_d:"Mohammad Abbasi — SEO and Product Manager at Bonbama, and builder of open-source tools for the Claude ecosystem. He built this catalog the way Sepehr built iran-mcp: a complete reference, not a showcase.",
- about_catalog_t:"The catalog", about_catalog_d:"19 servers, 89 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
+ about_catalog_t:"The catalog", about_catalog_d:"20 servers, 95 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
  contact_title:"Contact Us", contact_sub:"For questions, suggestions or bug reports, use the links below — your message goes straight to GitHub.", contact_gh_issue:"Open an issue on GitHub", contact_gh_profile:"GitHub profile",
  dash_go:"Go to marketplace",
  fav_title:"Favorites", fav_sub:"Servers and skills you starred — stored in this browser.",

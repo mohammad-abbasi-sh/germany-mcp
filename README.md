@@ -30,6 +30,7 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [zdf-mcp](https://github.com/mohammad-abbasi-sh/zdf-mcp) | ZDF heute news — headlines, topics, search & articles | 4 | `uvx zdf-mcp==0.1.0` |
 | [ecb-mcp](https://github.com/mohammad-abbasi-sh/ecb-mcp) | ECB euro data — exchange rates, key rates, inflation, money supply & bond yields | 5 | `uvx ecb-mcp==0.1.0` |
 | [wg-gesucht-mcp](https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp) | WG-Gesucht housing — rooms & flats in German cities | 4 | `uvx wg-gesucht-mcp==0.1.0` |
+| [uba-mcp](https://github.com/mohammad-abbasi-sh/uba-mcp) | UBA — German air quality: hourly PM10, NO2, O3 values + LQI from 400+ stations | 6 | `uvx uba-mcp==0.1.0` |
 
 *One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*
 

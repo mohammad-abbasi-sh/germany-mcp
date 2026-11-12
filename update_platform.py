@@ -69,6 +69,8 @@ SERVER_META = {
                     "featured": False, "added": 19},
     "uba-mcp": {"cat": "health", "color": "#059669", "letter": "🌬️",
                 "featured": False, "added": 20},
+    "openplz-mcp": {"cat": "open-data", "color": "#0F766E", "letter": "🧭",
+                    "featured": False, "added": 21},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -267,6 +269,17 @@ TRANSLATIONS = {
   "uba_measurements": ("مقادیر ساعتی در یک بازه + کمینه/بیشینه/میانگین و میانگین روزانه", "Stundenwerte über einen Zeitraum + Min/Max/Mittel & Tagesmittel"),
   "uba_list_components": ("هر ۱۲ آلاینده: کد، نماد، واحد، نام", "Alle 12 Schadstoffe: Code, Symbol, Einheit, Name"),
   "uba_list_networks": ("شبکه‌های اندازه‌گیری (۱۶ ایالت + UBA)", "Die Messnetze (16 Bundesländer + UBA)"),
+ }},
+"openplz-mcp": {
+ "desc_fa": "داده‌های پستی آلمان از OpenPLZ API (بدون کلید): کد پستی، شهرها، خیابان‌ها، شهرداری‌ها، بخش‌ها و ۱۶ ایالت فدرال.",
+ "desc_de": "Deutsche Postdaten über die OpenPLZ API (kein Schlüssel): Postleitzahlen, Orte, Straßen, Gemeinden, Kreise und die 16 Bundesländer.",
+ "tools": {
+  "openplz_lookup_postal_code": ("کدام شهر (یا شهرها) متعلق به یک کد پستی است", "Zu welchem Ort (oder welchen Orten) eine Postleitzahl gehört"),
+  "openplz_search_locality": ("جست‌وجوی شهرها بر اساس نام، اختیاری درون یک کد پستی", "Orte nach Namen suchen, optional innerhalb einer Postleitzahl"),
+  "openplz_search_street": ("جست‌وجوی خیابان‌ها بر اساس نام، کد پستی و/یا شهر", "Straßen nach Name, Postleitzahl und/oder Ort suchen"),
+  "openplz_full_text_search": ("جست‌وجوی آزاد در نام خیابان، کد پستی و شهر", "Freitextsuche über Straßenname, Postleitzahl und Stadt"),
+  "openplz_list_federal_states": ("هر ۱۶ ایالت فدرال با کد + مرکز", "Alle 16 Bundesländer mit Schlüssel + Hauptstadt"),
+  "openplz_admin_children": ("یک قدم پایین‌تر در درخت اداری (ایالت ← بخش ← شهرداری)", "Einen Schritt im Verwaltungsbaum nach unten (Land → Kreis → Gemeinde)"),
  }},
 }
 

@@ -581,6 +581,40 @@
      "summary": "The 17 measuring networks (16 Länder + UBA)"
     }
    ]
+  },
+  {
+   "description": "OpenPLZ API (no key): German postal codes — localities, streets, municipalities, districts & the 16 federal states.",
+   "name": "openplz-mcp",
+   "pypi": "openplz-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/openplz-mcp",
+   "title": "OpenPLZ — German postal codes: PLZ lookup, streets & admin tree",
+   "title_de": "OpenPLZ — Deutsche Postleitzahlen: PLZ-Suche, Straßen & Verwaltungsbaum",
+   "tools": [
+    {
+     "name": "openplz_lookup_postal_code",
+     "summary": "Which locality (or localities) a postal code belongs to"
+    },
+    {
+     "name": "openplz_search_locality",
+     "summary": "Search localities by name, optionally within one postal code"
+    },
+    {
+     "name": "openplz_search_street",
+     "summary": "Search streets by name, postal code and/or locality"
+    },
+    {
+     "name": "openplz_full_text_search",
+     "summary": "Free-form street search across name, postal code and city"
+    },
+    {
+     "name": "openplz_list_federal_states",
+     "summary": "All 16 federal states with key + capital"
+    },
+    {
+     "name": "openplz_admin_children",
+     "summary": "One step down the administrative tree (state → district → municipality)"
+    }
+   ]
   }
  ]
 }

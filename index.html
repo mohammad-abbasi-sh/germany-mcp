@@ -116,7 +116,7 @@ nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .hero-stats b{display:block;font-size:24px}
 .hero-stats span{color:var(--muted);font-size:13.5px}
 /* demo card */
-.demo{background:linear-gradient(160deg,#141B31,#0B1120);border:1px solid #26304D;border-radius:22px;box-shadow:var(--shadow-lg);overflow:hidden;color:#E6EBF7}
+.demo{background:linear-gradient(160deg,#141B31,#0B1120);border:1px solid #26304D;border-radius:22px;box-shadow:var(--shadow-lg);overflow:auto;color:#E6EBF7}
 .demo-tabs{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid #22304F;flex-wrap:wrap}
 .demo-tabs button{background:transparent;border:none;color:#8EA0C4;border-radius:999px;padding:7px 13px;font-size:13px;font-weight:600}
 .demo-tabs button.active{background:#232C47;color:#fff}
@@ -252,7 +252,7 @@ footer.site{margin-top:90px;border-top:1px solid var(--line);background:var(--ca
 .socials a{width:38px;height:38px;border-radius:11px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:16px}
 .socials a:hover{color:var(--primary);border-color:var(--primary);text-decoration:none}
 /* toast */
-#toast{position:fixed;bottom:22px;inset-inline-start:50%;transform:translateX(50%);background:var(--navy);color:#fff;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;box-shadow:var(--shadow-lg);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:100}
+#toast{position:fixed;bottom:22px;inset-inline-start:50%;transform:translateX(50%);background:var(--navy);color:#fff;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;max-width:calc(100vw - 40px);text-align:center;box-shadow:var(--shadow-lg);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:100}
 [dir="ltr"] #toast{transform:translateX(-50%)}
 #toast.show{opacity:1}
 [dir="rtl"] #toast{transform:translateX(50%)}
@@ -285,8 +285,9 @@ footer.site{margin-top:90px;border-top:1px solid var(--line);background:var(--ca
   .brand .mark{width:34px;height:34px}
   .brand small{display:none}
   .nav-right{gap:6px}
-  .icon-btn{width:36px;height:36px;font-size:15px}
+  .icon-btn{width:44px;height:44px;font-size:17px}
   .lang-select{padding:0 4px;font-size:12px}
+  .fav-btn{display:none}
 }
 </style>
 </head>
@@ -1101,7 +1102,7 @@ function headerHTML(){
         ${Object.keys(LANGS).map(l=>`<option value="${l}" ${l===state.lang?"selected":""}>${LANGS[l].name}</option>`).join("")}
       </select>
       <button class="icon-btn" onclick="App.toggleTheme()" aria-label="${state.theme==="dark"?t("theme_light"):t("theme_dark")}" title="${state.theme==="dark"?t("theme_light"):t("theme_dark")}">${state.theme==="dark"?"☀️":"🌙"}</button>
-      <a class="icon-btn" href="${hashFor("favorites")}" title="${t("nav_favorites")}" aria-label="${t("nav_favorites")}">★</a>
+      <a class="icon-btn fav-btn" href="${hashFor("favorites")}" title="${t("nav_favorites")}" aria-label="${t("nav_favorites")}">★</a>
       <button class="icon-btn burger" onclick="App.toggleMenu()" aria-label="${t("nav_menu")}">☰</button>
     </div>
   </div>
@@ -1338,7 +1339,7 @@ function toolHTML(id){
     <p><a href="${hashFor("marketplace")}">← ${t("back")}</a></p>
     <div class="detail-head">
       <span class="tile" style="background:${s.color}">${s.letter}</span>
-      <div style="flex:1;min-width:240px">
+      <div style="flex:1;min-width:0">
         <h1>${esc(s.title)}</h1>
         <p class="latin">${esc(s.id)} · v0.1.0</p>
         <p>${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span> `:""}<span class="badge badge-ok">✓ ${t("status_available")}</span> <span class="chip">${esc(catName(s.cat))}</span></p>
@@ -1400,7 +1401,7 @@ function skillHTML(id){
     <p><a href="${hashFor("skills")}">← ${t("back")}</a></p>
     <div class="detail-head">
       <span class="tile" style="background:linear-gradient(135deg,#6657E8,#19C6B3)">✦</span>
-      <div style="flex:1;min-width:240px"><h1>${esc(k.id)}</h1><p class="latin">github.com/mohammad-abbasi-sh/${esc(k.id)}</p></div>
+      <div style="flex:1;min-width:0"><h1>${esc(k.id)}</h1><p class="latin">github.com/mohammad-abbasi-sh/${esc(k.id)}</p></div>
       ${starBtn("skill", k.id)}
     </div>
     <p style="color:var(--muted);max-width:760px">${esc(skillTag(k))}</p>

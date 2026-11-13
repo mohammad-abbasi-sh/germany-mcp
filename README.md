@@ -32,6 +32,7 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [wg-gesucht-mcp](https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp) | WG-Gesucht housing — rooms & flats in German cities | 4 | `uvx wg-gesucht-mcp==0.1.0` |
 | [uba-mcp](https://github.com/mohammad-abbasi-sh/uba-mcp) | UBA — German air quality: hourly PM10, NO2, O3 values + LQI from 400+ stations | 6 | `uvx uba-mcp==0.1.0` |
 | [openplz-mcp](https://github.com/mohammad-abbasi-sh/openplz-mcp) | OpenPLZ — German postal codes: PLZ lookup, streets & admin tree | 6 | `uvx openplz-mcp==0.1.0` |
+| [feiertage-mcp](https://github.com/mohammad-abbasi-sh/feiertage-mcp) | Feiertage — German public holidays: by year & state, is-it-a-holiday, next holiday | 5 | `uvx feiertage-mcp==0.1.0` |
 
 *One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*
 

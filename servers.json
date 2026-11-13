@@ -615,6 +615,36 @@
      "summary": "One step down the administrative tree (state → district → municipality)"
     }
    ]
+  },
+  {
+   "description": "Feiertage — German public holidays via feiertage-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
+   "name": "feiertage-mcp",
+   "pypi": "feiertage-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/feiertage-mcp",
+   "title": "Feiertage — German public holidays: by year & state, is-it-a-holiday, next holiday",
+   "title_de": "Feiertage — Deutsche Feiertage nach Jahr & Bundesland, Ist-es-ein-Feiertag, nächster Feiertag",
+   "tools": [
+    {
+     "name": "feiertage_list_holidays",
+     "summary": "Public holidays of one year in one federal state (optional month filter)"
+    },
+    {
+     "name": "feiertage_is_holiday",
+     "summary": "Is a date a public holiday in one state?"
+    },
+    {
+     "name": "feiertage_next_holiday",
+     "summary": "The next public holiday on or after a date"
+    },
+    {
+     "name": "feiertage_holidays_between",
+     "summary": "Public holidays in a date range (max ~2 years)"
+    },
+    {
+     "name": "feiertage_list_states",
+     "summary": "All 16 federal states + NATIONAL (nationwide holidays)"
+    }
+   ]
   }
  ]
 }

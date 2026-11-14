@@ -645,6 +645,36 @@
      "summary": "All 16 federal states + NATIONAL (nationwide holidays)"
     }
    ]
+  },
+  {
+   "description": "Ferien — German school holidays via ferien-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
+   "name": "ferien-mcp",
+   "pypi": "ferien-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/ferien-mcp",
+   "title": "Ferien — German school holidays: by year & state, is-it-a-holiday, next holiday",
+   "title_de": "Ferien — Deutsche Schulferien nach Jahr & Bundesland, Ist-es-ein-Ferientag, nächste Ferien",
+   "tools": [
+    {
+     "name": "ferien_list_holidays",
+     "summary": "School holidays of one year in one federal state (optional month filter)"
+    },
+    {
+     "name": "ferien_is_holiday",
+     "summary": "Is a date inside the school holidays in one state?"
+    },
+    {
+     "name": "ferien_next_holiday",
+     "summary": "The next school holiday on or after a date"
+    },
+    {
+     "name": "ferien_holidays_between",
+     "summary": "School holidays overlapping a date range (max ~2 years)"
+    },
+    {
+     "name": "ferien_list_states",
+     "summary": "All 16 German federal states"
+    }
+   ]
   }
  ]
 }

@@ -4,26 +4,29 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Germany MCP — Connect AI to the World</title>
-<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 2 servers, 12 tools, in English, Deutsch and فارسی.">
-<link rel="canonical" href="https://github.com/mohammad-abbasi-sh/germany-mcp">
+<meta name="description" content="Germany MCP: the complete reference for unofficial read-only MCP servers for German web services — 24 servers, 116 tools, in English, Deutsch and فارسی.">
+<link rel="canonical" href="https://mohammad-abbasi-sh.github.io/germany-mcp/">
+<link rel="icon" href="favicon.ico">
 <link rel="alternate" hreflang="fa" href="#/fa/">
 <link rel="alternate" hreflang="de" href="#/de/">
 <link rel="alternate" hreflang="en" href="#/en/">
 <link rel="alternate" hreflang="x-default" href="#/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Germany MCP — Connect AI to the World">
-<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 2 servers, 12 tools. English, Deutsch, فارسی.">
+<meta property="og:description" content="Unofficial read-only MCP servers for German web services: football, news, media, weather, transport and open data. 24 servers, 116 tools. English, Deutsch, فارسی.">
+<meta property="og:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
+<meta name="twitter:image" content="https://mohammad-abbasi-sh.github.io/germany-mcp/og-image.png">
 <meta property="og:locale" content="fa_IR">
 <meta property="og:locale:alternate" content="de_DE">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Germany MCP — Connect AI to the World">
-<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 2 servers, 12 tools. EN / DE / FA.">
+<meta name="twitter:description" content="Unofficial read-only MCP servers for German web services. 24 servers, 116 tools. EN / DE / FA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://github.com/mohammad-abbasi-sh/germany-mcp","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 2 servers, 12 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"Germany MCP","alternateName":"Germany MCP Catalog","url":"https://mohammad-abbasi-sh.github.io/germany-mcp/","inLanguage":["fa","de","en"],"description":"Unofficial read-only MCP servers for German web services: 24 servers, 116 tools.","creator":{"@type":"Person","name":"Mohammad Abbasi","url":"https://github.com/mohammad-abbasi-sh"}}
 </script>
 <style>
 :root{
@@ -113,7 +116,7 @@ nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .hero-stats b{display:block;font-size:24px}
 .hero-stats span{color:var(--muted);font-size:13.5px}
 /* demo card */
-.demo{background:linear-gradient(160deg,#141B31,#0B1120);border:1px solid #26304D;border-radius:22px;box-shadow:var(--shadow-lg);overflow:hidden;color:#E6EBF7}
+.demo{background:linear-gradient(160deg,#141B31,#0B1120);border:1px solid #26304D;border-radius:22px;box-shadow:var(--shadow-lg);overflow:auto;color:#E6EBF7}
 .demo-tabs{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid #22304F;flex-wrap:wrap}
 .demo-tabs button{background:transparent;border:none;color:#8EA0C4;border-radius:999px;padding:7px 13px;font-size:13px;font-weight:600}
 .demo-tabs button.active{background:#232C47;color:#fff}
@@ -145,7 +148,7 @@ nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .card-top .latin{color:var(--muted);font-size:12.5px;margin:2px 0 0;direction:ltr;text-align:start;overflow-wrap:anywhere}
 .meta-row{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted);margin:0 0 4px}
 .meta-row .ic{font-size:14px}
-.card-bottom{display:flex;align-items:center;gap:10px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.card-bottom{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
 .card-bottom .count{color:var(--muted);font-size:13px}
 .card-bottom .btn{margin-inline-start:auto}
 .badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px}
@@ -249,7 +252,7 @@ footer.site{margin-top:90px;border-top:1px solid var(--line);background:var(--ca
 .socials a{width:38px;height:38px;border-radius:11px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:16px}
 .socials a:hover{color:var(--primary);border-color:var(--primary);text-decoration:none}
 /* toast */
-#toast{position:fixed;bottom:22px;inset-inline-start:50%;transform:translateX(50%);background:var(--navy);color:#fff;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;box-shadow:var(--shadow-lg);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:100}
+#toast{position:fixed;bottom:22px;inset-inline-start:50%;transform:translateX(50%);background:var(--navy);color:#fff;padding:12px 22px;border-radius:999px;font-size:14px;font-weight:600;max-width:calc(100vw - 40px);text-align:center;box-shadow:var(--shadow-lg);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;z-index:100}
 [dir="ltr"] #toast{transform:translateX(-50%)}
 #toast.show{opacity:1}
 [dir="rtl"] #toast{transform:translateX(50%)}
@@ -282,8 +285,9 @@ footer.site{margin-top:90px;border-top:1px solid var(--line);background:var(--ca
   .brand .mark{width:34px;height:34px}
   .brand small{display:none}
   .nav-right{gap:6px}
-  .icon-btn{width:36px;height:36px;font-size:15px}
+  .icon-btn{width:44px;height:44px;font-size:17px}
   .lang-select{padding:0 4px;font-size:12px}
+  .fav-btn{display:none}
 }
 </style>
 </head>
@@ -324,23 +328,325 @@ const SERVERS = [
    {n:"mediathek_by_topic",s:"All episodes of one show or series",sf:"همهٔ قسمت‌های یک برنامه یا سریال",st:"Alle Folgen einer Sendung oder Serie"},
    {n:"mediathek_programme_detail",s:"Full detail of one programme (video URLs, subtitles)",sf:"جزئیات کامل یک برنامه (لینک ویدیو، زیرنویس)",st:"Vollständige Details einer Sendung (Video-URLs, Untertitel)"},
    {n:"mediathek_list_channels",s:"Channels in the film list",sf:"شبکه‌های فهرست فیلم",st:"Sender der Filmliste"}
+  ]},
+{ id:"tagesschau-mcp", cat:"news", color:"#1E40AF", letter:"📰", featured:false, added:3,
+  title:"tagesschau — Germany's most-watched TV news",
+  title_de:"tagesschau — Deutschlands meistgesehene Fernsehnachrichten",
+  desc:"tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text.",
+  desc_fa:"tagesschau.de (ARD) با فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار بخش‌ها، اخبار منطقه‌ای هر ۱۶ ایالت، جدیدترین ویدیوها و متن کامل مقاله‌ها.",
+  desc_de:"tagesschau.de (ARD) über offizielle RSS-Feeds (kein Schlüssel): Schlagzeilen, Nachrichten nach Ressort, Regionalnachrichten aller 16 Bundesländer, neueste Videos und Volltexte.",
+  repo:"https://github.com/mohammad-abbasi-sh/tagesschau-mcp", pypi:"tagesschau-mcp",
+  tools:[
+   {n:"tagesschau_headlines",s:"Top headlines, newest first",sf:"تیترهای برتر tagesschau.de",st:"Top-Schlagzeilen von tagesschau.de"},
+   {n:"tagesschau_news_by_section",s:"Newest news of one section",sf:"جدیدترین اخبار یک بخش",st:"Neueste Nachrichten eines Ressorts"},
+   {n:"tagesschau_search_news",s:"Search news by keyword",sf:"جست‌وجوی اخبار با کلیدواژه",st:"Nachrichten nach Stichwort suchen"},
+   {n:"tagesschau_get_article",s:"Full text of one article",sf:"متن کامل یک مقاله",st:"Volltext eines Artikels"},
+   {n:"tagesschau_latest_videos",s:"Latest videos, newest first",sf:"جدیدترین ویدیوها",st:"Neueste Videos"},
+   {n:"tagesschau_regional_news",s:"Regional news of one Bundesland",sf:"اخبار منطقه‌ای یک ایالت",st:"Regionalnachrichten eines Bundeslandes"}
+  ]},
+{ id:"dwd-mcp", cat:"weather", color:"#0284C7", letter:"🌤️", featured:false, added:4,
+  title:"DWD — German weather: DWD ICON forecasts, current conditions, official warnings & pollen",
+  title_de:"DWD — Deutsches Wetter: ICON-Vorhersagen, aktuelles Wetter, amtliche Warnungen & Pollen",
+  desc:"DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen.",
+  desc_fa:"هواشناسی آلمان از سرویس ملی هواشناسی آلمان (DWD): پیش‌بینی و وضعیت فعلی با مدل ICON از طریق Open-Meteo، هشدارهای رسمی آب‌وهوای DWD و شمارش گرده.",
+  desc_de:"Deutsches Wetter vom Deutschen Wetterdienst (DWD): ICON-Vorhersagen und aktuelles Wetter über Open-Meteo, amtliche Unwetterwarnungen und Pollenflug.",
+  repo:"https://github.com/mohammad-abbasi-sh/dwd-mcp", pypi:"dwd-mcp",
+  tools:[
+   {n:"dwd_forecast",s:"ICON-model forecast for a German place (hourly + daily)",sf:"پیش‌بینی مدل ICON برای یک شهر آلمان (ساعتی + روزانه)",st:"ICON-Vorhersage für einen deutschen Ort (stündlich + täglich)"},
+   {n:"dwd_current_weather",s:"Current conditions for a German place",sf:"وضعیت فعلی هوا برای یک شهر آلمان",st:"Aktuelles Wetter für einen deutschen Ort"},
+   {n:"dwd_warnings",s:"Official DWD severe-weather warnings, filterable by state",sf:"هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت",st:"Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"},
+   {n:"dwd_pollen",s:"Pollen counts for a German place (CAMS via Open-Meteo)",sf:"شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)",st:"Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"},
+   {n:"dwd_find_place",s:"Find German places (name → coordinates)",sf:"یافتن شهرهای آلمان (نام → مختصات)",st:"Deutsche Orte finden (Name → Koordinaten)"}
+  ]},
+{ id:"autobahn-mcp", cat:"transport", color:"#0369A1", letter:"🛣️", featured:false, added:5,
+  title:"Autobahn — German motorway roadworks, closures, warnings, parking & EV charging",
+  title_de:"Autobahn — Baustellen, Sperrungen, Warnungen, Parken & E-Laden",
+  desc:"German Autobahn data from the official verkehr.autobahn.de API (no key): roadworks, closures, warnings, truck/car parking and EV charging stations per motorway.",
+  desc_fa:"داده‌های اتوبان آلمان از API رسمی verkehr.autobahn.de (بدون کلید): کارهای جاده‌ای، بسته‌شدن‌ها، هشدارها، پارکینگ کامیون/خودرو و ایستگاه‌های شارژ خودروی برقی برای هر اتوبان.",
+  desc_de:"Deutsche Autobahn-Daten über die offizielle API verkehr.autobahn.de (kein Schlüssel): Baustellen, Sperrungen, Warnungen, LKW-/PKW-Parkplätze und E-Ladesäulen je Autobahn.",
+  repo:"https://github.com/mohammad-abbasi-sh/autobahn-mcp", pypi:"autobahn-mcp",
+  tools:[
+   {n:"autobahn_roadworks",s:"Roadworks on one motorway",sf:"کارهای جاده‌ای یک اتوبان",st:"Baustellen auf einer Autobahn"},
+   {n:"autobahn_closures",s:"Closures on one motorway",sf:"بسته‌شدن‌های یک اتوبان",st:"Sperrungen auf einer Autobahn"},
+   {n:"autobahn_warnings",s:"Warnings on one motorway",sf:"هشدارهای یک اتوبان",st:"Warnungen auf einer Autobahn"},
+   {n:"autobahn_parking",s:"Truck/car parking areas on one motorway",sf:"پارکینگ‌های یک اتوبان",st:"Parkplätze auf einer Autobahn"},
+   {n:"autobahn_ev_charging",s:"EV charging stations on one motorway",sf:"ایستگاه‌های شارژ خودروی برقی یک اتوبان",st:"E-Ladesäulen auf einer Autobahn"}
+  ]},
+{ id:"dw-mcp", cat:"news", color:"#0E7490", letter:"📰", featured:false, added:6,
+  title:"Deutsche Welle — DW news in 31 languages: headlines, search, articles & topics",
+  title_de:"Deutsche Welle — DW-Nachrichten in 31 Sprachen: Schlagzeilen, Suche, Artikel & Themen",
+  desc:"Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages.",
+  desc_fa:"اخبار دویچه‌وله به ۳۱ زبان از سایت‌مپ‌های رسمی DW (بدون کلید): تازه‌ترین تیترها، جست‌وجوی کلیدواژه، تازه‌ترین مقاله‌ها، متن کامل مقاله و صفحه‌های موضوعی.",
+  desc_de:"Deutsche-Welle-Nachrichten in 31 Sprachen über die offiziellen DW-Sitemaps (kein Schlüssel): neueste Schlagzeilen, Stichwortsuche, neueste Artikel, Volltexte und Themenseiten.",
+  repo:"https://github.com/mohammad-abbasi-sh/dw-mcp", pypi:"dw-mcp",
+  tools:[
+   {n:"dw_headlines",s:"Latest DW headlines in one language",sf:"تازه‌ترین تیترهای DW به یک زبان",st:"Neueste DW-Schlagzeilen in einer Sprache"},
+   {n:"dw_search_news",s:"Search recent DW headlines by keyword",sf:"جست‌وجوی تیترهای اخیر DW با کلیدواژه",st:"Neueste DW-Schlagzeilen nach Stichwort suchen"},
+   {n:"dw_latest_articles",s:"Latest DW articles in one language",sf:"تازه‌ترین مقاله‌های DW به یک زبان",st:"Neueste DW-Artikel in einer Sprache"},
+   {n:"dw_get_article",s:"Full text of one DW article",sf:"متن کامل یک مقالهٔ DW",st:"Volltext eines DW-Artikels"},
+   {n:"dw_topics",s:"DW topic pages matching a word",sf:"صفحه‌های موضوعی DW برای یک واژه",st:"DW-Themenseiten zu einem Stichwort"}
+  ]},
+{ id:"ntv-mcp", cat:"news", color:"#B91C1C", letter:"📺", featured:false, added:7,
+  title:"n-tv — German TV news: headlines by section, markets, videos & articles",
+  title_de:"n-tv — Deutsche Fernsehnachrichten: Schlagzeilen, Börse, Videos & Artikel",
+  desc:"n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text.",
+  desc_fa:"اخبار n-tv از فیدهای RSS رسمی (بدون کلید): تازه‌ترین تیترها بر اساس بخش، اخبار بازار، تازه‌ترین ویدیوها، جست‌وجوی کلیدواژه و متن کامل مقاله.",
+  desc_de:"n-tv-Nachrichten über die offiziellen RSS-Feeds (kein Schlüssel): neueste Schlagzeilen nach Ressort, Börsennachrichten, neueste Videos, Stichwortsuche und Volltexte.",
+  repo:"https://github.com/mohammad-abbasi-sh/ntv-mcp", pypi:"ntv-mcp",
+  tools:[
+   {n:"ntv_headlines",s:"Latest n-tv headlines by section",sf:"تازه‌ترین تیترهای n-tv بر اساس بخش",st:"Neueste n-tv-Schlagzeilen nach Ressort"},
+   {n:"ntv_markets",s:"Latest n-tv market news",sf:"تازه‌ترین اخبار بازار n-tv",st:"Neueste n-tv-Börsennachrichten"},
+   {n:"ntv_videos",s:"Latest n-tv videos",sf:"تازه‌ترین ویدیوهای n-tv",st:"Neueste n-tv-Videos"},
+   {n:"ntv_search_news",s:"Search recent n-tv headlines by keyword",sf:"جست‌وجوی تیترهای اخیر n-tv با کلیدواژه",st:"Neueste n-tv-Schlagzeilen nach Stichwort suchen"},
+   {n:"ntv_get_article",s:"Full text of one n-tv article",sf:"متن کامل یک مقالهٔ n-tv",st:"Volltext eines n-tv-Artikels"}
+  ]},
+{ id:"dnb-mcp", cat:"open-data", color:"#7C3AED", letter:"📚", featured:false, added:8,
+  title:"DNB — Deutsche Nationalbibliothek catalogue: books, authors & ISBN lookup",
+  title_de:"DNB — Katalog der Deutschen Nationalbibliothek: Bücher, Autoren & ISBN",
+  desc:"Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup.",
+  desc_fa:"کاتالوگ کتابخانه ملی آلمان از طریق API رسمی SRU (بدون کلید): جست‌وجوی کلیدواژه، عنوان و نویسنده، جست‌وجو با ISBN و شناسهٔ DNB.",
+  desc_de:"Katalog der Deutschen Nationalbibliothek über die offizielle SRU-API (kein Schlüssel): Stichwort-, Titel- und Autorensuche, ISBN- und DNB-ID-Abfrage.",
+  repo:"https://github.com/mohammad-abbasi-sh/dnb-mcp", pypi:"dnb-mcp",
+  tools:[
+   {n:"dnb_search_books",s:"Keyword search across the DNB catalogue",sf:"جست‌وجوی کلیدواژه در کاتالوگ DNB",st:"Stichwortsuche im DNB-Katalog"},
+   {n:"dnb_search_by_title",s:"Search the DNB catalogue by title",sf:"جست‌وجو در کاتالوگ DNB با عنوان",st:"Titelsuche im DNB-Katalog"},
+   {n:"dnb_search_by_author",s:"Search the DNB catalogue by author",sf:"جست‌وجو در کاتالوگ DNB با نویسنده",st:"Autorensuche im DNB-Katalog"},
+   {n:"dnb_by_isbn",s:"Look up one book by ISBN",sf:"یافتن یک کتاب با ISBN",st:"Ein Buch per ISBN nachschlagen"},
+   {n:"dnb_get_record",s:"Full record by DNB identifier",sf:"رکورد کامل با شناسهٔ DNB",st:"Vollständiger Datensatz per DNB-ID"}
+  ]},
+{ id:"govdata-mcp", cat:"open-data", color:"#065F46", letter:"🗃️", featured:false, added:9,
+  title:"GovData — Germany's open-data portal: search 163,000+ datasets, publishers & resources",
+  title_de:"GovData — Deutschlands Open-Data-Portal: 163.000+ Datensätze, Herausgeber & Ressourcen",
+  desc:"Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details.",
+  desc_fa:"پورتال ملی داده‌های باز آلمان govdata.de از طریق API رسمی CKAN (بدون کلید): جست‌وجو در بیش از ۱۶۳٬۰۰۰ مجموعه‌داده، جزئیات مجموعه‌داده، ناشران، تازه‌ترین مجموعه‌داده‌ها و جزئیات منبع.",
+  desc_de:"Deutschlands nationales Open-Data-Portal govdata.de über die offizielle CKAN-API (kein Schlüssel): über 163.000 Datensätze durchsuchen, Datensatzdetails, Herausgeber, neueste Datensätze und Ressourcendetails.",
+  repo:"https://github.com/mohammad-abbasi-sh/govdata-mcp", pypi:"govdata-mcp",
+  tools:[
+   {n:"govdata_search_datasets",s:"Search govdata.de datasets",sf:"جست‌وجوی مجموعه‌داده‌ها در govdata.de",st:"Datensätze auf govdata.de suchen"},
+   {n:"govdata_get_dataset",s:"Full details of one dataset",sf:"جزئیات کامل یک مجموعه‌داده",st:"Vollständige Details eines Datensatzes"},
+   {n:"govdata_list_publishers",s:"Publishing organisations, most datasets first",sf:"ناشران، به ترتیب بیشترین مجموعه‌داده",st:"Herausgeber, nach Datensatzzahl sortiert"},
+   {n:"govdata_recent_datasets",s:"Most recently updated datasets",sf:"تازه‌ترین مجموعه‌داده‌های به‌روز شده",st:"Zuletzt aktualisierte Datensätze"},
+   {n:"govdata_get_resource",s:"Details of one dataset resource",sf:"جزئیات یک منبع مجموعه‌داده",st:"Details einer Datensatz-Ressource"}
+  ]},
+{ id:"deutschlandfunk-mcp", cat:"news", color:"#1E3A8A", letter:"📻", featured:false, added:10,
+  title:"Deutschlandfunk — German public radio news: rolling news, topics, articles & live stream",
+  title_de:"Deutschlandfunk — Nachrichten des deutschen öffentlich-rechtlichen Radios: Meldungen, Themen, Artikel & Livestream",
+  desc:"Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link.",
+  desc_fa:"اخبار و رادیوی دویچلندفونک از فیدهای RSS رسمی (بدون کلید): اخبار جاری، تازه‌ترین مطالب، فیدهای موضوعی، جست‌وجوی کلیدواژه، متن کامل مقاله و لینک پخش زنده.",
+  desc_de:"Deutschlandfunk-Nachrichten & Radio über die offiziellen RSS-Feeds (kein Schlüssel): laufende Nachrichten, neueste Beiträge, Ressort-Feeds, Stichwortsuche, Volltexte und Livestream-Link.",
+  repo:"https://github.com/mohammad-abbasi-sh/deutschlandfunk-mcp", pypi:"deutschlandfunk-mcp",
+  tools:[
+   {n:"dlf_latest_news",s:"Rolling DLF news headlines",sf:"تیترهای خبری جاری DLF",st:"Laufende DLF-Nachrichten"},
+   {n:"dlf_latest_contributions",s:"Latest DLF contributions",sf:"تازه‌ترین مطالب DLF",st:"Neueste DLF-Beiträge"},
+   {n:"dlf_news_by_topic",s:"DLF news by topic",sf:"اخبار DLF بر اساس موضوع",st:"DLF-Nachrichten nach Ressort"},
+   {n:"dlf_search_news",s:"Search recent DLF items by keyword",sf:"جست‌وجوی مطالب اخیر DLF با کلیدواژه",st:"Neueste DLF-Beiträge nach Stichwort suchen"},
+   {n:"dlf_get_article",s:"Full text of one DLF article",sf:"متن کامل یک مقالهٔ DLF",st:"Volltext eines DLF-Artikels"},
+   {n:"dlf_listen_live",s:"Deutschlandfunk live stream link",sf:"لینک پخش زندهٔ دویچلندفونک",st:"Livestream-Link des Deutschlandfunks"}
+  ]},
+{ id:"duden-mcp", cat:"language", color:"#7C3AED", letter:"📖", featured:false, added:11,
+  title:"Duden — Germany's standard dictionary: word meanings, synonyms, spelling & grammar",
+  title_de:"Duden — Das Standardwörterbuch der deutschen Sprache: Bedeutungen, Synonyme, Rechtschreibung & Grammatik",
+  desc:"Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation.",
+  desc_fa:"جست‌وجو در فرهنگ لغت دودن از duden.de (رایگان، بدون کلید): معانی واژه، مترادف‌ها، املا با جداسازی هجاها، نکات دستوری و صرف کامل فعل.",
+  desc_de:"Duden-Nachschlagen auf duden.de (kostenlos, kein Schlüssel, kein Login): Bedeutungen, Synonyme, Rechtschreibung mit Worttrennung, Grammatik und vollständige Verbkonjugation.",
+  repo:"https://github.com/mohammad-abbasi-sh/duden-mcp", pypi:"duden-mcp",
+  tools:[
+   {n:"duden_lookup_word",s:"Look up a German word: meanings, word type & grammar",sf:"جست‌وجوی واژهٔ آلمانی در دودن: معانی، نوع کلمه و دستور زبان",st:"Ein deutsches Wort im Duden nachschlagen: Bedeutungen, Wortart & Grammatik"},
+   {n:"duden_synonyms",s:"Synonyms of a German word",sf:"مترادف‌های یک واژهٔ آلمانی",st:"Synonyme eines deutschen Wortes"},
+   {n:"duden_spelling",s:"Spelling & hyphenation of a German word",sf:"املا و جداسازی هجاهای یک واژهٔ آلمانی",st:"Rechtschreibung & Worttrennung eines deutschen Wortes"},
+   {n:"duden_grammar",s:"Grammar notes for a German word",sf:"نکات دستوری یک واژهٔ آلمانی",st:"Grammatiknotizen zu einem deutschen Wort"},
+   {n:"duden_conjugate",s:"Full conjugation table of a German verb",sf:"جدول کامل صرف یک فعل آلمانی",st:"Vollständige Konjugationstabelle eines deutschen Verbs"},
+   {n:"duden_search",s:"Search Duden headwords",sf:"جست‌وجوی سرخط‌های دودن",st:"Duden-Stichwörter suchen"}
+  ]},
+{ id:"dictcc-mcp", cat:"language", color:"#0E7490", letter:"🌐", featured:false, added:12,
+  title:"dict.cc — German-English & 22 more pairs: translations with word class, gender & votes",
+  title_de:"dict.cc — Deutsch-Englisch und 22 weitere Sprachenpaare: Übersetzungen mit Wortart, Genus & Stimmen",
+  desc:"dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes.",
+  desc_fa:"ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",
+  desc_de:"dict.cc-Übersetzungen von dict.cc (kostenlos, kein Schlüssel, kein Login): Deutsch-Englisch plus 22 weitere Sprachenpaare, mit Wortart, Genus, Gebrauchshinweisen und Community-Stimmen.",
+  repo:"https://github.com/mohammad-abbasi-sh/dictcc-mcp", pypi:"dictcc-mcp",
+  tools:[
+   {n:"dictcc_translate",s:"Translate a word with dict.cc (23 pairs)",sf:"ترجمهٔ واژه با dict.cc (۲۳ زبان)",st:"Ein Wort mit dict.cc übersetzen (23 Sprachenpaare)"},
+   {n:"dictcc_search",s:"Find dict.cc headwords matching a query",sf:"یافتن سرخط‌های dict.cc مطابق پرس‌وجو",st:"dict.cc-Stichwörter zu einer Suchanfrage finden"}
+  ]},
+{ id:"bundeswahlleiter-mcp", cat:"open-data", color:"#92400E", letter:"🗳️", featured:false, added:13,
+  title:"Bundeswahlleiterin — German federal election results: Bundestag elections 2017–2025",
+  title_de:"Die Bundeswahlleiterin — Ergebnisse der Bundestagswahlen 2017–2025",
+  desc:"Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025.",
+  desc_fa:"نتایج رسمی انتخابات بوندستاگ از bundeswahlleiterin.de (داده‌های باز رایگان، بدون کلید): نتایج کشوری، نتایج احزاب، حوزه‌های انتخابیه و میزان مشارکت برای ۲۰۱۷، ۲۰۲۱ و ۲۰۲۵.",
+  desc_de:"Amtliche Bundestagswahlergebnisse von bundeswahlleiterin.de (freie offene Daten, kein Schlüssel, kein Login): Bundesergebnisse, Parteiergebnisse, Wahlkreise und Wahlbeteiligung für 2017, 2021 und 2025.",
+  repo:"https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp", pypi:"bundeswahlleiter-mcp",
+  tools:[
+   {n:"bwl_national_results",s:"National results of a Bundestag election",sf:"نتایج کشوری یک انتخابات بوندستاگ",st:"Bundesergebnis einer Bundestagswahl"},
+   {n:"bwl_party_results",s:"Results of one party, nationally and by Land",sf:"نتایج یک حزب، کشوری و به تفکیک ایالت",st:"Ergebnis einer Partei, bundesweit und nach Ländern"},
+   {n:"bwl_constituency_results",s:"Results of one constituency",sf:"نتایج یک حوزهٔ انتخابیه",st:"Ergebnis eines Wahlkreises"},
+   {n:"bwl_constituencies",s:"List constituencies with winner and turnout",sf:"فهرست حوزه‌ها با برنده و میزان مشارکت",st:"Wahlkreise mit Gewinner und Wahlbeteiligung auflisten"},
+   {n:"bwl_turnout",s:"Voter turnout by Land and nationally",sf:"میزان مشارکت به تفکیک ایالت و کشوری",st:"Wahlbeteiligung nach Ländern und bundesweit"}
+  ]},
+{ id:"flixtrain-mcp", cat:"transport", color:"#B45309", letter:"🚆", featured:false, added:14,
+  title:"FlixTrain — train times, stations & prices between German cities",
+  title_de:"FlixTrain — Zugzeiten, Bahnhöfe & Preise zwischen deutschen Städten",
+  desc:"FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability.",
+  desc_fa:"زمان‌بندی و قیمت فلیکس‌ترین از API جست‌وجوی فروشگاه فلیکس‌بوس (رایگان، بدون کلید): فقط سفرهای قطار بین شهرهای آلمان، با ایستگاه‌ها، مدت سفر، قیمت و صندلی‌های موجود.",
+  desc_de:"FlixTrain-Zeiten & Preise über die FlixBus-Shop-Suche (kostenlos, kein Schlüssel, kein Login): nur Zugverbindungen zwischen deutschen Städten, mit Bahnhöfen, Fahrzeit, Preis und Sitzplatzverfügbarkeit.",
+  repo:"https://github.com/mohammad-abbasi-sh/flixtrain-mcp", pypi:"flixtrain-mcp",
+  tools:[
+   {n:"flixtrain_search_trains",s:"Search FlixTrain departures between two cities",sf:"جست‌وجوی سفرهای فلیکس‌ترین بین دو شهر",st:"FlixTrain-Verbindungen zwischen zwei Städten suchen"},
+   {n:"flixtrain_search_cities",s:"Find cities by name",sf:"یافتن شهرها بر اساس نام",st:"Städte nach Namen finden"}
+  ]},
+{ id:"billiger-mcp", cat:"shopping", color:"#1D4ED8", letter:"🛒", featured:false, added:15,
+  title:"billiger.de — German price comparison: best prices, shop offers & deals",
+  title_de:"billiger.de — Deutscher Preisvergleich: Bestpreise, Shop-Angebote & Deals",
+  desc:"German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals.",
+  desc_fa:"مقایسهٔ قیمت آلمان از billiger.de (رایگان، بدون کلید): جست‌وجوی محصولات با بهترین قیمت، مقایسهٔ پیشنهادهای فروشگاه‌ها و تخفیف‌های روز.",
+  desc_de:"Deutscher Preisvergleich von billiger.de (kostenlos, kein Schlüssel, kein Login): Produkte mit Bestpreisen suchen, Shop-Angebote vergleichen und Tagesdeals.",
+  repo:"https://github.com/mohammad-abbasi-sh/billiger-mcp", pypi:"billiger-mcp",
+  tools:[
+   {n:"billiger_search_prices",s:"Search products with best prices",sf:"جست‌وجوی محصولات با بهترین قیمت",st:"Produkte mit Bestpreisen suchen"},
+   {n:"billiger_product_offers",s:"Compare shop offers for a product",sf:"مقایسهٔ پیشنهادهای فروشگاه‌ها برای یک محصول",st:"Shop-Angebote für ein Produkt vergleichen"},
+   {n:"billiger_best_deals",s:"Today's deals from the home page",sf:"تخفیف‌های روز از صفحهٔ اصلی",st:"Tagesdeals von der Startseite"}
+  ]},
+{ id:"fernsehserien-mcp", cat:"media", color:"#7C2D12", letter:"📺", featured:false, added:16,
+  title:"fernsehserien.de — German TV series: search, details, episodes & air dates",
+  title_de:"fernsehserien.de — Deutsche TV-Serien: Suche, Details, Episoden & Sendetermine",
+  desc:"German TV series from fernsehserien.de (free, no key, no login): search series, series details, episode guides and upcoming air dates.",
+  desc_fa:"سریال‌های تلویزیونی آلمان از fernsehserien.de (رایگان، بدون کلید): جست‌وجوی سریال، جزئیات سریال، راهنمای قسمت‌ها و زمان‌های پخش آینده.",
+  desc_de:"Deutsche TV-Serien von fernsehserien.de (kostenlos, kein Schlüssel, kein Login): Serien suchen, Seriendetails, Episodenguides und Sendetermine.",
+  repo:"https://github.com/mohammad-abbasi-sh/fernsehserien-mcp", pypi:"fernsehserien-mcp",
+  tools:[
+   {n:"fs_search_series",s:"Search TV series by name",sf:"جست‌وجوی سریال‌های تلویزیونی بر اساس نام",st:"TV-Serien nach Namen suchen"},
+   {n:"fs_series_detail",s:"Series details and seasons",sf:"جزئیات سریال و فصل‌ها",st:"Seriendetails und Staffeln"},
+   {n:"fs_episodes",s:"Episode guide for one season",sf:"راهنمای قسمت‌های یک فصل",st:"Episodenguide einer Staffel"},
+   {n:"fs_air_dates",s:"Upcoming air dates for a series",sf:"زمان‌های پخش آیندهٔ یک سریال",st:"Kommende Sendetermine einer Serie"}
+  ]},
+{ id:"zdf-mcp", cat:"media", color:"#C8102E", letter:"📺", featured:false, added:17,
+  title:"ZDF heute news — headlines, topics, search & articles",
+  title_de:"ZDF heute — Nachrichten, Themen, Suche & Artikel",
+  desc:"ZDF heute news from zdfheute.de (free, no key, no login): latest headlines, news by topic, keyword search and full article text.",
+  desc_fa:"اخبار ZDF heute از zdfheute.de (رایگان، بدون کلید): تازه‌ترین تیترها، اخبار بر اساس موضوع، جست‌وجوی کلیدواژه و متن کامل مقاله. فقط اخبار — مدیاتک ZDF در این سرور نیست.",
+  desc_de:"ZDF-heute-Nachrichten von zdfheute.de (kostenlos, kein Schlüssel, kein Login): aktuelle Schlagzeilen, Nachrichten nach Thema, Stichwortsuche und Volltext. Nur Nachrichten — keine Mediathek.",
+  repo:"https://github.com/mohammad-abbasi-sh/zdf-mcp", pypi:"zdf-mcp",
+  tools:[
+   {n:"zdf_headlines",s:"Latest ZDF heute headlines",sf:"تازه‌ترین تیترهای ZDF heute",st:"Aktuelle ZDF-heute-Schlagzeilen"},
+   {n:"zdf_news_by_topic",s:"ZDF heute news by topic",sf:"اخبار ZDF heute بر اساس موضوع",st:"ZDF-heute-Nachrichten nach Thema"},
+   {n:"zdf_search_news",s:"Search ZDF heute headlines by keyword",sf:"جست‌وجوی تیترهای ZDF heute با کلیدواژه",st:"ZDF-heute-Schlagzeilen nach Stichwort suchen"},
+   {n:"zdf_get_article",s:"Full text of a ZDF heute article",sf:"متن کامل مقالهٔ ZDF heute",st:"Volltext eines ZDF-heute-Artikels"}
+  ]},
+{ id:"ecb-mcp", cat:"finance", color:"#003399", letter:"💶", featured:false, added:18,
+  title:"ECB euro data — exchange rates, key rates, inflation, money supply & bond yields",
+  title_de:"EZB-Eurodaten — Wechselkurse, Leitzinsen, Inflation, Geldmenge & Anleiherenditen",
+  desc:"European Central Bank data via the official ECB SDMX API (free, no key, no login): euro exchange rates, key ECB interest rates, HICP inflation, M3 money supply and euro-area bond yields.",
+  desc_fa:"داده‌های بانک مرکزی اروپا از API رسمی SDMX (رایگان، بدون کلید): نرخ‌های ارز یورو، نرخ‌های کلیدی بهره، تورم HICP، عرضهٔ پول M3 و بازده اوراق قرضهٔ منطقهٔ یورو.",
+  desc_de:"Daten der Europäischen Zentralbank über die offizielle SDMX-API (kostenlos, kein Schlüssel, kein Login): Euro-Wechselkurse, EZB-Leitzinsen, HVPI-Inflation, Geldmenge M3 und Anleiherenditen des Euroraums.",
+  repo:"https://github.com/mohammad-abbasi-sh/ecb-mcp", pypi:"ecb-mcp",
+  tools:[
+   {n:"ecb_exchange_rates",s:"Euro exchange rates vs major currencies",sf:"نرخ‌های ارز یورو در برابر ارزهای اصلی",st:"Euro-Wechselkurse gegenüber wichtigen Währungen"},
+   {n:"ecb_interest_rates",s:"Key ECB interest rates (MRO, deposit, marginal lending)",sf:"نرخ‌های کلیدی بهرهٔ بانک مرکزی اروپا",st:"EZB-Leitzinsen (Hauptrefinanzierung, Einlage, Spitzenrefinanzierung)"},
+   {n:"ecb_inflation",s:"HICP inflation, euro area and Germany",sf:"تورم HICP منطقهٔ یورو و آلمان",st:"HVPI-Inflation, Euroraum und Deutschland"},
+   {n:"ecb_money_supply",s:"Euro-area money supply (M1, M2, M3)",sf:"عرضهٔ پول منطقهٔ یورو (M1، M2، M3)",st:"Geldmenge des Euroraums (M1, M2, M3)"},
+   {n:"ecb_bond_yields",s:"Euro-area government bond yields by maturity",sf:"بازده اوراق قرضهٔ دولتی منطقهٔ یورو بر اساس سررسید",st:"Staatsanleiherenditen des Euroraums nach Laufzeit"}
+  ]},
+{ id:"wg-gesucht-mcp", cat:"housing", color:"#0E7490", letter:"🏠", featured:false, added:19,
+  title:"WG-Gesucht housing — rooms & flats in German cities",
+  title_de:"WG-Gesucht — WG-Zimmer & Wohnungen in deutschen Städten",
+  desc:"WG-Gesucht flatshare listings from wg-gesucht.de (free, no key, no login): WG rooms and flats in 34 German-speaking cities, with price, size, availability and full listing details.",
+  desc_fa:"آگهی‌های مسکن WG-Gesucht از wg-gesucht.de (رایگان، بدون کلید): اتاق‌های اشتراکی و آپارتمان در ۳۴ شهر آلمانی‌زبان، با قیمت، متراژ، تاریخ در دسترس بودن و جزئیات کامل آگهی.",
+  desc_de:"WG-Gesucht-Angebote von wg-gesucht.de (kostenlos, kein Schlüssel, kein Login): WG-Zimmer und Wohnungen in 34 deutschsprachigen Städten, mit Preis, Größe, Verfügbarkeit und vollständigen Anzeigendetails.",
+  repo:"https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp", pypi:"wg-gesucht-mcp",
+  tools:[
+   {n:"wg_search_rooms",s:"Search WG rooms in a city",sf:"جست‌وجوی اتاق اشتراکی در یک شهر",st:"WG-Zimmer in einer Stadt suchen"},
+   {n:"wg_search_flats",s:"Search flats in a city",sf:"جست‌وجوی آپارتمان در یک شهر",st:"Wohnungen in einer Stadt suchen"},
+   {n:"wg_listing_detail",s:"Full details of one listing",sf:"جزئیات کامل یک آگهی",st:"Vollständige Details einer Anzeige"},
+   {n:"wg_cities",s:"List supported cities",sf:"فهرست شهرهای پشتیبانی‌شده",st:"Unterstützte Städte auflisten"}
+  ]},
+{ id:"uba-mcp", cat:"health", color:"#059669", letter:"🌬️", featured:false, added:20,
+  title:"UBA — German air quality: hourly PM10, NO2, O3 values + LQI from 400+ stations",
+  title_de:"UBA — Deutsche Luftqualität: stündliche PM10-, NO2-, O3-Werte + LQI von über 400 Stationen",
+  desc:"UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks.",
+  desc_fa:"کیفیت هوای آلمان از API نسخهٔ ۴ داده‌های هوای UBA (بدون کلید): اندازه‌گیری‌های ساعتی از بیش از ۴۰۰ ایستگاه آلمان، آلاینده‌ها، شاخص LQI و شبکه‌های اندازه‌گیری.",
+  desc_de:"Deutsche Luftqualität über die UBA Air Data API v4 (kein Schlüssel): stündliche Messwerte von über 400 deutschen Stationen, Schadstoffe, LQI-Klassen und Messnetze.",
+  repo:"https://github.com/mohammad-abbasi-sh/uba-mcp", pypi:"uba-mcp",
+  tools:[
+   {n:"uba_list_stations",s:"Measuring stations, filterable by city, state, type, area or name",sf:"ایستگاه‌های اندازه‌گیری، قابل فیلتر بر اساس شهر، ایالت، نوع، منطقه یا نام",st:"Messstationen, filterbar nach Stadt, Bundesland, Typ, Gebiet oder Name"},
+   {n:"uba_station_detail",s:"One station: address, coordinates, type, data window, recent pollutants",sf:"جزئیات یک ایستگاه: آدرس، مختصات، نوع، بازهٔ داده‌ها، آلاینده‌های اخیر",st:"Details einer Station: Adresse, Koordinaten, Typ, Datenzeitraum, aktuelle Schadstoffe"},
+   {n:"uba_current_air_quality",s:"Latest hourly values + LQI at a station (code, id or city name)",sf:"آخرین مقادیر ساعتی + شاخص LQI در یک ایستگاه",st:"Aktuelle Stundenwerte + LQI an einer Station"},
+   {n:"uba_measurements",s:"Hourly values over a date range (max 31 days) + min/max/mean & daily means",sf:"مقادیر ساعتی در یک بازه + کمینه/بیشینه/میانگین و میانگین روزانه",st:"Stundenwerte über einen Zeitraum + Min/Max/Mittel & Tagesmittel"},
+   {n:"uba_list_components",s:"All 12 pollutants: code, symbol, unit, name",sf:"هر ۱۲ آلاینده: کد، نماد، واحد، نام",st:"Alle 12 Schadstoffe: Code, Symbol, Einheit, Name"},
+   {n:"uba_list_networks",s:"The 17 measuring networks (16 Länder + UBA)",sf:"شبکه‌های اندازه‌گیری (۱۶ ایالت + UBA)",st:"Die Messnetze (16 Bundesländer + UBA)"}
+  ]},
+{ id:"openplz-mcp", cat:"open-data", color:"#0F766E", letter:"🧭", featured:false, added:21,
+  title:"OpenPLZ — German postal codes: PLZ lookup, streets & admin tree",
+  title_de:"OpenPLZ — Deutsche Postleitzahlen: PLZ-Suche, Straßen & Verwaltungsbaum",
+  desc:"OpenPLZ API (no key): German postal codes — localities, streets, municipalities, districts & the 16 federal states.",
+  desc_fa:"داده‌های پستی آلمان از OpenPLZ API (بدون کلید): کد پستی، شهرها، خیابان‌ها، شهرداری‌ها، بخش‌ها و ۱۶ ایالت فدرال.",
+  desc_de:"Deutsche Postdaten über die OpenPLZ API (kein Schlüssel): Postleitzahlen, Orte, Straßen, Gemeinden, Kreise und die 16 Bundesländer.",
+  repo:"https://github.com/mohammad-abbasi-sh/openplz-mcp", pypi:"openplz-mcp",
+  tools:[
+   {n:"openplz_lookup_postal_code",s:"Which locality (or localities) a postal code belongs to",sf:"کدام شهر (یا شهرها) متعلق به یک کد پستی است",st:"Zu welchem Ort (oder welchen Orten) eine Postleitzahl gehört"},
+   {n:"openplz_search_locality",s:"Search localities by name, optionally within one postal code",sf:"جست‌وجوی شهرها بر اساس نام، اختیاری درون یک کد پستی",st:"Orte nach Namen suchen, optional innerhalb einer Postleitzahl"},
+   {n:"openplz_search_street",s:"Search streets by name, postal code and/or locality",sf:"جست‌وجوی خیابان‌ها بر اساس نام، کد پستی و/یا شهر",st:"Straßen nach Name, Postleitzahl und/oder Ort suchen"},
+   {n:"openplz_full_text_search",s:"Free-form street search across name, postal code and city",sf:"جست‌وجوی آزاد در نام خیابان، کد پستی و شهر",st:"Freitextsuche über Straßenname, Postleitzahl und Stadt"},
+   {n:"openplz_list_federal_states",s:"All 16 federal states with key + capital",sf:"هر ۱۶ ایالت فدرال با کد + مرکز",st:"Alle 16 Bundesländer mit Schlüssel + Hauptstadt"},
+   {n:"openplz_admin_children",s:"One step down the administrative tree (state → district → municipality)",sf:"یک قدم پایین‌تر در درخت اداری (ایالت ← بخش ← شهرداری)",st:"Einen Schritt im Verwaltungsbaum nach unten (Land → Kreis → Gemeinde)"}
+  ]},
+{ id:"feiertage-mcp", cat:"open-data", color:"#9D174D", letter:"📅", featured:false, added:22,
+  title:"Feiertage — German public holidays: by year & state, is-it-a-holiday, next holiday",
+  title_de:"Feiertage — Deutsche Feiertage nach Jahr & Bundesland, Ist-es-ein-Feiertag, nächster Feiertag",
+  desc:"Feiertage — German public holidays via feiertage-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
+  desc_fa:"تعطیلات رسمی آلمان از feiertage-api.de (API رایگان، بدون کلید): تعطیلات هر سال در هر ایالت فدرال، بررسی تعطیل بودن یک تاریخ، نزدیک‌ترین تعطیل و تعطیلات در یک بازه.",
+  desc_de:"Deutsche Feiertage über feiertage-api.de (kostenlose API, kein Schlüssel): Feiertage pro Jahr und Bundesland, Ist-es-ein-Feiertag-Prüfung, nächster Feiertag und Feiertage in einem Zeitraum.",
+  repo:"https://github.com/mohammad-abbasi-sh/feiertage-mcp", pypi:"feiertage-mcp",
+  tools:[
+   {n:"feiertage_list_holidays",s:"Public holidays of one year in one federal state (optional month filter)",sf:"تعطیلات رسمی یک سال در یک ایالت فدرال (با فیلتر اختیاری ماه)",st:"Feiertage eines Jahres in einem Bundesland (optional nach Monat gefiltert)"},
+   {n:"feiertage_is_holiday",s:"Is a date a public holiday in one state?",sf:"آیا یک تاریخ در یک ایالت تعطیل رسمی است؟",st:"Ist ein Datum ein Feiertag in einem Bundesland?"},
+   {n:"feiertage_next_holiday",s:"The next public holiday on or after a date",sf:"نزدیک‌ترین تعطیل رسمی از یک تاریخ به بعد",st:"Der nächste Feiertag ab einem Datum"},
+   {n:"feiertage_holidays_between",s:"Public holidays in a date range (max ~2 years)",sf:"تعطیلات رسمی در یک بازهٔ زمانی (حداکثر حدود ۲ سال)",st:"Feiertage in einem Zeitraum (max. ca. 2 Jahre)"},
+   {n:"feiertage_list_states",s:"All 16 federal states + NATIONAL (nationwide holidays)",sf:"هر ۱۶ ایالت فدرال + NATIONAL (تعطیلات سراسری)",st:"Alle 16 Bundesländer + NATIONAL (bundesweite Feiertage)"}
+  ]},
+{ id:"ferien-mcp", cat:"open-data", color:"#EA580C", letter:"🏖️", featured:false, added:23,
+  title:"Ferien — German school holidays: by year & state, is-it-a-holiday, next holiday",
+  title_de:"Ferien — Deutsche Schulferien nach Jahr & Bundesland, Ist-es-ein-Ferientag, nächste Ferien",
+  desc:"Ferien — German school holidays via ferien-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
+  desc_fa:"تعطیلات مدارس آلمان از ferien-api.de (API رایگان، بدون کلید): تعطیلات هر سال در هر ایالت فدرال، بررسی اینکه یک تاریخ در تعطیلات مدارس است یا نه، نزدیک‌ترین تعطیلات و تعطیلات در یک بازه.",
+  desc_de:"Deutsche Schulferien über ferien-api.de (kostenlose API, kein Schlüssel): Ferien pro Jahr und Bundesland, Ist-es-ein-Ferientag-Prüfung, nächste Ferien und Ferien in einem Zeitraum.",
+  repo:"https://github.com/mohammad-abbasi-sh/ferien-mcp", pypi:"ferien-mcp",
+  tools:[
+   {n:"ferien_list_holidays",s:"School holidays of one year in one federal state (optional month filter)",sf:"تعطیلات مدارس یک سال در یک ایالت فدرال (با فیلتر اختیاری ماه)",st:"Schulferien eines Jahres in einem Bundesland (optional nach Monat gefiltert)"},
+   {n:"ferien_is_holiday",s:"Is a date inside the school holidays in one state?",sf:"آیا یک تاریخ در تعطیلات مدارس یک ایالت است؟",st:"Liegt ein Datum in den Schulferien eines Bundeslandes?"},
+   {n:"ferien_next_holiday",s:"The next school holiday on or after a date",sf:"نزدیک‌ترین تعطیلات مدارس از یک تاریخ به بعد",st:"Die nächsten Schulferien ab einem Datum"},
+   {n:"ferien_holidays_between",s:"School holidays overlapping a date range (max ~2 years)",sf:"تعطیلات مدارس در یک بازهٔ زمانی (حداکثر حدود ۲ سال)",st:"Schulferien in einem Zeitraum (max. ca. 2 Jahre)"},
+   {n:"ferien_list_states",s:"All 16 German federal states",sf:"هر ۱۶ ایالت فدرال",st:"Alle 16 Bundesländer"}
+  ]},
+{ id:"spiegel-mcp", cat:"news", color:"#E2001A", letter:"🗞️", featured:false, added:24,
+  title:"Spiegel — DER SPIEGEL news: headlines, 13 sections, search & videos",
+  title_de:"Spiegel — DER SPIEGEL: Schlagzeilen, 13 Ressorts, Suche & Videos",
+  desc:"Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly).",
+  desc_fa:"اخبار اشپیگل از spiegel.de (فیدهای رسمی RSS، بدون کلید): تیترهای برتر، اخبار ۱۳ بخش، جست‌وجوی کلیدواژه، جدیدترین ویدیوها و متن مقاله‌ها (مقاله‌های پولی SPIEGEL+ صادقانه مشخص می‌شوند).",
+  desc_de:"DER SPIEGEL über spiegel.de (offizielle RSS-Feeds, kein Schlüssel): Top-Schlagzeilen, 13 Ressorts, Stichwortsuche, neueste Videos und Artikeltexte (SPIEGEL+-Artikel werden ehrlich gekennzeichnet).",
+  repo:"https://github.com/mohammad-abbasi-sh/spiegel-mcp", pypi:"spiegel-mcp",
+  tools:[
+   {n:"spiegel_headlines",s:"Top headlines (Schlagzeilen), newest first",sf:"تیترهای برتر (Schlagzeilen)، جدیدترین اول",st:"Top-Schlagzeilen, neueste zuerst"},
+   {n:"spiegel_news_by_section",s:"Newest news of one of 13 sections",sf:"جدیدترین اخبار یکی از ۱۳ بخش",st:"Neueste Nachrichten eines von 13 Ressorts"},
+   {n:"spiegel_search_news",s:"Search news by keyword across all feeds",sf:"جست‌وجوی اخبار با کلیدواژه در همهٔ فیدها",st:"Nachrichtensuche nach Stichwort über alle Feeds"},
+   {n:"spiegel_get_article",s:"Article text of one spiegel.de article (paywall flagged)",sf:"متن یک مقالهٔ spiegel.de (پولی بودن مشخص می‌شود)",st:"Artikeltext eines spiegel.de-Artikels (Paywall wird gekennzeichnet)"},
+   {n:"spiegel_latest_videos",s:"Latest SPIEGEL videos, newest first",sf:"جدیدترین ویدیوهای اشپیگل، جدیدترین اول",st:"Neueste SPIEGEL-Videos, neueste zuerst"}
   ]}
 ];
 const TOTAL_TOOLS = SERVERS.reduce((a,s)=>a+s.tools.length,0);
 
 const CATEGORIES = [
  {id:"sports",icon:"⚽",color:"#15803D",soon:false},
- {id:"news",icon:"📰",color:"#1E40AF",soon:true},
+ {id:"news",icon:"📰",color:"#1E40AF",soon:false},
  {id:"media",icon:"📺",color:"#9F1239",soon:false},
- {id:"weather",icon:"🌤️",color:"#0284C7",soon:true},
- {id:"transport",icon:"🚌",color:"#0369A1",soon:true},
- {id:"open-data",icon:"📊",color:"#F59E0B",soon:true},
+ {id:"weather",icon:"🌤️",color:"#0284C7",soon:false},
+ {id:"transport",icon:"🚌",color:"#0369A1",soon:false},
+ {id:"open-data",icon:"📊",color:"#F59E0B",soon:false},
  {id:"dictionary",icon:"📖",color:"#7C3AED",soon:true},
  {id:"education",icon:"🎓",color:"#1D4ED8",soon:true},
- {id:"shopping",icon:"🛒",color:"#EA580C",soon:true},
- {id:"health",icon:"💊",color:"#059669",soon:true},
- {id:"finance",icon:"💱",color:"#0D9488",soon:true},
- {id:"housing",icon:"🏠",color:"#DB2777",soon:true},
+ {id:"shopping",icon:"🛒",color:"#EA580C",soon:false},
+ {id:"health",icon:"💊",color:"#059669",soon:false},
+ {id:"finance",icon:"💱",color:"#0D9488",soon:false},
+ {id:"housing",icon:"🏠",color:"#DB2777",soon:false},
  {id:"travel",icon:"🏨",color:"#0E7490",soon:true},
 ];
 const catCount = id => SERVERS.filter(s=>s.cat===id).length;
@@ -502,7 +808,7 @@ fa:{
  a11y_skip:"پرش به محتوا", brand_tag:"کاتالوگ MCP آلمان",
  nav_home:"خانه", nav_marketplace:"بازارچه MCP", nav_categories:"دسته‌بندی‌ها", nav_skills:"مهارت‌ها",
  nav_tutorials:"آموزش‌ها", nav_blog:"وبلاگ", nav_about:"درباره ما", nav_contact:"تماس",
- nav_favorites:"علاقه‌مندی‌ها",
+ nav_favorites:"علاقه‌مندی‌ها", nav_ask:"بپرس",
  nav_menu:"منو",
  hero_title:"هوش مصنوعی را به دنیای واقعی متصل کن",
  hero_sub:"سرورهای MCP فقط‌خواندنی برای سرویس‌های آلمان: فوتبال، خبر، رسانه، هواشناسی، حمل‌ونقل و دیتای باز — وصل‌شونده به Claude Code، Cursor و Claude Desktop. بدون کلید API، بدون حساب.",
@@ -567,7 +873,7 @@ fa:{
  about_title:"دربارهٔ Germany MCP", about_sub:"یک کاتالوگ مستقل و متن‌باز — مرجع کامل سرورهای MCP آلمان.",
  about_mission_t:"مأموریت ما", about_mission_d:"ساختن مرجع کامل و قابل‌اعتماد برای سرویس‌های وب آلمان: هر سرویس مهم یک سرور MCP فقط‌خواندنی، سه‌زبانه و آزمایش‌شده داشته باشد — بدون ادعای تأییدنشده و بدون دادهٔ ساختگی.",
  about_builder_t:"سازنده", about_builder_d:"محمد عباسی — مدیر سئو و محصول در بن‌باما، و سازندهٔ ابزارهای متن‌باز برای اکوسیستم Claude. این کاتالوگ را مثل پروژهٔ iran-mcp سپهر ساخت: یک مرجع کامل، نه مجموعه‌ای از نمونه‌کارها.",
- about_catalog_t:"کاتالوگ", about_catalog_d:"۲ سرور، ۱۲ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
+ about_catalog_t:"کاتالوگ", about_catalog_d:"۲۴ سرور، ۱۱۶ ابزار، همه فقط‌خواندنی. کد همهٔ سرورها در گیت‌هاب است و هر سرور با تست‌های واقعی تأیید شده است.",
  contact_title:"تماس با ما", contact_sub:"برای سؤال، پیشنهاد یا گزارش مشکل از راه‌های زیر استفاده کن — پیام مستقیم به گیت‌هاب می‌رسد.", contact_gh_issue:"ثبت Issue در گیت‌هاب", contact_gh_profile:"پروفایل گیت‌هاب",
  dash_go:"رفتن به بازارچه",
  fav_title:"علاقه‌مندی‌ها", fav_sub:"سرورها و مهارت‌هایی که ستاره‌دار کرده‌ای — در همین مرورگر ذخیره می‌شوند.",
@@ -575,13 +881,20 @@ fa:{
  nf_title:"صفحه پیدا نشد", nf_sub:"نشانی‌ای که باز کردی در این کاتالوگ وجود ندارد.", nf_home:"رفتن به خانه",
  theme_light:"روشن", theme_dark:"تیره", lang_name:"زبان",
  fav_added:"به علاقه‌مندی‌ها اضافه شد.", fav_removed:"از علاقه‌مندی‌ها حذف شد.",
- search_in:"جستجو در", match_servers:"سرورها", match_skills:"مهارت‌ها", match_tuts:"آموزش‌ها", match_arts:"مقاله‌ها"
+ search_in:"جستجو در", match_servers:"سرورها", match_skills:"مهارت‌ها", match_tuts:"آموزش‌ها", match_arts:"مقاله‌ها",
+ ask_title:"بپرس — سرور درست را پیدا کن", ask_sub:"سؤالت را به فارسی، آلمانی یا انگلیسی بپرس؛ ما از بین سرورهای کاتالوگ، سروری را پیدا می‌کنیم که جواب سؤال تو را می‌داند.",
+ ask_ph:"مثلاً: جدول بوندسلیگا…", ask_btn:"پیدا کن", ask_examples:"مثلاً:", ask_start:"سؤالت را بالا بنویس یا روی یکی از مثال‌ها بزن.",
+ ask_top:"بهترین سرورها برای سؤال شما", ask_why:"چرا این سرور؟", ask_install:"نصب با uvx",
+ ask_hint:"⚠️ این صفحه فقط سرور درست را برای سؤال شما پیدا می‌کند — قیمت یا جواب زنده نمی‌دهد. برای دادهٔ زنده، سرور را با uvx نصب کن یا سایت اصلی را باز کن.",
+ ask_no_match:"برای این سؤال سروری پیدا نشد", ask_no_match_hint:"کاتالوگ آلمان هنوز کوچک است — {n} سرور دارد. دسته‌بندی‌ها را ببین.",
+ ask_browse:"مرور کاتالوگ", ask_browse_chip:"همهٔ سرورها را ببین", ask_cross:"بپرس در سایت‌های دیگر شبکه:",
+ ask_x_turkey:"🇹🇷 turkey-mcp",
 },
 de:{
  a11y_skip:"Zum Inhalt springen", brand_tag:"Deutschland MCP Katalog",
  nav_home:"Startseite", nav_marketplace:"MCP-Marktplatz", nav_categories:"Kategorien", nav_skills:"Fähigkeiten",
  nav_tutorials:"Anleitungen", nav_blog:"Blog", nav_about:"Über uns", nav_contact:"Kontakt",
- nav_favorites:"Favoriten",
+ nav_favorites:"Favoriten", nav_ask:"Frag",
  nav_menu:"Menü",
  hero_title:"Verbinde KI mit der echten Welt",
  hero_sub:"Nur-Lesen-MCP-Server für deutsche Dienste: Fußball, Nachrichten, Medien, Wetter, Verkehr und offene Daten — für Claude Code, Cursor und Claude Desktop. Kein API-Schlüssel, kein Konto.",
@@ -646,7 +959,7 @@ de:{
  about_title:"Über Germany MCP", about_sub:"Ein unabhängiger Open-Source-Katalog — die vollständige Referenz für Deutschland-MCP-Server.",
  about_mission_t:"Unsere Mission", about_mission_d:"Die vollständige, vertrauenswürdige Referenz für deutsche Webdienste zu bauen: Jeder wichtige Dienst bekommt einen Nur-Lesen-, dreisprachigen und getesteten MCP-Server — keine ungeprüften Behauptungen und keine erfundenen Daten.",
  about_builder_t:"Der Erbauer", about_builder_d:"Mohammad Abbasi — SEO- und Produktmanager bei Bonbama und Erbauer von Open-Source-Tools für das Claude-Ökosystem. Er hat diesen Katalog so aufgebaut, wie Sepehr iran-mcp aufgebaut hat: als vollständige Referenz, nicht als Schaufenster.",
- about_catalog_t:"Der Katalog", about_catalog_d:"2 Server, 12 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
+ about_catalog_t:"Der Katalog", about_catalog_d:"24 Server, 116 Tools — alle nur lesbar. Der Code aller Server ist auf GitHub, und jeder Server wurde mit echten Tests geprüft.",
  contact_title:"Kontakt", contact_sub:"Für Fragen, Vorschläge oder Fehlermeldungen nutze die Links unten — deine Nachricht geht direkt an GitHub.",
  contact_gh_issue:"Issue auf GitHub öffnen", contact_gh_profile:"GitHub-Profil",
  dash_go:"Zum Marktplatz",
@@ -656,14 +969,21 @@ de:{
  nf_home:"Zur Startseite",
  theme_light:"Hell", theme_dark:"Dunkel", lang_name:"Sprache",
  fav_added:"Zu Favoriten hinzugefügt.", fav_removed:"Aus Favoriten entfernt.",
- search_in:"Suchen in", match_servers:"Server", match_skills:"Fähigkeiten", match_tuts:"Anleitungen", match_arts:"Artikel"
+ search_in:"Suchen in", match_servers:"Server", match_skills:"Fähigkeiten", match_tuts:"Anleitungen", match_arts:"Artikel",
+ ask_title:"Frag — finde den richtigen Server", ask_sub:"Frag auf Deutsch, Persisch oder Englisch — wir finden den Katalog-Server, der deine Frage beantworten kann.",
+ ask_ph:"Z. B.: Bundesliga-Tabelle…", ask_btn:"Finden", ask_examples:"Zum Beispiel:", ask_start:"Schreib deine Frage oben oder tippe auf ein Beispiel.",
+ ask_top:"Die besten Server für deine Frage", ask_why:"Warum dieser Server?", ask_install:"Mit uvx installieren",
+ ask_hint:"⚠️ Diese Seite findet nur den richtigen Server für deine Frage — keine Live-Preise oder Antworten. Für Live-Daten installiere den Server mit uvx oder öffne die Seite des Dienstes.",
+ ask_no_match:"Kein Server für diese Frage gefunden", ask_no_match_hint:"Der Deutschland-Katalog ist noch klein — erst {n} Server. Sieh dir die Kategorien an.",
+ ask_browse:"Katalog durchsuchen", ask_browse_chip:"Alle Server ansehen", ask_cross:"Auf anderen Seiten des Netzwerks fragen:",
+ ask_x_turkey:"🇹🇷 turkey-mcp",
 
 },
 en:{
  a11y_skip:"Skip to content", brand_tag:"Germany MCP Catalog",
  nav_home:"Home", nav_marketplace:"MCP Marketplace", nav_categories:"Categories", nav_skills:"Skills",
  nav_tutorials:"Tutorials", nav_blog:"Blog", nav_about:"About Us", nav_contact:"Contact",
- nav_favorites:"Favorites",
+ nav_favorites:"Favorites", nav_ask:"Ask",
  nav_menu:"Menu",
  hero_title:"Connect AI to the World",
  hero_sub:"Read-only MCP servers for German services: football, news, media, weather, transport and open data — connecting to Claude Code, Cursor and Claude Desktop. No API key, no account.",
@@ -728,7 +1048,7 @@ en:{
  about_title:"About Germany MCP", about_sub:"An independent, open-source catalog — the complete reference for Germany MCP servers.",
  about_mission_t:"Our mission", about_mission_d:"To build the complete, trustworthy reference for German web services: every major service gets a read-only, trilingual, tested MCP server — no unverified claims and no fabricated data.",
  about_builder_t:"The builder", about_builder_d:"Mohammad Abbasi — SEO and Product Manager at Bonbama, and builder of open-source tools for the Claude ecosystem. He built this catalog the way Sepehr built iran-mcp: a complete reference, not a showcase.",
- about_catalog_t:"The catalog", about_catalog_d:"2 servers, 12 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
+ about_catalog_t:"The catalog", about_catalog_d:"24 servers, 116 tools — all read-only. Every server's code is on GitHub and each server is verified with real tests.",
  contact_title:"Contact Us", contact_sub:"For questions, suggestions or bug reports, use the links below — your message goes straight to GitHub.", contact_gh_issue:"Open an issue on GitHub", contact_gh_profile:"GitHub profile",
  dash_go:"Go to marketplace",
  fav_title:"Favorites", fav_sub:"Servers and skills you starred — stored in this browser.",
@@ -736,7 +1056,14 @@ en:{
  nf_title:"Page not found", nf_sub:"The address you opened does not exist in this catalog.", nf_home:"Go home",
  theme_light:"Light", theme_dark:"Dark", lang_name:"Language",
  fav_added:"Added to favorites.", fav_removed:"Removed from favorites.",
- search_in:"Search in", match_servers:"Servers", match_skills:"Skills", match_tuts:"Tutorials", match_arts:"Articles"
+ search_in:"Search in", match_servers:"Servers", match_skills:"Skills", match_tuts:"Tutorials", match_arts:"Articles",
+ ask_title:"Ask — find the right server", ask_sub:"Ask in Persian, German or English — we find the catalog server that can answer your question.",
+ ask_ph:"E.g.: Bundesliga table…", ask_btn:"Find", ask_examples:"Try:", ask_start:"Type your question above or tap an example.",
+ ask_top:"Best servers for your question", ask_why:"Why this server?", ask_install:"Install with uvx",
+ ask_hint:"⚠️ This page only finds the right server for your question — it does not fetch live prices or answers. For live data, install the server with uvx or open the service's own site.",
+ ask_no_match:"No server found for this question", ask_no_match_hint:"The Germany catalog is still small — only {n} servers. Browse the categories.",
+ ask_browse:"Browse the catalog", ask_browse_chip:"Browse all servers", ask_cross:"Ask on the network's other sites:",
+ ask_x_turkey:"🇹🇷 turkey-mcp",
 }};
 const LANGS = {fa:{name:"فارسی",dir:"rtl",locale:"fa-IR"},de:{name:"Deutsch",dir:"ltr",locale:"de-DE"},en:{name:"English",dir:"ltr",locale:"en-US"}};
 
@@ -775,7 +1102,7 @@ function copyText(txt, msg){ const done=()=>toast(msg||t("tool_copied"));
 function fallbackCopy(txt, done){ const ta=document.createElement("textarea"); ta.value=txt; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); try{ document.execCommand("copy"); }catch(e){} document.body.removeChild(ta); done(); }
 
 /* ---------------- router ---------------- */
-const PAGES = ["home","marketplace","tool","categories","skills","skill","tutorials","tutorial","blog","article","about","contact","favorites"];
+const PAGES = ["home","marketplace","tool","categories","skills","skill","tutorials","tutorial","blog","article","about","contact","favorites","ask"];
 function parseHash(){
   const raw = location.hash||"";
   if(raw && !raw.startsWith("#/")){
@@ -793,7 +1120,7 @@ function go(page, param){ location.hash = hashFor(page, param); window.scrollTo(
 
 /* ---------------- shared components ---------------- */
 function headerHTML(){
-  const navItems = [["home","nav_home"],["marketplace","nav_marketplace"],["categories","nav_categories"],["skills","nav_skills"],["tutorials","nav_tutorials"],["blog","nav_blog"],["about","nav_about"],["contact","nav_contact"]];
+  const navItems = [["home","nav_home"],["marketplace","nav_marketplace"],["categories","nav_categories"],["skills","nav_skills"],["tutorials","nav_tutorials"],["blog","nav_blog"],["about","nav_about"],["contact","nav_contact"],["ask","nav_ask"]];
   const nav = navItems.map(([p,k])=>`<a href="${hashFor(p)}" class="${state.page===p||(p==="marketplace"&&state.page==="tool")||(p==="skills"&&state.page==="skill")||(p==="tutorials"&&state.page==="tutorial")||(p==="blog"&&state.page==="article")?"active":""}">${t(k)}</a>`).join("");
   return `<header class="site"><div class="wrap nav">
     <a class="brand" href="${hashFor("home")}"><span class="mark">G</span><span>Germany MCP<small>${t("brand_tag")}</small></span></a>
@@ -803,7 +1130,7 @@ function headerHTML(){
         ${Object.keys(LANGS).map(l=>`<option value="${l}" ${l===state.lang?"selected":""}>${LANGS[l].name}</option>`).join("")}
       </select>
       <button class="icon-btn" onclick="App.toggleTheme()" aria-label="${state.theme==="dark"?t("theme_light"):t("theme_dark")}" title="${state.theme==="dark"?t("theme_light"):t("theme_dark")}">${state.theme==="dark"?"☀️":"🌙"}</button>
-      <a class="icon-btn" href="${hashFor("favorites")}" title="${t("nav_favorites")}" aria-label="${t("nav_favorites")}">★</a>
+      <a class="icon-btn fav-btn" href="${hashFor("favorites")}" title="${t("nav_favorites")}" aria-label="${t("nav_favorites")}">★</a>
       <button class="icon-btn burger" onclick="App.toggleMenu()" aria-label="${t("nav_menu")}">☰</button>
     </div>
   </div>
@@ -826,7 +1153,7 @@ function footerHTML(){
       </div>
       ${col(t("foot_platform"), [[hashFor("marketplace"),t("nav_marketplace")],[hashFor("categories"),t("nav_categories")],[hashFor("skills"),t("nav_skills")],[hashFor("tutorials"),t("nav_tutorials")]])}
       ${col(t("foot_resources"), [[hashFor("blog"),t("nav_blog")],[hashFor("tutorials"),t("tut_title")],["https://github.com/mohammad-abbasi-sh/germany-mcp",t("tool_repo")],["https://pypi.org/user/mohammad-abbasi-sh/","PyPI"]])}
-      ${col(t("foot_company"), [[hashFor("about"),t("nav_about")],[hashFor("contact"),t("nav_contact")],["#",t("foot_privacy")],["#",t("foot_terms")]])}
+      ${col(t("foot_company"), [[hashFor("about"),t("nav_about")],[hashFor("contact"),t("nav_contact")],["https://almanibama.ir","Almanibama"],["https://mabbasi.ir","mabbasi.ir"],["#",t("foot_privacy")],["#",t("foot_terms")]])}
     </div>
     <div class="foot-bottom">
       <span>© ${new Date().getFullYear()} Germany MCP — ${t("foot_rights")}</span>
@@ -1040,7 +1367,7 @@ function toolHTML(id){
     <p><a href="${hashFor("marketplace")}">← ${t("back")}</a></p>
     <div class="detail-head">
       <span class="tile" style="background:${s.color}">${s.letter}</span>
-      <div style="flex:1;min-width:240px">
+      <div style="flex:1;min-width:0">
         <h1>${esc(s.title)}</h1>
         <p class="latin">${esc(s.id)} · v0.1.0</p>
         <p>${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span> `:""}<span class="badge badge-ok">✓ ${t("status_available")}</span> <span class="chip">${esc(catName(s.cat))}</span></p>
@@ -1102,7 +1429,7 @@ function skillHTML(id){
     <p><a href="${hashFor("skills")}">← ${t("back")}</a></p>
     <div class="detail-head">
       <span class="tile" style="background:linear-gradient(135deg,#6657E8,#19C6B3)">✦</span>
-      <div style="flex:1;min-width:240px"><h1>${esc(k.id)}</h1><p class="latin">github.com/mohammad-abbasi-sh/${esc(k.id)}</p></div>
+      <div style="flex:1;min-width:0"><h1>${esc(k.id)}</h1><p class="latin">github.com/mohammad-abbasi-sh/${esc(k.id)}</p></div>
       ${starBtn("skill", k.id)}
     </div>
     <p style="color:var(--muted);max-width:760px">${esc(skillTag(k))}</p>
@@ -1256,6 +1583,119 @@ function startDemo(){
 function stopDemo(){ clearInterval(demoTimer); typeToken++; }
 
 /* ---------------- render ---------------- */
+/* ---------------- Ask — find the right server ---------------- */
+const ASK_STATE = {q:""};
+const ASK_CHIPS = {
+ fa:["جدول بوندسلیگا","نتایج زنده بوندسلیگا","گلزنان برتر بوندسلیگا","برنامه‌های تلویزیونی امشب","جدیدترین برنامه‌های ZDF"],
+ de:["Bundesliga-Tabelle","Bundesliga Live-Ergebnisse","Bundesliga Torschützen","TV-Programm heute Abend","Neueste ZDF-Sendungen"],
+ en:["Bundesliga table","Bundesliga live scores","Bundesliga top scorers","Tonight's TV programmes","Latest ZDF programmes"]
+};
+const ASK_INTENTS = [
+ {cats:["sports"], kw:{fa:["فوتبال","بوندسلیگا","لیگ","جدول","گلزن","نتیجه بازی"],de:["fußball","bundesliga","liga","tabelle","torschütze","ergebnis","spiel","live"],en:["football","soccer","bundesliga","league","table","scorer","score","match","live"]}},
+ {cats:["media"], kw:{fa:["تلویزیون","برنامه","سریال","فیلم","پخش","مدیاتک"],de:["fernsehen","sendung","serie","film","programm","mediathek","ard","zdf"],en:["tv","television","programme","show","series","broadcast","mediathek"]}},
+ {cats:["weather"], kw:{fa:["هوا","آب و هوا","باران","دما"],de:["wetter","regen","temperatur","vorhersage"],en:["weather","rain","temperature","forecast"]}},
+ {cats:["transport"], kw:{fa:["قطار","بلیت","سفر","اتوبوس"],de:["bahn","zug","ticket","bus","reise","flixtrain"],en:["train","ticket","bus","travel"]}},
+ {cats:["shopping"], kw:{fa:["خرید","گوشی","موبایل","تخفیف","فروشگاه"],de:["shop","handy","kaufen","preis","rabatt","einkaufen"],en:["shop","phone","buy","discount","store"]}},
+ {cats:["finance"], kw:{fa:["دلار","یورو","طلا","ارز","نرخ"],de:["dollar","euro","gold","währung","kurs","ezb"],en:["dollar","euro","gold","currency","exchange","rate"]}},
+ {cats:["news"], kw:{fa:["خبر","اخبار","روزنامه"],de:["nachrichten","news","schlagzeile","tagesschau"],en:["news","headline"]}},
+ {cats:["jobs"], kw:{fa:["شغل","استخدام","کار"],de:["job","karriere","stellenangebot","arbeit"],en:["job","career","hiring","employment"]}},
+ {cats:["travel"], kw:{fa:["هتل","سفر","بلیت هواپیما"],de:["hotel","reise","flug"],en:["hotel","travel","flight"]}},
+ {cats:["dictionary"], kw:{fa:["دیکشنری","لغت","معنی","ترجمه"],de:["wörterbuch","wort","bedeutung","übersetzung"],en:["dictionary","word","meaning","translate"]}},
+ {cats:["education"], kw:{fa:["دانشگاه","تحصیل","رشته"],de:["universität","studium","hochschule"],en:["university","study","degree"]}},
+ {cats:["health"], kw:{fa:["دارو","داروخانه","دکتر","پزشک"],de:["apotheke","medizin","arzt","medikament"],en:["pharmacy","medicine","doctor"]}}
+];
+function askNorm(s){
+  return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/ي/g,"ی").replace(/ك/g,"ک").replace(/ة/g,"ه")
+    .replace(/[۰-۹]/g,d=>"۰۱۲۳۴۵۶۷۸۹".indexOf(d))
+    .replace(/[^a-z0-9\u0600-\u06FF ]/g," ").replace(/\s+/g," ").trim();
+}
+function askTokens(q){ return askNorm(q).split(" ").filter(w=>w.length>1); }
+function askHay(s){
+  return askNorm([s.id, s.title, s.title_de||"", s.desc, s.desc_fa, s.desc_de||"", s.cat,
+    s.tools.map(x=>x.n+" "+x.s+" "+(x.sf||"")+" "+(x.st||"")).join(" ")].join(" "));
+}
+function askScore(q){
+  const toks = askTokens(q);
+  if(!toks.length) return [];
+  const intents = ASK_INTENTS.map(it=>{
+    const kws = Object.keys(it.kw).reduce((a,k)=>a.concat(it.kw[k].map(askNorm)),[]);
+    const hit = [];
+    toks.forEach(w=>{
+      kws.forEach(k=>{
+        k.split(" ").forEach(kw=>{
+          if(kw && (kw===w || (kw.length>=3 && w.indexOf(kw)>=0) || (w.length>3 && kw.indexOf(w)>=0)) && hit.indexOf(kw)<0) hit.push(kw);
+        });
+      });
+    });
+    return {cats:it.cats, hit};
+  }).filter(x=>x.hit.length);
+  return SERVERS.map(s=>{
+    const hay = askHay(s);
+    let score = 0; const matched = [];
+    toks.forEach(w=>{ if(hay.indexOf(w)>=0){ score += 2; if(matched.indexOf(w)<0) matched.push(w); } });
+    intents.forEach(it=>{
+      if(it.cats.indexOf(s.cat)>=0){ score += 3*it.hit.length; it.hit.forEach(kw=>{ if(matched.indexOf(kw)<0) matched.push(kw); }); }
+    });
+    return {s, score, matched};
+  }).filter(r=>r.score>0).sort((a,b)=>b.score-a.score).slice(0,3);
+}
+function askCard(r){
+  const s = r.s;
+  const cmd = "uvx " + s.pypi;
+  const tools = s.tools.slice(0,3).map(x=>`<code>${esc(x.n)}</code>`).join(" · ");
+  return `<article class="card" style="margin-bottom:16px">
+    <div class="card-top">
+      <span class="tile" style="background:${s.color}">${s.letter}</span>
+      <div style="flex:1;min-width:0"><h3>${esc(s.title.split(" — ")[0])}</h3><p class="latin">${esc(s.id)}</p></div>
+      ${starBtn("server", s.id)}
+    </div>
+    <p class="desc">${esc(serverDesc(s))}</p>
+    <p class="meta-row"><span class="ic">🎯</span> ${t("ask_why")}: ${r.matched.map(m=>`<span class="chip">${esc(m)}</span>`).join(" ")}</p>
+    <p class="meta-row"><span class="ic">▦</span> ${esc(catName(s.cat))} · ${fmtNum(s.tools.length)} ${t("tools_count")}</p>
+    <p style="font-size:13.5px;color:var(--muted)">${tools}${s.tools.length>3?` · +${fmtNum(s.tools.length-3)}`:""}</p>
+    <div class="install-box" style="margin-top:14px"><h3>${t("ask_install")}</h3><div class="copy-row"><pre><code>${esc(cmd)}</code></pre><button class="copy-btn" onclick="App.copy('${esc(cmd)}')">${t("tool_copy")}</button></div></div>
+    <div class="card-bottom">
+      <a class="btn btn-primary btn-sm" href="${hashFor("tool", s.id)}">${t("details")}</a>
+      <a class="btn btn-ghost btn-sm" href="${s.repo}" target="_blank" rel="noopener">${t("tool_repo")} ↗</a>
+      <a class="btn btn-ghost btn-sm" href="https://pypi.org/project/${s.pypi}/" target="_blank" rel="noopener">${t("tool_pypi")} ↗</a>
+    </div>
+  </article>`;
+}
+function askNoMatchHTML(){
+  const liveCats = CATEGORIES.filter(c=>!c.soon);
+  const hint = t("ask_no_match_hint").replace("{n}", fmtNum(SERVERS.length));
+  return `<div class="empty"><div class="big">🧭</div><h3>${t("ask_no_match")}</h3><p>${hint}</p>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px">${liveCats.map(c=>`<a class="chip" href="${hashFor("categories")}">${esc(c.icon)} ${esc(catName(c.id))}</a>`).join("")}</div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px">
+    <a class="btn btn-primary btn-sm" href="${hashFor("marketplace")}">${t("ask_browse")}</a>
+  </div></div>`;
+}
+function askResultsHTML(q, res){
+  if(!q || !askTokens(q).length) return `<p style="color:var(--muted)">${t("ask_start")}</p>`;
+  if(!res.length) return askNoMatchHTML();
+  return `<h2 style="font-size:20px">${t("ask_top")}</h2><div style="margin-top:14px">${res.map(askCard).join("")}</div>`;
+}
+function askHTML(){
+  const q = ASK_STATE.q;
+  const chips = ASK_CHIPS[state.lang]||ASK_CHIPS.en;
+  const res = q ? askScore(q) : [];
+  return `<section class="section"><div class="wrap">
+    <p><a href="${hashFor("home")}">← ${t("back")}</a></p>
+    <h1>${t("ask_title")}</h1>
+    <p style="color:var(--muted);max-width:760px">${t("ask_sub")}</p>
+    <div class="note">${t("ask_hint")}</div>
+    <form onsubmit="return App.askSubmit(event)" style="margin-top:22px">
+      <div class="toolbar"><div class="search-box"><span class="mag">🔍</span><input id="ask-q" type="search" placeholder="${esc(t("ask_ph"))}" value="${esc(q)}" oninput="App.askSearch(this.value)" aria-label="${esc(t("ask_ph"))}"></div>
+      <button class="btn btn-primary" type="submit">${t("ask_btn")}</button></div>
+    </form>
+    <p style="margin-top:4px"><strong>${t("ask_examples")}</strong></p>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">${chips.map(c=>`<button type="button" class="chip" style="cursor:pointer" onclick="App.askChip(this.textContent)">${esc(c)}</button>`).join("")} <a class="chip" style="cursor:pointer" href="${hashFor("marketplace")}">${t("ask_browse_chip")} →</a></div>
+    <div id="ask-results" style="margin-top:26px">${askResultsHTML(q,res)}</div>
+    <div class="note">${t("ask_cross")} <a href="https://mohammad-abbasi-sh.github.io/turkey-mcp/#/ask/" target="_blank" rel="noopener">${t("ask_x_turkey")}</a></div>
+  </div></section>`;
+}
+
 function pageHTML(){
   switch(state.page){
     case "home": return homeHTML();
@@ -1271,12 +1711,13 @@ function pageHTML(){
     case "about": return aboutHTML();
     case "contact": return contactHTML();
     case "favorites": return favoritesHTML();
+    case "ask": return askHTML();
     default: return notFoundHTML();
   }
 }
 function pageTitle(){
   const base = "Germany MCP";
-  const map = {home:t("hero_title"),marketplace:t("mp_title"),categories:t("cats_page_title"),skills:t("skills_page_title"),tutorials:t("tut_page_title"),blog:t("blog_page_title"),about:t("about_title"),contact:t("contact_title"),favorites:t("fav_title"),"404":t("nf_title")};
+  const map = {home:t("hero_title"),marketplace:t("mp_title"),categories:t("cats_page_title"),skills:t("skills_page_title"),tutorials:t("tut_page_title"),blog:t("blog_page_title"),about:t("about_title"),contact:t("contact_title"),favorites:t("fav_title"),ask:t("ask_title"),"404":t("nf_title")};
   if(state.page==="tool"){ const s=SERVERS.find(x=>x.id===state.param); return s? s.title+" — "+base : base; }
   if(state.page==="skill"){ const k=SKILLS.find(x=>x.id===state.param); return k? k.id+" — "+base : base; }
   if(state.page==="tutorial"){ const x=TUTORIALS.find(v=>v.id===state.param); return x? L(x.title)+" — "+base : base; }
@@ -1314,6 +1755,9 @@ window.App = {
   copy(txt){ copyText(txt); },
   demoTab(i){ demoIdx=i; showDemo(); },
   heroSearch(ev){ ev.preventDefault(); const q=document.getElementById("hero-q"); mp.q=q?q.value:""; mp.cat="all"; go("marketplace"); render(); return false; },
+  askSearch(v){ ASK_STATE.q=v; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(v,askScore(v)); },
+  askChip(txt){ ASK_STATE.q=txt.trim(); const inp=document.getElementById("ask-q"); if(inp) inp.value=ASK_STATE.q; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(ASK_STATE.q,askScore(ASK_STATE.q)); },
+  askSubmit(ev){ ev.preventDefault(); const inp=document.getElementById("ask-q"); ASK_STATE.q=inp?inp.value:""; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(ASK_STATE.q,askScore(ASK_STATE.q)); return false; },
   openCategory(id){ mp.cat=id; mp.q=""; go("marketplace"); render(); },
   mpSearch(v){ mp.q=v; const el=document.getElementById("mp-results"); if(el) el.innerHTML=mpResultsHTML(); },
   mpFilter(k,v){ mp[k]=v; const el=document.getElementById("mp-results"); if(el) el.innerHTML=mpResultsHTML(); },

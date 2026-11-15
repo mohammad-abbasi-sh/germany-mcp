@@ -743,6 +743,25 @@ const DEMOS = [
 
 ];
 
+const FAQ = [
+ {q:{fa:"برای استفاده از سرورها کلید API لازم است؟",de:"Brauche ich einen API-Schlüssel, um die Server zu nutzen?",en:"Do I need an API key to use the servers?"},a:{fa:"نه. همهٔ سرورها روی کامپیوتر خودت با uvx اجرا می‌شوند؛ بدون کلید API، بدون حساب و بدون ثبت‌نام.",de:"Nein. Alle Server laufen mit uvx auf deinem eigenen Computer — kein API-Schlüssel, kein Konto, keine Registrierung.",en:"No. Every server runs on your own computer with uvx — no API key, no account, no sign-up."}},
+ {q:{fa:"سرورها فقط‌خواندنی‌اند؟",de:"Sind die Server nur lesbar?",en:"Are the servers read-only?"},a:{fa:"بله. سرورها فقط دادهٔ عمومی سایت‌ها را می‌خوانند؛ چیزی نمی‌خرند، رزرو نمی‌کنند و در هیچ حسابی تغییری نمی‌دهند.",de:"Ja. Die Server lesen nur öffentliche Daten der Websites; sie kaufen nichts, buchen nichts und ändern nichts in einem Konto.",en:"Yes. The servers only read the sites' public data; they never buy, book, or change anything in an account."}},
+ {q:{fa:"این سرورها رسمی‌اند؟",de:"Sind diese Server offiziell?",en:"Are these servers official?"},a:{fa:"نه؛ غیررسمی و ساختهٔ جامعه‌اند و از همان نشانی‌هایی استفاده می‌کنند که خود سایت‌ها به کار می‌برند. اگر سایتی تغییر کند، سرورش ممکن است از کار بیفتد؛ اینجا نگهداری و به‌روز می‌شوند.",de:"Nein; sie sind inoffiziell und von der Community gebaut und nutzen dieselben Adressen, die die Websites selbst verwenden. Ändert sich eine Website, kann ihr Server ausfallen; hier werden sie gewartet und aktualisiert.",en:"No; they are unofficial, community-built, and use the same endpoints the sites themselves use. If a site changes, its server may break; they are maintained and updated here."}},
+ {q:{fa:"چطور یک سرور را وصل کنم؟",de:"Wie verbinde ich einen Server?",en:"How do I connect a server?"},a:{fa:"از صفحهٔ «اتصال»، برنامه‌ات را انتخاب کن و قدم‌ها را دنبال کن — معمولاً یک دستور ترمینال یا چند خط تنظیمات است.",de:"Wähle auf der Seite «Verbinden» deine App und folge den Schritten — meist reicht ein Terminal-Befehl oder ein paar Zeilen Konfiguration.",en:"Pick your app on the «Connect» page and follow the steps — usually one terminal command or a few lines of config."}},
+ {q:{fa:"با کدام برنامه‌ها کار می‌کند؟",de:"Mit welchen Apps funktioniert das?",en:"Which apps does it work with?"},a:{fa:"هر کلاینت MCP که سرور stdio محلی را پشتیبانی کند: Claude Code، Claude Desktop، Cursor و VS Code اینجا تأیید شده‌اند؛ Windsurf، Codex CLI و Gemini CLI هم با تنظیم استاندارد کار می‌کنند.",de:"Mit jedem MCP-Client, der lokale stdio-Server unterstützt: Claude Code, Claude Desktop, Cursor und VS Code sind hier geprüft; Windsurf, Codex CLI und Gemini CLI funktionieren ebenfalls mit der Standard-Konfiguration.",en:"Any MCP client that supports local stdio servers: Claude Code, Claude Desktop, Cursor and VS Code are verified here; Windsurf, Codex CLI and Gemini CLI also work with the standard config."}},
+ {q:{fa:"چطور یک سرور تازه پیشنهاد دهم؟",de:"Wie schlage ich einen neuen Server vor?",en:"How do I suggest a new server?"},a:{fa:"در گیت‌هاب یک ایشو باز کن و بگو چه سرویسی، چه داده‌ای و چرا به درد می‌خورد.",de:"Eröffne ein Issue auf GitHub und schreibe, welcher Dienst, welche Daten und warum es nützlich wäre.",en:"Open an issue on GitHub and say which service, which data, and why it would be useful."}}
+];
+
+const CONNECT_APPS = [
+ {id:"claude-code",name:"Claude Code",icon:"⌘",kind:"cli",verified:true,desc:{fa:"ایجنت خط فرمان — با یک دستور ترمینال وصل می‌شود.",de:"Kommandozeilen-Agent — mit einem einzigen Terminal-Befehl verbinden.",en:"CLI agent — connect with one terminal command."}},
+ {id:"claude-desktop",name:"Claude Desktop",icon:"▣",kind:"cfg",verified:true,file:"claude_desktop_config.json",desc:{fa:"برنامهٔ دسکتاپ — از Settings ← Developer ← Edit Config بازش کن.",de:"Desktop-App — über Settings → Developer → Edit Config öffnen.",en:"Desktop app — open it from Settings → Developer → Edit Config."}},
+ {id:"cursor",name:"Cursor",icon:"▸",kind:"cfg",verified:true,file:"~/.cursor/mcp.json",desc:{fa:"ویرایشگر کد هوش مصنوعی — سرور را در تنظیمات MCP اضافه کن.",de:"KI-Code-Editor — Server in den MCP-Einstellungen hinzufügen.",en:"AI code editor — add the server in MCP settings."}},
+ {id:"vscode",name:"VS Code",icon:"◈",kind:"vscode",verified:true,file:".vscode/mcp.json",desc:{fa:"در پوشهٔ پروژه، فایل «.vscode/mcp.json» را بساز یا ویرایش کن.",de:"Lege im Projektordner die Datei «.vscode/mcp.json» an oder bearbeite sie.",en:"Create or edit «.vscode/mcp.json» in the project folder."}},
+ {id:"windsurf",name:"Windsurf",icon:"≋",kind:"cfg",verified:false,file:"~/.codeium/windsurf/mcp_config.json",desc:{fa:"ویرایشگر کد هوش مصنوعی — تنظیمات MCP در فایل زیر است.",de:"KI-Code-Editor — die MCP-Einstellungen stehen in der Datei unten.",en:"AI code editor — MCP settings live in the file below."}},
+ {id:"codex",name:"Codex CLI",icon:"⌨",kind:"toml",verified:false,file:"~/.codex/config.toml",desc:{fa:"ایجنت خط فرمان OpenAI — سرور را در config.toml ثبت کن.",de:"OpenAI-Kommandozeilen-Agent — Server in der config.toml registrieren.",en:"OpenAI CLI agent — register the server in config.toml."}},
+ {id:"gemini-cli",name:"Gemini CLI",icon:"✦",kind:"cfg",verified:false,file:"~/.gemini/settings.json",desc:{fa:"ایجنت خط فرمان گوگل — سرور را در settings.json ثبت کن.",de:"Google-Kommandozeilen-Agent — Server in der settings.json registrieren.",en:"Google CLI agent — register the server in settings.json."}}
+];
+
 const TUTORIALS = [
 
  {id:"install-uvx",level:"beginner",mins:5,cat:"setup",
@@ -889,6 +908,37 @@ fa:{
  ask_no_match:"برای این سؤال سروری پیدا نشد", ask_no_match_hint:"کاتالوگ آلمان هنوز کوچک است — {n} سرور دارد. دسته‌بندی‌ها را ببین.",
  ask_browse:"مرور کاتالوگ", ask_browse_chip:"همهٔ سرورها را ببین", ask_cross:"بپرس در سایت‌های دیگر شبکه:",
  ask_x_turkey:"🇹🇷 turkey-mcp",
+ nav_connect:"اتصال",
+ badge_nokey:"بدون کلید API",
+ badge_local:"اجرا روی کامپیوتر شما",
+ suggest_server:"پیشنهاد سرور تازه",
+ conn_title:"دستیارت را وصل کن",
+ conn_sub:"برنامه‌ات را انتخاب کن تا قدم‌به‌قدم ببینی چطور یک سرور را اضافه کنی. همهٔ سرورها محلی و فقط‌خواندنی‌اند؛ بدون کلید API و بدون حساب.",
+ conn_pick:"برنامه‌ات را انتخاب کن",
+ conn_prereq_t:"پیش‌نیاز: uvx",
+ conn_prereq_d:"uvx سرورها را بدون نصب جداگانه اجرا می‌کند. اگر نصب نیست، با یک دستور نصبش کن و ترمینال را دوباره باز کن.",
+ conn_steps_t:"قدم‌ها",
+ conn_snippet_t:"تنظیمات",
+ conn_file:"فایل",
+ conn_unverified:"با تنظیم استاندارد MCP کار می‌کند؛ اینجا هنوز تأیید نشده است.",
+ conn_cli_s1:"این دستور را در ترمینال اجرا کن.",
+ conn_cli_s2:"برنامه را کامل ببند و دوباره باز کن.",
+ conn_cli_s3:"با دستور «claude mcp list» بررسی کن که سرور در فهرست باشد.",
+ conn_cfg_s1:"این تنظیمات را در فایل {file} بگذار (اگر فایل نیست، بسازش).",
+ conn_cfg_s2:"برنامه را کامل ببند و دوباره باز کن؛ بستن پنجره کافی نیست.",
+ conn_cfg_s3:"در یک گفت‌وگوی تازه، سؤالی بپرس که این سرور جوابش را می‌داند.",
+ conn_trouble_t:"ابزارها دیده نمی‌شوند؟",
+ conn_tb1:"برنامه را کامل ببند و دوباره باز کن؛ بستن پنجره کافی نیست.",
+ conn_tb2:"در Claude Code دستور «claude mcp list» را اجرا کن؛ سرور باید در فهرست باشد.",
+ conn_tb3:"فایل تنظیمات باید JSON معتبر باشد — بدون ویرگول اضافه و با آکولادهای بسته.",
+ conn_tb4:"uvx نصب باشد («uvx --version»)؛ بعد از نصبش، ترمینال و برنامه را دوباره باز کن.",
+ conn_all_t:"همهٔ سرورها یکجا",
+ conn_all_d:"ریپوی کاتالوگ را کلون کن و در Claude Code بازش کن — فایل «.mcp.json» همهٔ سرورها را ثبت کرده است؛ همان‌هایی را که می‌خواهی تأیید کن.",
+ conn_sample:"مثال با سرور «{name}» — برای هر سرور دیگر، نام و بسته را عوض کن.",
+ conn_llms_t:"برای ایجنت‌های هوش مصنوعی",
+ conn_llms_d:"فایل «llms.txt» فهرست کامل کاتالوگ را به زبان ماشین می‌دهد تا ایجنت‌ها سرور درست را پیدا کنند.",
+ faq_title:"سؤالات متداول",
+ faq_sub:"پاسخ کوتاه به سؤال‌هایی که بیشتر پرسیده می‌شوند.",
 },
 de:{
  a11y_skip:"Zum Inhalt springen", brand_tag:"Deutschland MCP Katalog",
@@ -977,6 +1027,37 @@ de:{
  ask_no_match:"Kein Server für diese Frage gefunden", ask_no_match_hint:"Der Deutschland-Katalog ist noch klein — erst {n} Server. Sieh dir die Kategorien an.",
  ask_browse:"Katalog durchsuchen", ask_browse_chip:"Alle Server ansehen", ask_cross:"Auf anderen Seiten des Netzwerks fragen:",
  ask_x_turkey:"🇹🇷 turkey-mcp",
+ nav_connect:"Verbinden",
+ badge_nokey:"Kein API-Schlüssel",
+ badge_local:"Läuft auf deinem Computer",
+ suggest_server:"Neuen Server vorschlagen",
+ conn_title:"Verbinde deinen Assistenten",
+ conn_sub:"Wähle deine App und sieh Schritt für Schritt, wie du einen Server hinzufügst. Alle Server laufen lokal und sind nur lesbar — kein API-Schlüssel, kein Konto.",
+ conn_pick:"Wähle deine App",
+ conn_prereq_t:"Voraussetzung: uvx",
+ conn_prereq_d:"uvx führt die Server ohne separate Installation aus. Falls nicht installiert, mit einem Befehl installieren und das Terminal neu öffnen.",
+ conn_steps_t:"Schritte",
+ conn_snippet_t:"Konfiguration",
+ conn_file:"Datei",
+ conn_unverified:"Funktioniert mit der Standard-MCP-Konfiguration; hier noch nicht geprüft.",
+ conn_cli_s1:"Führe diesen Befehl im Terminal aus.",
+ conn_cli_s2:"Schließe die App vollständig und öffne sie erneut.",
+ conn_cli_s3:"Prüfe mit «claude mcp list», ob der Server in der Liste steht.",
+ conn_cfg_s1:"Füge diese Einstellungen in die Datei {file} ein (falls sie nicht existiert, erstelle sie).",
+ conn_cfg_s2:"Schließe die App vollständig und öffne sie erneut; das Fenster zu schließen reicht nicht.",
+ conn_cfg_s3:"Stelle in einem neuen Chat eine Frage, die dieser Server beantworten kann.",
+ conn_trouble_t:"Werden die Tools nicht angezeigt?",
+ conn_tb1:"Schließe die App vollständig und öffne sie erneut; das Fenster zu schließen reicht nicht.",
+ conn_tb2:"Führe in Claude Code «claude mcp list» aus; der Server muss in der Liste stehen.",
+ conn_tb3:"Die Konfigurationsdatei muss gültiges JSON sein — kein Komma am Ende, geschlossene Klammern.",
+ conn_tb4:"uvx muss installiert sein («uvx --version»); nach der Installation Terminal und App neu öffnen.",
+ conn_all_t:"Alle Server auf einmal",
+ conn_all_d:"Klone das Katalog-Repository und öffne es in Claude Code — die Datei «.mcp.json» registriert alle Server; bestätige die, die du willst.",
+ conn_sample:"Beispiel mit dem Server «{name}» — für einen anderen Server Name und Paket austauschen.",
+ conn_llms_t:"Für KI-Agenten",
+ conn_llms_d:"Die Datei «llms.txt» gibt den gesamten Katalog in maschinenlesbarer Form, damit Agenten den richtigen Server finden.",
+ faq_title:"Häufige Fragen",
+ faq_sub:"Kurze Antworten auf die am häufigsten gestellten Fragen.",
 
 },
 en:{
@@ -1064,6 +1145,37 @@ en:{
  ask_no_match:"No server found for this question", ask_no_match_hint:"The Germany catalog is still small — only {n} servers. Browse the categories.",
  ask_browse:"Browse the catalog", ask_browse_chip:"Browse all servers", ask_cross:"Ask on the network's other sites:",
  ask_x_turkey:"🇹🇷 turkey-mcp",
+ nav_connect:"Connect",
+ badge_nokey:"No API key",
+ badge_local:"Runs on your computer",
+ suggest_server:"Suggest a server",
+ conn_title:"Connect your assistant",
+ conn_sub:"Pick your app to see step by step how to add a server. Every server runs locally and is read-only — no API key, no account.",
+ conn_pick:"Pick your app",
+ conn_prereq_t:"Prerequisite: uvx",
+ conn_prereq_d:"uvx runs the servers with no separate install. If it is not installed, install it with one command and reopen the terminal.",
+ conn_steps_t:"Steps",
+ conn_snippet_t:"Configuration",
+ conn_file:"File",
+ conn_unverified:"Works with the standard MCP config; not verified here yet.",
+ conn_cli_s1:"Run this command in the terminal.",
+ conn_cli_s2:"Quit the app completely and reopen it.",
+ conn_cli_s3:"Check with «claude mcp list» that the server is listed.",
+ conn_cfg_s1:"Put these settings in {file} (create the file if it does not exist).",
+ conn_cfg_s2:"Quit the app completely and reopen it; closing the window is not enough.",
+ conn_cfg_s3:"In a new chat, ask a question this server can answer.",
+ conn_trouble_t:"Tools not showing?",
+ conn_tb1:"Quit the app completely and reopen it; closing the window is not enough.",
+ conn_tb2:"In Claude Code, run «claude mcp list»; the server must be listed.",
+ conn_tb3:"The config file must be valid JSON — no trailing comma, closed braces.",
+ conn_tb4:"uvx must be installed («uvx --version»); after installing it, reopen the terminal and the app.",
+ conn_all_t:"All servers at once",
+ conn_all_d:"Clone the catalog repo and open it in Claude Code — the «.mcp.json» file registers every server; approve the ones you want.",
+ conn_sample:"Example with the «{name}» server — swap the name and package for any other server.",
+ conn_llms_t:"For AI agents",
+ conn_llms_d:"The «llms.txt» file gives the whole catalog in machine-readable form so agents can find the right server.",
+ faq_title:"Frequently asked questions",
+ faq_sub:"Short answers to the questions asked most.",
 }};
 const LANGS = {fa:{name:"فارسی",dir:"rtl",locale:"fa-IR"},de:{name:"Deutsch",dir:"ltr",locale:"de-DE"},en:{name:"English",dir:"ltr",locale:"en-US"}};
 
@@ -1102,7 +1214,7 @@ function copyText(txt, msg){ const done=()=>toast(msg||t("tool_copied"));
 function fallbackCopy(txt, done){ const ta=document.createElement("textarea"); ta.value=txt; ta.style.position="fixed"; ta.style.opacity="0"; document.body.appendChild(ta); ta.select(); try{ document.execCommand("copy"); }catch(e){} document.body.removeChild(ta); done(); }
 
 /* ---------------- router ---------------- */
-const PAGES = ["home","marketplace","tool","categories","skills","skill","tutorials","tutorial","blog","article","about","contact","favorites","ask"];
+const PAGES = ["home","marketplace","tool","categories","skills","skill","tutorials","tutorial","blog","article","about","contact","favorites","ask","connect"];
 function parseHash(){
   const raw = location.hash||"";
   if(raw && !raw.startsWith("#/")){
@@ -1120,7 +1232,7 @@ function go(page, param){ location.hash = hashFor(page, param); window.scrollTo(
 
 /* ---------------- shared components ---------------- */
 function headerHTML(){
-  const navItems = [["home","nav_home"],["marketplace","nav_marketplace"],["categories","nav_categories"],["skills","nav_skills"],["tutorials","nav_tutorials"],["blog","nav_blog"],["about","nav_about"],["contact","nav_contact"],["ask","nav_ask"]];
+  const navItems = [["home","nav_home"],["marketplace","nav_marketplace"],["categories","nav_categories"],["skills","nav_skills"],["tutorials","nav_tutorials"],["blog","nav_blog"],["about","nav_about"],["contact","nav_contact"],["ask","nav_ask"],["connect","nav_connect"]];
   const nav = navItems.map(([p,k])=>`<a href="${hashFor(p)}" class="${state.page===p||(p==="marketplace"&&state.page==="tool")||(p==="skills"&&state.page==="skill")||(p==="tutorials"&&state.page==="tutorial")||(p==="blog"&&state.page==="article")?"active":""}">${t(k)}</a>`).join("");
   return `<header class="site"><div class="wrap nav">
     <a class="brand" href="${hashFor("home")}"><span class="mark">G</span><span>Germany MCP<small>${t("brand_tag")}</small></span></a>
@@ -1152,7 +1264,7 @@ function footerHTML(){
         </div>
       </div>
       ${col(t("foot_platform"), [[hashFor("marketplace"),t("nav_marketplace")],[hashFor("categories"),t("nav_categories")],[hashFor("skills"),t("nav_skills")],[hashFor("tutorials"),t("nav_tutorials")]])}
-      ${col(t("foot_resources"), [[hashFor("blog"),t("nav_blog")],[hashFor("tutorials"),t("tut_title")],["https://github.com/mohammad-abbasi-sh/germany-mcp",t("tool_repo")],["https://pypi.org/user/mohammad-abbasi-sh/","PyPI"]])}
+      ${col(t("foot_resources"), [[hashFor("blog"),t("nav_blog")],[hashFor("tutorials"),t("tut_title")],["https://github.com/mohammad-abbasi-sh/germany-mcp",t("tool_repo")],["https://pypi.org/user/mohammad-abbasi-sh/","PyPI"],["https://github.com/mohammad-abbasi-sh/germany-mcp/issues/new",t("suggest_server")]])}
       ${col(t("foot_company"), [[hashFor("about"),t("nav_about")],[hashFor("contact"),t("nav_contact")],["https://almanibama.ir","Almanibama"],["https://mabbasi.ir","mabbasi.ir"],["#",t("foot_privacy")],["#",t("foot_terms")]])}
     </div>
     <div class="foot-bottom">
@@ -1174,7 +1286,7 @@ function serverCard(s){
     </div>
     <p class="desc">${esc(serverDesc(s))}</p>
     <p class="meta-row"><span class="ic">▦</span> ${esc(catName(s.cat))} · ${fmtNum(s.tools.length)} ${t("tools_count")}</p>
-    <p class="meta-row"><span class="ic">✓</span> ${t("status_available")} · stdio · uvx</p>
+    <p class="meta-row"><span class="ic">✓</span> ${t("status_available")} · stdio · uvx · ${t("badge_nokey")}</p>
     <div class="card-bottom">
       ${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span>`:`<span class="chip">${esc(catName(s.cat))}</span>`}
       <a class="btn btn-primary btn-sm" href="${hashFor("tool", s.id)}">${t("details")}</a>
@@ -1370,7 +1482,7 @@ function toolHTML(id){
       <div style="flex:1;min-width:0">
         <h1>${esc(s.title)}</h1>
         <p class="latin">${esc(s.id)} · v0.1.0</p>
-        <p>${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span> `:""}<span class="badge badge-ok">✓ ${t("status_available")}</span> <span class="chip">${esc(catName(s.cat))}</span></p>
+        <p>${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span> `:""}<span class="badge badge-ok">✓ ${t("status_available")}</span> <span class="chip">💻 ${t("badge_local")}</span> <span class="chip">${esc(catName(s.cat))}</span></p>
       </div>
       ${starBtn("server", s.id)}
     </div>
@@ -1394,7 +1506,7 @@ function toolHTML(id){
           <a class="btn btn-primary btn-sm" href="${s.repo}" target="_blank" rel="noopener">${t("tool_repo")} ↗</a>
           <a class="btn btn-ghost btn-sm" href="https://pypi.org/project/${s.pypi}/" target="_blank" rel="noopener">${t("tool_pypi")} ↗</a>
         </div>
-        <p style="color:var(--muted);font-size:13px;margin-top:14px">${t("tool_last")}: ${fmtDate("2026-11-09")}</p>
+        <p style="color:var(--muted);font-size:13px;margin-top:14px">${t("tool_last")}: ${fmtDate("2026-11-15")}</p>
       </div>
     </div>
   </div></section>`;
@@ -1502,6 +1614,10 @@ function aboutHTML(){
       <div class="stat"><b>${fmtNum(TOTAL_TOOLS)}</b><span>${t("stat_tools")}</span></div>
       <div class="stat"><b>${fmtNum(SKILLS.length)}</b><span>${t("stat_skills")}</span></div>
     </div>
+    <h2 style="font-size:20px;margin-top:26px">${t("faq_title")}</h2>
+    <p style="color:var(--muted)">${t("faq_sub")}</p>
+    <div class="grid grid-2" style="margin-top:14px">${FAQ.map(f=>`<article class="card"><h3>${esc(L(f.q))}</h3><p class="desc">${esc(L(f.a))}</p></article>`).join("")}</div>
+    <p style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary btn-sm" href="${hashFor("connect")}">${t("nav_connect")}</a><a class="btn btn-ghost btn-sm" href="https://github.com/mohammad-abbasi-sh/germany-mcp/issues/new" target="_blank" rel="noopener">${t("suggest_server")} ↗</a></p>
   </div></section>`;
 }
 function contactHTML(){
@@ -1573,7 +1689,7 @@ async function showDemo(){
   pre.querySelector("code").innerHTML = hlCode(d.code);
   body.querySelector(".status").textContent = d.status[state.lang];
   body.querySelector(".a").textContent = d.a[state.lang];
-  body.querySelector(".ask").innerHTML = `<a href="${hashFor("marketplace")}">${esc(t("demo_ask"))}</a> · ${esc(t("demo_nosignup"))}`;
+  body.querySelector(".ask").innerHTML = `<a href="${hashFor("ask", encodeURIComponent(d.q[state.lang]))}">${esc(t("demo_ask"))}</a> · ${esc(t("demo_nosignup"))}`;
 }
 function startDemo(){
   clearInterval(demoTimer);
@@ -1669,6 +1785,7 @@ function askNoMatchHTML(){
   <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:16px">${liveCats.map(c=>`<a class="chip" href="${hashFor("categories")}">${esc(c.icon)} ${esc(catName(c.id))}</a>`).join("")}</div>
   <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px">
     <a class="btn btn-primary btn-sm" href="${hashFor("marketplace")}">${t("ask_browse")}</a>
+    <a class="btn btn-ghost btn-sm" href="https://github.com/mohammad-abbasi-sh/germany-mcp/issues/new" target="_blank" rel="noopener">${t("suggest_server")} ↗</a>
   </div></div>`;
 }
 function askResultsHTML(q, res){
@@ -1677,6 +1794,7 @@ function askResultsHTML(q, res){
   return `<h2 style="font-size:20px">${t("ask_top")}</h2><div style="margin-top:14px">${res.map(askCard).join("")}</div>`;
 }
 function askHTML(){
+  if(state.param && ASK_STATE._hash!==state.param){ try{ ASK_STATE.q = decodeURIComponent(state.param); }catch(e){} ASK_STATE._hash = state.param; }
   const q = ASK_STATE.q;
   const chips = ASK_CHIPS[state.lang]||ASK_CHIPS.en;
   const res = q ? askScore(q) : [];
@@ -1696,6 +1814,51 @@ function askHTML(){
   </div></section>`;
 }
 
+/* ---------------- Connect — pick your app, get the steps ---------------- */
+const CONNECT_STATE = {app:"claude-code"};
+function connSnippet(app, s){
+  const short = s.id.replace("-mcp","");
+  if(app.kind==="cli") return "claude mcp add --transport stdio --scope user "+short+" -- uvx "+s.pypi;
+  if(app.kind==="toml") return '[mcp_servers.'+short+']\ncommand = "uvx"\nargs = ["'+s.pypi+'"]';
+  if(app.kind==="vscode") return '{\n  "servers": {\n    "'+short+'": {\n      "type": "stdio",\n      "command": "uvx",\n      "args": ["'+s.pypi+'"]\n    }\n  }\n}';
+  return '{\n  "mcpServers": {\n    "'+short+'": {\n      "command": "uvx",\n      "args": ["'+s.pypi+'"]\n    }\n  }\n}';
+}
+function connectHTML(){
+  const s = SERVERS.find(x=>x.featured) || SERVERS[0];
+  const app = CONNECT_APPS.find(a=>a.id===CONNECT_STATE.app) || CONNECT_APPS[0];
+  const snip = connSnippet(app, s);
+  const steps = app.kind==="cli" ? [t("conn_cli_s1"),t("conn_cli_s2"),t("conn_cli_s3")]
+    : [t("conn_cfg_s1").replace("{file}", app.file||""), t("conn_cfg_s2"), t("conn_cfg_s3")];
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("🔌", t("conn_title"), t("conn_sub"))}
+    <div class="card" style="margin-bottom:18px"><h3>${t("conn_prereq_t")}</h3><p style="color:var(--muted)">${t("conn_prereq_d")}</p>
+    <div class="copy-row"><pre><code>curl -LsSf https://astral.sh/uv/install.sh | sh</code></pre><button class="copy-btn" onclick="App.copy('curl -LsSf https://astral.sh/uv/install.sh | sh')">${t("tool_copy")}</button></div>
+    <p style="color:var(--muted);font-size:13px;margin-top:8px">Windows: <code>powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;</code></p></div>
+    <h2 style="font-size:20px">${t("conn_pick")}</h2>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 18px">${CONNECT_APPS.map(a=>`<button type="button" class="btn ${a.id===app.id?"btn-primary":"btn-ghost"} btn-sm" onclick="App.connApp('${a.id}')">${a.icon} ${a.name}${a.verified?" ✓":""}</button>`).join("")}</div>
+    <div class="grid grid-2">
+      <div>
+        <h2 style="font-size:20px">${t("conn_steps_t")}</h2>
+        <ol>${steps.map(x=>`<li>${esc(x)}</li>`).join("")}</ol>
+        <p style="color:var(--muted);font-size:13.5px">${esc(L(app.desc))}</p>
+        ${app.verified?"":`<p><span class="badge badge-unverified">! ${t("conn_unverified")}</span></p>`}
+      </div>
+      <div>
+        <h2 style="font-size:20px">${t("conn_snippet_t")}</h2>
+        ${app.file?`<p style="color:var(--muted);font-size:13.5px">${t("conn_file")}: <code>${esc(app.file)}</code></p>`:""}
+        <div class="install-box"><div class="copy-row"><pre><code>${esc(snip)}</code></pre><button class="copy-btn" onclick="App.copy(${JSON.stringify(snip).replace(/"/g,"&quot;")})">${t("tool_copy")}</button></div></div>
+        <p style="color:var(--muted);font-size:13.5px">${t("conn_sample").replace("{name}", esc(s.title.split(" — ")[0]))}</p>
+      </div>
+    </div>
+    <h2 style="font-size:20px;margin-top:26px">${t("conn_trouble_t")}</h2>
+    <ul>${[t("conn_tb1"),t("conn_tb2"),t("conn_tb3"),t("conn_tb4")].map(x=>`<li>${esc(x)}</li>`).join("")}</ul>
+    <div class="grid grid-2" style="margin-top:26px">
+      <div class="card"><h3>${t("conn_all_t")}</h3><p style="color:var(--muted)">${t("conn_all_d")}</p><a class="btn btn-primary btn-sm" href="https://github.com/mohammad-abbasi-sh/germany-mcp/blob/main/.mcp.json" target="_blank" rel="noopener">.mcp.json ↗</a></div>
+      <div class="card"><h3>${t("conn_llms_t")}</h3><p style="color:var(--muted)">${t("conn_llms_d")}</p><a class="btn btn-primary btn-sm" href="llms.txt" target="_blank" rel="noopener">llms.txt ↗</a></div>
+    </div>
+  </div></section>`;
+}
+
 function pageHTML(){
   switch(state.page){
     case "home": return homeHTML();
@@ -1712,12 +1875,13 @@ function pageHTML(){
     case "contact": return contactHTML();
     case "favorites": return favoritesHTML();
     case "ask": return askHTML();
+    case "connect": return connectHTML();
     default: return notFoundHTML();
   }
 }
 function pageTitle(){
   const base = "Germany MCP";
-  const map = {home:t("hero_title"),marketplace:t("mp_title"),categories:t("cats_page_title"),skills:t("skills_page_title"),tutorials:t("tut_page_title"),blog:t("blog_page_title"),about:t("about_title"),contact:t("contact_title"),favorites:t("fav_title"),ask:t("ask_title"),"404":t("nf_title")};
+  const map = {home:t("hero_title"),marketplace:t("mp_title"),categories:t("cats_page_title"),skills:t("skills_page_title"),tutorials:t("tut_page_title"),blog:t("blog_page_title"),about:t("about_title"),contact:t("contact_title"),favorites:t("fav_title"),ask:t("ask_title"),connect:t("conn_title"),"404":t("nf_title")};
   if(state.page==="tool"){ const s=SERVERS.find(x=>x.id===state.param); return s? s.title+" — "+base : base; }
   if(state.page==="skill"){ const k=SKILLS.find(x=>x.id===state.param); return k? k.id+" — "+base : base; }
   if(state.page==="tutorial"){ const x=TUTORIALS.find(v=>v.id===state.param); return x? L(x.title)+" — "+base : base; }
@@ -1754,6 +1918,7 @@ window.App = {
     store.set("tmp_favs_v1", f); render(); },
   copy(txt){ copyText(txt); },
   demoTab(i){ demoIdx=i; showDemo(); },
+  connApp(id){ CONNECT_STATE.app=id; render(); },
   heroSearch(ev){ ev.preventDefault(); const q=document.getElementById("hero-q"); mp.q=q?q.value:""; mp.cat="all"; go("marketplace"); render(); return false; },
   askSearch(v){ ASK_STATE.q=v; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(v,askScore(v)); },
   askChip(txt){ ASK_STATE.q=txt.trim(); const inp=document.getElementById("ask-q"); if(inp) inp.value=ASK_STATE.q; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(ASK_STATE.q,askScore(ASK_STATE.q)); },

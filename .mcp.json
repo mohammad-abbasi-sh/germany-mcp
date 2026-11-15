@@ -1,0 +1,148 @@
+{
+  "mcpServers": {
+    "bundesliga": {
+      "command": "uvx",
+      "args": [
+        "bundesliga-mcp"
+      ]
+    },
+    "mediathek": {
+      "command": "uvx",
+      "args": [
+        "mediathek-mcp"
+      ]
+    },
+    "tagesschau": {
+      "command": "uvx",
+      "args": [
+        "tagesschau-mcp"
+      ]
+    },
+    "dwd": {
+      "command": "uvx",
+      "args": [
+        "dwd-mcp"
+      ]
+    },
+    "autobahn": {
+      "command": "uvx",
+      "args": [
+        "autobahn-mcp"
+      ]
+    },
+    "dw": {
+      "command": "uvx",
+      "args": [
+        "dw-mcp"
+      ]
+    },
+    "ntv": {
+      "command": "uvx",
+      "args": [
+        "ntv-mcp"
+      ]
+    },
+    "dnb": {
+      "command": "uvx",
+      "args": [
+        "dnb-mcp"
+      ]
+    },
+    "govdata": {
+      "command": "uvx",
+      "args": [
+        "govdata-mcp"
+      ]
+    },
+    "deutschlandfunk": {
+      "command": "uvx",
+      "args": [
+        "deutschlandfunk-mcp"
+      ]
+    },
+    "duden": {
+      "command": "uvx",
+      "args": [
+        "duden-mcp"
+      ]
+    },
+    "dictcc": {
+      "command": "uvx",
+      "args": [
+        "dictcc-mcp"
+      ]
+    },
+    "bundeswahlleiter": {
+      "command": "uvx",
+      "args": [
+        "bundeswahlleiter-mcp"
+      ]
+    },
+    "flixtrain": {
+      "command": "uvx",
+      "args": [
+        "flixtrain-mcp"
+      ]
+    },
+    "billiger": {
+      "command": "uvx",
+      "args": [
+        "billiger-mcp"
+      ]
+    },
+    "fernsehserien": {
+      "command": "uvx",
+      "args": [
+        "fernsehserien-mcp"
+      ]
+    },
+    "zdf": {
+      "command": "uvx",
+      "args": [
+        "zdf-mcp"
+      ]
+    },
+    "ecb": {
+      "command": "uvx",
+      "args": [
+        "ecb-mcp"
+      ]
+    },
+    "wg-gesucht": {
+      "command": "uvx",
+      "args": [
+        "wg-gesucht-mcp"
+      ]
+    },
+    "uba": {
+      "command": "uvx",
+      "args": [
+        "uba-mcp"
+      ]
+    },
+    "openplz": {
+      "command": "uvx",
+      "args": [
+        "openplz-mcp"
+      ]
+    },
+    "feiertage": {
+      "command": "uvx",
+      "args": [
+        "feiertage-mcp"
+      ]
+    },
+    "ferien": {
+      "command": "uvx",
+      "args": [
+        "ferien-mcp"
+      ]
+    },
+    "spiegel": {
+      "command": "uvx",
+      "args": [
+        "spiegel-mcp"
+      ]
+    }
+  }
+}

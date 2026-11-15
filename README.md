@@ -34,8 +34,9 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [openplz-mcp](https://github.com/mohammad-abbasi-sh/openplz-mcp) | OpenPLZ — German postal codes: PLZ lookup, streets & admin tree | 6 | `uvx openplz-mcp==0.1.0` |
 | [feiertage-mcp](https://github.com/mohammad-abbasi-sh/feiertage-mcp) | Feiertage — German public holidays: by year & state, is-it-a-holiday, next holiday | 5 | `uvx feiertage-mcp==0.1.0` |
 | [ferien-mcp](https://github.com/mohammad-abbasi-sh/ferien-mcp) | Ferien — German school holidays: by year & state, is-it-a-holiday, next holiday | 5 | `uvx ferien-mcp==0.1.0` |
+| [spiegel-mcp](https://github.com/mohammad-abbasi-sh/spiegel-mcp) | Spiegel — DER SPIEGEL news: headlines, 13 sections, search, videos & article text | 5 | `uvx spiegel-mcp==0.1.0` |
 
-*One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers planned (see the build queue).*
+*One new server every day. Each server ships with tests, fixtures and trilingual docs. 24 servers live — and the queue keeps growing (see the build queue).*
 
 ## For AI agents
 

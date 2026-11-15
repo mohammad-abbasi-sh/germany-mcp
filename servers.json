@@ -675,6 +675,36 @@
      "summary": "All 16 German federal states"
     }
    ]
+  },
+  {
+   "description": "Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly).",
+   "name": "spiegel-mcp",
+   "pypi": "spiegel-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/spiegel-mcp",
+   "title": "Spiegel — DER SPIEGEL news: headlines, 13 sections, search & videos",
+   "title_de": "Spiegel — DER SPIEGEL: Schlagzeilen, 13 Ressorts, Suche & Videos",
+   "tools": [
+    {
+     "name": "spiegel_headlines",
+     "summary": "Top headlines (Schlagzeilen), newest first"
+    },
+    {
+     "name": "spiegel_news_by_section",
+     "summary": "Newest news of one of 13 sections"
+    },
+    {
+     "name": "spiegel_search_news",
+     "summary": "Search news by keyword across all feeds"
+    },
+    {
+     "name": "spiegel_get_article",
+     "summary": "Article text of one spiegel.de article (paywall flagged)"
+    },
+    {
+     "name": "spiegel_latest_videos",
+     "summary": "Latest SPIEGEL videos, newest first"
+    }
+   ]
   }
  ]
 }

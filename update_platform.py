@@ -71,6 +71,12 @@ SERVER_META = {
                 "featured": False, "added": 20},
     "openplz-mcp": {"cat": "open-data", "color": "#0F766E", "letter": "🧭",
                     "featured": False, "added": 21},
+    "feiertage-mcp": {"cat": "open-data", "color": "#9D174D", "letter": "📅",
+                      "featured": False, "added": 22},
+    "ferien-mcp": {"cat": "open-data", "color": "#EA580C", "letter": "🏖️",
+                   "featured": False, "added": 23},
+    "spiegel-mcp": {"cat": "news", "color": "#E2001A", "letter": "🗞️",
+                    "featured": False, "added": 24},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -281,6 +287,36 @@ TRANSLATIONS = {
   "openplz_list_federal_states": ("هر ۱۶ ایالت فدرال با کد + مرکز", "Alle 16 Bundesländer mit Schlüssel + Hauptstadt"),
   "openplz_admin_children": ("یک قدم پایین‌تر در درخت اداری (ایالت ← بخش ← شهرداری)", "Einen Schritt im Verwaltungsbaum nach unten (Land → Kreis → Gemeinde)"),
  }},
+"feiertage-mcp": {
+ "desc_fa": "تعطیلات رسمی آلمان از feiertage-api.de (API رایگان، بدون کلید): تعطیلات هر سال در هر ایالت فدرال، بررسی تعطیل بودن یک تاریخ، نزدیک‌ترین تعطیل و تعطیلات در یک بازه.",
+ "desc_de": "Deutsche Feiertage über feiertage-api.de (kostenlose API, kein Schlüssel): Feiertage pro Jahr und Bundesland, Ist-es-ein-Feiertag-Prüfung, nächster Feiertag und Feiertage in einem Zeitraum.",
+ "tools": {
+  "feiertage_list_holidays": ("تعطیلات رسمی یک سال در یک ایالت فدرال (با فیلتر اختیاری ماه)", "Feiertage eines Jahres in einem Bundesland (optional nach Monat gefiltert)"),
+  "feiertage_is_holiday": ("آیا یک تاریخ در یک ایالت تعطیل رسمی است؟", "Ist ein Datum ein Feiertag in einem Bundesland?"),
+  "feiertage_next_holiday": ("نزدیک‌ترین تعطیل رسمی از یک تاریخ به بعد", "Der nächste Feiertag ab einem Datum"),
+  "feiertage_holidays_between": ("تعطیلات رسمی در یک بازهٔ زمانی (حداکثر حدود ۲ سال)", "Feiertage in einem Zeitraum (max. ca. 2 Jahre)"),
+  "feiertage_list_states": ("هر ۱۶ ایالت فدرال + NATIONAL (تعطیلات سراسری)", "Alle 16 Bundesländer + NATIONAL (bundesweite Feiertage)"),
+ }},
+"ferien-mcp": {
+ "desc_fa": "تعطیلات مدارس آلمان از ferien-api.de (API رایگان، بدون کلید): تعطیلات هر سال در هر ایالت فدرال، بررسی اینکه یک تاریخ در تعطیلات مدارس است یا نه، نزدیک‌ترین تعطیلات و تعطیلات در یک بازه.",
+ "desc_de": "Deutsche Schulferien über ferien-api.de (kostenlose API, kein Schlüssel): Ferien pro Jahr und Bundesland, Ist-es-ein-Ferientag-Prüfung, nächste Ferien und Ferien in einem Zeitraum.",
+ "tools": {
+  "ferien_list_holidays": ("تعطیلات مدارس یک سال در یک ایالت فدرال (با فیلتر اختیاری ماه)", "Schulferien eines Jahres in einem Bundesland (optional nach Monat gefiltert)"),
+  "ferien_is_holiday": ("آیا یک تاریخ در تعطیلات مدارس یک ایالت است؟", "Liegt ein Datum in den Schulferien eines Bundeslandes?"),
+  "ferien_next_holiday": ("نزدیک‌ترین تعطیلات مدارس از یک تاریخ به بعد", "Die nächsten Schulferien ab einem Datum"),
+  "ferien_holidays_between": ("تعطیلات مدارس در یک بازهٔ زمانی (حداکثر حدود ۲ سال)", "Schulferien in einem Zeitraum (max. ca. 2 Jahre)"),
+  "ferien_list_states": ("هر ۱۶ ایالت فدرال", "Alle 16 Bundesländer"),
+ }},
+"spiegel-mcp": {
+ "desc_fa": "اخبار اشپیگل از spiegel.de (فیدهای رسمی RSS، بدون کلید): تیترهای برتر، اخبار ۱۳ بخش، جست‌وجوی کلیدواژه، جدیدترین ویدیوها و متن مقاله‌ها (مقاله‌های پولی SPIEGEL+ صادقانه مشخص می‌شوند).",
+ "desc_de": "DER SPIEGEL über spiegel.de (offizielle RSS-Feeds, kein Schlüssel): Top-Schlagzeilen, 13 Ressorts, Stichwortsuche, neueste Videos und Artikeltexte (SPIEGEL+-Artikel werden ehrlich gekennzeichnet).",
+ "tools": {
+  "spiegel_headlines": ("تیترهای برتر (Schlagzeilen)، جدیدترین اول", "Top-Schlagzeilen, neueste zuerst"),
+  "spiegel_news_by_section": ("جدیدترین اخبار یکی از ۱۳ بخش", "Neueste Nachrichten eines von 13 Ressorts"),
+  "spiegel_search_news": ("جست‌وجوی اخبار با کلیدواژه در همهٔ فیدها", "Nachrichtensuche nach Stichwort über alle Feeds"),
+  "spiegel_get_article": ("متن یک مقالهٔ spiegel.de (پولی بودن مشخص می‌شود)", "Artikeltext eines spiegel.de-Artikels (Paywall wird gekennzeichnet)"),
+  "spiegel_latest_videos": ("جدیدترین ویدیوهای اشپیگل، جدیدترین اول", "Neueste SPIEGEL-Videos, neueste zuerst"),
+ }},
 }
 
 FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
@@ -369,10 +405,14 @@ def main():
                        "n11", "ciceksepeti", "biletall", "secretcv", "biletix",
                        "sozcu", "eleman", "mackolik", "donanimhaber",
                        "yemek.com", "hurriyet", "sok-mcp", "jolly", "migros",
-                       "cineverse", "trthaber", "22 servers", "111 tools",
+                       "cineverse", "trthaber",
                        '"tr"', "'tr'", "tr:", "title_tr", "desc_tr",
                        "tag_tr", "gap_tr", "ترکیه")
            if s in html]
+    # NOTE 2026-11-14: "111 tools" was removed from this list — it was a
+    # stale-count canary from the Turkey platform, but 111 is now the
+    # legitimate tool count (23 servers). Same false-positive as
+    # "22 servers" on 2026-11-13.
     assert not bad, f"Turkish/Turkey leftovers: {bad}"
     assert html.count("{ id:") == n_servers, "SERVERS entry count mismatch"
     assert html.count("{n:") == n_tools, "tool entry count mismatch"

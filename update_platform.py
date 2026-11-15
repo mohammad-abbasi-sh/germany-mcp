@@ -15,6 +15,7 @@ numbers). When the factory adds a server: add its entry to SERVER_META
 Usage: python3 update_platform.py
 Output: platform/index.html (+ versioned copy platform/index-v1-20261109.html)
 """
+import datetime
 import json
 import re
 import subprocess
@@ -360,6 +361,54 @@ def build_entry(name):
     return "\n".join(lines)
 
 
+def write_agent_files(order):
+    """Regenerate .mcp.json + llms.txt at the project root (pushed to the
+    catalog repo root so Pages serves them; the Connect page links both).
+    NOTE: the factory cron must push these two files after each regen —
+    update_platform.py only writes them locally."""
+    servers = [BY_ID[n] for n in order]
+    mcp = {"mcpServers": {
+        s["name"].replace("-mcp", ""): {"command": "uvx", "args": [s["pypi"]]}
+        for s in servers}}
+    (HERE / ".mcp.json").write_text(
+        json.dumps(mcp, indent=2, ensure_ascii=False) + "\n")
+    n_tools = sum(len(s["tools"]) for s in servers)
+    lines = [
+        "# Germany MCP",
+        "",
+        "> %d read-only MCP servers (%d tools) for German web services — "
+        "news, weather, transport, open data, finance, housing, sports and "
+        "more. Every server runs locally with uvx, no API key, no account."
+        % (len(servers), n_tools),
+        "",
+    ]
+    for s in servers:
+        lines.append("- [%s](%s): %s (%d tools)" % (
+            s["name"], s["repository"], s["description"], len(s["tools"])))
+    lines += [
+        "",
+        "## Install",
+        "",
+        "- Claude Code: `claude mcp add --transport stdio --scope user "
+        "<name> -- uvx <package>`",
+        "- Any MCP client: add `{\"command\": \"uvx\", \"args\": "
+        "[\"<package>\"]}` under `mcpServers` in the client's config.",
+        "- All servers at once: clone "
+        "https://github.com/mohammad-abbasi-sh/germany-mcp and open it in "
+        "Claude Code — `.mcp.json` registers every server.",
+        "",
+        "## Links",
+        "",
+        "- Catalog: https://mohammad-abbasi-sh.github.io/germany-mcp/",
+        "- Ask (find the right server): "
+        "https://mohammad-abbasi-sh.github.io/germany-mcp/#/ask/",
+        "- GitHub: https://github.com/mohammad-abbasi-sh/germany-mcp",
+        "",
+    ]
+    (HERE / "llms.txt").write_text("\n".join(lines))
+    print("wrote .mcp.json + llms.txt:", len(servers), "servers")
+
+
 def main():
     base_path = HERE / "platform" / "base.html"
     html = base_path.read_text()
@@ -398,8 +447,14 @@ def main():
         assert tok in html, f"missing token {tok}"
         html = html.replace(tok, val)
 
+    # --- 3b. Build-date token -> today (detail pages show "last checked") ---
+    today = datetime.date.today().isoformat()
+    assert "__BUILD_DATE__" in html, "missing __BUILD_DATE__ token"
+    html = html.replace("__BUILD_DATE__", today)
+
     # --- Validation ---
     assert "__COUNTS_" not in html, "unfilled count token left"
+    assert "__BUILD_DATE__" not in html, "unfilled build-date token left"
     bad = [s for s in ("Turkey", "Türkiye", "Türkçe", "Turkish", "tcmb",
                        "Hepsiburada", "obilet", "arabam", "emlakjet", "armut",
                        "n11", "ciceksepeti", "biletall", "secretcv", "biletix",
@@ -431,6 +486,7 @@ def main():
     out.write_text(html)
     versioned = HERE / "platform" / "index-v1-20261109.html"
     versioned.write_text(html)
+    write_agent_files(order)
     print("wrote", out, len(html), "chars;",
           n_servers, "server(s),", n_tools, "tools; node --check OK")
 

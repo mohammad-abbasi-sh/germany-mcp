@@ -1,0 +1,40 @@
+# Germany MCP
+
+> 24 read-only MCP servers (116 tools) for German web services — news, weather, transport, open data, finance, housing, sports and more. Every server runs locally with uvx, no API key, no account.
+
+- [bundesliga-mcp](https://github.com/mohammad-abbasi-sh/bundesliga-mcp): Bundesliga, 2./3. Liga, DFB-Pokal & DEL via OpenLigaDB (free API, no key): fixtures, live scores, tables, top scorers. (6 tools)
+- [mediathek-mcp](https://github.com/mohammad-abbasi-sh/mediathek-mcp): ARD, ZDF, 3sat, ARTE, Phoenix & more via MediathekViewWeb (free API, no key): search programmes, latest broadcasts, by channel/topic, programme detail. (6 tools)
+- [tagesschau-mcp](https://github.com/mohammad-abbasi-sh/tagesschau-mcp): tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text. (6 tools)
+- [dwd-mcp](https://github.com/mohammad-abbasi-sh/dwd-mcp): DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen. (5 tools)
+- [autobahn-mcp](https://github.com/mohammad-abbasi-sh/autobahn-mcp): German Autobahn data from the official verkehr.autobahn.de API (no key): roadworks, closures, warnings, truck/car parking and EV charging stations per motorway. (5 tools)
+- [dw-mcp](https://github.com/mohammad-abbasi-sh/dw-mcp): Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages. (5 tools)
+- [ntv-mcp](https://github.com/mohammad-abbasi-sh/ntv-mcp): n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text. (5 tools)
+- [dnb-mcp](https://github.com/mohammad-abbasi-sh/dnb-mcp): Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup. (5 tools)
+- [govdata-mcp](https://github.com/mohammad-abbasi-sh/govdata-mcp): Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details. (5 tools)
+- [deutschlandfunk-mcp](https://github.com/mohammad-abbasi-sh/deutschlandfunk-mcp): Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link. (6 tools)
+- [duden-mcp](https://github.com/mohammad-abbasi-sh/duden-mcp): Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation. (6 tools)
+- [dictcc-mcp](https://github.com/mohammad-abbasi-sh/dictcc-mcp): dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes. (2 tools)
+- [bundeswahlleiter-mcp](https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp): Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025. (5 tools)
+- [flixtrain-mcp](https://github.com/mohammad-abbasi-sh/flixtrain-mcp): FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability. (2 tools)
+- [billiger-mcp](https://github.com/mohammad-abbasi-sh/billiger-mcp): German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals. (3 tools)
+- [fernsehserien-mcp](https://github.com/mohammad-abbasi-sh/fernsehserien-mcp): German TV series from fernsehserien.de (free, no key, no login): search series, series details, episode guides and upcoming air dates. (4 tools)
+- [zdf-mcp](https://github.com/mohammad-abbasi-sh/zdf-mcp): ZDF heute news from zdfheute.de (free, no key, no login): latest headlines, news by topic, keyword search and full article text. (4 tools)
+- [ecb-mcp](https://github.com/mohammad-abbasi-sh/ecb-mcp): European Central Bank data via the official ECB SDMX API (free, no key, no login): euro exchange rates, key ECB interest rates, HICP inflation, M3 money supply and euro-area bond yields. (5 tools)
+- [wg-gesucht-mcp](https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp): WG-Gesucht flatshare listings from wg-gesucht.de (free, no key, no login): WG rooms and flats in 34 German-speaking cities, with price, size, availability and full listing details. (4 tools)
+- [uba-mcp](https://github.com/mohammad-abbasi-sh/uba-mcp): UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks. (6 tools)
+- [openplz-mcp](https://github.com/mohammad-abbasi-sh/openplz-mcp): OpenPLZ API (no key): German postal codes — localities, streets, municipalities, districts & the 16 federal states. (6 tools)
+- [feiertage-mcp](https://github.com/mohammad-abbasi-sh/feiertage-mcp): Feiertage — German public holidays via feiertage-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges. (5 tools)
+- [ferien-mcp](https://github.com/mohammad-abbasi-sh/ferien-mcp): Ferien — German school holidays via ferien-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges. (5 tools)
+- [spiegel-mcp](https://github.com/mohammad-abbasi-sh/spiegel-mcp): Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly). (5 tools)
+
+## Install
+
+- Claude Code: `claude mcp add --transport stdio --scope user <name> -- uvx <package>`
+- Any MCP client: add `{"command": "uvx", "args": ["<package>"]}` under `mcpServers` in the client's config.
+- All servers at once: clone https://github.com/mohammad-abbasi-sh/germany-mcp and open it in Claude Code — `.mcp.json` registers every server.
+
+## Links
+
+- Catalog: https://mohammad-abbasi-sh.github.io/germany-mcp/
+- Ask (find the right server): https://mohammad-abbasi-sh.github.io/germany-mcp/#/ask/
+- GitHub: https://github.com/mohammad-abbasi-sh/germany-mcp

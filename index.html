@@ -62,22 +62,22 @@ label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--primary-soft);border-radius:6px;padding:1px 6px;direction:ltr;unicode-bidi:isolate}
 pre{background:var(--navy);color:#E6EBF7;border-radius:14px;padding:16px 18px;overflow-x:auto;font-size:13px;line-height:1.7;direction:ltr;text-align:left;margin:0}
 pre code{background:none;padding:0;color:inherit}
-.wrap{max-width:1160px;margin:0 auto;padding-inline:20px}
-.section{padding:72px 0 8px}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:20px}
+.section{padding:64px 0 24px}
 .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
 .section-head h2{font-size:30px;margin:0}
 .section-head p{color:var(--muted);margin:6px 0 0;max-width:640px}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--primary);background:var(--primary-soft);border-radius:999px;padding:5px 14px;margin-bottom:14px}
 .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--secondary)}
 /* ---------- header / nav ---------- */
-header.site{position:sticky;top:0;z-index:60;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--line)}
+header.site{position:sticky;top:0;z-index:60;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);background:var(--bg);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid var(--line)}
 .nav{display:flex;align-items:center;gap:14px;height:66px}
 .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--text);text-decoration:none;white-space:nowrap}
 .brand:hover{text-decoration:none}
 .brand .mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#9B8CFF 55%,var(--secondary));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:900;font-size:19px;box-shadow:0 6px 16px rgba(102,87,232,.35)}
 .brand small{display:block;font-size:11px;font-weight:600;color:var(--muted);line-height:1}
 nav.main{display:flex;gap:2px;margin-inline-start:8px}
-nav.main a{color:var(--muted);font-size:14.5px;font-weight:600;padding:8px 12px;border-radius:999px;text-decoration:none;white-space:nowrap}
+nav.main a{color:var(--muted);font-size:14px;font-weight:600;padding:8px 10px;border-radius:999px;text-decoration:none;white-space:nowrap}
 nav.main a:hover{color:var(--text);background:var(--primary-soft);text-decoration:none}
 nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .nav-right{margin-inline-start:auto;display:flex;align-items:center;gap:8px}
@@ -91,6 +91,7 @@ nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .btn-mint{background:var(--secondary);color:#06231F;box-shadow:0 10px 24px rgba(25,198,179,.3)}
 .btn-sm{padding:9px 18px;font-size:14px}
 .btn-block{width:100%}
+.nav-cta{padding:9px 16px}
 .burger{display:none}
 .mobile-menu{display:none;border-top:1px solid var(--line);padding:12px 20px 18px;background:var(--bg)}
 .mobile-menu.open{display:block}
@@ -130,7 +131,7 @@ nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .demo-body .ask a{color:#9DB4FF}
 .demo-body .cursor{display:inline-block;width:2px;height:1em;background:#32DCC7;vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
 @keyframes blink{50%{opacity:0}}
-.demo-foot{display:flex;align-items:center;gap:12px;border-top:1px solid #22304F;padding:14px 22px}
+.demo-foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid #22304F;padding:14px 22px}
 .demo-foot span{color:#8EA0C4;font-size:13px}
 .demo-foot .btn{padding:9px 20px;font-size:14px}
 /* ---------- cards / grids ---------- */
@@ -152,17 +153,17 @@ nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .card-bottom .count{color:var(--muted);font-size:13px}
 .card-bottom .btn{margin-inline-start:auto}
 .badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px}
-.badge-feat{background:var(--accent-soft);color:#B26A00}
+.badge-feat{background:var(--accent-soft);color:#8A5200}
 [data-theme="dark"] .badge-feat{color:var(--accent)}
-.badge-ok{background:var(--secondary-soft);color:#0B7A6E}
+.badge-ok{background:var(--secondary-soft);color:#09685E}
 [data-theme="dark"] .badge-ok{color:var(--secondary)}
 .badge-soon{background:var(--primary-soft);color:var(--primary)}
-.badge-verified{background:var(--secondary-soft);color:#0B7A6E}
+.badge-verified{background:var(--secondary-soft);color:#09685E}
 [data-theme="dark"] .badge-verified{color:var(--secondary)}
-.badge-unverified{background:#FDECEC;color:#B42318}
-[data-theme="dark"] .badge-unverified{background:#3A1D1D;color:#FF9A94}
+.badge-unverified{background:#FEF3C7;color:#92400E}
+[data-theme="dark"] .badge-unverified{background:#3A2B17;color:#FFB86B}
 .chip{display:inline-flex;align-items:center;gap:6px;background:var(--primary-soft);color:var(--primary);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600;white-space:nowrap}
-.chip.mint{background:var(--secondary-soft);color:#0B7A6E}
+.chip.mint{background:var(--secondary-soft);color:#09685E}
 [data-theme="dark"] .chip.mint{color:var(--secondary)}
 .star-btn{border:1px solid var(--line);background:var(--card);border-radius:10px;width:36px;height:36px;font-size:17px;color:var(--muted);display:inline-flex;align-items:center;justify-content:center}
 .star-btn.on{color:#F5A623;border-color:#F5A623;background:var(--accent-soft)}
@@ -218,12 +219,38 @@ nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .field.invalid input,.field.invalid textarea{border-color:var(--danger)}
 .field.invalid .err{display:block}
 .alert{border-radius:12px;padding:12px 16px;font-size:14px;margin-bottom:16px}
-.alert-ok{background:var(--secondary-soft);color:#0B7A6E}
+.alert-ok{background:var(--secondary-soft);color:#09685E}
 [data-theme="dark"] .alert-ok{color:var(--secondary)}
 .alert-err{background:#FDECEC;color:#B42318}
 [data-theme="dark"] .alert-err{background:#3A1D1D;color:#FF9A94}
 .alert-info{background:var(--primary-soft);color:var(--primary)}
 .note{font-size:13px;color:var(--muted);background:var(--primary-soft);border-radius:12px;padding:12px 14px;margin-top:16px}
+/* connect guide: two tracks */
+.track-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:6px 0 24px}
+.track-tab{border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:11px 22px;font-size:15px;font-weight:700}
+.track-tab:hover{border-color:var(--primary)}
+.track-tab.active{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;border-color:transparent;box-shadow:0 10px 24px rgba(102,87,232,.35)}
+.guide-lead{font-size:17px;color:var(--muted);max-width:760px}
+.callout{border:1px solid var(--line);border-inline-start:4px solid var(--secondary);background:var(--secondary-soft);border-radius:14px;padding:16px 18px;margin:20px 0}
+.callout h3{font-size:16px;margin:0 0 6px}
+.callout p{color:var(--muted);margin:0;font-size:14.5px}
+.callout-warn{border-inline-start-color:var(--accent);background:var(--accent-soft)}
+.guide-steps{list-style:none;margin:24px 0;padding:0;counter-reset:gstep}
+.guide-step{position:relative;padding:0 0 26px 0;padding-inline-start:60px;counter-increment:gstep}
+.guide-step::before{content:counter(gstep);position:absolute;inset-inline-start:0;top:0;width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;box-shadow:0 8px 18px rgba(102,87,232,.3)}
+.guide-step h3{font-size:17.5px;margin:2px 0 6px}
+.guide-step p{color:var(--muted);font-size:15px;margin:0 0 10px}
+.guide-step .copy-row{margin:10px 0 4px}
+.guide-step .os-label{font-size:13px;font-weight:700;color:var(--muted);margin:12px 0 4px}
+.path-list{list-style:none;margin:12px 0;padding:0}
+.path-list li{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.path-list li:last-child{border-bottom:none}
+.path-list .os{min-width:76px;font-weight:700}
+.path-list code{overflow-wrap:anywhere}
+.trouble{list-style:none;margin:12px 0;padding:0}
+.trouble li{margin-bottom:14px}
+.trouble li b{display:block;font-size:15.5px}
+.trouble li span{color:var(--muted);font-size:14.5px}
 /* blog / tutorial */
 .article-body{max-width:760px}
 .article-body h2{font-size:22px;margin:28px 0 10px}
@@ -242,7 +269,7 @@ nav.main a.active{color:var(--primary);background:var(--primary-soft)}
 .stat b{font-size:28px;display:block}
 .stat span{color:var(--muted);font-size:13.5px}
 /* footer */
-footer.site{margin-top:90px;border-top:1px solid var(--line);background:var(--card)}
+footer.site{margin-top:72px;border-top:1px solid var(--line);background:var(--card)}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;padding:56px 0 32px}
 .foot-grid h4{font-size:15px;margin:0 0 14px}
 .foot-grid a{display:block;color:var(--muted);font-size:14px;margin-bottom:9px}
@@ -260,9 +287,12 @@ footer.site{margin-top:90px;border-top:1px solid var(--line);background:var(--ca
 .skip:focus{position:fixed;inset-inline-start:16px;top:16px;z-index:200;background:var(--primary);color:#fff;padding:10px 18px;border-radius:999px}
 :focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:6px}
 /* responsive */
-@media (max-width:1020px){
+@media (max-width:1259px){
   nav.main{display:none}
   .burger{display:inline-flex}
+  .nav-cta{display:none}
+}
+@media (max-width:1020px){
   .hero-grid{grid-template-columns:1fr;gap:36px}
   .hero h1{font-size:40px}
   .grid-4{grid-template-columns:repeat(2,1fr)}
@@ -288,6 +318,9 @@ footer.site{margin-top:90px;border-top:1px solid var(--line);background:var(--ca
   .icon-btn{width:44px;height:44px;font-size:17px}
   .lang-select{padding:0 4px;font-size:12px}
   .fav-btn{display:none}
+  .copy-row{flex-direction:column}
+  .copy-row .copy-btn{padding:12px 16px}
+  .form-card{padding:24px 20px}
 }
 </style>
 </head>
@@ -641,7 +674,7 @@ const CATEGORIES = [
  {id:"weather",icon:"🌤️",color:"#0284C7",soon:false},
  {id:"transport",icon:"🚌",color:"#0369A1",soon:false},
  {id:"open-data",icon:"📊",color:"#F59E0B",soon:false},
- {id:"dictionary",icon:"📖",color:"#7C3AED",soon:true},
+ {id:"language",icon:"📖",color:"#7C3AED",soon:false},
  {id:"education",icon:"🎓",color:"#1D4ED8",soon:true},
  {id:"shopping",icon:"🛒",color:"#EA580C",soon:false},
  {id:"health",icon:"💊",color:"#059669",soon:false},
@@ -658,8 +691,8 @@ const PLATFORMS_VERIFIED = [
  {id:"vscode",name:"VS Code",icon:"◈",desc:{fa:"هر ویرایشگر سازگار با MCP، با یک تنظیم stdio.",de:"Jeder MCP-kompatible Editor mit einer stdio-Konfiguration.",en:"Any MCP-compatible editor via a stdio config."}}
 ];
 const PLATFORMS_UNVERIFIED = [
- {id:"chatgpt",name:"ChatGPT",icon:"✦",desc:{fa:"وب‌اپ — سرورهای stdio محلی اینجا تأیید نشده‌اند.",de:"Web-App — lokale stdio-Server sind hier nicht geprüft.",en:"Web app — local stdio servers are not verified here."}},
- {id:"gemini",name:"Gemini",icon:"✧",desc:{fa:"وب‌اپ — سرورهای stdio محلی اینجا تأیید نشده‌اند.",de:"Web-App — lokale stdio-Server sind hier nicht geprüft.",en:"Web app — local stdio servers are not verified here."}}
+ {id:"chatgpt",name:"ChatGPT",icon:"✦",desc:{fa:"وب‌اپ — سرورهای محلی در مرورگر اجرا نمی‌شوند؛ از برنامهٔ دسکتاپ استفاده کن.",de:"Web-App — lokale Server laufen nicht im Browser; nutze eine Desktop-App.",en:"Web app — local servers don't run in the browser; use a desktop app."}},
+ {id:"gemini",name:"Gemini",icon:"✧",desc:{fa:"وب‌اپ — سرورهای محلی در مرورگر اجرا نمی‌شوند؛ از برنامهٔ دسکتاپ استفاده کن.",de:"Web-App — lokale Server laufen nicht im Browser; nutze eine Desktop-App.",en:"Web app — local servers don't run in the browser; use a desktop app."}}
 ];
 
 const SKILLS = [
@@ -747,7 +780,7 @@ const FAQ = [
  {q:{fa:"برای استفاده از سرورها کلید API لازم است؟",de:"Brauche ich einen API-Schlüssel, um die Server zu nutzen?",en:"Do I need an API key to use the servers?"},a:{fa:"نه. همهٔ سرورها روی کامپیوتر خودت با uvx اجرا می‌شوند؛ بدون کلید API، بدون حساب و بدون ثبت‌نام.",de:"Nein. Alle Server laufen mit uvx auf deinem eigenen Computer — kein API-Schlüssel, kein Konto, keine Registrierung.",en:"No. Every server runs on your own computer with uvx — no API key, no account, no sign-up."}},
  {q:{fa:"سرورها فقط‌خواندنی‌اند؟",de:"Sind die Server nur lesbar?",en:"Are the servers read-only?"},a:{fa:"بله. سرورها فقط دادهٔ عمومی سایت‌ها را می‌خوانند؛ چیزی نمی‌خرند، رزرو نمی‌کنند و در هیچ حسابی تغییری نمی‌دهند.",de:"Ja. Die Server lesen nur öffentliche Daten der Websites; sie kaufen nichts, buchen nichts und ändern nichts in einem Konto.",en:"Yes. The servers only read the sites' public data; they never buy, book, or change anything in an account."}},
  {q:{fa:"این سرورها رسمی‌اند؟",de:"Sind diese Server offiziell?",en:"Are these servers official?"},a:{fa:"نه؛ غیررسمی و ساختهٔ جامعه‌اند و از همان نشانی‌هایی استفاده می‌کنند که خود سایت‌ها به کار می‌برند. اگر سایتی تغییر کند، سرورش ممکن است از کار بیفتد؛ اینجا نگهداری و به‌روز می‌شوند.",de:"Nein; sie sind inoffiziell und von der Community gebaut und nutzen dieselben Adressen, die die Websites selbst verwenden. Ändert sich eine Website, kann ihr Server ausfallen; hier werden sie gewartet und aktualisiert.",en:"No; they are unofficial, community-built, and use the same endpoints the sites themselves use. If a site changes, its server may break; they are maintained and updated here."}},
- {q:{fa:"چطور یک سرور را وصل کنم؟",de:"Wie verbinde ich einen Server?",en:"How do I connect a server?"},a:{fa:"از صفحهٔ «اتصال»، برنامه‌ات را انتخاب کن و قدم‌ها را دنبال کن — معمولاً یک دستور ترمینال یا چند خط تنظیمات است.",de:"Wähle auf der Seite «Verbinden» deine App und folge den Schritten — meist reicht ein Terminal-Befehl oder ein paar Zeilen Konfiguration.",en:"Pick your app on the «Connect» page and follow the steps — usually one terminal command or a few lines of config."}},
+ {q:{fa:"چطور یک سرور را وصل کنم؟",de:"Wie verbinde ich einen Server?",en:"How do I connect a server?"},a:{fa:"از صفحهٔ «اتصال»، «شروع ساده» را انتخاب کن و قدم‌ها را دنبال کن — با Claude Desktop و بدون دانش فنی.",de:"Wähle auf der Seite «Verbinden» den «Einfachen Start» und folge den Schritten — mit Claude Desktop, ohne technisches Wissen.",en:"On the «Connect» page, pick «Simple start» and follow the steps — with Claude Desktop, no technical knowledge needed."}},
  {q:{fa:"با کدام برنامه‌ها کار می‌کند؟",de:"Mit welchen Apps funktioniert das?",en:"Which apps does it work with?"},a:{fa:"هر کلاینت MCP که سرور stdio محلی را پشتیبانی کند: Claude Code، Claude Desktop، Cursor و VS Code اینجا تأیید شده‌اند؛ Windsurf، Codex CLI و Gemini CLI هم با تنظیم استاندارد کار می‌کنند.",de:"Mit jedem MCP-Client, der lokale stdio-Server unterstützt: Claude Code, Claude Desktop, Cursor und VS Code sind hier geprüft; Windsurf, Codex CLI und Gemini CLI funktionieren ebenfalls mit der Standard-Konfiguration.",en:"Any MCP client that supports local stdio servers: Claude Code, Claude Desktop, Cursor and VS Code are verified here; Windsurf, Codex CLI and Gemini CLI also work with the standard config."}},
  {q:{fa:"چطور یک سرور تازه پیشنهاد دهم؟",de:"Wie schlage ich einen neuen Server vor?",en:"How do I suggest a new server?"},a:{fa:"در گیت‌هاب یک ایشو باز کن و بگو چه سرویسی، چه داده‌ای و چرا به درد می‌خورد.",de:"Eröffne ein Issue auf GitHub und schreibe, welcher Dienst, welche Daten und warum es nützlich wäre.",en:"Open an issue on GitHub and say which service, which data, and why it would be useful."}}
 ];
@@ -808,9 +841,9 @@ const ARTICLES = [
  {id:"choose-client",cat:"guides",date:"2026-11-09",mins:5,cover:"g2",icon:"🧭",
   title:{fa:"کدام کلاینت MCP برای شما مناسب است؟",de:"Welcher MCP-Client passt zu dir?",en:"Which MCP client is right for you?"},
   ex:{fa:"Claude Code، Cursor، Claude Desktop یا VS Code — انتخاب درست به روش کارت بستگی دارد.",de:"Claude Code, Cursor, Claude Desktop oder VS Code — die richtige Wahl hängt davon ab, wie du arbeitest.",en:"Claude Code, Cursor, Claude Desktop or VS Code — the right choice depends on how you work."},
-  body:{fa:["اگر بیشتر در ترمینال کار می‌کنی، Claude Code سریع‌ترین راه است: یک دستور، و سرور وصل است. برای کسانی که با خط فرمان راحت‌اند، هیچ راه ساده‌تری نیست.","اگر برنامه‌نویس هستی و در ویرایشگر کد زندگی می‌کنی، Cursor یا VS Code انتخاب طبیعی است؛ سرور در کنار کدت قرار می‌گیرد و می‌توانی از دستیار بخواهی هم‌زمان کد و دادهٔ واقعی را ببیند.","اگر فقط می‌خواهی گفت‌وگو کنی و سؤال بپرسی، Claude Desktop ساده‌ترین گزینه است: یک بار فایل پیکربندی را ویرایش می‌کنی و بعد همه‌چیز در چت است.","یک نکتهٔ مهم: سرورهای محلی (stdio) فقط روی کامپیوتر خودت اجرا می‌شوند. نسخهٔ وب ChatGPT و Gemini فعلاً با این سرورها تأیید نشده‌اند — پس اگر از نسخهٔ وب استفاده می‌کنی، سراغ کلاینت‌های دسکتاپ یا خط فرمان برو."],
-         de:["Wenn du hauptsächlich im Terminal arbeitest, ist Claude Code der schnellste Weg: ein Befehl und der Server ist verbunden. Für alle, die sich mit der Kommandozeile wohlfühlen, gibt es nichts Einfacheres.","Wenn du programmierst und in einem Code-Editor lebst, sind Cursor oder VS Code die natürliche Wahl; der Server sitzt neben deinem Code und du kannst den Assistenten bitten, Code und echte Daten gleichzeitig zu sehen.","Wenn du nur chatten und Fragen stellen willst, ist Claude Desktop die einfachste Option: Du bearbeitest die Konfigurationsdatei einmal, und danach läuft alles im Chat.","Ein wichtiger Hinweis: Lokale (stdio-)Server laufen nur auf deinem eigenen Computer. Die Webversionen von ChatGPT und Gemini sind mit diesen Servern noch nicht geprüft — wenn du die Webversion nutzt, nimm Desktop- oder Kommandozeilen-Clients."],
-         en:["If you mostly live in the terminal, Claude Code is the fastest path: one command and the server is connected. For anyone comfortable with the command line, there is nothing simpler.","If you are a programmer who lives in a code editor, Cursor or VS Code is the natural choice; the server sits next to your code and you can ask the assistant to see code and real data at the same time.","If you only want to chat and ask questions, Claude Desktop is the simplest option: you edit the config file once, and afterwards everything happens in the chat.","One important note: local (stdio) servers run only on your own computer. The web versions of ChatGPT and Gemini are not yet verified with these servers — so if you use the web version, pick a desktop or command-line client instead."]}},
+  body:{fa:["اگر بیشتر در ترمینال کار می‌کنی، Claude Code سریع‌ترین راه است: یک دستور، و سرور وصل است. برای کسانی که با خط فرمان راحت‌اند، هیچ راه ساده‌تری نیست.","اگر برنامه‌نویس هستی و در ویرایشگر کد زندگی می‌کنی، Cursor یا VS Code انتخاب طبیعی است؛ سرور در کنار کدت قرار می‌گیرد و می‌توانی از دستیار بخواهی هم‌زمان کد و دادهٔ واقعی را ببیند.","اگر فقط می‌خواهی گفت‌وگو کنی و سؤال بپرسی، Claude Desktop ساده‌ترین گزینه است: یک بار فایل پیکربندی را ویرایش می‌کنی و بعد همه‌چیز در چت است.","یک نکتهٔ مهم: سرورهای محلی فقط روی کامپیوتر خودت اجرا می‌شوند و در نسخهٔ وب claude.ai یا ChatGPT کار نمی‌کنند. برای این سرورها به یک برنامهٔ دسکتاپ یا خط فرمان نیاز داری — مثلاً Claude Desktop."],
+         de:["Wenn du hauptsächlich im Terminal arbeitest, ist Claude Code der schnellste Weg: ein Befehl und der Server ist verbunden. Für alle, die sich mit der Kommandozeile wohlfühlen, gibt es nichts Einfacheres.","Wenn du programmierst und in einem Code-Editor lebst, sind Cursor oder VS Code die natürliche Wahl; der Server sitzt neben deinem Code und du kannst den Assistenten bitten, Code und echte Daten gleichzeitig zu sehen.","Wenn du nur chatten und Fragen stellen willst, ist Claude Desktop die einfachste Option: Du bearbeitest die Konfigurationsdatei einmal, und danach läuft alles im Chat.","Ein wichtiger Hinweis: Lokale Server laufen nur auf deinem eigenen Computer und funktionieren nicht in der Webversion von claude.ai oder ChatGPT. Für diese Server brauchst du eine Desktop-App oder einen Kommandozeilen-Client — zum Beispiel Claude Desktop."],
+         en:["If you mostly live in the terminal, Claude Code is the fastest path: one command and the server is connected. For anyone comfortable with the command line, there is nothing simpler.","If you are a programmer who lives in a code editor, Cursor or VS Code is the natural choice; the server sits next to your code and you can ask the assistant to see code and real data at the same time.","If you only want to chat and ask questions, Claude Desktop is the simplest option: you edit the config file once, and afterwards everything happens in the chat.","One important note: local servers run only on your own computer and do not work in the web version of claude.ai or ChatGPT. For these servers you need a desktop app or a command-line client — for example Claude Desktop."]}},
  {id:"germany-servers",cat:"guides",date:"2026-11-09",mins:7,cover:"g3",icon:"🇩🇪",
   title:{fa:"سرورهای آلمان چطور کار می‌کنند؟",de:"Wie funktionieren die Deutschland-Server?",en:"How do the Germany servers work?"},
   ex:{fa:"پشت صحنهٔ سرورهای فقط‌خواندنی: از کجا داده می‌خوانند، چه چیزی را نمی‌توانند انجام دهند و چرا امن‌اند.",de:"Hinter den Kulissen der Nur-Lesen-Server: woher sie Daten lesen, was sie nicht können und warum sie sicher sind.",en:"Behind the scenes of the read-only servers: where they read data, what they cannot do, and why they are safe."},
@@ -843,7 +876,7 @@ fa:{
  cat_weather:"هواشناسی", cat_weather_d:"پیش‌بینی و هشدارهای DWD",
  cat_transport:"حمل‌ونقل", cat_transport_d:"وضعیت جاده‌های اتوبان و قطار فلیکس‌ترین",
  cat_open_data:"دیتای باز", cat_open_data_d:"دیتای رسمی دولت آلمان",
- cat_dictionary:"دیکشنری", cat_dictionary_d:"معنی و صرف واژه‌های آلمانی",
+ cat_language:"زبان", cat_language_d:"دیکشنری و ابزارهای زبان آلمانی",
  cat_education:"آموزش", cat_education_d:"دانشگاه‌ها و رشته‌ها در آلمان",
  cat_shopping:"خرید و قیمت", cat_shopping_d:"مقایسهٔ قیمت فروشگاه‌های آلمان",
  cat_health:"سلامت", cat_health_d:"داروخانه‌ها و خدمات سلامت",
@@ -860,7 +893,7 @@ fa:{
  plat_unverified_note:"نسخهٔ وب این سرویس‌ها با سرورهای محلی stdio تأیید نشده است — ادعای سازگاری نمی‌کنیم.",
  how_title:"چطور کار می‌کند؟", how_sub:"سه قدم تا اولین سؤال واقعی از دستیارت.",
  how_s1_t:"۱. یک سرور MCP پیدا کن", how_s1_d:"در بازارچه بگرد؛ هر سرور یک سرویس آلمان را پوشش می‌دهد و فهرست ابزارهایش مشخص است.",
- how_s2_t:"۲. آن را به دستیارت وصل کن", how_s2_d:"با یک دستور uvx در Claude Code، یا با چند کلیک در Cursor و Claude Desktop.",
+ how_s2_t:"۲. آن را به دستیارت وصل کن", how_s2_d:"با یک دستور uvx در Claude Code، یا با چند خط تنظیمات در Cursor و Claude Desktop.",
  how_s3_t:"۳. از هوش مصنوعی استفاده کن", how_s3_d:"به‌جای باز کردن ده تب، بپرس — جواب را با عدد، قیمت و منبع می‌گیری.",
  skills_title:"بازارچهٔ مهارت‌ها", skills_sub:"مهارت‌های واقعی ایجنت که یک خلأ اثبات‌شده در اکوسیستم Claude را پر می‌کنند.",
  skill_compat:"سازگار با", skill_gap:"خلأیی که پر می‌کند", skill_repo:"گیت‌هاب", skill_tests:"تست",
@@ -960,7 +993,7 @@ de:{
  cat_weather:"Wetter", cat_weather_d:"DWD-Vorhersagen und Warnungen",
  cat_transport:"Verkehr", cat_transport_d:"Autobahn-Lage und FlixTrain",
  cat_open_data:"Offene Daten", cat_open_data_d:"Offizielle Daten der deutschen Regierung",
- cat_dictionary:"Wörterbuch", cat_dictionary_d:"Bedeutungen und Formen deutscher Wörter",
+ cat_language:"Sprache", cat_language_d:"Wörterbücher und Deutsch-Tools",
  cat_education:"Bildung", cat_education_d:"Universitäten und Studiengänge in Deutschland",
  cat_shopping:"Einkaufen und Preise", cat_shopping_d:"Preisvergleich deutscher Shops",
  cat_health:"Gesundheit", cat_health_d:"Apotheken und Gesundheitsdienste",
@@ -977,7 +1010,7 @@ de:{
  plat_unverified_note:"Die Webversionen dieser Dienste sind mit lokalen stdio-Servern nicht geprüft — wir geben keine Kompatibilitätsversprechen.",
  how_title:"Wie funktioniert es?", how_sub:"Drei Schritte zu deiner ersten echten Frage.",
  how_s1_t:"1. Einen MCP-Server finden", how_s1_d:"Stöbere auf dem Marktplatz; jeder Server deckt einen deutschen Dienst ab und seine Tool-Liste ist sichtbar.",
- how_s2_t:"2. Mit deinem Assistenten verbinden", how_s2_d:"Ein einziger uvx-Befehl in Claude Code oder ein paar Klicks in Cursor und Claude Desktop.",
+ how_s2_t:"2. Mit deinem Assistenten verbinden", how_s2_d:"Ein einziger uvx-Befehl in Claude Code oder ein paar Zeilen Konfiguration in Cursor und Claude Desktop.",
  how_s3_t:"3. KI nutzen", how_s3_d:"Statt zehn Tabs zu öffnen, frag einfach — und erhalte die Antwort mit Zahlen, Preisen und Quelle.",
  skills_title:"Fähigkeiten-Marktplatz", skills_sub:"Echte Agent-Fähigkeiten, die eine nachgewiesene Lücke im Claude-Ökosystem schließen.",
  skill_compat:"Kompatibel mit", skill_gap:"Die Lücke, die sie schließt", skill_repo:"GitHub", skill_tests:"Tests",
@@ -1080,7 +1113,7 @@ en:{
  cat_weather:"Weather", cat_weather_d:"DWD forecasts and warnings",
  cat_transport:"Transport", cat_transport_d:"Autobahn conditions and FlixTrain",
  cat_open_data:"Open Data", cat_open_data_d:"Official German government data",
- cat_dictionary:"Dictionary", cat_dictionary_d:"Meanings and forms of German words",
+ cat_language:"Language", cat_language_d:"Dictionaries and German language tools",
  cat_education:"Education", cat_education_d:"Universities and degree programmes in Germany",
  cat_shopping:"Shopping & Prices", cat_shopping_d:"Price comparison from German shops",
  cat_health:"Health", cat_health_d:"Pharmacies and health services",
@@ -1097,7 +1130,7 @@ en:{
  plat_unverified_note:"The web versions of these services are not verified with local stdio servers — we make no compatibility claim.",
  how_title:"How It Works", how_sub:"Three steps to your first real question to your assistant.",
  how_s1_t:"1. Find an MCP server", how_s1_d:"Browse the marketplace; each server covers one German service and its tool list is shown.",
- how_s2_t:"2. Connect it to your assistant", how_s2_d:"One uvx command in Claude Code, or a few clicks in Cursor and Claude Desktop.",
+ how_s2_t:"2. Connect it to your assistant", how_s2_d:"One uvx command in Claude Code, or a few lines of config in Cursor and Claude Desktop.",
  how_s3_t:"3. Use AI", how_s3_d:"Instead of opening ten tabs, ask — and get the answer with numbers, prices and a source.",
  skills_title:"Skills Marketplace", skills_sub:"Real agent skills that fill a proven gap in the Claude ecosystem.",
  skill_compat:"Compatible with", skill_gap:"The gap it fills", skill_repo:"GitHub", skill_tests:"tests",
@@ -1233,11 +1266,14 @@ function go(page, param){ location.hash = hashFor(page, param); window.scrollTo(
 /* ---------------- shared components ---------------- */
 function headerHTML(){
   const navItems = [["home","nav_home"],["marketplace","nav_marketplace"],["categories","nav_categories"],["skills","nav_skills"],["tutorials","nav_tutorials"],["blog","nav_blog"],["about","nav_about"],["contact","nav_contact"],["ask","nav_ask"],["connect","nav_connect"]];
-  const nav = navItems.map(([p,k])=>`<a href="${hashFor(p)}" class="${state.page===p||(p==="marketplace"&&state.page==="tool")||(p==="skills"&&state.page==="skill")||(p==="tutorials"&&state.page==="tutorial")||(p==="blog"&&state.page==="article")?"active":""}">${t(k)}</a>`).join("");
+  const deskItems = navItems.filter(([p])=>["marketplace","categories","skills","tutorials","blog","about"].includes(p));
+  const nav = deskItems.map(([p,k])=>`<a href="${hashFor(p)}" class="${state.page===p||(p==="marketplace"&&state.page==="tool")||(p==="skills"&&state.page==="skill")||(p==="tutorials"&&state.page==="tutorial")||(p==="blog"&&state.page==="article")?"active":""}">${t(k)}</a>`).join("");
   return `<header class="site"><div class="wrap nav">
     <a class="brand" href="${hashFor("home")}"><span class="mark">G</span><span>Germany MCP<small>${t("brand_tag")}</small></span></a>
     <nav class="main" aria-label="main">${nav}</nav>
     <div class="nav-right">
+      <a class="btn btn-ghost btn-sm nav-cta" href="${hashFor("ask")}">${t("nav_ask")}</a>
+      <a class="btn btn-primary btn-sm nav-cta" href="${hashFor("connect")}">${t("nav_connect")}</a>
       <select class="lang-select" aria-label="${t("lang_name")}" onchange="App.setLang(this.value)">
         ${Object.keys(LANGS).map(l=>`<option value="${l}" ${l===state.lang?"selected":""}>${LANGS[l].name}</option>`).join("")}
       </select>
@@ -1265,7 +1301,7 @@ function footerHTML(){
       </div>
       ${col(t("foot_platform"), [[hashFor("marketplace"),t("nav_marketplace")],[hashFor("categories"),t("nav_categories")],[hashFor("skills"),t("nav_skills")],[hashFor("tutorials"),t("nav_tutorials")]])}
       ${col(t("foot_resources"), [[hashFor("blog"),t("nav_blog")],[hashFor("tutorials"),t("tut_title")],["https://github.com/mohammad-abbasi-sh/germany-mcp",t("tool_repo")],["https://pypi.org/user/mohammad-abbasi-sh/","PyPI"],["https://github.com/mohammad-abbasi-sh/germany-mcp/issues/new",t("suggest_server")]])}
-      ${col(t("foot_company"), [[hashFor("about"),t("nav_about")],[hashFor("contact"),t("nav_contact")],["https://almanibama.ir","Almanibama"],["https://mabbasi.ir","mabbasi.ir"],["#",t("foot_privacy")],["#",t("foot_terms")]])}
+      ${col(t("foot_company"), [[hashFor("about"),t("nav_about")],[hashFor("contact"),t("nav_contact")],["https://almanibama.ir","Almanibama"],["https://mabbasi.ir","mabbasi.ir"]])}
     </div>
     <div class="foot-bottom">
       <span>© ${new Date().getFullYear()} Germany MCP — ${t("foot_rights")}</span>
@@ -1288,7 +1324,7 @@ function serverCard(s){
     <p class="meta-row"><span class="ic">▦</span> ${esc(catName(s.cat))} · ${fmtNum(s.tools.length)} ${t("tools_count")}</p>
     <p class="meta-row"><span class="ic">✓</span> ${t("status_available")} · stdio · uvx · ${t("badge_nokey")}</p>
     <div class="card-bottom">
-      ${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span>`:`<span class="chip">${esc(catName(s.cat))}</span>`}
+      ${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span>`:""}
       <a class="btn btn-primary btn-sm" href="${hashFor("tool", s.id)}">${t("details")}</a>
     </div>
   </article>`;
@@ -1311,7 +1347,7 @@ function skillCard(k){
 }
 function catCard(c){
   const n = catCount(c.id);
-  return `<article class="card cat-card" onclick="App.openCategory('${c.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')App.openCategory('${c.id}')">
+  return `<article class="card cat-card" onclick="App.openCategory('${c.id}')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();App.openCategory('${c.id}')}">
     <span class="ic" style="background:${c.color}22;color:${c.color}">${c.icon}</span>
     <h3>${esc(catName(c.id))}</h3>
     <p>${esc(catDesc(c.id))}</p>
@@ -1362,7 +1398,7 @@ function heroHTML(){
   </div></section>`;
 }
 function homeHTML(){
-  const feat = SERVERS.filter(s=>s.featured).concat(SERVERS.filter(s=>!s.featured).slice(0,2));
+  const feat = SERVERS.filter(s=>s.featured).concat(SERVERS.filter(s=>!s.featured).slice(0,3));
   return heroHTML() + `
   <section class="section"><div class="wrap">
     ${sectionHead("●", t("cats_title"), t("cats_sub"), `<a class="btn btn-ghost btn-sm" href="${hashFor("categories")}">${t("view_all")}</a>`)}
@@ -1461,9 +1497,6 @@ function marketplaceHTML(){
     <div class="toolbar">
       <div class="search-box"><span class="mag">🔍</span><input id="mp-q" type="search" placeholder="${esc(t("mp_search_ph"))}" value="${esc(mp.q)}" oninput="App.mpSearch(this.value)" aria-label="${esc(t("mp_search_ph"))}"></div>
       <select id="mp-cat" onchange="App.mpFilter('cat',this.value)" aria-label="${t("f_category")}">${opt("all",mp.cat,t("f_all"))}${CATEGORIES.filter(c=>!c.soon).map(c=>opt(c.id,mp.cat,catName(c.id))).join("")}</select>
-      <select onchange="App.mpFilter('platform',this.value)" aria-label="${t("f_platform")}">${opt("all",mp.platform,t("f_all"))}${PLATFORMS_VERIFIED.map(p=>opt(p.id,mp.platform,p.name)).join("")}</select>
-      <select onchange="App.mpFilter('conn',this.value)" aria-label="${t("f_connection")}">${opt("all",mp.conn,t("f_all"))}${opt("stdio",mp.conn,t("f_stdio"))}</select>
-      <select onchange="App.mpFilter('status',this.value)" aria-label="${t("f_status")}">${opt("all",mp.status,t("f_all"))}${opt("available",mp.status,t("f_available"))}</select>
       <select onchange="App.mpFilter('sort',this.value)" aria-label="${t("sort")}">${opt("popular",mp.sort,t("sort_popular"))}${opt("newest",mp.sort,t("sort_newest"))}${opt("alpha",mp.sort,t("sort_alpha"))}</select>
     </div>
     <div id="mp-results">${mpResultsHTML()}</div>
@@ -1481,7 +1514,7 @@ function toolHTML(id){
       <span class="tile" style="background:${s.color}">${s.letter}</span>
       <div style="flex:1;min-width:0">
         <h1>${esc(s.title)}</h1>
-        <p class="latin">${esc(s.id)} · v0.1.0</p>
+        <p class="latin">${esc(s.id)}</p>
         <p>${s.featured?`<span class="badge badge-feat">★ ${t("feat_badge")}</span> `:""}<span class="badge badge-ok">✓ ${t("status_available")}</span> <span class="chip">💻 ${t("badge_local")}</span> <span class="chip">${esc(catName(s.cat))}</span></p>
       </div>
       ${starBtn("server", s.id)}
@@ -1506,7 +1539,7 @@ function toolHTML(id){
           <a class="btn btn-primary btn-sm" href="${s.repo}" target="_blank" rel="noopener">${t("tool_repo")} ↗</a>
           <a class="btn btn-ghost btn-sm" href="https://pypi.org/project/${s.pypi}/" target="_blank" rel="noopener">${t("tool_pypi")} ↗</a>
         </div>
-        <p style="color:var(--muted);font-size:13px;margin-top:14px">${t("tool_last")}: ${fmtDate("2026-11-15")}</p>
+        <p style="color:var(--muted);font-size:13px;margin-top:14px">${t("tool_last")}: ${fmtDate("2026-11-16")}</p>
       </div>
     </div>
   </div></section>`;
@@ -1716,7 +1749,7 @@ const ASK_INTENTS = [
  {cats:["news"], kw:{fa:["خبر","اخبار","روزنامه"],de:["nachrichten","news","schlagzeile","tagesschau"],en:["news","headline"]}},
  {cats:["jobs"], kw:{fa:["شغل","استخدام","کار"],de:["job","karriere","stellenangebot","arbeit"],en:["job","career","hiring","employment"]}},
  {cats:["travel"], kw:{fa:["هتل","سفر","بلیت هواپیما"],de:["hotel","reise","flug"],en:["hotel","travel","flight"]}},
- {cats:["dictionary"], kw:{fa:["دیکشنری","لغت","معنی","ترجمه"],de:["wörterbuch","wort","bedeutung","übersetzung"],en:["dictionary","word","meaning","translate"]}},
+ {cats:["language"], kw:{fa:["دیکشنری","لغت","معنی","ترجمه"],de:["wörterbuch","wort","bedeutung","übersetzung"],en:["dictionary","word","meaning","translate"]}},
  {cats:["education"], kw:{fa:["دانشگاه","تحصیل","رشته"],de:["universität","studium","hochschule"],en:["university","study","degree"]}},
  {cats:["health"], kw:{fa:["دارو","داروخانه","دکتر","پزشک"],de:["apotheke","medizin","arzt","medikament"],en:["pharmacy","medicine","doctor"]}}
 ];
@@ -1814,8 +1847,92 @@ function askHTML(){
   </div></section>`;
 }
 
-/* ---------------- Connect — pick your app, get the steps ---------------- */
-const CONNECT_STATE = {app:"claude-code"};
+const SIMPLE_GUIDE = {
+  tab_simple:{fa:"شروع ساده",de:"Einfacher Start",en:"Simple start"},
+  tab_tech:{fa:"راهنمای فنی",de:"Technische Anleitung",en:"Technical guide"},
+  what_t:{fa:"MCP چیست؟",de:"Was ist MCP?",en:"What is MCP?"},
+  what:{fa:"MCP به دستیار هوش مصنوعی شما اجازه می‌دهد به‌جای حدس زدن از روی حافظه، اطلاعات زنده را پیدا کند. هر سرور این کاتالوگ یک سرویس آلمان — جدول فوتبال، اخبار، هواشناسی — را به دستیار شما وصل می‌کند. سرورها فقط دادهٔ عمومی را می‌خوانند؛ هرگز وارد حساب شما نمی‌شوند، چیزی نمی‌خرند و چیزی را تغییر نمی‌دهند.",
+        de:"MCP erlaubt deinem KI-Assistenten, live Informationen nachzuschlagen, statt aus dem Gedächtnis zu raten. Jeder Server in diesem Katalog verbindet einen deutschen Dienst — Fußballtabellen, Nachrichten, Wetter — mit deinem Assistenten. Die Server lesen nur öffentliche Daten; sie melden sich nie in deinem Konto an, kaufen nichts und ändern nichts.",
+        en:"MCP lets your AI assistant look up live information instead of guessing from memory. Each server in this catalog connects one German service — football tables, news, weather — to your assistant. The servers only read public data; they never log in to your account, buy anything, or change anything."},
+  only_t:{fa:"مهم: فقط روی کامپیوتر شما کار می‌کند",de:"Wichtig: nur auf deinem eigenen Computer",en:"Important: only on your own computer"},
+  only:{fa:"این سرورها روی کامپیوتر خودت اجرا می‌شوند و در وب‌سایت claude.ai یا ChatGPT کار نمی‌کنند. برای استفاده از آن‌ها برنامهٔ رایگان Claude Desktop را نصب کن. بدون حساب و بدون کلید API.",
+        de:"Diese Server laufen auf deinem eigenen Computer und funktionieren nicht auf der Website von claude.ai oder ChatGPT. Installiere dafür die kostenlose App Claude Desktop. Kein Konto, kein API-Schlüssel.",
+        en:"These servers run on your own computer and do not work on the claude.ai or ChatGPT website. Install the free Claude Desktop app to use them. No account, no API key."},
+  steps_t:{fa:"قدم‌به‌قدم با Claude Desktop",de:"Schritt für Schritt mit Claude Desktop",en:"Step by step with Claude Desktop"},
+  os_mac:{fa:"مک و لینوکس",de:"Mac und Linux",en:"Mac and Linux"},
+  os_win:{fa:"ویندوز",de:"Windows",en:"Windows"},
+  sample_q:{fa:"چه تیمی صدر جدول بوندس‌لیگاست؟",de:"Wer führt die Bundesliga-Tabelle an?",en:"Who tops the Bundesliga table?"},
+  steps:[
+    {t:{fa:"برنامهٔ Claude Desktop را نصب کن",de:"Installiere die App Claude Desktop",en:"Install the Claude Desktop app"},
+     d:{fa:"به نشانی claude.ai/download برو و نسخهٔ ویندوز یا مک را دانلود و نصب کن؛ مثل هر برنامهٔ دیگری. اگر از قبل نصبش داری، این قدم را رد کن.",
+        de:"Gehe zu claude.ai/download, lade die Version für Windows oder Mac herunter und installiere sie wie jede andere App. Falls du sie schon hast, überspringe diesen Schritt.",
+        en:"Go to claude.ai/download, download the version for Windows or Mac, and install it like any other app. If you already have it, skip this step."},
+     link:{url:"https://claude.ai/download",label:{fa:"دانلود Claude Desktop",de:"Claude Desktop herunterladen",en:"Download Claude Desktop"}}},
+    {t:{fa:"ابزار کوچک uv را نصب کن",de:"Installiere das kleine Hilfsprogramm uv",en:"Install the small helper uv"},
+     d:{fa:"uv برنامه‌ای است که سرورها را اجرا می‌کند؛ یک بار نصبش کن و دیگر کاری با آن نداری. اول ترمینال را باز کن: در مک کلیدهای Cmd + Space را بزن، بنویس Terminal و Enter بزن؛ در ویندوز منوی Start را باز کن، بنویس PowerShell و Enter بزن؛ در لینوکس Ctrl + Alt + T را بزن. بعد دستور مربوط به سیستم‌عامل خودت را کپی و در ترمینال بچسبان و Enter بزن.",
+        de:"uv ist das kleine Programm, das die Server ausführt; installiere es einmal und du musst dich nie wieder darum kümmern. Öffne zuerst das Terminal: auf dem Mac drücke Cmd + Leertaste, tippe Terminal und drücke Enter; unter Windows öffne das Startmenü, tippe PowerShell und drücke Enter; unter Linux drücke Strg + Alt + T. Kopiere dann den Befehl für dein System, füge ihn ins Terminal ein und drücke Enter.",
+        en:"uv is the small program that runs the servers; install it once and you never have to think about it again. First open the terminal: on Mac press Cmd + Space, type Terminal and press Enter; on Windows open the Start menu, type PowerShell and press Enter; on Linux press Ctrl + Alt + T. Then copy the command for your system, paste it into the terminal, and press Enter."},
+     codeMac:"curl -LsSf https://astral.sh/uv/install.sh | sh",
+     codeWin:"powershell -ExecutionPolicy ByPass -c \"irm https://astral.sh/uv/install.ps1 | iex\""},
+    {t:{fa:"فایل تنظیمات را باز کن",de:"Öffne die Konfigurationsdatei",en:"Open the settings file"},
+     d:{fa:"در Claude Desktop از منو Settings را باز کن، بعد Developer و بعد روی «Edit Config» کلیک کن. فایل تنظیمات در ویرایشگر متن باز می‌شود. اگر فایل خالی است، اشکالی ندارد.",
+        de:"Öffne in Claude Desktop das Menü, dann Settings, dann Developer, und klicke auf «Edit Config». Die Konfigurationsdatei öffnet sich in einem Texteditor. Wenn die Datei leer ist, ist das normal.",
+        en:"In Claude Desktop, open the menu, then Settings, then Developer, and click «Edit Config». The settings file opens in a text editor. If the file is empty, that's normal."}},
+    {t:{fa:"تنظیمات سرور را بچسبان",de:"Füge die Server-Einstellungen ein",en:"Paste the server settings"},
+     d:{fa:"متن زیر را با دکمهٔ «کپی» کپی کن و در فایل بچسبان. این متن سرور بوندس‌لیگا را اضافه می‌کند؛ برای سرورهای دیگر فقط نام و بسته عوض می‌شود. اگر فایل از قبل نوشته‌ای دارد، این قدم را در راهنمای فنی ببین.",
+        de:"Kopiere den Text unten mit der Schaltfläche «Kopieren» und füge ihn in die Datei ein. Dieser Text fügt den Bundesliga-Server hinzu; für andere Server ändern sich nur Name und Paket. Wenn die Datei schon Text enthält, schau dir diesen Schritt in der technischen Anleitung an.",
+        en:"Copy the text below with the «Copy» button and paste it into the file. This text adds the Bundesliga server; for other servers only the name and package change. If the file already has text in it, see this step in the technical guide."},
+     snippet:true},
+    {t:{fa:"ذخیره کن و برنامه را کامل ببند و باز کن",de:"Speichern, App ganz schließen und neu öffnen",en:"Save, then fully quit and reopen the app"},
+     d:{fa:"فایل را ذخیره کن (Ctrl + S در ویندوز و لینوکس، Cmd + S در مک)، بعد Claude Desktop را کامل ببند — بستن پنجره کافی نیست؛ از منو Quit را بزن — و دوباره بازش کن.",
+        de:"Speichere die Datei (Strg + S unter Windows und Linux, Cmd + S auf dem Mac), schließe Claude Desktop dann vollständig — das Fenster zu schließen reicht nicht; wähle im Menü Quit — und öffne die App erneut.",
+        en:"Save the file (Ctrl + S on Windows and Linux, Cmd + S on Mac), then quit Claude Desktop completely — closing the window is not enough; choose Quit from the menu — and open it again."}},
+    {t:{fa:"در یک گفت‌وگوی تازه سؤال بپرس",de:"Stelle in einem neuen Chat eine Frage",en:"Ask a question in a new chat"},
+     d:{fa:"یک گفت‌وگوی تازه باز کن و این سؤال را بپرس:",
+        de:"Öffne einen neuen Chat und stelle diese Frage:",
+        en:"Open a new chat and ask this question:"},
+     sample:true},
+    {t:{fa:"از کجا بفهمم کار می‌کند؟",de:"Woran erkenne ich, dass es funktioniert?",en:"How do I know it works?"},
+     d:{fa:"اگر جواب با جدول و عددهای به‌روز آمد، وصل شده‌ای. گاهی کلود می‌گوید دارد از یک ابزار استفاده می‌کند — یعنی سرور کار می‌کند. اگر جواب بدون عدد بود یا کلود گفت نمی‌داند، به بخش «اگر چیزی کار نکرد» پایین صفحه نگاه کن.",
+        de:"Wenn die Antwort mit einer aktuellen Tabelle und Zahlen kommt, bist du verbunden. Manchmal sagt Claude, dass es ein Tool benutzt — das heißt, der Server arbeitet. Wenn die Antwort ohne Zahlen kommt oder Claude sagt, es wisse es nicht, schau unten bei «Wenn etwas nicht klappt» nach.",
+        en:"If the answer comes back with a current table and numbers, you're connected. Sometimes Claude says it's using a tool — that means the server is working. If the answer has no numbers, or Claude says it doesn't know, see «If something doesn't work» below."}}
+  ],
+  paths_t:{fa:"فایل تنظیمات کجاست؟",de:"Wo liegt die Konfigurationsdatei?",en:"Where is the settings file?"},
+  paths_d:{fa:"معمولاً لازم نیست خودت دنبال فایل بگردی — قدم ۳ آن را برایت باز می‌کند. اما اگر خواستی مستقیم پیداش کنی، این نشانی‌ها را در کامپیوترت جست‌وجو کن:",
+        de:"Normalerweise musst du die Datei nicht selbst suchen — Schritt 3 öffnet sie für dich. Falls du sie doch direkt finden willst, suche auf deinem Computer nach diesen Adressen:",
+        en:"You normally don't need to hunt for the file yourself — step 3 opens it for you. But if you want to find it directly, look for these addresses on your computer:"},
+  paths:{rows:[
+    {os:"macOS",path:"~/Library/Application Support/Claude/claude_desktop_config.json"},
+    {os:"Windows",path:"%APPDATA%\\Claude\\claude_desktop_config.json"},
+    {os:"Linux",path:"~/.config/Claude/claude_desktop_config.json",note:{fa:"بیلدهای غیررسمی لینوکس",de:"Inoffizielle Linux-Versionen",en:"Community Linux builds"}}
+  ]},
+  trouble_t:{fa:"اگر چیزی کار نکرد",de:"Wenn etwas nicht klappt",en:"If something doesn't work"},
+  trouble:[
+    {q:{fa:"کلود سرور را نمی‌بیند و جواب را از حافظه می‌دهد",de:"Claude sieht den Server nicht und antwortet aus dem Gedächtnis",en:"Claude doesn't see the server and answers from memory"},
+     a:{fa:"برنامه را کامل ببند و دوباره باز کن (قدم ۵) و مطمئن شو فایل را ذخیره کرده‌ای. اگر باز هم نشد، متن تنظیمات را دوباره کپی و بچسبان.",
+        de:"Schließe die App vollständig und öffne sie erneut (Schritt 5) und prüfe, ob du die Datei gespeichert hast. Falls es immer noch nicht klappt, kopiere die Einstellungen erneut und füge sie wieder ein.",
+        en:"Quit the app completely and reopen it (step 5), and make sure you saved the file. If it still doesn't work, copy the settings again and re-paste them."}},
+    {q:{fa:"خطای JSON یا «فایل تنظیمات خراب است»",de:"JSON-Fehler oder «Konfigurationsdatei ist beschädigt»",en:"A JSON error, or «settings file is broken»"},
+     a:{fa:"فایل باید دقیق باشد: بدون ویرگول اضافه و با همهٔ آکولادهای بسته. ساده‌ترین راه‌حل: همهٔ متن فایل را پاک کن و متن قدم ۴ را دقیقاً همان‌طور که هست بچسبان.",
+        de:"Die Datei muss exakt stimmen: kein Komma zu viel und alle Klammern geschlossen. Die einfachste Lösung: Lösche den ganzen Text der Datei und füge den Text aus Schritt 4 genau so ein, wie er ist.",
+        en:"The file must be exact: no extra comma, all brackets closed. The simplest fix: delete all the text in the file and paste the text from step 4 exactly as it is."}},
+    {q:{fa:"«uvx پیدا نشد» یا هیچ اتفاقی نمی‌افتد",de:"«uvx nicht gefunden» oder es passiert gar nichts",en:"«uvx not found», or nothing happens at all"},
+     a:{fa:"یعنی uv نصب نشده است. قدم ۲ را دوباره انجام بده، بعد ترمینال را ببند و دوباره باز کن و بنویس uvx --version — اگر یک شمارهٔ نسخه دیدی، یعنی نصب شده است.",
+        de:"Das heißt, uv ist nicht installiert. Mach Schritt 2 noch einmal, schließe das Terminal, öffne es erneut und tippe uvx --version — wenn du eine Versionsnummer siehst, ist es installiert.",
+        en:"That means uv isn't installed. Do step 2 again, then close the terminal, reopen it, and type uvx --version — if you see a version number, it's installed."}},
+    {q:{fa:"جواب‌ها خالی برمی‌گردند",de:"Die Antworten kommen leer zurück",en:"Replies come back empty"},
+     a:{fa:"اتصال اینترنت را بررسی کن — سرورها داده را زنده از سایت‌ها می‌خوانند. اگر اینترنت وصل است، چند دقیقه صبر کن و دوباره بپرس.",
+        de:"Prüfe deine Internetverbindung — die Server lesen die Daten live von den Websites. Wenn das Internet läuft, warte ein paar Minuten und frage erneut.",
+        en:"Check your internet connection — the servers read data live from the sites. If the internet is fine, wait a few minutes and ask again."}}
+  ],
+  next_t:{fa:"قدم بعدی",de:"Nächster Schritt",en:"Next step"},
+  next_d:{fa:"حالا سرور دیگری را امتحان کن: در بازارچه بگرد، سرور را باز کن و همان قدم‌ها را با نام و بستهٔ آن سرور تکرار کن. مقالهٔ «MCP چیست؟» هم همه‌چیز را به زبان ساده توضیح می‌دهد.",
+        de:"Probiere jetzt einen anderen Server aus: Stöbere auf dem Marktplatz, öffne einen Server und wiederhole dieselben Schritte mit dessen Namen und Paket. Der Artikel «Was ist MCP?» erklärt alles in einfacher Sprache.",
+        en:"Now try another server: browse the marketplace, open a server, and repeat the same steps with that server's name and package. The article «What is MCP?» explains everything in plain language."}
+};
+
+/* ---------------- Connect — two tracks: simple first, technical second ---------------- */
+const CONNECT_STATE = {app:"claude-code",track:"simple"};
 function connSnippet(app, s){
   const short = s.id.replace("-mcp","");
   if(app.kind==="cli") return "claude mcp add --transport stdio --scope user "+short+" -- uvx "+s.pypi;
@@ -1823,15 +1940,40 @@ function connSnippet(app, s){
   if(app.kind==="vscode") return '{\n  "servers": {\n    "'+short+'": {\n      "type": "stdio",\n      "command": "uvx",\n      "args": ["'+s.pypi+'"]\n    }\n  }\n}';
   return '{\n  "mcpServers": {\n    "'+short+'": {\n      "command": "uvx",\n      "args": ["'+s.pypi+'"]\n    }\n  }\n}';
 }
-function connectHTML(){
-  const s = SERVERS.find(x=>x.featured) || SERVERS[0];
+function simpleHTML(s){
+  const G = SIMPLE_GUIDE;
+  const app = CONNECT_APPS.find(a=>a.id==="claude-desktop") || CONNECT_APPS[0];
+  const snip = connSnippet(app, s);
+  const copyRow = code => `<div class="copy-row"><pre><code>${esc(code)}</code></pre><button class="copy-btn" onclick="App.copy(${JSON.stringify(code).replace(/"/g,"&quot;")})">${t("tool_copy")}</button></div>`;
+  const steps = G.steps.map(st=>{
+    let extra = "";
+    if(st.link) extra += `<p><a class="btn btn-ghost btn-sm" href="${st.link.url}" target="_blank" rel="noopener">${esc(L(st.link.label))} ↗</a></p>`;
+    if(st.codeMac) extra += `<p class="os-label">${esc(L(G.os_mac))}</p>${copyRow(st.codeMac)}<p class="os-label">${esc(L(G.os_win))}</p>${copyRow(st.codeWin)}`;
+    if(st.snippet) extra += copyRow(snip) + `<p style="color:var(--muted);font-size:13.5px">${t("conn_sample").replace("{name}", esc(s.title.split(" — ")[0]))}</p>`;
+    if(st.sample) extra += `<p style="font-size:16px;font-weight:700">«${esc(L(G.sample_q))}»</p>`;
+    return `<li class="guide-step"><h3>${esc(L(st.t))}</h3><p>${esc(L(st.d))}</p>${extra}</li>`;
+  }).join("");
+  const paths = G.paths.rows.map(r=>`<li><span class="os">${esc(r.os)}</span><code>${esc(r.path)}</code>${r.note?`<span style="color:var(--muted);font-size:13px">${esc(L(r.note))}</span>`:""}</li>`).join("");
+  const trouble = G.trouble.map(x=>`<li><b>${esc(L(x.q))}</b><span>${esc(L(x.a))}</span></li>`).join("");
+  return `<p class="guide-lead">${esc(L(G.what))}</p>
+  <div class="callout callout-warn"><h3>${esc(L(G.only_t))}</h3><p>${esc(L(G.only))}</p></div>
+  <h2 style="font-size:20px;margin-top:26px">${esc(L(G.steps_t))}</h2>
+  <ol class="guide-steps">${steps}</ol>
+  <h2 style="font-size:20px">${esc(L(G.paths_t))}</h2>
+  <p style="color:var(--muted)">${esc(L(G.paths_d))}</p>
+  <ul class="path-list">${paths}</ul>
+  <h2 style="font-size:20px;margin-top:26px">${esc(L(G.trouble_t))}</h2>
+  <ul class="trouble">${trouble}</ul>
+  <div class="callout"><h3>${esc(L(G.next_t))}</h3><p>${esc(L(G.next_d))}</p>
+  <p style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-primary btn-sm" href="${hashFor("marketplace")}">${t("hero_cta1")}</a><a class="btn btn-ghost btn-sm" href="${hashFor("article","what-is-mcp")}">${esc(L(G.what_t))}</a><button type="button" class="btn btn-ghost btn-sm" onclick="App.connTrack('tech')">${esc(L(G.tab_tech))}</button></p></div>`;
+}
+
+function techHTML(s){
   const app = CONNECT_APPS.find(a=>a.id===CONNECT_STATE.app) || CONNECT_APPS[0];
   const snip = connSnippet(app, s);
   const steps = app.kind==="cli" ? [t("conn_cli_s1"),t("conn_cli_s2"),t("conn_cli_s3")]
     : [t("conn_cfg_s1").replace("{file}", app.file||""), t("conn_cfg_s2"), t("conn_cfg_s3")];
-  return `<section class="section"><div class="wrap">
-    ${sectionHead("🔌", t("conn_title"), t("conn_sub"))}
-    <div class="card" style="margin-bottom:18px"><h3>${t("conn_prereq_t")}</h3><p style="color:var(--muted)">${t("conn_prereq_d")}</p>
+  return `<div class="card" style="margin-bottom:18px"><h3>${t("conn_prereq_t")}</h3><p style="color:var(--muted)">${t("conn_prereq_d")}</p>
     <div class="copy-row"><pre><code>curl -LsSf https://astral.sh/uv/install.sh | sh</code></pre><button class="copy-btn" onclick="App.copy('curl -LsSf https://astral.sh/uv/install.sh | sh')">${t("tool_copy")}</button></div>
     <p style="color:var(--muted);font-size:13px;margin-top:8px">Windows: <code>powershell -ExecutionPolicy ByPass -c &quot;irm https://astral.sh/uv/install.ps1 | iex&quot;</code></p></div>
     <h2 style="font-size:20px">${t("conn_pick")}</h2>
@@ -1855,7 +1997,19 @@ function connectHTML(){
     <div class="grid grid-2" style="margin-top:26px">
       <div class="card"><h3>${t("conn_all_t")}</h3><p style="color:var(--muted)">${t("conn_all_d")}</p><a class="btn btn-primary btn-sm" href="https://github.com/mohammad-abbasi-sh/germany-mcp/blob/main/.mcp.json" target="_blank" rel="noopener">.mcp.json ↗</a></div>
       <div class="card"><h3>${t("conn_llms_t")}</h3><p style="color:var(--muted)">${t("conn_llms_d")}</p><a class="btn btn-primary btn-sm" href="llms.txt" target="_blank" rel="noopener">llms.txt ↗</a></div>
+    </div>`;
+}
+
+function connectHTML(){
+  const s = SERVERS.find(x=>x.featured) || SERVERS[0];
+  const track = CONNECT_STATE.track || "simple";
+  return `<section class="section"><div class="wrap">
+    ${sectionHead("🔌", t("conn_title"), t("conn_sub"))}
+    <div class="track-tabs" role="tablist">
+      <button type="button" class="track-tab ${track==="simple"?"active":""}" onclick="App.connTrack('simple')">✦ ${esc(L(SIMPLE_GUIDE.tab_simple))}</button>
+      <button type="button" class="track-tab ${track==="tech"?"active":""}" onclick="App.connTrack('tech')">⌘ ${esc(L(SIMPLE_GUIDE.tab_tech))}</button>
     </div>
+    ${track==="simple"?simpleHTML(s):techHTML(s)}
   </div></section>`;
 }
 
@@ -1919,6 +2073,7 @@ window.App = {
   copy(txt){ copyText(txt); },
   demoTab(i){ demoIdx=i; showDemo(); },
   connApp(id){ CONNECT_STATE.app=id; render(); },
+  connTrack(tr){ CONNECT_STATE.track=tr; render(); },
   heroSearch(ev){ ev.preventDefault(); const q=document.getElementById("hero-q"); mp.q=q?q.value:""; mp.cat="all"; go("marketplace"); render(); return false; },
   askSearch(v){ ASK_STATE.q=v; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(v,askScore(v)); },
   askChip(txt){ ASK_STATE.q=txt.trim(); const inp=document.getElementById("ask-q"); if(inp) inp.value=ASK_STATE.q; const el=document.getElementById("ask-results"); if(el) el.innerHTML=askResultsHTML(ASK_STATE.q,askScore(ASK_STATE.q)); },

@@ -7,6 +7,12 @@ fills the SERVERS array from servers.json, flips category soon-flags for
 categories that have live servers, and fills the __COUNTS_*__ tokens with
 computed counts (never hardcoded).
 
+DESIGN/GUIDE EDITS BELONG IN platform/base.html, NOT in this file and NOT
+in the generated platform/index.html: this script contains no HTML/CSS/JS,
+it only injects data into the template. Any change made only to index.html
+is wiped by the next factory run; a change to base.html survives every
+regeneration. (Redesign + two-track connect guide landed 2026-11-16.)
+
 EN titles/descriptions/tool summaries come from servers.json; FA/DE strings
 are authored in TRANSLATIONS below (no machine output, no fabricated
 numbers). When the factory adds a server: add its entry to SERVER_META
@@ -78,6 +84,8 @@ SERVER_META = {
                    "featured": False, "added": 23},
     "spiegel-mcp": {"cat": "news", "color": "#E2001A", "letter": "🗞️",
                     "featured": False, "added": 24},
+    "heise-mcp": {"cat": "news", "color": "#00559F", "letter": "💻",
+                  "featured": False, "added": 25},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -317,6 +325,17 @@ TRANSLATIONS = {
   "spiegel_search_news": ("جست‌وجوی اخبار با کلیدواژه در همهٔ فیدها", "Nachrichtensuche nach Stichwort über alle Feeds"),
   "spiegel_get_article": ("متن یک مقالهٔ spiegel.de (پولی بودن مشخص می‌شود)", "Artikeltext eines spiegel.de-Artikels (Paywall wird gekennzeichnet)"),
   "spiegel_latest_videos": ("جدیدترین ویدیوهای اشپیگل، جدیدترین اول", "Neueste SPIEGEL-Videos, neueste zuerst"),
+ }},
+"heise-mcp": {
+ "desc_fa": "اخبار فناوری اطلاعات هایزه از heise.de (فید رسمی RSS، بدون کلید): تیترهای برتر، اخبار ۷ بخش، جست‌وجوی کلیدواژه، خبرهای برتر صفحهٔ اصلی، مقاله‌های مجلهٔ c't و متن مقاله‌ها (مقاله‌های پولی heise+ صادقانه مشخص می‌شوند).",
+ "desc_de": "heise online über heise.de (offizieller RSS-Feed, kein Schlüssel): Top-Schlagzeilen, 7 Ressorts, Stichwortsuche, Top-Meldungen der Startseite, c't-Artikel und Artikeltexte (heise+-Artikel werden ehrlich gekennzeichnet).",
+ "tools": {
+  "heise_headlines": ("تیترهای برتر (فید اصلی RSS)، جدیدترین اول", "Top-Schlagzeilen (Haupt-RSS-Feed), neueste zuerst"),
+  "heise_search_news": ("جست‌وجوی اخبار با کلیدواژه در فید اصلی", "Nachrichtensuche nach Stichwort im Haupt-Feed"),
+  "heise_news_by_section": ("جدیدترین اخبار یکی از ۷ بخش", "Neueste Nachrichten eines von 7 Ressorts"),
+  "heise_top_stories": ("خبرهای برتر صفحهٔ اصلی، به ترتیب صفحه", "Top-Meldungen der Startseite, in Seitenreihenfolge"),
+  "heise_ct": ("جدیدترین مقاله‌های مجلهٔ c't", "Neueste Artikel aus der c't"),
+  "heise_get_article": ("متن یک مقالهٔ heise.de (پولی بودن مشخص می‌شود)", "Artikeltext eines heise.de-Artikels (Paywall wird gekennzeichnet)"),
  }},
 }
 

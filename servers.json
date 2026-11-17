@@ -739,6 +739,36 @@
           "summary": "Article text of one heise.de article (paywall flagged)"
         }
       ]
+    },
+    {
+      "description": "Zeit — DIE ZEIT news via the official RSS feeds (no key): top headlines, 10 sections, keyword search (main feed + all sections) & section list.",
+      "name": "zeit-mcp",
+      "pypi": "zeit-mcp",
+      "repository": "https://github.com/mohammad-abbasi-sh/zeit-mcp",
+      "title": "Zeit — DIE ZEIT: Germany's biggest weekly newspaper",
+      "title_de": "DIE ZEIT — Deutschlands größte Wochenzeitung: Schlagzeilen, Ressorts & Suche",
+      "tools": [
+        {
+          "name": "zeit_headlines",
+          "summary": "Top headlines (main RSS feed), newest first"
+        },
+        {
+          "name": "zeit_news_by_section",
+          "summary": "Newest news of one of 10 sections"
+        },
+        {
+          "name": "zeit_search_news",
+          "summary": "Search news by keyword in the main feed"
+        },
+        {
+          "name": "zeit_search_all_sections",
+          "summary": "Search news by keyword across all 10 section feeds"
+        },
+        {
+          "name": "zeit_sections",
+          "summary": "The 10 sections with RSS feeds"
+        }
+      ]
     }
   ]
 }

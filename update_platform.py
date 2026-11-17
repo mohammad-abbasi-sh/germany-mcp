@@ -86,6 +86,8 @@ SERVER_META = {
                     "featured": False, "added": 24},
     "heise-mcp": {"cat": "news", "color": "#00559F", "letter": "💻",
                   "featured": False, "added": 25},
+    "zeit-mcp": {"cat": "news", "color": "#9B1B30", "letter": "⏰",
+                 "featured": False, "added": 26},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -336,6 +338,16 @@ TRANSLATIONS = {
   "heise_top_stories": ("خبرهای برتر صفحهٔ اصلی، به ترتیب صفحه", "Top-Meldungen der Startseite, in Seitenreihenfolge"),
   "heise_ct": ("جدیدترین مقاله‌های مجلهٔ c't", "Neueste Artikel aus der c't"),
   "heise_get_article": ("متن یک مقالهٔ heise.de (پولی بودن مشخص می‌شود)", "Artikeltext eines heise.de-Artikels (Paywall wird gekennzeichnet)"),
+ }},
+"zeit-mcp": {
+ "desc_fa": "اخبار روزنامهٔ تسایت (DIE ZEIT) از فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار ۱۰ بخش، جست‌وجوی کلیدواژه در فید اصلی و همهٔ بخش‌ها، و فهرست بخش‌ها.",
+ "desc_de": "DIE ZEIT über die offiziellen RSS-Feeds (kein Schlüssel): Top-Schlagzeilen, Nachrichten aus 10 Ressorts, Stichwortsuche im Haupt-Feed und über alle Ressorts sowie die Ressortliste.",
+ "tools": {
+  "zeit_headlines": ("تیترهای برتر (فید اصلی RSS)، جدیدترین اول", "Top-Schlagzeilen (Haupt-RSS-Feed), neueste zuerst"),
+  "zeit_news_by_section": ("جدیدترین اخبار یکی از ۱۰ بخش", "Neueste Nachrichten eines von 10 Ressorts"),
+  "zeit_search_news": ("جست‌وجوی اخبار با کلیدواژه در فید اصلی", "Nachrichtensuche nach Stichwort im Haupt-Feed"),
+  "zeit_search_all_sections": ("جست‌وجوی اخبار با کلیدواژه در همهٔ فیدهای بخش‌ها", "Nachrichtensuche nach Stichwort über alle Ressort-Feeds"),
+  "zeit_sections": ("فهرست ۱۰ بخش دارای فید RSS", "Liste der 10 Ressorts mit RSS-Feed"),
  }},
 }
 

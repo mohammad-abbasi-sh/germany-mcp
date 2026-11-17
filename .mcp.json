@@ -149,6 +149,12 @@
       "args": [
         "heise-mcp"
       ]
+    },
+    "zeit": {
+      "command": "uvx",
+      "args": [
+        "zeit-mcp"
+      ]
     }
   }
 }

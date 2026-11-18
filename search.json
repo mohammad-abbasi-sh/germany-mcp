@@ -1,0 +1,218 @@
+[
+  {
+    "id": "bundesliga-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/bundesliga-mcp",
+    "name": "Bundesliga",
+    "en": "bundesliga-mcp",
+    "kind": "mcp",
+    "s": "bundesliga-mcp Bundesliga — German football fixtures, tables & scorers Bundesliga — Spielpläne, Tabellen & Torschützen Bundesliga, 2./3. Liga, DFB-Pokal & DEL via OpenLigaDB (free API, no key): fixtures, live scores, tables, top scorers. بوندس‌لیگا، لیگ ۲ و ۳، جام حذفی و DEL با OpenLigaDB (API رایگان، بدون کلید): بازی‌ها، نتایج زنده، جدول‌ها و گلزنان برتر. Bundesliga, 2. und 3. Liga, DFB-Pokal und DEL über OpenLigaDB (kostenlose API, kein Schlüssel): Spielpläne, Live-Ergebnisse, Tabellen und Torschützen. sports bundesliga_list_leagues Leagues with their current season لیگ‌ها با فصل جاری Ligen mit ihrer aktuellen Saison bundesliga_get_fixtures One matchday's fixtures and results بازی‌های یک هفتهٔ مشخص با نتایج Spiele eines Spieltags mit Ergebnissen bundesliga_get_live_scores Current matchday scores and status نتایج زندهٔ هفتهٔ جاری Aktuelle Live-Ergebnisse des Spieltags bundesliga_get_table League table جدول لیگ Tabelle der Liga bundesliga_get_top_scorers Top scorers of a season گلزنان برتر یک فصل Torschützen einer Saison bundesliga_get_match_detail Full detail of one match جزئیات کامل یک مسابقه Vollständige Details eines Spiels"
+  },
+  {
+    "id": "mediathek-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/mediathek-mcp",
+    "name": "Mediathek",
+    "en": "mediathek-mcp",
+    "kind": "mcp",
+    "s": "mediathek-mcp Mediathek — German public broadcasters' programmes Mediathek — Sendungen der öffentlich-rechtlichen Sender ARD, ZDF, 3sat, ARTE, Phoenix & more via MediathekViewWeb (free API, no key): search programmes, latest broadcasts, by channel/topic, programme detail. ARD، ZDF، 3sat، ARTE، Phoenix و بیشتر با MediathekViewWeb (API رایگان، بدون کلید): جست‌وجوی برنامه‌ها، جدیدترین پخش‌ها، بر اساس شبکه/موضوع و جزئیات برنامه. ARD, ZDF, 3sat, ARTE, Phoenix und mehr über MediathekViewWeb (kostenlose API, kein Schlüssel): Sendungen suchen, neueste Sendungen, nach Sender/Thema, Sendedetails. media mediathek_search_programmes Search programmes by title, topic or description جست‌وجوی برنامه‌ها با عنوان، موضوع یا توضیح Sendungen nach Titel, Thema oder Beschreibung suchen mediathek_latest_broadcasts Newest programmes across all channels جدیدترین برنامه‌های همهٔ شبکه‌ها Neueste Sendungen aller Sender mediathek_by_channel Newest programmes of one channel جدیدترین برنامه‌های یک شبکه Neueste Sendungen eines Senders mediathek_by_topic All episodes of one show or series همهٔ قسمت‌های یک برنامه یا سریال Alle Folgen einer Sendung oder Serie mediathek_programme_detail Full detail of one programme (video URLs, subtitles) جزئیات کامل یک برنامه (لینک ویدیو، زیرنویس) Vollständige Details einer Sendung (Video-URLs, Untertitel) mediathek_list_channels Channels in the film list شبکه‌های فهرست فیلم Sender der Filmliste"
+  },
+  {
+    "id": "tagesschau-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/tagesschau-mcp",
+    "name": "tagesschau",
+    "en": "tagesschau-mcp",
+    "kind": "mcp",
+    "s": "tagesschau-mcp tagesschau — Germany's most-watched TV news tagesschau — Deutschlands meistgesehene Fernsehnachrichten tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text. tagesschau.de (ARD) با فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار بخش‌ها، اخبار منطقه‌ای هر ۱۶ ایالت، جدیدترین ویدیوها و متن کامل مقاله‌ها. tagesschau.de (ARD) über offizielle RSS-Feeds (kein Schlüssel): Schlagzeilen, Nachrichten nach Ressort, Regionalnachrichten aller 16 Bundesländer, neueste Videos und Volltexte. news tagesschau_headlines Top headlines, newest first تیترهای برتر tagesschau.de Top-Schlagzeilen von tagesschau.de tagesschau_news_by_section Newest news of one section جدیدترین اخبار یک بخش Neueste Nachrichten eines Ressorts tagesschau_search_news Search news by keyword جست‌وجوی اخبار با کلیدواژه Nachrichten nach Stichwort suchen tagesschau_get_article Full text of one article متن کامل یک مقاله Volltext eines Artikels tagesschau_latest_videos Latest videos, newest first جدیدترین ویدیوها Neueste Videos tagesschau_regional_news Regional news of one Bundesland اخبار منطقه‌ای یک ایالت Regionalnachrichten eines Bundeslandes"
+  },
+  {
+    "id": "dwd-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/dwd-mcp",
+    "name": "DWD",
+    "en": "dwd-mcp",
+    "kind": "mcp",
+    "s": "dwd-mcp DWD — German weather: DWD ICON forecasts, current conditions, official warnings & pollen DWD — Deutsches Wetter: ICON-Vorhersagen, aktuelles Wetter, amtliche Warnungen & Pollen DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen. هواشناسی آلمان از سرویس ملی هواشناسی آلمان (DWD): پیش‌بینی و وضعیت فعلی با مدل ICON از طریق Open-Meteo، هشدارهای رسمی آب‌وهوای DWD و شمارش گرده. Deutsches Wetter vom Deutschen Wetterdienst (DWD): ICON-Vorhersagen und aktuelles Wetter über Open-Meteo, amtliche Unwetterwarnungen und Pollenflug. weather dwd_forecast ICON-model forecast for a German place (hourly + daily) پیش‌بینی مدل ICON برای یک شهر آلمان (ساعتی + روزانه) ICON-Vorhersage für einen deutschen Ort (stündlich + täglich) dwd_current_weather Current conditions for a German place وضعیت فعلی هوا برای یک شهر آلمان Aktuelles Wetter für einen deutschen Ort dwd_warnings Official DWD severe-weather warnings, filterable by state هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland dwd_pollen Pollen counts for a German place (CAMS via Open-Meteo) شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo) Pollenflug für einen deutschen Ort (CAMS über Open-Meteo) dwd_find_place Find German places (name → coordinates) یافتن شهرهای آلمان (نام → مختصات) Deutsche Orte finden (Name → Koordinaten)"
+  },
+  {
+    "id": "autobahn-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/autobahn-mcp",
+    "name": "Autobahn",
+    "en": "autobahn-mcp",
+    "kind": "mcp",
+    "s": "autobahn-mcp Autobahn — German motorway roadworks, closures, warnings, parking & EV charging Autobahn — Baustellen, Sperrungen, Warnungen, Parken & E-Laden German Autobahn data from the official verkehr.autobahn.de API (no key): roadworks, closures, warnings, truck/car parking and EV charging stations per motorway. داده‌های اتوبان آلمان از API رسمی verkehr.autobahn.de (بدون کلید): کارهای جاده‌ای، بسته‌شدن‌ها، هشدارها، پارکینگ کامیون/خودرو و ایستگاه‌های شارژ خودروی برقی برای هر اتوبان. Deutsche Autobahn-Daten über die offizielle API verkehr.autobahn.de (kein Schlüssel): Baustellen, Sperrungen, Warnungen, LKW-/PKW-Parkplätze und E-Ladesäulen je Autobahn. transport autobahn_roadworks Roadworks on one motorway کارهای جاده‌ای یک اتوبان Baustellen auf einer Autobahn autobahn_closures Closures on one motorway بسته‌شدن‌های یک اتوبان Sperrungen auf einer Autobahn autobahn_warnings Warnings on one motorway هشدارهای یک اتوبان Warnungen auf einer Autobahn autobahn_parking Truck/car parking areas on one motorway پارکینگ‌های یک اتوبان Parkplätze auf einer Autobahn autobahn_ev_charging EV charging stations on one motorway ایستگاه‌های شارژ خودروی برقی یک اتوبان E-Ladesäulen auf einer Autobahn"
+  },
+  {
+    "id": "dw-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/dw-mcp",
+    "name": "Deutsche Welle",
+    "en": "dw-mcp",
+    "kind": "mcp",
+    "s": "dw-mcp Deutsche Welle — DW news in 31 languages: headlines, search, articles & topics Deutsche Welle — DW-Nachrichten in 31 Sprachen: Schlagzeilen, Suche, Artikel & Themen Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages. اخبار دویچه‌وله به ۳۱ زبان از سایت‌مپ‌های رسمی DW (بدون کلید): تازه‌ترین تیترها، جست‌وجوی کلیدواژه، تازه‌ترین مقاله‌ها، متن کامل مقاله و صفحه‌های موضوعی. Deutsche-Welle-Nachrichten in 31 Sprachen über die offiziellen DW-Sitemaps (kein Schlüssel): neueste Schlagzeilen, Stichwortsuche, neueste Artikel, Volltexte und Themenseiten. news dw_headlines Latest DW headlines in one language تازه‌ترین تیترهای DW به یک زبان Neueste DW-Schlagzeilen in einer Sprache dw_search_news Search recent DW headlines by keyword جست‌وجوی تیترهای اخیر DW با کلیدواژه Neueste DW-Schlagzeilen nach Stichwort suchen dw_latest_articles Latest DW articles in one language تازه‌ترین مقاله‌های DW به یک زبان Neueste DW-Artikel in einer Sprache dw_get_article Full text of one DW article متن کامل یک مقالهٔ DW Volltext eines DW-Artikels dw_topics DW topic pages matching a word صفحه‌های موضوعی DW برای یک واژه DW-Themenseiten zu einem Stichwort"
+  },
+  {
+    "id": "ntv-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/ntv-mcp",
+    "name": "n-tv",
+    "en": "ntv-mcp",
+    "kind": "mcp",
+    "s": "ntv-mcp n-tv — German TV news: headlines by section, markets, videos & articles n-tv — Deutsche Fernsehnachrichten: Schlagzeilen, Börse, Videos & Artikel n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text. اخبار n-tv از فیدهای RSS رسمی (بدون کلید): تازه‌ترین تیترها بر اساس بخش، اخبار بازار، تازه‌ترین ویدیوها، جست‌وجوی کلیدواژه و متن کامل مقاله. n-tv-Nachrichten über die offiziellen RSS-Feeds (kein Schlüssel): neueste Schlagzeilen nach Ressort, Börsennachrichten, neueste Videos, Stichwortsuche und Volltexte. news ntv_headlines Latest n-tv headlines by section تازه‌ترین تیترهای n-tv بر اساس بخش Neueste n-tv-Schlagzeilen nach Ressort ntv_markets Latest n-tv market news تازه‌ترین اخبار بازار n-tv Neueste n-tv-Börsennachrichten ntv_videos Latest n-tv videos تازه‌ترین ویدیوهای n-tv Neueste n-tv-Videos ntv_search_news Search recent n-tv headlines by keyword جست‌وجوی تیترهای اخیر n-tv با کلیدواژه Neueste n-tv-Schlagzeilen nach Stichwort suchen ntv_get_article Full text of one n-tv article متن کامل یک مقالهٔ n-tv Volltext eines n-tv-Artikels"
+  },
+  {
+    "id": "dnb-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/dnb-mcp",
+    "name": "DNB",
+    "en": "dnb-mcp",
+    "kind": "mcp",
+    "s": "dnb-mcp DNB — Deutsche Nationalbibliothek catalogue: books, authors & ISBN lookup DNB — Katalog der Deutschen Nationalbibliothek: Bücher, Autoren & ISBN Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup. کاتالوگ کتابخانه ملی آلمان از طریق API رسمی SRU (بدون کلید): جست‌وجوی کلیدواژه، عنوان و نویسنده، جست‌وجو با ISBN و شناسهٔ DNB. Katalog der Deutschen Nationalbibliothek über die offizielle SRU-API (kein Schlüssel): Stichwort-, Titel- und Autorensuche, ISBN- und DNB-ID-Abfrage. open-data dnb_search_books Keyword search across the DNB catalogue جست‌وجوی کلیدواژه در کاتالوگ DNB Stichwortsuche im DNB-Katalog dnb_search_by_title Search the DNB catalogue by title جست‌وجو در کاتالوگ DNB با عنوان Titelsuche im DNB-Katalog dnb_search_by_author Search the DNB catalogue by author جست‌وجو در کاتالوگ DNB با نویسنده Autorensuche im DNB-Katalog dnb_by_isbn Look up one book by ISBN یافتن یک کتاب با ISBN Ein Buch per ISBN nachschlagen dnb_get_record Full record by DNB identifier رکورد کامل با شناسهٔ DNB Vollständiger Datensatz per DNB-ID"
+  },
+  {
+    "id": "govdata-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/govdata-mcp",
+    "name": "GovData",
+    "en": "govdata-mcp",
+    "kind": "mcp",
+    "s": "govdata-mcp GovData — Germany's open-data portal: search 163,000+ datasets, publishers & resources GovData — Deutschlands Open-Data-Portal: 163.000+ Datensätze, Herausgeber & Ressourcen Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details. پورتال ملی داده‌های باز آلمان govdata.de از طریق API رسمی CKAN (بدون کلید): جست‌وجو در بیش از ۱۶۳٬۰۰۰ مجموعه‌داده، جزئیات مجموعه‌داده، ناشران، تازه‌ترین مجموعه‌داده‌ها و جزئیات منبع. Deutschlands nationales Open-Data-Portal govdata.de über die offizielle CKAN-API (kein Schlüssel): über 163.000 Datensätze durchsuchen, Datensatzdetails, Herausgeber, neueste Datensätze und Ressourcendetails. open-data govdata_search_datasets Search govdata.de datasets جست‌وجوی مجموعه‌داده‌ها در govdata.de Datensätze auf govdata.de suchen govdata_get_dataset Full details of one dataset جزئیات کامل یک مجموعه‌داده Vollständige Details eines Datensatzes govdata_list_publishers Publishing organisations, most datasets first ناشران، به ترتیب بیشترین مجموعه‌داده Herausgeber, nach Datensatzzahl sortiert govdata_recent_datasets Most recently updated datasets تازه‌ترین مجموعه‌داده‌های به‌روز شده Zuletzt aktualisierte Datensätze govdata_get_resource Details of one dataset resource جزئیات یک منبع مجموعه‌داده Details einer Datensatz-Ressource"
+  },
+  {
+    "id": "deutschlandfunk-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/deutschlandfunk-mcp",
+    "name": "Deutschlandfunk",
+    "en": "deutschlandfunk-mcp",
+    "kind": "mcp",
+    "s": "deutschlandfunk-mcp Deutschlandfunk — German public radio news: rolling news, topics, articles & live stream Deutschlandfunk — Nachrichten des deutschen öffentlich-rechtlichen Radios: Meldungen, Themen, Artikel & Livestream Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link. اخبار و رادیوی دویچلندفونک از فیدهای RSS رسمی (بدون کلید): اخبار جاری، تازه‌ترین مطالب، فیدهای موضوعی، جست‌وجوی کلیدواژه، متن کامل مقاله و لینک پخش زنده. Deutschlandfunk-Nachrichten & Radio über die offiziellen RSS-Feeds (kein Schlüssel): laufende Nachrichten, neueste Beiträge, Ressort-Feeds, Stichwortsuche, Volltexte und Livestream-Link. news dlf_latest_news Rolling DLF news headlines تیترهای خبری جاری DLF Laufende DLF-Nachrichten dlf_latest_contributions Latest DLF contributions تازه‌ترین مطالب DLF Neueste DLF-Beiträge dlf_news_by_topic DLF news by topic اخبار DLF بر اساس موضوع DLF-Nachrichten nach Ressort dlf_search_news Search recent DLF items by keyword جست‌وجوی مطالب اخیر DLF با کلیدواژه Neueste DLF-Beiträge nach Stichwort suchen dlf_get_article Full text of one DLF article متن کامل یک مقالهٔ DLF Volltext eines DLF-Artikels dlf_listen_live Deutschlandfunk live stream link لینک پخش زندهٔ دویچلندفونک Livestream-Link des Deutschlandfunks"
+  },
+  {
+    "id": "duden-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/duden-mcp",
+    "name": "Duden",
+    "en": "duden-mcp",
+    "kind": "mcp",
+    "s": "duden-mcp Duden — Germany's standard dictionary: word meanings, synonyms, spelling & grammar Duden — Das Standardwörterbuch der deutschen Sprache: Bedeutungen, Synonyme, Rechtschreibung & Grammatik Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation. جست‌وجو در فرهنگ لغت دودن از duden.de (رایگان، بدون کلید): معانی واژه، مترادف‌ها، املا با جداسازی هجاها، نکات دستوری و صرف کامل فعل. Duden-Nachschlagen auf duden.de (kostenlos, kein Schlüssel, kein Login): Bedeutungen, Synonyme, Rechtschreibung mit Worttrennung, Grammatik und vollständige Verbkonjugation. language duden_lookup_word Look up a German word: meanings, word type & grammar جست‌وجوی واژهٔ آلمانی در دودن: معانی، نوع کلمه و دستور زبان Ein deutsches Wort im Duden nachschlagen: Bedeutungen, Wortart & Grammatik duden_synonyms Synonyms of a German word مترادف‌های یک واژهٔ آلمانی Synonyme eines deutschen Wortes duden_spelling Spelling & hyphenation of a German word املا و جداسازی هجاهای یک واژهٔ آلمانی Rechtschreibung & Worttrennung eines deutschen Wortes duden_grammar Grammar notes for a German word نکات دستوری یک واژهٔ آلمانی Grammatiknotizen zu einem deutschen Wort duden_conjugate Full conjugation table of a German verb جدول کامل صرف یک فعل آلمانی Vollständige Konjugationstabelle eines deutschen Verbs duden_search Search Duden headwords جست‌وجوی سرخط‌های دودن Duden-Stichwörter suchen"
+  },
+  {
+    "id": "dictcc-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/dictcc-mcp",
+    "name": "dict.cc",
+    "en": "dictcc-mcp",
+    "kind": "mcp",
+    "s": "dictcc-mcp dict.cc — German-English & 22 more pairs: translations with word class, gender & votes dict.cc — Deutsch-Englisch und 22 weitere Sprachenpaare: Übersetzungen mit Wortart, Genus & Stimmen dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes. ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران. dict.cc-Übersetzungen von dict.cc (kostenlos, kein Schlüssel, kein Login): Deutsch-Englisch plus 22 weitere Sprachenpaare, mit Wortart, Genus, Gebrauchshinweisen und Community-Stimmen. language dictcc_translate Translate a word with dict.cc (23 pairs) ترجمهٔ واژه با dict.cc (۲۳ زبان) Ein Wort mit dict.cc übersetzen (23 Sprachenpaare) dictcc_search Find dict.cc headwords matching a query یافتن سرخط‌های dict.cc مطابق پرس‌وجو dict.cc-Stichwörter zu einer Suchanfrage finden"
+  },
+  {
+    "id": "bundeswahlleiter-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/bundeswahlleiter-mcp",
+    "name": "Bundeswahlleiterin",
+    "en": "bundeswahlleiter-mcp",
+    "kind": "mcp",
+    "s": "bundeswahlleiter-mcp Bundeswahlleiterin — German federal election results: Bundestag elections 2017–2025 Die Bundeswahlleiterin — Ergebnisse der Bundestagswahlen 2017–2025 Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025. نتایج رسمی انتخابات بوندستاگ از bundeswahlleiterin.de (داده‌های باز رایگان، بدون کلید): نتایج کشوری، نتایج احزاب، حوزه‌های انتخابیه و میزان مشارکت برای ۲۰۱۷، ۲۰۲۱ و ۲۰۲۵. Amtliche Bundestagswahlergebnisse von bundeswahlleiterin.de (freie offene Daten, kein Schlüssel, kein Login): Bundesergebnisse, Parteiergebnisse, Wahlkreise und Wahlbeteiligung für 2017, 2021 und 2025. open-data bwl_national_results National results of a Bundestag election نتایج کشوری یک انتخابات بوندستاگ Bundesergebnis einer Bundestagswahl bwl_party_results Results of one party, nationally and by Land نتایج یک حزب، کشوری و به تفکیک ایالت Ergebnis einer Partei, bundesweit und nach Ländern bwl_constituency_results Results of one constituency نتایج یک حوزهٔ انتخابیه Ergebnis eines Wahlkreises bwl_constituencies List constituencies with winner and turnout فهرست حوزه‌ها با برنده و میزان مشارکت Wahlkreise mit Gewinner und Wahlbeteiligung auflisten bwl_turnout Voter turnout by Land and nationally میزان مشارکت به تفکیک ایالت و کشوری Wahlbeteiligung nach Ländern und bundesweit"
+  },
+  {
+    "id": "flixtrain-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/flixtrain-mcp",
+    "name": "FlixTrain",
+    "en": "flixtrain-mcp",
+    "kind": "mcp",
+    "s": "flixtrain-mcp FlixTrain — train times, stations & prices between German cities FlixTrain — Zugzeiten, Bahnhöfe & Preise zwischen deutschen Städten FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability. زمان‌بندی و قیمت فلیکس‌ترین از API جست‌وجوی فروشگاه فلیکس‌بوس (رایگان، بدون کلید): فقط سفرهای قطار بین شهرهای آلمان، با ایستگاه‌ها، مدت سفر، قیمت و صندلی‌های موجود. FlixTrain-Zeiten & Preise über die FlixBus-Shop-Suche (kostenlos, kein Schlüssel, kein Login): nur Zugverbindungen zwischen deutschen Städten, mit Bahnhöfen, Fahrzeit, Preis und Sitzplatzverfügbarkeit. transport flixtrain_search_trains Search FlixTrain departures between two cities جست‌وجوی سفرهای فلیکس‌ترین بین دو شهر FlixTrain-Verbindungen zwischen zwei Städten suchen flixtrain_search_cities Find cities by name یافتن شهرها بر اساس نام Städte nach Namen finden"
+  },
+  {
+    "id": "billiger-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/billiger-mcp",
+    "name": "billiger.de",
+    "en": "billiger-mcp",
+    "kind": "mcp",
+    "s": "billiger-mcp billiger.de — German price comparison: best prices, shop offers & deals billiger.de — Deutscher Preisvergleich: Bestpreise, Shop-Angebote & Deals German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals. مقایسهٔ قیمت آلمان از billiger.de (رایگان، بدون کلید): جست‌وجوی محصولات با بهترین قیمت، مقایسهٔ پیشنهادهای فروشگاه‌ها و تخفیف‌های روز. Deutscher Preisvergleich von billiger.de (kostenlos, kein Schlüssel, kein Login): Produkte mit Bestpreisen suchen, Shop-Angebote vergleichen und Tagesdeals. shopping billiger_search_prices Search products with best prices جست‌وجوی محصولات با بهترین قیمت Produkte mit Bestpreisen suchen billiger_product_offers Compare shop offers for a product مقایسهٔ پیشنهادهای فروشگاه‌ها برای یک محصول Shop-Angebote für ein Produkt vergleichen billiger_best_deals Today's deals from the home page تخفیف‌های روز از صفحهٔ اصلی Tagesdeals von der Startseite"
+  },
+  {
+    "id": "fernsehserien-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/fernsehserien-mcp",
+    "name": "fernsehserien.de",
+    "en": "fernsehserien-mcp",
+    "kind": "mcp",
+    "s": "fernsehserien-mcp fernsehserien.de — German TV series: search, details, episodes & air dates fernsehserien.de — Deutsche TV-Serien: Suche, Details, Episoden & Sendetermine German TV series from fernsehserien.de (free, no key, no login): search series, series details, episode guides and upcoming air dates. سریال‌های تلویزیونی آلمان از fernsehserien.de (رایگان، بدون کلید): جست‌وجوی سریال، جزئیات سریال، راهنمای قسمت‌ها و زمان‌های پخش آینده. Deutsche TV-Serien von fernsehserien.de (kostenlos, kein Schlüssel, kein Login): Serien suchen, Seriendetails, Episodenguides und Sendetermine. media fs_search_series Search TV series by name جست‌وجوی سریال‌های تلویزیونی بر اساس نام TV-Serien nach Namen suchen fs_series_detail Series details and seasons جزئیات سریال و فصل‌ها Seriendetails und Staffeln fs_episodes Episode guide for one season راهنمای قسمت‌های یک فصل Episodenguide einer Staffel fs_air_dates Upcoming air dates for a series زمان‌های پخش آیندهٔ یک سریال Kommende Sendetermine einer Serie"
+  },
+  {
+    "id": "zdf-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/zdf-mcp",
+    "name": "ZDF heute news",
+    "en": "zdf-mcp",
+    "kind": "mcp",
+    "s": "zdf-mcp ZDF heute news — headlines, topics, search & articles ZDF heute — Nachrichten, Themen, Suche & Artikel ZDF heute news from zdfheute.de (free, no key, no login): latest headlines, news by topic, keyword search and full article text. اخبار ZDF heute از zdfheute.de (رایگان، بدون کلید): تازه‌ترین تیترها، اخبار بر اساس موضوع، جست‌وجوی کلیدواژه و متن کامل مقاله. فقط اخبار — مدیاتک ZDF در این سرور نیست. ZDF-heute-Nachrichten von zdfheute.de (kostenlos, kein Schlüssel, kein Login): aktuelle Schlagzeilen, Nachrichten nach Thema, Stichwortsuche und Volltext. Nur Nachrichten — keine Mediathek. media zdf_headlines Latest ZDF heute headlines تازه‌ترین تیترهای ZDF heute Aktuelle ZDF-heute-Schlagzeilen zdf_news_by_topic ZDF heute news by topic اخبار ZDF heute بر اساس موضوع ZDF-heute-Nachrichten nach Thema zdf_search_news Search ZDF heute headlines by keyword جست‌وجوی تیترهای ZDF heute با کلیدواژه ZDF-heute-Schlagzeilen nach Stichwort suchen zdf_get_article Full text of a ZDF heute article متن کامل مقالهٔ ZDF heute Volltext eines ZDF-heute-Artikels"
+  },
+  {
+    "id": "ecb-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/ecb-mcp",
+    "name": "ECB euro data",
+    "en": "ecb-mcp",
+    "kind": "mcp",
+    "s": "ecb-mcp ECB euro data — exchange rates, key rates, inflation, money supply & bond yields EZB-Eurodaten — Wechselkurse, Leitzinsen, Inflation, Geldmenge & Anleiherenditen European Central Bank data via the official ECB SDMX API (free, no key, no login): euro exchange rates, key ECB interest rates, HICP inflation, M3 money supply and euro-area bond yields. داده‌های بانک مرکزی اروپا از API رسمی SDMX (رایگان، بدون کلید): نرخ‌های ارز یورو، نرخ‌های کلیدی بهره، تورم HICP، عرضهٔ پول M3 و بازده اوراق قرضهٔ منطقهٔ یورو. Daten der Europäischen Zentralbank über die offizielle SDMX-API (kostenlos, kein Schlüssel, kein Login): Euro-Wechselkurse, EZB-Leitzinsen, HVPI-Inflation, Geldmenge M3 und Anleiherenditen des Euroraums. finance ecb_exchange_rates Euro exchange rates vs major currencies نرخ‌های ارز یورو در برابر ارزهای اصلی Euro-Wechselkurse gegenüber wichtigen Währungen ecb_interest_rates Key ECB interest rates (MRO, deposit, marginal lending) نرخ‌های کلیدی بهرهٔ بانک مرکزی اروپا EZB-Leitzinsen (Hauptrefinanzierung, Einlage, Spitzenrefinanzierung) ecb_inflation HICP inflation, euro area and Germany تورم HICP منطقهٔ یورو و آلمان HVPI-Inflation, Euroraum und Deutschland ecb_money_supply Euro-area money supply (M1, M2, M3) عرضهٔ پول منطقهٔ یورو (M1، M2، M3) Geldmenge des Euroraums (M1, M2, M3) ecb_bond_yields Euro-area government bond yields by maturity بازده اوراق قرضهٔ دولتی منطقهٔ یورو بر اساس سررسید Staatsanleiherenditen des Euroraums nach Laufzeit"
+  },
+  {
+    "id": "wg-gesucht-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/wg-gesucht-mcp",
+    "name": "WG-Gesucht housing",
+    "en": "wg-gesucht-mcp",
+    "kind": "mcp",
+    "s": "wg-gesucht-mcp WG-Gesucht housing — rooms & flats in German cities WG-Gesucht — WG-Zimmer & Wohnungen in deutschen Städten WG-Gesucht flatshare listings from wg-gesucht.de (free, no key, no login): WG rooms and flats in 34 German-speaking cities, with price, size, availability and full listing details. آگهی‌های مسکن WG-Gesucht از wg-gesucht.de (رایگان، بدون کلید): اتاق‌های اشتراکی و آپارتمان در ۳۴ شهر آلمانی‌زبان، با قیمت، متراژ، تاریخ در دسترس بودن و جزئیات کامل آگهی. WG-Gesucht-Angebote von wg-gesucht.de (kostenlos, kein Schlüssel, kein Login): WG-Zimmer und Wohnungen in 34 deutschsprachigen Städten, mit Preis, Größe, Verfügbarkeit und vollständigen Anzeigendetails. housing wg_search_rooms Search WG rooms in a city جست‌وجوی اتاق اشتراکی در یک شهر WG-Zimmer in einer Stadt suchen wg_search_flats Search flats in a city جست‌وجوی آپارتمان در یک شهر Wohnungen in einer Stadt suchen wg_listing_detail Full details of one listing جزئیات کامل یک آگهی Vollständige Details einer Anzeige wg_cities List supported cities فهرست شهرهای پشتیبانی‌شده Unterstützte Städte auflisten"
+  },
+  {
+    "id": "uba-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/uba-mcp",
+    "name": "UBA",
+    "en": "uba-mcp",
+    "kind": "mcp",
+    "s": "uba-mcp UBA — German air quality: hourly PM10, NO2, O3 values + LQI from 400+ stations UBA — Deutsche Luftqualität: stündliche PM10-, NO2-, O3-Werte + LQI von über 400 Stationen UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks. کیفیت هوای آلمان از API نسخهٔ ۴ داده‌های هوای UBA (بدون کلید): اندازه‌گیری‌های ساعتی از بیش از ۴۰۰ ایستگاه آلمان، آلاینده‌ها، شاخص LQI و شبکه‌های اندازه‌گیری. Deutsche Luftqualität über die UBA Air Data API v4 (kein Schlüssel): stündliche Messwerte von über 400 deutschen Stationen, Schadstoffe, LQI-Klassen und Messnetze. health uba_list_stations Measuring stations, filterable by city, state, type, area or name ایستگاه‌های اندازه‌گیری، قابل فیلتر بر اساس شهر، ایالت، نوع، منطقه یا نام Messstationen, filterbar nach Stadt, Bundesland, Typ, Gebiet oder Name uba_station_detail One station: address, coordinates, type, data window, recent pollutants جزئیات یک ایستگاه: آدرس، مختصات، نوع، بازهٔ داده‌ها، آلاینده‌های اخیر Details einer Station: Adresse, Koordinaten, Typ, Datenzeitraum, aktuelle Schadstoffe uba_current_air_quality Latest hourly values + LQI at a station (code, id or city name) آخرین مقادیر ساعتی + شاخص LQI در یک ایستگاه Aktuelle Stundenwerte + LQI an einer Station uba_measurements Hourly values over a date range (max 31 days) + min/max/mean & daily means مقادیر ساعتی در یک بازه + کمینه/بیشینه/میانگین و میانگین روزانه Stundenwerte über einen Zeitraum + Min/Max/Mittel & Tagesmittel uba_list_components All 12 pollutants: code, symbol, unit, name هر ۱۲ آلاینده: کد، نماد، واحد، نام Alle 12 Schadstoffe: Code, Symbol, Einheit, Name uba_list_networks The 17 measuring networks (16 Länder + UBA) شبکه‌های اندازه‌گیری (۱۶ ایالت + UBA) Die Messnetze (16 Bundesländer + UBA)"
+  },
+  {
+    "id": "openplz-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/openplz-mcp",
+    "name": "OpenPLZ",
+    "en": "openplz-mcp",
+    "kind": "mcp",
+    "s": "openplz-mcp OpenPLZ — German postal codes: PLZ lookup, streets & admin tree OpenPLZ — Deutsche Postleitzahlen: PLZ-Suche, Straßen & Verwaltungsbaum OpenPLZ API (no key): German postal codes — localities, streets, municipalities, districts & the 16 federal states. داده‌های پستی آلمان از OpenPLZ API (بدون کلید): کد پستی، شهرها، خیابان‌ها، شهرداری‌ها، بخش‌ها و ۱۶ ایالت فدرال. Deutsche Postdaten über die OpenPLZ API (kein Schlüssel): Postleitzahlen, Orte, Straßen, Gemeinden, Kreise und die 16 Bundesländer. open-data openplz_lookup_postal_code Which locality (or localities) a postal code belongs to کدام شهر (یا شهرها) متعلق به یک کد پستی است Zu welchem Ort (oder welchen Orten) eine Postleitzahl gehört openplz_search_locality Search localities by name, optionally within one postal code جست‌وجوی شهرها بر اساس نام، اختیاری درون یک کد پستی Orte nach Namen suchen, optional innerhalb einer Postleitzahl openplz_search_street Search streets by name, postal code and/or locality جست‌وجوی خیابان‌ها بر اساس نام، کد پستی و/یا شهر Straßen nach Name, Postleitzahl und/oder Ort suchen openplz_full_text_search Free-form street search across name, postal code and city جست‌وجوی آزاد در نام خیابان، کد پستی و شهر Freitextsuche über Straßenname, Postleitzahl und Stadt openplz_list_federal_states All 16 federal states with key + capital هر ۱۶ ایالت فدرال با کد + مرکز Alle 16 Bundesländer mit Schlüssel + Hauptstadt openplz_admin_children One step down the administrative tree (state → district → municipality) یک قدم پایین‌تر در درخت اداری (ایالت ← بخش ← شهرداری) Einen Schritt im Verwaltungsbaum nach unten (Land → Kreis → Gemeinde)"
+  },
+  {
+    "id": "feiertage-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/feiertage-mcp",
+    "name": "Feiertage",
+    "en": "feiertage-mcp",
+    "kind": "mcp",
+    "s": "feiertage-mcp Feiertage — German public holidays: by year & state, is-it-a-holiday, next holiday Feiertage — Deutsche Feiertage nach Jahr & Bundesland, Ist-es-ein-Feiertag, nächster Feiertag Feiertage — German public holidays via feiertage-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges. تعطیلات رسمی آلمان از feiertage-api.de (API رایگان، بدون کلید): تعطیلات هر سال در هر ایالت فدرال، بررسی تعطیل بودن یک تاریخ، نزدیک‌ترین تعطیل و تعطیلات در یک بازه. Deutsche Feiertage über feiertage-api.de (kostenlose API, kein Schlüssel): Feiertage pro Jahr und Bundesland, Ist-es-ein-Feiertag-Prüfung, nächster Feiertag und Feiertage in einem Zeitraum. open-data feiertage_list_holidays Public holidays of one year in one federal state (optional month filter) تعطیلات رسمی یک سال در یک ایالت فدرال (با فیلتر اختیاری ماه) Feiertage eines Jahres in einem Bundesland (optional nach Monat gefiltert) feiertage_is_holiday Is a date a public holiday in one state? آیا یک تاریخ در یک ایالت تعطیل رسمی است؟ Ist ein Datum ein Feiertag in einem Bundesland? feiertage_next_holiday The next public holiday on or after a date نزدیک‌ترین تعطیل رسمی از یک تاریخ به بعد Der nächste Feiertag ab einem Datum feiertage_holidays_between Public holidays in a date range (max ~2 years) تعطیلات رسمی در یک بازهٔ زمانی (حداکثر حدود ۲ سال) Feiertage in einem Zeitraum (max. ca. 2 Jahre) feiertage_list_states All 16 federal states + NATIONAL (nationwide holidays) هر ۱۶ ایالت فدرال + NATIONAL (تعطیلات سراسری) Alle 16 Bundesländer + NATIONAL (bundesweite Feiertage)"
+  },
+  {
+    "id": "ferien-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/ferien-mcp",
+    "name": "Ferien",
+    "en": "ferien-mcp",
+    "kind": "mcp",
+    "s": "ferien-mcp Ferien — German school holidays: by year & state, is-it-a-holiday, next holiday Ferien — Deutsche Schulferien nach Jahr & Bundesland, Ist-es-ein-Ferientag, nächste Ferien Ferien — German school holidays via ferien-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges. تعطیلات مدارس آلمان از ferien-api.de (API رایگان، بدون کلید): تعطیلات هر سال در هر ایالت فدرال، بررسی اینکه یک تاریخ در تعطیلات مدارس است یا نه، نزدیک‌ترین تعطیلات و تعطیلات در یک بازه. Deutsche Schulferien über ferien-api.de (kostenlose API, kein Schlüssel): Ferien pro Jahr und Bundesland, Ist-es-ein-Ferientag-Prüfung, nächste Ferien und Ferien in einem Zeitraum. open-data ferien_list_holidays School holidays of one year in one federal state (optional month filter) تعطیلات مدارس یک سال در یک ایالت فدرال (با فیلتر اختیاری ماه) Schulferien eines Jahres in einem Bundesland (optional nach Monat gefiltert) ferien_is_holiday Is a date inside the school holidays in one state? آیا یک تاریخ در تعطیلات مدارس یک ایالت است؟ Liegt ein Datum in den Schulferien eines Bundeslandes? ferien_next_holiday The next school holiday on or after a date نزدیک‌ترین تعطیلات مدارس از یک تاریخ به بعد Die nächsten Schulferien ab einem Datum ferien_holidays_between School holidays overlapping a date range (max ~2 years) تعطیلات مدارس در یک بازهٔ زمانی (حداکثر حدود ۲ سال) Schulferien in einem Zeitraum (max. ca. 2 Jahre) ferien_list_states All 16 German federal states هر ۱۶ ایالت فدرال Alle 16 Bundesländer"
+  },
+  {
+    "id": "spiegel-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/spiegel-mcp",
+    "name": "Spiegel",
+    "en": "spiegel-mcp",
+    "kind": "mcp",
+    "s": "spiegel-mcp Spiegel — DER SPIEGEL news: headlines, 13 sections, search & videos Spiegel — DER SPIEGEL: Schlagzeilen, 13 Ressorts, Suche & Videos Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly). اخبار اشپیگل از spiegel.de (فیدهای رسمی RSS، بدون کلید): تیترهای برتر، اخبار ۱۳ بخش، جست‌وجوی کلیدواژه، جدیدترین ویدیوها و متن مقاله‌ها (مقاله‌های پولی SPIEGEL+ صادقانه مشخص می‌شوند). DER SPIEGEL über spiegel.de (offizielle RSS-Feeds, kein Schlüssel): Top-Schlagzeilen, 13 Ressorts, Stichwortsuche, neueste Videos und Artikeltexte (SPIEGEL+-Artikel werden ehrlich gekennzeichnet). news spiegel_headlines Top headlines (Schlagzeilen), newest first تیترهای برتر (Schlagzeilen)، جدیدترین اول Top-Schlagzeilen, neueste zuerst spiegel_news_by_section Newest news of one of 13 sections جدیدترین اخبار یکی از ۱۳ بخش Neueste Nachrichten eines von 13 Ressorts spiegel_search_news Search news by keyword across all feeds جست‌وجوی اخبار با کلیدواژه در همهٔ فیدها Nachrichtensuche nach Stichwort über alle Feeds spiegel_get_article Article text of one spiegel.de article (paywall flagged) متن یک مقالهٔ spiegel.de (پولی بودن مشخص می‌شود) Artikeltext eines spiegel.de-Artikels (Paywall wird gekennzeichnet) spiegel_latest_videos Latest SPIEGEL videos, newest first جدیدترین ویدیوهای اشپیگل، جدیدترین اول Neueste SPIEGEL-Videos, neueste zuerst"
+  },
+  {
+    "id": "heise-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/heise-mcp",
+    "name": "Heise",
+    "en": "heise-mcp",
+    "kind": "mcp",
+    "s": "heise-mcp Heise — Germany's #1 IT news portal: headlines, sections, search & c't heise — Deutschlands #1-IT-Nachrichtenportal: Schlagzeilen, Ressorts, Suche & c't Heise — heise.de IT news via the official RSS feed (no key): top headlines, 7 sections, keyword search, top stories, c't & article text (heise+ flagged honestly). اخبار فناوری اطلاعات هایزه از heise.de (فید رسمی RSS، بدون کلید): تیترهای برتر، اخبار ۷ بخش، جست‌وجوی کلیدواژه، خبرهای برتر صفحهٔ اصلی، مقاله‌های مجلهٔ c't و متن مقاله‌ها (مقاله‌های پولی heise+ صادقانه مشخص می‌شوند). heise online über heise.de (offizieller RSS-Feed, kein Schlüssel): Top-Schlagzeilen, 7 Ressorts, Stichwortsuche, Top-Meldungen der Startseite, c't-Artikel und Artikeltexte (heise+-Artikel werden ehrlich gekennzeichnet). news heise_headlines Top headlines (main RSS feed), newest first تیترهای برتر (فید اصلی RSS)، جدیدترین اول Top-Schlagzeilen (Haupt-RSS-Feed), neueste zuerst heise_search_news Search news by keyword in the main feed جست‌وجوی اخبار با کلیدواژه در فید اصلی Nachrichtensuche nach Stichwort im Haupt-Feed heise_news_by_section Newest news of one of 7 sections جدیدترین اخبار یکی از ۷ بخش Neueste Nachrichten eines von 7 Ressorts heise_top_stories Front-page top stories, in page order خبرهای برتر صفحهٔ اصلی، به ترتیب صفحه Top-Meldungen der Startseite, in Seitenreihenfolge heise_ct Latest c't magazine articles جدیدترین مقاله‌های مجلهٔ c't Neueste Artikel aus der c't heise_get_article Article text of one heise.de article (paywall flagged) متن یک مقالهٔ heise.de (پولی بودن مشخص می‌شود) Artikeltext eines heise.de-Artikels (Paywall wird gekennzeichnet)"
+  },
+  {
+    "id": "zeit-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/zeit-mcp",
+    "name": "Zeit",
+    "en": "zeit-mcp",
+    "kind": "mcp",
+    "s": "zeit-mcp Zeit — DIE ZEIT: Germany's biggest weekly newspaper DIE ZEIT — Deutschlands größte Wochenzeitung: Schlagzeilen, Ressorts & Suche Zeit — DIE ZEIT news via the official RSS feeds (no key): top headlines, 10 sections, keyword search (main feed + all sections) & section list. اخبار روزنامهٔ تسایت (DIE ZEIT) از فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار ۱۰ بخش، جست‌وجوی کلیدواژه در فید اصلی و همهٔ بخش‌ها، و فهرست بخش‌ها. DIE ZEIT über die offiziellen RSS-Feeds (kein Schlüssel): Top-Schlagzeilen, Nachrichten aus 10 Ressorts, Stichwortsuche im Haupt-Feed und über alle Ressorts sowie die Ressortliste. news zeit_headlines Top headlines (main RSS feed), newest first تیترهای برتر (فید اصلی RSS)، جدیدترین اول Top-Schlagzeilen (Haupt-RSS-Feed), neueste zuerst zeit_news_by_section Newest news of one of 10 sections جدیدترین اخبار یکی از ۱۰ بخش Neueste Nachrichten eines von 10 Ressorts zeit_search_news Search news by keyword in the main feed جست‌وجوی اخبار با کلیدواژه در فید اصلی Nachrichtensuche nach Stichwort im Haupt-Feed zeit_search_all_sections Search news by keyword across all 10 section feeds جست‌وجوی اخبار با کلیدواژه در همهٔ فیدهای بخش‌ها Nachrichtensuche nach Stichwort über alle Ressort-Feeds zeit_sections The 10 sections with RSS feeds فهرست ۱۰ بخش دارای فید RSS Liste der 10 Ressorts mit RSS-Feed"
+  },
+  {
+    "id": "welt-mcp",
+    "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/welt-mcp",
+    "name": "Welt",
+    "en": "welt-mcp",
+    "kind": "mcp",
+    "s": "welt-mcp Welt — WELT: one of Germany's biggest daily newspapers WELT — eine der größten Tageszeitungen Deutschlands: Schlagzeilen, Themen, Videos & Artikeltexte Welt — WELT news via the official RSS feed (no key): top headlines, news by topic, keyword search, latest videos & full article text (WELT+ honestly flagged). اخبار روزنامهٔ ولت (WELT) از فید رسمی RSS و صفحات مقالات (بدون کلید): تیترهای برتر، اخبار بر اساس موضوع، جست‌وجوی کلیدواژه، جدیدترین ویدیوها و متن کامل مقاله‌ها (مقاله‌های پولی WELT+ صادقانه مشخص می‌شوند). WELT über den offiziellen RSS-Feed und Artikelseiten (kein Schlüssel): Top-Schlagzeilen, Nachrichten nach Thema, Stichwortsuche, neueste Videos und Artikeltexte (WELT+-Artikel werden ehrlich gekennzeichnet). news welt_headlines Top headlines (official RSS feed), newest first تیترهای برتر (فید رسمی RSS)، جدیدترین اول Top-Schlagzeilen (offizieller RSS-Feed), neueste zuerst welt_news_by_topic Newest news of one topic (Deutschland, Ausland, Fußball, Kultur, ...) جدیدترین اخبار یک موضوع (آلمان، خارج، فوتبال، فرهنگ و …) Neueste Nachrichten zu einem Thema (Deutschland, Ausland, Fußball, Kultur, …) welt_search_news Search news by keyword in the feed جست‌وجوی اخبار با کلیدواژه در فید Nachrichtensuche nach Stichwort im Feed welt_latest_videos Latest video items from the feed جدیدترین ویدیوهای ولت، جدیدترین اول Neueste WELT-Videos, neueste zuerst welt_get_article Full text of a WELT article (WELT+ paywall flagged) متن یک مقالهٔ welt.de (پولی بودن مشخص می‌شود) Artikeltext eines welt.de-Artikels (Paywall wird gekennzeichnet)"
+  }
+]

@@ -1,6 +1,6 @@
 # Germany MCP
 
-> 26 read-only MCP servers (127 tools) for German web services — news, weather, transport, open data, finance, housing, sports and more. Every server runs locally with uvx, no API key, no account.
+> 27 read-only MCP servers (132 tools) for German web services — news, weather, transport, open data, finance, housing, sports and more. Every server runs locally with uvx, no API key, no account.
 
 - [bundesliga-mcp](https://github.com/mohammad-abbasi-sh/bundesliga-mcp): Bundesliga, 2./3. Liga, DFB-Pokal & DEL via OpenLigaDB (free API, no key): fixtures, live scores, tables, top scorers. (6 tools)
 - [mediathek-mcp](https://github.com/mohammad-abbasi-sh/mediathek-mcp): ARD, ZDF, 3sat, ARTE, Phoenix & more via MediathekViewWeb (free API, no key): search programmes, latest broadcasts, by channel/topic, programme detail. (6 tools)
@@ -28,6 +28,7 @@
 - [spiegel-mcp](https://github.com/mohammad-abbasi-sh/spiegel-mcp): Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly). (5 tools)
 - [heise-mcp](https://github.com/mohammad-abbasi-sh/heise-mcp): Heise — heise.de IT news via the official RSS feed (no key): top headlines, 7 sections, keyword search, top stories, c't & article text (heise+ flagged honestly). (6 tools)
 - [zeit-mcp](https://github.com/mohammad-abbasi-sh/zeit-mcp): Zeit — DIE ZEIT news via the official RSS feeds (no key): top headlines, 10 sections, keyword search (main feed + all sections) & section list. (5 tools)
+- [welt-mcp](https://github.com/mohammad-abbasi-sh/welt-mcp): Welt — WELT news via the official RSS feed (no key): top headlines, news by topic, keyword search, latest videos & full article text (WELT+ honestly flagged). (5 tools)
 
 ## Install
 

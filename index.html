@@ -267,6 +267,40 @@ nav.main a.active{color:var(--accent-ink);background:var(--accent-soft)}
 .drawer .tools-mini{font-family:var(--mono);font-size:12.5px;color:var(--mut);margin:0 0 12px;line-height:2}
 .drawer .tools-mini code{font-size:12px}
 .drawer-btns{display:flex;gap:8px;flex-wrap:wrap}
+/* ---------- all-mcp meta entry (2026-11-18): main reference, above the catalog ---------- */
+.meta-hier{margin:22px 0 0;max-width:640px;font-size:14px;color:var(--hero-mut);border-inline-start:3px solid var(--gold);padding-inline-start:12px}
+.meta-hier a{font-weight:700;color:var(--accent-ink);white-space:nowrap}
+.meta-band{background:var(--primary-dark);color:#E8EDF7;position:relative;overflow:hidden;border-block-end:1px solid var(--line)}
+.meta-band::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.08) 1px,transparent 1px),radial-gradient(560px 280px at 88% -10%,rgba(73,103,233,.35),transparent 70%);background-size:26px 26px,100% 100%;pointer-events:none}
+.meta-band-in{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;padding:44px 0;align-items:center}
+.meta-band .eyebrow{color:#E8BC74}
+.meta-band .eyebrow .tick{background:var(--gold)}
+.meta-band h2{font-size:clamp(26px,3.4vw,36px);color:#FFFFFF;margin:0 0 10px}
+.meta-band h2 .acc{color:#8FA5F8;font-style:normal}
+.meta-band .sub{color:#C3CDDF;font-size:16px;max-width:560px;margin:0}
+.meta-nums{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.meta-num{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:10px 14px}
+.meta-num b{display:block;font-family:var(--mono);font-size:22px;color:#FFFFFF;line-height:1.2}
+.meta-num span{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:#9AA8C7}
+[lang="fa"] .meta-num span{letter-spacing:0;text-transform:none}
+.meta-band .btn-ghost{color:#E8EDF7;border-color:rgba(255,255,255,.28);background:transparent}
+.meta-band .btn-ghost:hover{background:rgba(255,255,255,.08)}
+.meta-install{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-card);padding:20px 22px;box-shadow:var(--shadow-lg)}
+.meta-install .lbl{color:#E8BC74}
+.meta-install .copy-row{margin-top:12px}
+.meta-install .copy-row pre{background:var(--console-bg)}
+.meta-card{grid-column:1/-1;border:2px solid var(--accent);background:linear-gradient(180deg,var(--accent-soft),var(--paper) 55%)}
+[data-theme="dark"] .meta-card{background:linear-gradient(180deg,#1B2542,var(--paper) 60%)}
+.meta-card-in{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:24px;padding:24px;align-items:start}
+.meta-card-side{display:flex;flex-direction:column;gap:12px;min-width:0}
+.meta-connect{border:1px solid var(--accent);border-inline-start:4px solid var(--accent);border-radius:var(--r-md);background:var(--accent-soft);padding:18px 20px;margin:0 0 24px}
+.meta-connect h2{font-size:19px;margin:8px 0 6px}
+.meta-connect p{color:var(--mut);margin:0 0 12px;font-size:14.5px}
+.meta-connect p:last-child{margin-bottom:0}
+@media (max-width:900px){
+  .meta-band-in{grid-template-columns:1fr;gap:24px;padding:32px 0}
+  .meta-card-in{grid-template-columns:1fr}
+}
 /* compact rows (tool-page rail, favorites) */
 .row-mini{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px 12px;border-radius:12px;text-decoration:none;color:var(--ink);cursor:pointer;margin:2px 6px}
 .row-mini:hover{background:var(--panel);text-decoration:none}
@@ -998,6 +1032,49 @@ const SERVERS = [
   ]}
 ];
 const TOTAL_TOOLS = SERVERS.reduce((a,s)=>a+s.tools.length,0);
+
+/* META-EXEMPT-START */
+/* all-mcp (2026-11-18): the meta-MCP — ONE server containing all 60 MCP
+   servers (Turkey 32, Germany 27, Bonbama 1), 324 tools. Rendered from
+   this single object everywhere; NEVER added to SERVERS (catalog counts
+   27/132 are computed from SERVERS and must stay exact). This block is
+   exempt from update_platform.py's Turkey-leftover scan: naming the
+   Turkey catalog here is the point of the meta-server, not a leftover. */
+const META = {
+  id:"all-mcp", pypi:"all-mcp", servers:60, tools:324,
+  repo:"https://github.com/mohammad-abbasi-sh/all-mcp",
+  pypiUrl:"https://pypi.org/project/all-mcp/",
+  title:{fa:"یک MCP برای همه‌چیز", de:"Ein MCP für alles", en:"One MCP for everything"},
+  pitch:{fa:"all-mcp — یک سرور که همهٔ ۶۰ سرور MCP را دارد (ترکیه ۳۲، آلمان ۲۷، بن‌باما ۱) — ۳۲۴ ابزار با یک کانفیگ. هر سؤالی بپرسید، خودش به MCP درست وصل می‌شود.",
+    de:"all-mcp — ein Server mit allen 60 MCP-Servern (Türkei 32, Deutschland 27, Bonbama 1) — 324 Tools mit einem einzigen Konfigurationseintrag. Einfach fragen — er verbindet sich selbst mit dem richtigen MCP.",
+    en:"all-mcp — one server containing all 60 MCP servers (Turkey 32, Germany 27, Bonbama 1) — 324 tools behind a single config entry. Ask anything; it connects to the right MCP itself."},
+  hier:{fa:"از اینجا شروع کنید: all-mcp مرجع اصلی است — یک سرور برای همه‌چیز. این کاتالوگ سرورهای تکی پشت آن را فهرست می‌کند.",
+    de:"Hier starten: all-mcp ist die Hauptreferenz — ein Server für alles. Dieser Katalog listet die einzelnen Server dahinter.",
+    en:"Start here: all-mcp is the main reference — one server for everything. This catalog lists the individual servers behind it."},
+  toolList:[
+    {name:"search_tools", s:"Find the right tools for a question, in any language.", sf:"ابزارهای درست برای هر سؤال را پیدا می‌کند، به هر زبانی.", st:"Findet die passenden Tools zu einer Frage — in jeder Sprache."},
+    {name:"call_tool", s:"Run one tool on one child server.", sf:"یک ابزار را روی یک سرور اجرا می‌کند.", st:"Führt ein Tool auf einem Kind-Server aus."},
+    {name:"ask", s:"One-step answer: route, run and explain.", sf:"پاسخ در یک قدم: مسیریابی، اجرا و توضیح.", st:"Antwort in einem Schritt: routen, ausführen, erklären."},
+    {name:"list_servers", s:"Browse all 60 servers behind all-mcp.", sf:"مرور همهٔ ۶۰ سرور پشت all-mcp.", st:"Alle 60 Server hinter all-mcp durchsuchen."},
+    {name:"set_location", s:"Save your country for location-first routing.", sf:"کشورت را برای مسیریابی بر اساس مکان ذخیره می‌کند.", st:"Speichert dein Land für standortbasiertes Routing."},
+    {name:"meta_health", s:"Index counts, PyPI status and current location.", sf:"تعدادها، وضعیت PyPI و مکان فعلی.", st:"Indexzahlen, PyPI-Status und aktueller Standort."}
+  ]
+};
+/* META-EXEMPT-END */
+function metaL(o){ return o[state.lang]||o.en; }
+function metaTitle(){ return metaL(META.title); }
+function metaPitch(){ return metaL(META.pitch); }
+function metaHier(){ return metaL(META.hier); }
+function metaToolSum(tl){ return state.lang==="fa"?tl.sf:state.lang==="de"?tl.st:tl.s; }
+function metaSnippet(){
+  return '{\n  "mcpServers": {\n    "all-mcp": {\n      "command": "uvx",\n      "args": ["all-mcp"],\n      "env": {"USER_COUNTRY": "DE"}\n    }\n  }\n}';
+}
+function metaHay(){
+  return askNorm([META.id, META.title.en, META.title.de, META.title.fa,
+    META.pitch.en, META.pitch.de, META.pitch.fa,
+    META.toolList.map(x=>x.name+" "+x.s+" "+x.sf+" "+x.st).join(" "),
+    "meta router all mcp"].join(" "));
+}
 
 const CATEGORIES = [
  {id:"sports",icon:"⚽",color:"#15803D",soon:false},
@@ -1999,6 +2076,7 @@ function heroHTML(){
     + '<div class="spec-cell"><b>'+fmtNum(TOTAL_TOOLS)+'</b><span>'+t("stat_tools")+'</span></div>'
     + '<div class="spec-cell"><b>'+fmtNum(SKILLS.length)+'</b><span>'+t("stat_skills")+'</span></div>'
     + '<div class="spec-cell"><b>'+fmtNum(3)+'</b><span>'+t("stat_langs")+'</span></div></div>'
+    + '<p class="meta-hier">'+esc(metaHier())+' <a href="'+hashFor("tool", "all-mcp")+'">all-mcp →</a></p>'
     + '</div><div>'
     + '<div class="console" id="demo-card"><div class="console-head"><span class="cdot c1"></span><span class="cdot c2"></span><span class="cdot c3"></span><span>LIVE DEMO · BUNDESLIGA-MCP</span></div>'
     + '<div class="demo-tabs" id="demo-tabs"></div><div class="demo-body" id="demo-body"></div>'
@@ -2020,6 +2098,7 @@ function homeHTML(){
   ];
   const benefitHTML = '<div class="benefit-grid">'+benefits.map(b=>'<div class="benefit-card"><div class="benefit-icon" aria-hidden="true">'+b.icon+'</div><h3>'+esc(b.t)+'</h3><p>'+esc(b.d)+'</p></div>').join("")+'</div>';
   return heroHTML()
+  + metaBandHTML()
   + '<section class="section" id="how"><div class="wrap">'
   + sectionHead("HOW", t("how_title"), t("how_sub"))
   + benefitHTML+'</div></section>'
@@ -2072,8 +2151,9 @@ function mpMatches(q){
 function mpResultsHTML(){
   const list = mpFiltered();
   const m = mpMatches(mp.q);
-  let h = '<p class="mono" style="color:var(--mut);font-size:12.5px;margin-bottom:14px">['+fmtNum(list.length)+'] '+t("results")+'</p>';
-  if(!list.length && !m.skills.length && !m.tuts.length && !m.arts.length) return h + emptyHTML() + '<p style="text-align:center;margin-top:14px"><a class="btn btn-ghost btn-sm" href="'+hashFor("submit")+'">'+nt("pal_suggest")+' →</a></p>';
+  const showMeta = metaVisible();
+  let h = (showMeta?metaCardHTML():"") + '<p class="mono" style="color:var(--mut);font-size:12.5px;margin-bottom:14px">['+fmtNum(list.length)+'] '+t("results")+'</p>';
+  if(!list.length && !showMeta && !m.skills.length && !m.tuts.length && !m.arts.length) return h + emptyHTML() + '<p style="text-align:center;margin-top:14px"><a class="btn btn-ghost btn-sm" href="'+hashFor("submit")+'">'+nt("pal_suggest")+' →</a></p>';
   if(list.length) h += '<div class="card-grid">'+list.map(serverRow).join("")+'</div>';
   const extra = [];
   if(m.skills.length) extra.push('<h3 style="margin:26px 0 12px">'+t("match_skills")+' ('+fmtNum(m.skills.length)+')</h3><div class="ledger">'+m.skills.map(skillCard).join("")+'</div>');
@@ -2177,7 +2257,7 @@ function aboutHTML(){
   const row3 = (title, desc)=>ledgerLine({staticCls:true, idCell:"§", name:title, desc:desc});
   return '<section class="section"><div class="wrap">'
     + sectionHead("ABOUT", t("about_title"), t("about_sub"))
-    + '<div class="ledger">'+row3(t("about_mission_t"),t("about_mission_d"))+row3(t("about_builder_t"),t("about_builder_d"))+row3(t("about_catalog_t"),t("about_catalog_d"))+'</div>'
+    + '<div class="ledger">'+row3(t("about_mission_t"),t("about_mission_d"))+row3(t("about_builder_t"),t("about_builder_d"))+row3(t("about_catalog_t"),t("about_catalog_d"))+row3("all-mcp — "+L(META.title), esc(L(META.hier))+' <a href="'+hashFor("tool","all-mcp")+'">'+t("details")+' →</a>')+'</div>'
     + '<div class="stat-grid" style="margin-top:26px"><div class="stat"><b>'+fmtNum(SERVERS.length)+'</b><span>'+t("stat_servers")+'</span></div>'
     + '<div class="stat"><b>'+fmtNum(TOTAL_TOOLS)+'</b><span>'+t("stat_tools")+'</span></div>'
     + '<div class="stat"><b>'+fmtNum(SKILLS.length)+'</b><span>'+t("stat_skills")+'</span></div></div>'
@@ -2200,7 +2280,7 @@ function favItemsHTML(){
   const f = favs();
   if(!f.length) return '<div class="empty"><div class="big">[ ☆ ]</div><h3>'+t("fav_empty")+'</h3><p>'+t("fav_empty_hint")+'</p><a class="btn btn-ink btn-sm" href="'+hashFor("marketplace")+'">'+t("dash_go")+'</a></div>';
   const cards = f.map(xx=>{
-    if(xx.type==="server"){ const s=SERVERS.find(v=>v.id===xx.id); return s?serverRow(s):""; }
+    if(xx.type==="server"){ if(xx.id==="all-mcp") return metaCardHTML(); const s=SERVERS.find(v=>v.id===xx.id); return s?serverRow(s):""; }
     const k=SKILLS.find(v=>v.id===xx.id); return k?skillCard(k):"";
   }).join("");
   return '<div class="card-grid">'+cards+'</div>';
@@ -2285,7 +2365,7 @@ function simpleHTML(s){
   }).join("");
   const paths = G.paths.rows.map(r=>'<li><span class="os">'+esc(r.os)+'</span><code>'+esc(r.path)+'</code>'+(r.note?'<span style="color:var(--mut);font-size:13px">'+esc(L(r.note))+'</span>':"")+'</li>').join("");
   const trouble = G.trouble.map(xx=>'<li><b>'+esc(L(xx.q))+'</b><span>'+esc(L(xx.a))+'</span></li>').join("");
-  return '<p class="guide-lead">'+esc(L(G.what))+'</p>'
+  return metaConnectHTML() + '<p class="guide-lead">'+esc(L(G.what))+'</p>'
   + '<div class="callout callout-warn"><h3>'+esc(L(G.only_t))+'</h3><p>'+esc(L(G.only))+'</p></div>'
   + '<h2 style="font-size:20px;margin-top:26px">'+esc(L(G.steps_t))+'</h2>'
   + '<ol class="guide-steps">'+steps+'</ol>'
@@ -2490,6 +2570,19 @@ fa:{
  f_clear:"پاک کردن همهٔ فیلترها", f_last_checked:"آخرین بررسی فهرست",
  loading:"در حال بارگذاری…", error_retry:"دوباره امتحان کن",
  try_q:"سؤال نمونه را امتحان کن",
+ meta_badge:"مرجع اصلی", meta_free:"رایگان · محلی · بدون بک‌اند",
+ meta_how_t:"چطور کار می‌کند؟",
+ meta_ask_t:"پرسیدن با ask",
+ meta_ask_d:"ask در یک قدم پاسخ می‌دهد: به سرور درست وصل می‌شود، ابزار را اجرا می‌کند و نتیجه را توضیح می‌دهد. با کلید خودت (Gemini، OpenAI، Anthropic یا OpenRouter) یا Ollamaی محلی با LLM مسیریابی می‌کند؛ بدون کلید هم با جست‌وجو کار می‌کند.",
+ meta_loc_t:"مکان تو",
+ meta_loc_d:"set_location کشورت را فقط روی کامپیوتر خودت (یک فایل محلی) ذخیره می‌کند تا مسیریابی سرورهای کشورت را ترجیح دهد. هیچ‌چیز از کامپیوترت خارج نمی‌شود.",
+ meta_http_t:"پل HTTP (برای بعد)",
+ meta_http_d:"برای رابط چت آینده، all-mcp به‌صورت پل HTTP هم اجرا می‌شود: uvx all-mcp --http --port 8765.",
+ meta_connect_t:"آسان‌ترین راه: فقط all-mcp را نصب کن",
+ meta_connect_d:"یک سرور برای همه‌چیز: all-mcp خودش به سرور درست وصل می‌شود. همین یک کانفیگ کافی است — بقیهٔ راهنما برای نصب تکی سرورهاست.",
+ meta_behind_t:"سرورهای تکی پشت آن",
+ meta_sample_t:"سؤال‌های نمونه",
+ meta_config_t:"کانفیگ Claude Desktop",
 },
 de:{
  nav_builder:"Profil-Builder", nav_demo:"Demo", nav_status:"Status", nav_guide:"Anleitung",
@@ -2599,6 +2692,19 @@ de:{
  f_clear:"Alle Filter löschen", f_last_checked:"Katalog zuletzt geprüft",
  loading:"Laden…", error_retry:"Erneut versuchen",
  try_q:"Beispielfrage ausprobieren",
+ meta_badge:"Hauptreferenz", meta_free:"Kostenlos · lokal · kein Backend",
+ meta_how_t:"Wie funktioniert es?",
+ meta_ask_t:"Fragen mit ask",
+ meta_ask_d:"ask antwortet in einem Schritt: Es routet zum richtigen Server, führt das Tool aus und erklärt das Ergebnis. Mit deinem eigenen Schlüssel (Gemini, OpenAI, Anthropic oder OpenRouter) oder lokalem Ollama routet es mit einem LLM; ohne Schlüssel funktioniert es weiterhin über die Such-Fallback.",
+ meta_loc_t:"Dein Standort",
+ meta_loc_d:"set_location speichert dein Land auf deinem eigenen Rechner (nur eine lokale Datei), damit das Routing Server deines Landes bevorzugt. Nichts verlässt deinen Computer.",
+ meta_http_t:"HTTP-Brücke (für später)",
+ meta_http_d:"Für eine zukünftige Chat-Oberfläche läuft all-mcp auch als HTTP-Brücke: uvx all-mcp --http --port 8765.",
+ meta_connect_t:"Am einfachsten: installiere nur all-mcp",
+ meta_connect_d:"Ein Server für alles: all-mcp verbindet sich selbst mit dem richtigen Server. Diese eine Konfiguration genügt — der Rest dieser Anleitung beschreibt die Installation einzelner Server.",
+ meta_behind_t:"Die einzelnen Server dahinter",
+ meta_sample_t:"Beispielfragen",
+ meta_config_t:"Claude-Desktop-Konfiguration",
 },
 en:{
  nav_builder:"Profile Builder", nav_demo:"Demo", nav_status:"Status", nav_guide:"Guide",
@@ -2708,6 +2814,19 @@ en:{
  f_clear:"Clear all filters", f_last_checked:"Catalog last checked",
  loading:"Loading…", error_retry:"Try again",
  try_q:"Try the sample question",
+ meta_badge:"Main reference", meta_free:"Free · local · no backend",
+ meta_how_t:"How does it work?",
+ meta_ask_t:"Asking with ask",
+ meta_ask_d:"ask answers in one step: it routes to the right server, runs the tool and explains the result. With your own key (Gemini, OpenAI, Anthropic or OpenRouter) or local Ollama it routes with an LLM; without a key it still works via the search fallback.",
+ meta_loc_t:"Your location",
+ meta_loc_d:"set_location saves your country on your own machine (a local file only) so routing prefers your country's servers. Nothing leaves your computer.",
+ meta_http_t:"HTTP bridge (for later)",
+ meta_http_d:"For a future chat UI, all-mcp also runs as an HTTP bridge: uvx all-mcp --http --port 8765.",
+ meta_connect_t:"Easiest: install just all-mcp",
+ meta_connect_d:"One server for everything: all-mcp connects to the right server itself. This one config entry is enough — the rest of this guide covers installing individual servers.",
+ meta_behind_t:"The individual servers behind it",
+ meta_sample_t:"Sample questions",
+ meta_config_t:"Claude Desktop config",
 }};
 function nt(k){ const d = NT[state.lang]||NT.en; return d[k]!==undefined?d[k]:(NT.en[k]!==undefined?NT.en[k]:k); }
 
@@ -3083,7 +3202,151 @@ function builderDeeplinksFor(s){
 }
 
 /* ================= Detail page (replaces toolHTML) ================= */
+/* ---------------- all-mcp meta entry: band, card, detail, connect ---------------- */
+function metaBandHTML(){
+  const cmd = "uvx all-mcp";
+  const title = esc(metaTitle()).replace("MCP",'<span class="acc" dir="ltr">MCP</span>');
+  return '<section class="meta-band"><div class="wrap"><div class="meta-band-in"><div>'
+    + '<span class="eyebrow lbl"><span class="tick"></span>★ '+nt("meta_badge")+' · ALL-MCP</span>'
+    + '<h2>'+title+'</h2>'
+    + '<p class="sub">'+esc(metaPitch())+'</p>'
+    + '<div class="meta-nums"><div class="meta-num"><b>'+fmtNum(META.servers)+'</b><span>'+t("stat_servers")+'</span></div>'
+    + '<div class="meta-num"><b>'+fmtNum(META.tools)+'</b><span>'+t("stat_tools")+'</span></div></div>'
+    + '<p style="color:#9AA8C7;font-size:13.5px;margin:14px 0 0">✓ '+nt("meta_free")+'</p>'
+    + '</div><div class="meta-install"><span class="lbl">INSTALL · ALL-MCP</span>'
+    + '<div class="copy-row"><pre><code>'+cmd+'</code></pre><button class="copy-btn" onclick="App.copy(\''+cmd+'\',this,event)">'+t("tool_copy")+'</button></div>'
+    + '<p style="display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 0"><a class="btn btn-accent btn-sm" href="'+hashFor("tool","all-mcp")+'">'+t("details")+'</a>'
+    + '<a class="btn btn-ghost btn-sm" href="'+META.repo+'" target="_blank" rel="noopener">'+t("tool_repo")+' ↗</a>'
+    + '<a class="btn btn-ghost btn-sm" href="'+META.pypiUrl+'" target="_blank" rel="noopener">'+t("tool_pypi")+' ↗</a></p>'
+    + '</div></div></div></section>';
+}
+function metaCardHTML(){
+  const cmd = "uvx all-mcp";
+  const tools = META.toolList.map(xx=>"<code>"+esc(xx.name)+"</code>").join("");
+  return '<article class="row meta-card" data-row="all-mcp"><div class="meta-card-in">'
+    + '<div style="min-width:0"><div class="card-top"><div class="tile" style="--tile-c:#4967E9" aria-hidden="true">'+ICO_SPARK+'</div>'
+    + '<div class="card-head"><h3 class="row-name">'+esc(metaTitle())+'<span class="latin">all-mcp</span></h3></div></div>'
+    + '<p class="row-desc" style="margin-top:12px">'+esc(metaPitch())+'</p>'
+    + '<div class="row-meta" style="margin-top:12px"><span class="badge badge-feat">★ '+nt("meta_badge")+'</span><span class="badge badge-ok">✓ '+t("status_available")+'</span><span class="chip">⌘ '+t("badge_local")+'</span><span class="chip">'+nt("meta_free")+'</span></div>'
+    + '<div class="card-tools" style="margin-top:12px">'+tools+'</div></div>'
+    + '<div class="meta-card-side"><div class="copy-row"><pre><code>'+cmd+'</code></pre><button class="copy-btn" onclick="App.copy(\''+cmd+'\',this,event)">'+t("tool_copy")+'</button></div>'
+    + '<div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-accent btn-sm" href="'+hashFor("tool","all-mcp")+'">'+t("details")+'</a>'
+    + '<a class="btn btn-ghost btn-sm" href="'+META.repo+'" target="_blank" rel="noopener">'+t("tool_repo")+' ↗</a>'
+    + '<a class="btn btn-ghost btn-sm" href="'+META.pypiUrl+'" target="_blank" rel="noopener">'+t("tool_pypi")+' ↗</a></div>'
+    + '<p class="mono" style="color:var(--mut);font-size:12px;margin:0">'+fmtNum(META.servers)+' '+t("stat_servers")+' · '+fmtNum(META.tools)+' '+t("stat_tools")+'</p></div>'
+    + '</div></article>';
+}
+/* Marketplace visibility: pinned above the catalog by default. Hidden only
+   when a filter excludes it — a single-category filter (it belongs to no
+   one category), the official-source filter (it is unofficial), or a text
+   query that does not match it. Featured/local/no-key/no-change filters
+   all include it. */
+function metaVisible(){
+  if(mp.cat!=="all") return false;
+  if(mp.official) return false;
+  const q = mp.q.trim();
+  if(!q) return true;
+  const toks = askTokens(q);
+  if(!toks.length) return true;
+  const hay = metaHay();
+  return toks.every(w=>hay.indexOf(w)>=0);
+}
+function metaConnectHTML(){
+  const snip = metaSnippet();
+  return '<div class="meta-connect"><span class="lbl">★ '+nt("meta_badge")+' · ALL-MCP</span>'
+    + '<h2>'+nt("meta_connect_t")+'</h2>'
+    + '<p>'+nt("meta_connect_d")+'</p>'
+    + '<div class="copy-row"><pre><code>'+esc(snip)+'</code></pre><button class="copy-btn" onclick="App.copy('+JSON.stringify(snip).replace(/"/g,"&quot;")+',this,event)">'+t("tool_copy")+'</button></div>'
+    + '<p style="margin:12px 0 0;display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-accent btn-sm" href="'+hashFor("tool","all-mcp")+'">'+t("details")+'</a>'
+    + '<a class="btn btn-ghost btn-sm" href="'+META.repo+'" target="_blank" rel="noopener">'+t("tool_repo")+' ↗</a></p></div>';
+}
+function metaRailRow(active){
+  return '<a class="row-mini'+(active?" active":"")+'" href="'+hashFor("tool","all-mcp")+'"><span class="rid">META</span><span class="rnm">'+esc(metaTitle())+'<small>all-mcp</small></span><span class="cnt">'+fmtNum(META.tools)+' T</span></a>';
+}
+const META_FAQ = [
+ {q:{fa:"all-mcp چیست؟", de:"Was ist all-mcp?", en:"What is all-mcp?"},
+  a:{fa:"all-mcp یک سرور MCP است که همهٔ ۶۰ سرور MCP را دارد — ۳۲۴ ابزار با یک کانفیگ. هر سؤالی بپرسید، خودش به MCP درست وصل می‌شود.",
+     de:"all-mcp ist ein MCP-Server, der alle 60 MCP-Server enthält — 324 Tools mit einem einzigen Konfigurationseintrag. Du fragst einfach; er verbindet sich selbst mit dem richtigen MCP.",
+     en:"all-mcp is one MCP server that contains all 60 MCP servers — 324 tools behind a single config entry. You ask anything; it connects to the right MCP itself."}},
+ {q:{fa:"کلید API لازم است؟", de:"Brauche ich einen API-Schlüssel?", en:"Do I need an API key?"},
+  a:{fa:"نه. all-mcp بدون کلید کار می‌کند. کلید (Gemini، OpenAI، Anthropic یا OpenRouter) یا Ollamaی محلی فقط مسیریابی ask را بهتر می‌کند.",
+     de:"Nein. all-mcp funktioniert ohne Schlüssel. Ein Schlüssel (Gemini, OpenAI, Anthropic oder OpenRouter) oder lokales Ollama verbessert nur das ask-Routing.",
+     en:"No. all-mcp works without a key. A key (Gemini, OpenAI, Anthropic or OpenRouter) or local Ollama only improves ask routing."}},
+ {q:{fa:"چیزی را در حساب من تغییر می‌دهد؟", de:"Ändert es etwas in meinem Konto?", en:"Does it change anything in my account?"},
+  a:{fa:"نه. all-mcp و همهٔ ۶۰ سرور پشت آن فقط‌خواندنی‌اند؛ چیزی خریده، رزرو یا تغییر نمی‌شود.",
+     de:"Nein. all-mcp und alle 60 Server dahinter sind nur lesend; nichts wird gekauft, gebucht oder geändert.",
+     en:"No. all-mcp and all 60 servers behind it are read-only; nothing is bought, booked or changed."}},
+ {q:{fa:"هنوز می‌شود یک سرور تکی نصب کرد؟", de:"Kann ich trotzdem einen einzelnen Server installieren?", en:"Can I still install a single server?"},
+  a:{fa:"بله. این کاتالوگ سرورهای تکی را فهرست می‌کند — هر کدام را مستقیم نصب کن، یا فقط all-mcp را نصب کن و بگذار خودش مسیریابی کند.",
+     de:"Ja. Dieser Katalog listet die einzelnen Server — installiere einen direkt, oder installiere nur all-mcp und lass es routen.",
+     en:"Yes. This catalog lists the individual servers — install any of them directly, or install just all-mcp and let it route."}}
+];
+function metaFAQ(){ return META_FAQ.map(f=>({q:L(f.q), a:L(f.a)})); }
+const META_SAMPLE_Q = [
+ {q:{fa:"صدر جدول بوندس‌لیگا کیه؟", de:"Wer führt die Bundesliga-Tabelle an?", en:"Who tops the Bundesliga table?"}},
+ {q:{fa:"هوای برلین این هفته چطوره؟", de:"Wie wird das Wetter in Berlin diese Woche?", en:"What's the weather in Berlin this week?"}},
+ {q:{fa:"اخبار مربوط به بوندستاگ را پیدا کن.", de:"Finde Nachrichten zum Bundestag.", en:"Find news about the Bundestag."}}
+];
+function metaDetailHTML(){
+  pushRecent("server", "all-mcp");
+  const faq = metaFAQ();
+  const behind = SERVERS.slice().sort((a,b)=>a.added-b.added).slice(0,4);
+  const rail = metaRailRow(true) + SERVERS.slice().sort((a,b)=>a.added-b.added).map(xx=>'<a class="row-mini" href="'+hashFor("tool", xx.id)+'"><span class="rid">'+serverNo(xx)+'</span><span class="rnm">'+esc(xx.title.split(" — ")[0])+'<small>'+esc(xx.id)+'</small></span><span class="cnt">'+fmtNum(xx.tools.length)+' T</span></a>').join("");
+  const snip = metaSnippet();
+  const cmd = "uvx all-mcp";
+  const httpCmd = "uvx all-mcp --http --port 8765";
+  let h = '<section class="section"><div class="wrap">'
+    + '<p class="crumb"><a href="'+hashFor("home")+'">'+t("nav_home")+'</a> / <a href="'+hashFor("marketplace")+'">'+t("nav_marketplace")+'</a> / <b>all-mcp</b></p>'
+    + '<div class="split"><div class="ledger-rail"><div class="rail-head"><span class="lbl">'+x("insp_servers")+'</span><span class="mono" style="font-size:11px;color:var(--mut)">'+fmtNum(SERVERS.length)+' / '+fmtNum(TOTAL_TOOLS)+'</span></div>'+rail+'</div>'
+    + '<aside class="inspector"><div class="inspector-head"><div style="display:flex;gap:12px;align-items:flex-start"><div style="flex:1;min-width:0">'
+    + '<span class="lbl">META · ALL-MCP</span>'
+    + '<h1>'+esc(metaTitle())+'</h1><p class="latin">all-mcp</p>'
+    + '<p style="margin:0;display:flex;gap:6px;flex-wrap:wrap"><span class="badge badge-feat">★ '+nt("meta_badge")+'</span> <span class="badge badge-ok">✓ '+t("status_available")+'</span> <span class="chip">⌘ '+t("badge_local")+'</span></p>'
+    + '</div>'+starBtn("server", "all-mcp")+'</div></div>'
+    + '<div class="inspector-body"><p style="color:var(--mut)">'+esc(metaPitch())+'</p>'
+    + '<p style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip">⌘ '+t("badge_local")+'</span><span class="chip">✓ '+t("badge_nokey")+'</span><span class="chip">'+nt("meta_free")+'</span></p>'
+    + '<h2>'+nt("d_rbi")+'</h2>'
+    + '<table class="rbi"><tr><td>'+nt("d_rbi_source")+'</td><td>'+esc(L({fa:"all-mcp — متا-MCP روی ۶۰ سرور", de:"all-mcp — Meta-MCP über 60 Server", en:"all-mcp — meta-MCP over 60 servers"}))+'</td></tr>'
+    + '<tr><td>'+nt("d_rbi_run")+'</td><td>'+nt("d_rbi_run_v")+'</td></tr>'
+    + '<tr><td>'+nt("d_rbi_key")+'</td><td>'+esc(L({fa:"لازم نیست (کلید فقط برای مسیریابی ask، اختیاری)", de:"Nicht nötig (Schlüssel nur für ask-Routing, optional)", en:"Not needed (a key only for ask routing, optional)"}))+'</td></tr>'
+    + '<tr><td>'+nt("d_rbi_conn")+'</td><td>'+esc(L({fa:"به ۶۰ سرور فرزند وصل می‌شود", de:"Verbindet sich mit 60 Kind-Servern", en:"Connects to 60 child servers"}))+'</td></tr>'
+    + '<tr><td>'+nt("d_rbi_code")+'</td><td><a href="'+META.repo+'" target="_blank" rel="noopener">'+nt("d_rbi_code_v")+' ↗</a></td></tr>'
+    + '<tr><td>'+nt("d_rbi_checked")+'</td><td>'+fmtDate(BUILD_DATE)+'</td></tr></table>'
+    + '<h2>'+nt("d_tools_n")+' ('+fmtNum(META.toolList.length)+')</h2>'
+    + '<div class="table-scroll"><table class="tools-table"><thead><tr><th>Tool</th><th>'+t("details")+'</th></tr></thead><tbody>'
+    + META.toolList.map(xx=>'<tr><td><code>'+esc(xx.name)+'</code></td><td>'+esc(metaToolSum(xx))+'</td></tr>').join("")
+    + '</tbody></table></div>'
+    + '<h2>'+t("tool_platforms")+'</h2><p>'+PLATFORMS_VERIFIED.map(p=>'<span class="chip" style="margin:0 6px 6px 0">✓ '+esc(p.name)+'</span>').join("")+'</p>'
+    + '<p style="color:var(--mut);font-size:13.5px">'+t("plat_unverified_note")+'</p>'
+    + '<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"><a class="btn btn-ink btn-sm" href="'+META.repo+'" target="_blank" rel="noopener">'+t("tool_repo")+' ↗</a>'
+    + '<a class="btn btn-ghost btn-sm" href="'+META.pypiUrl+'" target="_blank" rel="noopener">'+t("tool_pypi")+' ↗</a></div>'
+    + '<p style="color:var(--mut);font-size:13px;margin-top:14px">'+t("tool_last")+': '+fmtDate(BUILD_DATE)+'</p>'
+    + '</div></aside></div></div></section>';
+  h += '<section class="section" style="padding-top:8px"><div class="wrap"><div style="max-width:860px">';
+  h += '<div class="detail-sec"><h2>'+t("tool_install")+'</h2>'
+    + '<div class="install-box"><h3>'+nt("meta_config_t")+'</h3>'
+    + '<div class="copy-row"><pre><code>'+esc(cmd)+'</code></pre><button class="copy-btn" onclick="App.copy(\''+cmd+'\',this,event)">'+t("tool_copy")+'</button></div>'
+    + '<div class="copy-row" style="margin-top:10px"><pre><code>'+esc(snip)+'</code></pre><button class="copy-btn" onclick="App.copy('+JSON.stringify(snip).replace(/"/g,"&quot;")+',this,event)">'+t("tool_copy")+'</button></div>'
+    + '<p style="color:var(--mut);font-size:13.5px;margin:10px 0 0">'+esc(L({fa:"USER_COUNTRY مکان را روی آلمان می‌گذارد تا مسیریابی سرورهای آلمان را ترجیح دهد.", de:"USER_COUNTRY setzt den Standort auf Deutschland, damit das Routing deutsche Server bevorzugt.", en:"USER_COUNTRY sets the location to Germany so routing prefers German servers."}))+'</p></div></div>';
+  h += '<div class="detail-sec"><h2>'+nt("meta_how_t")+'</h2><div class="cols-2">'
+    + '<div class="install-box"><h3>'+nt("meta_ask_t")+'</h3><p style="color:var(--mut)">'+nt("meta_ask_d")+'</p></div>'
+    + '<div class="install-box"><h3>'+nt("meta_loc_t")+'</h3><p style="color:var(--mut)">'+nt("meta_loc_d")+'</p></div></div>'
+    + '<div class="install-box"><h3>'+nt("meta_http_t")+'</h3><p style="color:var(--mut)">'+nt("meta_http_d")+'</p>'
+    + '<div class="copy-row"><pre><code>'+httpCmd+'</code></pre><button class="copy-btn" onclick="App.copy(\''+httpCmd+'\',this,event)">'+t("tool_copy")+'</button></div></div></div>';
+  h += '<div class="detail-sec"><h2>'+nt("meta_sample_t")+'</h2>'
+    + META_SAMPLE_Q.map(q=>'<div class="demo-qa" style="padding:16px"><p class="dq" style="margin:0">«'+esc(L(q.q))+'»</p><p style="color:var(--mut);font-size:13.5px;margin:8px 0 0"><code>ask(…)</code> · <span class="sample-tag" style="margin:0">'+nt("demo_sample_note")+'</span></p>'
+    + '<div style="display:flex;gap:8px;margin-top:10px"><button class="btn btn-ghost btn-sm" onclick="App.copy(\''+esc(L(q.q))+'\',this,event)">'+t("tool_copy")+'</button></div></div>').join("")
+    + '</div>';
+  h += '<div class="detail-sec faq-mini"><h2>'+nt("d_faq")+'</h2>'
+    + faq.map(f=>'<details class="faq"><summary>'+esc(f.q)+'</summary><p>'+esc(f.a)+'</p></details>').join("")+'</div>';
+  h += '<div class="detail-sec"><h2>'+nt("meta_behind_t")+'</h2><p style="color:var(--mut)">'+esc(metaHier())+'</p>'
+    + '<div class="card-grid" style="margin-top:14px">'+behind.map(serverRow).join("")+'</div>'
+    + '<p style="margin-top:16px"><a class="btn btn-ink btn-sm" href="'+hashFor("marketplace")+'">'+t("view_all")+' →</a></p></div>';
+  h += '</div></div></section>';
+  return h;
+}
 function toolHTML(id){
+  if(id==="all-mcp") return metaDetailHTML();
   const s = SERVERS.find(xx=>xx.id===id);
   if(!s) return notFoundHTML();
   pushRecent("server", id);
@@ -3092,7 +3355,7 @@ function toolHTML(id){
   const badge = badgeUrls(s);
   const related = SERVERS.filter(xx=>xx.cat===s.cat && xx.id!==s.id).slice(0,4);
   const toolsShown = toolHTML._showAll===id ? s.tools : s.tools.slice(0,8);
-  const rail = SERVERS.slice().sort((a,b)=>a.added-b.added).map(xx=>'<a class="row-mini'+(xx.id===id?" active":"")+'" href="'+hashFor("tool", xx.id)+'"><span class="rid">'+serverNo(xx)+'</span><span class="rnm">'+esc(xx.title.split(" — ")[0])+'<small>'+esc(xx.id)+'</small></span><span class="cnt">'+fmtNum(xx.tools.length)+' T</span></a>').join("");
+  const rail = metaRailRow(false) + SERVERS.slice().sort((a,b)=>a.added-b.added).map(xx=>'<a class="row-mini'+(xx.id===id?" active":"")+'" href="'+hashFor("tool", xx.id)+'"><span class="rid">'+serverNo(xx)+'</span><span class="rnm">'+esc(xx.title.split(" — ")[0])+'<small>'+esc(xx.id)+'</small></span><span class="cnt">'+fmtNum(xx.tools.length)+' T</span></a>').join("");
   const codeSample = 'from mcp import ClientSession, StdioServerParameters\nfrom mcp.client.stdio import stdio_client\n\nparams = StdioServerParameters(command="uvx", args=["'+s.pypi+'"])\nasync with stdio_client(params) as (read, write):\n    async with ClientSession(read, write) as session:\n        tools = await session.list_tools()';
   let h = '<section class="section"><div class="wrap">'
     + '<p class="crumb"><a href="'+hashFor("home")+'">'+t("nav_home")+'</a> / <a href="'+hashFor("marketplace")+'">'+t("nav_marketplace")+'</a> / <a href="'+hashFor("categories")+'">'+esc(catName(s.cat))+'</a> / <b>'+esc(s.title.split(" — ")[0])+'</b></p>'
@@ -3430,6 +3693,16 @@ function searchLoad(){
 function palBuildPort(q){
   const items = [];
   const ql = askNorm(q);
+  /* all-mcp first: it is the main reference, so it tops the palette on an
+     empty query and whenever the query matches it. */
+  const metaHit = (()=>{
+    if(!ql) return true;
+    const toks = ql.split(" ").filter(w=>w.length>1);
+    if(!toks.length) return true;
+    const hay = metaHay();
+    return toks.every(w=>hay.indexOf(w)>=0);
+  })();
+  if(metaHit) items.push({group:"servers", pid:"META", name:metaTitle(), sub:"all-mcp · "+fmtNum(META.servers)+" "+t("stat_servers")+" · "+fmtNum(META.tools)+" "+t("stat_tools"), tag:"★", page:"tool", param:"all-mcp"});
   if(SEARCH.idx && ql){
     const toks = ql.split(" ").filter(w=>w.length>1);
     const scored = SEARCH.idx.map(e=>{
@@ -3539,6 +3812,14 @@ function wnMaybe(){
 function ldJSON(){
   const base = SITE_URL;
   if(state.page==="tool"){
+    if(state.param==="all-mcp") return [
+      {"@context":"https://schema.org", "@type":"SoftwareApplication", "name":"all-mcp — One MCP for everything", "applicationCategory":"DeveloperApplication", "operatingSystem":"Windows, macOS, Linux", "description":META.pitch.en, "url":base+"#/en/tool/all-mcp", "offers":{"@type":"Offer", "price":"0", "priceCurrency":"EUR"}, "author":{"@type":"Person", "name":"Mohammad Abbasi"}},
+      {"@context":"https://schema.org", "@type":"FAQPage", "mainEntity":metaFAQ().map(f=>({"@type":"Question", "name":f.q, "acceptedAnswer":{"@type":"Answer", "text":f.a}}))},
+      {"@context":"https://schema.org", "@type":"BreadcrumbList", "itemListElement":[
+        {"@type":"ListItem", "position":1, "name":"Germany MCP", "item":base},
+        {"@type":"ListItem", "position":2, "name":"Marketplace", "item":base+"#/en/marketplace"},
+        {"@type":"ListItem", "position":3, "name":"all-mcp", "item":base+"#/en/tool/all-mcp"}]}
+    ];
     const s = SERVERS.find(xx=>xx.id===state.param);
     if(!s) return null;
     return [
@@ -3578,7 +3859,7 @@ function footerHTML(){
     + '<div class="socials"><a href="https://github.com/mohammad-abbasi-sh/germany-mcp" target="_blank" rel="noopener" aria-label="GitHub">GH</a>'
     + '<a href="https://www.linkedin.com/in/mohammad-abbasi-sh/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></div>'
     + '</div>'
-    + col(nt("foot_start"), [[hashFor("home"),t("nav_home")],[hashFor("marketplace"),t("nav_marketplace")],[hashFor("builder"),nt("nav_builder")],[hashFor("demo"),nt("nav_demo")],[hashFor("connect"),t("nav_connect")],[hashFor("guide"),nt("nav_guide")]])
+    + col(nt("foot_start"), [[hashFor("home"),t("nav_home")],[hashFor("tool","all-mcp"),"all-mcp ★"],[hashFor("marketplace"),t("nav_marketplace")],[hashFor("builder"),nt("nav_builder")],[hashFor("demo"),nt("nav_demo")],[hashFor("connect"),t("nav_connect")],[hashFor("guide"),nt("nav_guide")]])
     + col(nt("foot_dev"), [["catalog.json","catalog.json"],["search.json","search.json"],["llms.txt","llms.txt"],["llms-full.txt","llms-full.txt"],[hashFor("status"),nt("nav_status")],["https://github.com/mohammad-abbasi-sh/germany-mcp/blob/main/submission-guide.md","submission-guide.md"]])
     + col(t("foot_company"), [[hashFor("about"),t("nav_about")],[hashFor("privacy"),nt("nav_privacy")],[hashFor("terms"),nt("nav_terms")],[hashFor("submit"),nt("nav_submit")],[hashFor("my"),nt("nav_my")],["https://almanibama.ir","Almanibama"],["https://mabbasi.ir","mabbasi.ir"]])
     + '</div>'
@@ -3719,7 +4000,7 @@ function pageHTML(){
 function pageTitle(){
   const base = "Germany MCP";
   const map = {home:t("hero_title"),marketplace:t("mp_title"),categories:t("cats_page_title"),skills:t("skills_page_title"),tutorials:t("tut_page_title"),blog:t("blog_page_title"),about:t("about_title"),contact:t("contact_title"),favorites:t("fav_title"),ask:t("ask_title"),connect:t("conn_title"),builder:nt("b_title"),demo:nt("demo_title"),status:nt("st_title"),guide:nt("g_title"),submit:nt("s_title"),my:nt("my_title"),privacy:nt("p_title"),terms:nt("t_title"),"404":t("nf_title")};
-  if(state.page==="tool"){ const s=SERVERS.find(xx=>xx.id===state.param); return s? s.title+" — "+base : base; }
+  if(state.page==="tool"){ if(state.param==="all-mcp") return "all-mcp — "+metaTitle()+" — "+base; const s=SERVERS.find(xx=>xx.id===state.param); return s? s.title+" — "+base : base; }
   if(state.page==="skill"){ const k=SKILLS.find(xx=>xx.id===state.param); return k? k.id+" — "+base : base; }
   if(state.page==="tutorial"){ const xx=TUTORIALS.find(v=>v.id===state.param); return xx? L(xx.title)+" — "+base : base; }
   if(state.page==="article"){ const a=ARTICLES.find(v=>v.id===state.param); return a? L(a.title)+" — "+base : base; }

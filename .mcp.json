@@ -155,6 +155,12 @@
       "args": [
         "zeit-mcp"
       ]
+    },
+    "welt": {
+      "command": "uvx",
+      "args": [
+        "welt-mcp"
+      ]
     }
   }
 }

@@ -37,8 +37,9 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [spiegel-mcp](https://github.com/mohammad-abbasi-sh/spiegel-mcp) | Spiegel — DER SPIEGEL news: headlines, 13 sections, search, videos & article text | 5 | `uvx spiegel-mcp==0.1.0` |
 | [heise-mcp](https://github.com/mohammad-abbasi-sh/heise-mcp) | Heise — Germany's #1 IT news portal: headlines, 7 sections, search, top stories & c't | 6 | `uvx heise-mcp==0.1.0` |
 | [zeit-mcp](https://github.com/mohammad-abbasi-sh/zeit-mcp) | Zeit — DIE ZEIT news: headlines, 10 sections, search & section list | 5 | `uvx zeit-mcp==0.1.0` |
+| [welt-mcp](https://github.com/mohammad-abbasi-sh/welt-mcp) | Welt — WELT news: headlines, topics, search, videos & article text | 5 | `uvx welt-mcp==0.1.0` |
 
-*One new server every day. Each server ships with tests, fixtures and trilingual docs. 26 servers live — and the queue keeps growing (see the build queue).*
+*One new server every day. Each server ships with tests, fixtures and trilingual docs. 27 servers live — and the queue keeps growing (see the build queue).*
 
 ## For AI agents
 

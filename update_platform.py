@@ -88,6 +88,8 @@ SERVER_META = {
                   "featured": False, "added": 25},
     "zeit-mcp": {"cat": "news", "color": "#9B1B30", "letter": "⏰",
                  "featured": False, "added": 26},
+    "welt-mcp": {"cat": "news", "color": "#0F172A", "letter": "🌍",
+                 "featured": False, "added": 27},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -348,6 +350,16 @@ TRANSLATIONS = {
   "zeit_search_news": ("جست‌وجوی اخبار با کلیدواژه در فید اصلی", "Nachrichtensuche nach Stichwort im Haupt-Feed"),
   "zeit_search_all_sections": ("جست‌وجوی اخبار با کلیدواژه در همهٔ فیدهای بخش‌ها", "Nachrichtensuche nach Stichwort über alle Ressort-Feeds"),
   "zeit_sections": ("فهرست ۱۰ بخش دارای فید RSS", "Liste der 10 Ressorts mit RSS-Feed"),
+ }},
+"welt-mcp": {
+ "desc_fa": "اخبار روزنامهٔ ولت (WELT) از فید رسمی RSS و صفحات مقالات (بدون کلید): تیترهای برتر، اخبار بر اساس موضوع، جست‌وجوی کلیدواژه، جدیدترین ویدیوها و متن کامل مقاله‌ها (مقاله‌های پولی WELT+ صادقانه مشخص می‌شوند).",
+ "desc_de": "WELT über den offiziellen RSS-Feed und Artikelseiten (kein Schlüssel): Top-Schlagzeilen, Nachrichten nach Thema, Stichwortsuche, neueste Videos und Artikeltexte (WELT+-Artikel werden ehrlich gekennzeichnet).",
+ "tools": {
+  "welt_headlines": ("تیترهای برتر (فید رسمی RSS)، جدیدترین اول", "Top-Schlagzeilen (offizieller RSS-Feed), neueste zuerst"),
+  "welt_news_by_topic": ("جدیدترین اخبار یک موضوع (آلمان، خارج، فوتبال، فرهنگ و …)", "Neueste Nachrichten zu einem Thema (Deutschland, Ausland, Fußball, Kultur, …)"),
+  "welt_search_news": ("جست‌وجوی اخبار با کلیدواژه در فید", "Nachrichtensuche nach Stichwort im Feed"),
+  "welt_latest_videos": ("جدیدترین ویدیوهای ولت، جدیدترین اول", "Neueste WELT-Videos, neueste zuerst"),
+  "welt_get_article": ("متن یک مقالهٔ welt.de (پولی بودن مشخص می‌شود)", "Artikeltext eines welt.de-Artikels (Paywall wird gekennzeichnet)"),
  }},
 }
 

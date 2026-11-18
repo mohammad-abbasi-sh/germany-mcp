@@ -769,6 +769,36 @@
           "summary": "The 10 sections with RSS feeds"
         }
       ]
+    },
+    {
+      "description": "Welt — WELT news via the official RSS feed (no key): top headlines, news by topic, keyword search, latest videos & full article text (WELT+ honestly flagged).",
+      "name": "welt-mcp",
+      "pypi": "welt-mcp",
+      "repository": "https://github.com/mohammad-abbasi-sh/welt-mcp",
+      "title": "Welt — WELT: one of Germany's biggest daily newspapers",
+      "title_de": "WELT — eine der größten Tageszeitungen Deutschlands: Schlagzeilen, Themen, Videos & Artikeltexte",
+      "tools": [
+        {
+          "name": "welt_headlines",
+          "summary": "Top headlines (official RSS feed), newest first"
+        },
+        {
+          "name": "welt_news_by_topic",
+          "summary": "Newest news of one topic (Deutschland, Ausland, Fußball, Kultur, ...)"
+        },
+        {
+          "name": "welt_search_news",
+          "summary": "Search news by keyword in the feed"
+        },
+        {
+          "name": "welt_latest_videos",
+          "summary": "Latest video items from the feed"
+        },
+        {
+          "name": "welt_get_article",
+          "summary": "Full text of a WELT article (WELT+ paywall flagged)"
+        }
+      ]
     }
   ]
 }

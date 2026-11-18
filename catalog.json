@@ -1,0 +1,1639 @@
+{
+  "catalog": "germany-mcp",
+  "generatedAt": "2026-11-18T14:52:04Z",
+  "count": {
+    "servers": 27,
+    "tools": 132
+  },
+  "servers": [
+    {
+      "id": "bundesliga-mcp",
+      "name": "bundesliga-mcp",
+      "summary": "Bundesliga, 2./3. Liga, DFB-Pokal & DEL via OpenLigaDB (free API, no key): fixtures, live scores, tables, top scorers.",
+      "summary_fa": "بوندس‌لیگا، لیگ ۲ و ۳، جام حذفی و DEL با OpenLigaDB (API رایگان، بدون کلید): بازی‌ها، نتایج زنده، جدول‌ها و گلزنان برتر.",
+      "summary_de": "Bundesliga, 2. und 3. Liga, DFB-Pokal und DEL über OpenLigaDB (kostenlose API, kein Schlüssel): Spielpläne, Live-Ergebnisse, Tabellen und Torschützen.",
+      "category": "sports",
+      "tags": [
+        "sports",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": true,
+      "added": 1,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/bundesliga-mcp",
+      "pypi": "bundesliga-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/bundesliga-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "bundesliga-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "bundesliga_list_leagues",
+          "summary": "Leagues with their current season",
+          "summary_fa": "لیگ‌ها با فصل جاری",
+          "summary_de": "Ligen mit ihrer aktuellen Saison"
+        },
+        {
+          "name": "bundesliga_get_fixtures",
+          "summary": "One matchday's fixtures and results",
+          "summary_fa": "بازی‌های یک هفتهٔ مشخص با نتایج",
+          "summary_de": "Spiele eines Spieltags mit Ergebnissen"
+        },
+        {
+          "name": "bundesliga_get_live_scores",
+          "summary": "Current matchday scores and status",
+          "summary_fa": "نتایج زندهٔ هفتهٔ جاری",
+          "summary_de": "Aktuelle Live-Ergebnisse des Spieltags"
+        },
+        {
+          "name": "bundesliga_get_table",
+          "summary": "League table",
+          "summary_fa": "جدول لیگ",
+          "summary_de": "Tabelle der Liga"
+        },
+        {
+          "name": "bundesliga_get_top_scorers",
+          "summary": "Top scorers of a season",
+          "summary_fa": "گلزنان برتر یک فصل",
+          "summary_de": "Torschützen einer Saison"
+        },
+        {
+          "name": "bundesliga_get_match_detail",
+          "summary": "Full detail of one match",
+          "summary_fa": "جزئیات کامل یک مسابقه",
+          "summary_de": "Vollständige Details eines Spiels"
+        }
+      ]
+    },
+    {
+      "id": "mediathek-mcp",
+      "name": "mediathek-mcp",
+      "summary": "ARD, ZDF, 3sat, ARTE, Phoenix & more via MediathekViewWeb (free API, no key): search programmes, latest broadcasts, by channel/topic, programme detail.",
+      "summary_fa": "ARD، ZDF، 3sat، ARTE، Phoenix و بیشتر با MediathekViewWeb (API رایگان، بدون کلید): جست‌وجوی برنامه‌ها، جدیدترین پخش‌ها، بر اساس شبکه/موضوع و جزئیات برنامه.",
+      "summary_de": "ARD, ZDF, 3sat, ARTE, Phoenix und mehr über MediathekViewWeb (kostenlose API, kein Schlüssel): Sendungen suchen, neueste Sendungen, nach Sender/Thema, Sendedetails.",
+      "category": "media",
+      "tags": [
+        "media",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 2,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/mediathek-mcp",
+      "pypi": "mediathek-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/mediathek-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "mediathek-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "mediathek_search_programmes",
+          "summary": "Search programmes by title, topic or description",
+          "summary_fa": "جست‌وجوی برنامه‌ها با عنوان، موضوع یا توضیح",
+          "summary_de": "Sendungen nach Titel, Thema oder Beschreibung suchen"
+        },
+        {
+          "name": "mediathek_latest_broadcasts",
+          "summary": "Newest programmes across all channels",
+          "summary_fa": "جدیدترین برنامه‌های همهٔ شبکه‌ها",
+          "summary_de": "Neueste Sendungen aller Sender"
+        },
+        {
+          "name": "mediathek_by_channel",
+          "summary": "Newest programmes of one channel",
+          "summary_fa": "جدیدترین برنامه‌های یک شبکه",
+          "summary_de": "Neueste Sendungen eines Senders"
+        },
+        {
+          "name": "mediathek_by_topic",
+          "summary": "All episodes of one show or series",
+          "summary_fa": "همهٔ قسمت‌های یک برنامه یا سریال",
+          "summary_de": "Alle Folgen einer Sendung oder Serie"
+        },
+        {
+          "name": "mediathek_programme_detail",
+          "summary": "Full detail of one programme (video URLs, subtitles)",
+          "summary_fa": "جزئیات کامل یک برنامه (لینک ویدیو، زیرنویس)",
+          "summary_de": "Vollständige Details einer Sendung (Video-URLs, Untertitel)"
+        },
+        {
+          "name": "mediathek_list_channels",
+          "summary": "Channels in the film list",
+          "summary_fa": "شبکه‌های فهرست فیلم",
+          "summary_de": "Sender der Filmliste"
+        }
+      ]
+    },
+    {
+      "id": "tagesschau-mcp",
+      "name": "tagesschau-mcp",
+      "summary": "tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text.",
+      "summary_fa": "tagesschau.de (ARD) با فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار بخش‌ها، اخبار منطقه‌ای هر ۱۶ ایالت، جدیدترین ویدیوها و متن کامل مقاله‌ها.",
+      "summary_de": "tagesschau.de (ARD) über offizielle RSS-Feeds (kein Schlüssel): Schlagzeilen, Nachrichten nach Ressort, Regionalnachrichten aller 16 Bundesländer, neueste Videos und Volltexte.",
+      "category": "news",
+      "tags": [
+        "news",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 3,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/tagesschau-mcp",
+      "pypi": "tagesschau-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/tagesschau-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "tagesschau-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "tagesschau_headlines",
+          "summary": "Top headlines, newest first",
+          "summary_fa": "تیترهای برتر tagesschau.de",
+          "summary_de": "Top-Schlagzeilen von tagesschau.de"
+        },
+        {
+          "name": "tagesschau_news_by_section",
+          "summary": "Newest news of one section",
+          "summary_fa": "جدیدترین اخبار یک بخش",
+          "summary_de": "Neueste Nachrichten eines Ressorts"
+        },
+        {
+          "name": "tagesschau_search_news",
+          "summary": "Search news by keyword",
+          "summary_fa": "جست‌وجوی اخبار با کلیدواژه",
+          "summary_de": "Nachrichten nach Stichwort suchen"
+        },
+        {
+          "name": "tagesschau_get_article",
+          "summary": "Full text of one article",
+          "summary_fa": "متن کامل یک مقاله",
+          "summary_de": "Volltext eines Artikels"
+        },
+        {
+          "name": "tagesschau_latest_videos",
+          "summary": "Latest videos, newest first",
+          "summary_fa": "جدیدترین ویدیوها",
+          "summary_de": "Neueste Videos"
+        },
+        {
+          "name": "tagesschau_regional_news",
+          "summary": "Regional news of one Bundesland",
+          "summary_fa": "اخبار منطقه‌ای یک ایالت",
+          "summary_de": "Regionalnachrichten eines Bundeslandes"
+        }
+      ]
+    },
+    {
+      "id": "dwd-mcp",
+      "name": "dwd-mcp",
+      "summary": "DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen.",
+      "summary_fa": "هواشناسی آلمان از سرویس ملی هواشناسی آلمان (DWD): پیش‌بینی و وضعیت فعلی با مدل ICON از طریق Open-Meteo، هشدارهای رسمی آب‌وهوای DWD و شمارش گرده.",
+      "summary_de": "Deutsches Wetter vom Deutschen Wetterdienst (DWD): ICON-Vorhersagen und aktuelles Wetter über Open-Meteo, amtliche Unwetterwarnungen und Pollenflug.",
+      "category": "weather",
+      "tags": [
+        "weather",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 4,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/dwd-mcp",
+      "pypi": "dwd-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/dwd-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "dwd-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "dwd_forecast",
+          "summary": "ICON-model forecast for a German place (hourly + daily)",
+          "summary_fa": "پیش‌بینی مدل ICON برای یک شهر آلمان (ساعتی + روزانه)",
+          "summary_de": "ICON-Vorhersage für einen deutschen Ort (stündlich + täglich)"
+        },
+        {
+          "name": "dwd_current_weather",
+          "summary": "Current conditions for a German place",
+          "summary_fa": "وضعیت فعلی هوا برای یک شهر آلمان",
+          "summary_de": "Aktuelles Wetter für einen deutschen Ort"
+        },
+        {
+          "name": "dwd_warnings",
+          "summary": "Official DWD severe-weather warnings, filterable by state",
+          "summary_fa": "هشدارهای رسمی آب‌وهوای DWD، قابل فیلتر بر اساس ایالت",
+          "summary_de": "Amtliche Unwetterwarnungen des DWD, filterbar nach Bundesland"
+        },
+        {
+          "name": "dwd_pollen",
+          "summary": "Pollen counts for a German place (CAMS via Open-Meteo)",
+          "summary_fa": "شمارش گرده برای یک شهر آلمان (CAMS از طریق Open-Meteo)",
+          "summary_de": "Pollenflug für einen deutschen Ort (CAMS über Open-Meteo)"
+        },
+        {
+          "name": "dwd_find_place",
+          "summary": "Find German places (name → coordinates)",
+          "summary_fa": "یافتن شهرهای آلمان (نام → مختصات)",
+          "summary_de": "Deutsche Orte finden (Name → Koordinaten)"
+        }
+      ]
+    },
+    {
+      "id": "autobahn-mcp",
+      "name": "autobahn-mcp",
+      "summary": "German Autobahn data from the official verkehr.autobahn.de API (no key): roadworks, closures, warnings, truck/car parking and EV charging stations per motorway.",
+      "summary_fa": "داده‌های اتوبان آلمان از API رسمی verkehr.autobahn.de (بدون کلید): کارهای جاده‌ای، بسته‌شدن‌ها، هشدارها، پارکینگ کامیون/خودرو و ایستگاه‌های شارژ خودروی برقی برای هر اتوبان.",
+      "summary_de": "Deutsche Autobahn-Daten über die offizielle API verkehr.autobahn.de (kein Schlüssel): Baustellen, Sperrungen, Warnungen, LKW-/PKW-Parkplätze und E-Ladesäulen je Autobahn.",
+      "category": "transport",
+      "tags": [
+        "transport",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 5,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/autobahn-mcp",
+      "pypi": "autobahn-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/autobahn-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "autobahn-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "autobahn_roadworks",
+          "summary": "Roadworks on one motorway",
+          "summary_fa": "کارهای جاده‌ای یک اتوبان",
+          "summary_de": "Baustellen auf einer Autobahn"
+        },
+        {
+          "name": "autobahn_closures",
+          "summary": "Closures on one motorway",
+          "summary_fa": "بسته‌شدن‌های یک اتوبان",
+          "summary_de": "Sperrungen auf einer Autobahn"
+        },
+        {
+          "name": "autobahn_warnings",
+          "summary": "Warnings on one motorway",
+          "summary_fa": "هشدارهای یک اتوبان",
+          "summary_de": "Warnungen auf einer Autobahn"
+        },
+        {
+          "name": "autobahn_parking",
+          "summary": "Truck/car parking areas on one motorway",
+          "summary_fa": "پارکینگ‌های یک اتوبان",
+          "summary_de": "Parkplätze auf einer Autobahn"
+        },
+        {
+          "name": "autobahn_ev_charging",
+          "summary": "EV charging stations on one motorway",
+          "summary_fa": "ایستگاه‌های شارژ خودروی برقی یک اتوبان",
+          "summary_de": "E-Ladesäulen auf einer Autobahn"
+        }
+      ]
+    },
+    {
+      "id": "dw-mcp",
+      "name": "dw-mcp",
+      "summary": "Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages.",
+      "summary_fa": "اخبار دویچه‌وله به ۳۱ زبان از سایت‌مپ‌های رسمی DW (بدون کلید): تازه‌ترین تیترها، جست‌وجوی کلیدواژه، تازه‌ترین مقاله‌ها، متن کامل مقاله و صفحه‌های موضوعی.",
+      "summary_de": "Deutsche-Welle-Nachrichten in 31 Sprachen über die offiziellen DW-Sitemaps (kein Schlüssel): neueste Schlagzeilen, Stichwortsuche, neueste Artikel, Volltexte und Themenseiten.",
+      "category": "news",
+      "tags": [
+        "news",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 6,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/dw-mcp",
+      "pypi": "dw-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/dw-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "dw-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "dw_headlines",
+          "summary": "Latest DW headlines in one language",
+          "summary_fa": "تازه‌ترین تیترهای DW به یک زبان",
+          "summary_de": "Neueste DW-Schlagzeilen in einer Sprache"
+        },
+        {
+          "name": "dw_search_news",
+          "summary": "Search recent DW headlines by keyword",
+          "summary_fa": "جست‌وجوی تیترهای اخیر DW با کلیدواژه",
+          "summary_de": "Neueste DW-Schlagzeilen nach Stichwort suchen"
+        },
+        {
+          "name": "dw_latest_articles",
+          "summary": "Latest DW articles in one language",
+          "summary_fa": "تازه‌ترین مقاله‌های DW به یک زبان",
+          "summary_de": "Neueste DW-Artikel in einer Sprache"
+        },
+        {
+          "name": "dw_get_article",
+          "summary": "Full text of one DW article",
+          "summary_fa": "متن کامل یک مقالهٔ DW",
+          "summary_de": "Volltext eines DW-Artikels"
+        },
+        {
+          "name": "dw_topics",
+          "summary": "DW topic pages matching a word",
+          "summary_fa": "صفحه‌های موضوعی DW برای یک واژه",
+          "summary_de": "DW-Themenseiten zu einem Stichwort"
+        }
+      ]
+    },
+    {
+      "id": "ntv-mcp",
+      "name": "ntv-mcp",
+      "summary": "n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text.",
+      "summary_fa": "اخبار n-tv از فیدهای RSS رسمی (بدون کلید): تازه‌ترین تیترها بر اساس بخش، اخبار بازار، تازه‌ترین ویدیوها، جست‌وجوی کلیدواژه و متن کامل مقاله.",
+      "summary_de": "n-tv-Nachrichten über die offiziellen RSS-Feeds (kein Schlüssel): neueste Schlagzeilen nach Ressort, Börsennachrichten, neueste Videos, Stichwortsuche und Volltexte.",
+      "category": "news",
+      "tags": [
+        "news",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 7,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/ntv-mcp",
+      "pypi": "ntv-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/ntv-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "ntv-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "ntv_headlines",
+          "summary": "Latest n-tv headlines by section",
+          "summary_fa": "تازه‌ترین تیترهای n-tv بر اساس بخش",
+          "summary_de": "Neueste n-tv-Schlagzeilen nach Ressort"
+        },
+        {
+          "name": "ntv_markets",
+          "summary": "Latest n-tv market news",
+          "summary_fa": "تازه‌ترین اخبار بازار n-tv",
+          "summary_de": "Neueste n-tv-Börsennachrichten"
+        },
+        {
+          "name": "ntv_videos",
+          "summary": "Latest n-tv videos",
+          "summary_fa": "تازه‌ترین ویدیوهای n-tv",
+          "summary_de": "Neueste n-tv-Videos"
+        },
+        {
+          "name": "ntv_search_news",
+          "summary": "Search recent n-tv headlines by keyword",
+          "summary_fa": "جست‌وجوی تیترهای اخیر n-tv با کلیدواژه",
+          "summary_de": "Neueste n-tv-Schlagzeilen nach Stichwort suchen"
+        },
+        {
+          "name": "ntv_get_article",
+          "summary": "Full text of one n-tv article",
+          "summary_fa": "متن کامل یک مقالهٔ n-tv",
+          "summary_de": "Volltext eines n-tv-Artikels"
+        }
+      ]
+    },
+    {
+      "id": "dnb-mcp",
+      "name": "dnb-mcp",
+      "summary": "Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup.",
+      "summary_fa": "کاتالوگ کتابخانه ملی آلمان از طریق API رسمی SRU (بدون کلید): جست‌وجوی کلیدواژه، عنوان و نویسنده، جست‌وجو با ISBN و شناسهٔ DNB.",
+      "summary_de": "Katalog der Deutschen Nationalbibliothek über die offizielle SRU-API (kein Schlüssel): Stichwort-, Titel- und Autorensuche, ISBN- und DNB-ID-Abfrage.",
+      "category": "open-data",
+      "tags": [
+        "open-data",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 8,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/dnb-mcp",
+      "pypi": "dnb-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/dnb-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "dnb-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "dnb_search_books",
+          "summary": "Keyword search across the DNB catalogue",
+          "summary_fa": "جست‌وجوی کلیدواژه در کاتالوگ DNB",
+          "summary_de": "Stichwortsuche im DNB-Katalog"
+        },
+        {
+          "name": "dnb_search_by_title",
+          "summary": "Search the DNB catalogue by title",
+          "summary_fa": "جست‌وجو در کاتالوگ DNB با عنوان",
+          "summary_de": "Titelsuche im DNB-Katalog"
+        },
+        {
+          "name": "dnb_search_by_author",
+          "summary": "Search the DNB catalogue by author",
+          "summary_fa": "جست‌وجو در کاتالوگ DNB با نویسنده",
+          "summary_de": "Autorensuche im DNB-Katalog"
+        },
+        {
+          "name": "dnb_by_isbn",
+          "summary": "Look up one book by ISBN",
+          "summary_fa": "یافتن یک کتاب با ISBN",
+          "summary_de": "Ein Buch per ISBN nachschlagen"
+        },
+        {
+          "name": "dnb_get_record",
+          "summary": "Full record by DNB identifier",
+          "summary_fa": "رکورد کامل با شناسهٔ DNB",
+          "summary_de": "Vollständiger Datensatz per DNB-ID"
+        }
+      ]
+    },
+    {
+      "id": "govdata-mcp",
+      "name": "govdata-mcp",
+      "summary": "Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details.",
+      "summary_fa": "پورتال ملی داده‌های باز آلمان govdata.de از طریق API رسمی CKAN (بدون کلید): جست‌وجو در بیش از ۱۶۳٬۰۰۰ مجموعه‌داده، جزئیات مجموعه‌داده، ناشران، تازه‌ترین مجموعه‌داده‌ها و جزئیات منبع.",
+      "summary_de": "Deutschlands nationales Open-Data-Portal govdata.de über die offizielle CKAN-API (kein Schlüssel): über 163.000 Datensätze durchsuchen, Datensatzdetails, Herausgeber, neueste Datensätze und Ressourcendetails.",
+      "category": "open-data",
+      "tags": [
+        "open-data",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 9,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/govdata-mcp",
+      "pypi": "govdata-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/govdata-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "govdata-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "govdata_search_datasets",
+          "summary": "Search govdata.de datasets",
+          "summary_fa": "جست‌وجوی مجموعه‌داده‌ها در govdata.de",
+          "summary_de": "Datensätze auf govdata.de suchen"
+        },
+        {
+          "name": "govdata_get_dataset",
+          "summary": "Full details of one dataset",
+          "summary_fa": "جزئیات کامل یک مجموعه‌داده",
+          "summary_de": "Vollständige Details eines Datensatzes"
+        },
+        {
+          "name": "govdata_list_publishers",
+          "summary": "Publishing organisations, most datasets first",
+          "summary_fa": "ناشران، به ترتیب بیشترین مجموعه‌داده",
+          "summary_de": "Herausgeber, nach Datensatzzahl sortiert"
+        },
+        {
+          "name": "govdata_recent_datasets",
+          "summary": "Most recently updated datasets",
+          "summary_fa": "تازه‌ترین مجموعه‌داده‌های به‌روز شده",
+          "summary_de": "Zuletzt aktualisierte Datensätze"
+        },
+        {
+          "name": "govdata_get_resource",
+          "summary": "Details of one dataset resource",
+          "summary_fa": "جزئیات یک منبع مجموعه‌داده",
+          "summary_de": "Details einer Datensatz-Ressource"
+        }
+      ]
+    },
+    {
+      "id": "deutschlandfunk-mcp",
+      "name": "deutschlandfunk-mcp",
+      "summary": "Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link.",
+      "summary_fa": "اخبار و رادیوی دویچلندفونک از فیدهای RSS رسمی (بدون کلید): اخبار جاری، تازه‌ترین مطالب، فیدهای موضوعی، جست‌وجوی کلیدواژه، متن کامل مقاله و لینک پخش زنده.",
+      "summary_de": "Deutschlandfunk-Nachrichten & Radio über die offiziellen RSS-Feeds (kein Schlüssel): laufende Nachrichten, neueste Beiträge, Ressort-Feeds, Stichwortsuche, Volltexte und Livestream-Link.",
+      "category": "news",
+      "tags": [
+        "news",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 10,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/deutschlandfunk-mcp",
+      "pypi": "deutschlandfunk-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/deutschlandfunk-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "deutschlandfunk-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "dlf_latest_news",
+          "summary": "Rolling DLF news headlines",
+          "summary_fa": "تیترهای خبری جاری DLF",
+          "summary_de": "Laufende DLF-Nachrichten"
+        },
+        {
+          "name": "dlf_latest_contributions",
+          "summary": "Latest DLF contributions",
+          "summary_fa": "تازه‌ترین مطالب DLF",
+          "summary_de": "Neueste DLF-Beiträge"
+        },
+        {
+          "name": "dlf_news_by_topic",
+          "summary": "DLF news by topic",
+          "summary_fa": "اخبار DLF بر اساس موضوع",
+          "summary_de": "DLF-Nachrichten nach Ressort"
+        },
+        {
+          "name": "dlf_search_news",
+          "summary": "Search recent DLF items by keyword",
+          "summary_fa": "جست‌وجوی مطالب اخیر DLF با کلیدواژه",
+          "summary_de": "Neueste DLF-Beiträge nach Stichwort suchen"
+        },
+        {
+          "name": "dlf_get_article",
+          "summary": "Full text of one DLF article",
+          "summary_fa": "متن کامل یک مقالهٔ DLF",
+          "summary_de": "Volltext eines DLF-Artikels"
+        },
+        {
+          "name": "dlf_listen_live",
+          "summary": "Deutschlandfunk live stream link",
+          "summary_fa": "لینک پخش زندهٔ دویچلندفونک",
+          "summary_de": "Livestream-Link des Deutschlandfunks"
+        }
+      ]
+    },
+    {
+      "id": "duden-mcp",
+      "name": "duden-mcp",
+      "summary": "Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation.",
+      "summary_fa": "جست‌وجو در فرهنگ لغت دودن از duden.de (رایگان، بدون کلید): معانی واژه، مترادف‌ها، املا با جداسازی هجاها، نکات دستوری و صرف کامل فعل.",
+      "summary_de": "Duden-Nachschlagen auf duden.de (kostenlos, kein Schlüssel, kein Login): Bedeutungen, Synonyme, Rechtschreibung mit Worttrennung, Grammatik und vollständige Verbkonjugation.",
+      "category": "language",
+      "tags": [
+        "language",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 11,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/duden-mcp",
+      "pypi": "duden-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/duden-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "duden-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "duden_lookup_word",
+          "summary": "Look up a German word: meanings, word type & grammar",
+          "summary_fa": "جست‌وجوی واژهٔ آلمانی در دودن: معانی، نوع کلمه و دستور زبان",
+          "summary_de": "Ein deutsches Wort im Duden nachschlagen: Bedeutungen, Wortart & Grammatik"
+        },
+        {
+          "name": "duden_synonyms",
+          "summary": "Synonyms of a German word",
+          "summary_fa": "مترادف‌های یک واژهٔ آلمانی",
+          "summary_de": "Synonyme eines deutschen Wortes"
+        },
+        {
+          "name": "duden_spelling",
+          "summary": "Spelling & hyphenation of a German word",
+          "summary_fa": "املا و جداسازی هجاهای یک واژهٔ آلمانی",
+          "summary_de": "Rechtschreibung & Worttrennung eines deutschen Wortes"
+        },
+        {
+          "name": "duden_grammar",
+          "summary": "Grammar notes for a German word",
+          "summary_fa": "نکات دستوری یک واژهٔ آلمانی",
+          "summary_de": "Grammatiknotizen zu einem deutschen Wort"
+        },
+        {
+          "name": "duden_conjugate",
+          "summary": "Full conjugation table of a German verb",
+          "summary_fa": "جدول کامل صرف یک فعل آلمانی",
+          "summary_de": "Vollständige Konjugationstabelle eines deutschen Verbs"
+        },
+        {
+          "name": "duden_search",
+          "summary": "Search Duden headwords",
+          "summary_fa": "جست‌وجوی سرخط‌های دودن",
+          "summary_de": "Duden-Stichwörter suchen"
+        }
+      ]
+    },
+    {
+      "id": "dictcc-mcp",
+      "name": "dictcc-mcp",
+      "summary": "dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes.",
+      "summary_fa": "ترجمه‌های dict.cc از dict.cc (رایگان، بدون کلید): آلمانی–انگلیسی و ۲۲ زبان دیگر، با نوع کلمه، جنسیت، توضیحات کاربرد و آرای کاربران.",
+      "summary_de": "dict.cc-Übersetzungen von dict.cc (kostenlos, kein Schlüssel, kein Login): Deutsch-Englisch plus 22 weitere Sprachenpaare, mit Wortart, Genus, Gebrauchshinweisen und Community-Stimmen.",
+      "category": "language",
+      "tags": [
+        "language",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 12,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/dictcc-mcp",
+      "pypi": "dictcc-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/dictcc-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "dictcc-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "dictcc_translate",
+          "summary": "Translate a word with dict.cc (23 pairs)",
+          "summary_fa": "ترجمهٔ واژه با dict.cc (۲۳ زبان)",
+          "summary_de": "Ein Wort mit dict.cc übersetzen (23 Sprachenpaare)"
+        },
+        {
+          "name": "dictcc_search",
+          "summary": "Find dict.cc headwords matching a query",
+          "summary_fa": "یافتن سرخط‌های dict.cc مطابق پرس‌وجو",
+          "summary_de": "dict.cc-Stichwörter zu einer Suchanfrage finden"
+        }
+      ]
+    },
+    {
+      "id": "bundeswahlleiter-mcp",
+      "name": "bundeswahlleiter-mcp",
+      "summary": "Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025.",
+      "summary_fa": "نتایج رسمی انتخابات بوندستاگ از bundeswahlleiterin.de (داده‌های باز رایگان، بدون کلید): نتایج کشوری، نتایج احزاب، حوزه‌های انتخابیه و میزان مشارکت برای ۲۰۱۷، ۲۰۲۱ و ۲۰۲۵.",
+      "summary_de": "Amtliche Bundestagswahlergebnisse von bundeswahlleiterin.de (freie offene Daten, kein Schlüssel, kein Login): Bundesergebnisse, Parteiergebnisse, Wahlkreise und Wahlbeteiligung für 2017, 2021 und 2025.",
+      "category": "open-data",
+      "tags": [
+        "open-data",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 13,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp",
+      "pypi": "bundeswahlleiter-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/bundeswahlleiter-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "bundeswahlleiter-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "bwl_national_results",
+          "summary": "National results of a Bundestag election",
+          "summary_fa": "نتایج کشوری یک انتخابات بوندستاگ",
+          "summary_de": "Bundesergebnis einer Bundestagswahl"
+        },
+        {
+          "name": "bwl_party_results",
+          "summary": "Results of one party, nationally and by Land",
+          "summary_fa": "نتایج یک حزب، کشوری و به تفکیک ایالت",
+          "summary_de": "Ergebnis einer Partei, bundesweit und nach Ländern"
+        },
+        {
+          "name": "bwl_constituency_results",
+          "summary": "Results of one constituency",
+          "summary_fa": "نتایج یک حوزهٔ انتخابیه",
+          "summary_de": "Ergebnis eines Wahlkreises"
+        },
+        {
+          "name": "bwl_constituencies",
+          "summary": "List constituencies with winner and turnout",
+          "summary_fa": "فهرست حوزه‌ها با برنده و میزان مشارکت",
+          "summary_de": "Wahlkreise mit Gewinner und Wahlbeteiligung auflisten"
+        },
+        {
+          "name": "bwl_turnout",
+          "summary": "Voter turnout by Land and nationally",
+          "summary_fa": "میزان مشارکت به تفکیک ایالت و کشوری",
+          "summary_de": "Wahlbeteiligung nach Ländern und bundesweit"
+        }
+      ]
+    },
+    {
+      "id": "flixtrain-mcp",
+      "name": "flixtrain-mcp",
+      "summary": "FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability.",
+      "summary_fa": "زمان‌بندی و قیمت فلیکس‌ترین از API جست‌وجوی فروشگاه فلیکس‌بوس (رایگان، بدون کلید): فقط سفرهای قطار بین شهرهای آلمان، با ایستگاه‌ها، مدت سفر، قیمت و صندلی‌های موجود.",
+      "summary_de": "FlixTrain-Zeiten & Preise über die FlixBus-Shop-Suche (kostenlos, kein Schlüssel, kein Login): nur Zugverbindungen zwischen deutschen Städten, mit Bahnhöfen, Fahrzeit, Preis und Sitzplatzverfügbarkeit.",
+      "category": "transport",
+      "tags": [
+        "transport",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 14,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/flixtrain-mcp",
+      "pypi": "flixtrain-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/flixtrain-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "flixtrain-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "flixtrain_search_trains",
+          "summary": "Search FlixTrain departures between two cities",
+          "summary_fa": "جست‌وجوی سفرهای فلیکس‌ترین بین دو شهر",
+          "summary_de": "FlixTrain-Verbindungen zwischen zwei Städten suchen"
+        },
+        {
+          "name": "flixtrain_search_cities",
+          "summary": "Find cities by name",
+          "summary_fa": "یافتن شهرها بر اساس نام",
+          "summary_de": "Städte nach Namen finden"
+        }
+      ]
+    },
+    {
+      "id": "billiger-mcp",
+      "name": "billiger-mcp",
+      "summary": "German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals.",
+      "summary_fa": "مقایسهٔ قیمت آلمان از billiger.de (رایگان، بدون کلید): جست‌وجوی محصولات با بهترین قیمت، مقایسهٔ پیشنهادهای فروشگاه‌ها و تخفیف‌های روز.",
+      "summary_de": "Deutscher Preisvergleich von billiger.de (kostenlos, kein Schlüssel, kein Login): Produkte mit Bestpreisen suchen, Shop-Angebote vergleichen und Tagesdeals.",
+      "category": "shopping",
+      "tags": [
+        "shopping",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 15,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/billiger-mcp",
+      "pypi": "billiger-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/billiger-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "billiger-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "billiger_search_prices",
+          "summary": "Search products with best prices",
+          "summary_fa": "جست‌وجوی محصولات با بهترین قیمت",
+          "summary_de": "Produkte mit Bestpreisen suchen"
+        },
+        {
+          "name": "billiger_product_offers",
+          "summary": "Compare shop offers for a product",
+          "summary_fa": "مقایسهٔ پیشنهادهای فروشگاه‌ها برای یک محصول",
+          "summary_de": "Shop-Angebote für ein Produkt vergleichen"
+        },
+        {
+          "name": "billiger_best_deals",
+          "summary": "Today's deals from the home page",
+          "summary_fa": "تخفیف‌های روز از صفحهٔ اصلی",
+          "summary_de": "Tagesdeals von der Startseite"
+        }
+      ]
+    },
+    {
+      "id": "fernsehserien-mcp",
+      "name": "fernsehserien-mcp",
+      "summary": "German TV series from fernsehserien.de (free, no key, no login): search series, series details, episode guides and upcoming air dates.",
+      "summary_fa": "سریال‌های تلویزیونی آلمان از fernsehserien.de (رایگان، بدون کلید): جست‌وجوی سریال، جزئیات سریال، راهنمای قسمت‌ها و زمان‌های پخش آینده.",
+      "summary_de": "Deutsche TV-Serien von fernsehserien.de (kostenlos, kein Schlüssel, kein Login): Serien suchen, Seriendetails, Episodenguides und Sendetermine.",
+      "category": "media",
+      "tags": [
+        "media",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 16,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/fernsehserien-mcp",
+      "pypi": "fernsehserien-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/fernsehserien-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "fernsehserien-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "fs_search_series",
+          "summary": "Search TV series by name",
+          "summary_fa": "جست‌وجوی سریال‌های تلویزیونی بر اساس نام",
+          "summary_de": "TV-Serien nach Namen suchen"
+        },
+        {
+          "name": "fs_series_detail",
+          "summary": "Series details and seasons",
+          "summary_fa": "جزئیات سریال و فصل‌ها",
+          "summary_de": "Seriendetails und Staffeln"
+        },
+        {
+          "name": "fs_episodes",
+          "summary": "Episode guide for one season",
+          "summary_fa": "راهنمای قسمت‌های یک فصل",
+          "summary_de": "Episodenguide einer Staffel"
+        },
+        {
+          "name": "fs_air_dates",
+          "summary": "Upcoming air dates for a series",
+          "summary_fa": "زمان‌های پخش آیندهٔ یک سریال",
+          "summary_de": "Kommende Sendetermine einer Serie"
+        }
+      ]
+    },
+    {
+      "id": "zdf-mcp",
+      "name": "zdf-mcp",
+      "summary": "ZDF heute news from zdfheute.de (free, no key, no login): latest headlines, news by topic, keyword search and full article text.",
+      "summary_fa": "اخبار ZDF heute از zdfheute.de (رایگان، بدون کلید): تازه‌ترین تیترها، اخبار بر اساس موضوع، جست‌وجوی کلیدواژه و متن کامل مقاله. فقط اخبار — مدیاتک ZDF در این سرور نیست.",
+      "summary_de": "ZDF-heute-Nachrichten von zdfheute.de (kostenlos, kein Schlüssel, kein Login): aktuelle Schlagzeilen, Nachrichten nach Thema, Stichwortsuche und Volltext. Nur Nachrichten — keine Mediathek.",
+      "category": "media",
+      "tags": [
+        "media",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 17,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/zdf-mcp",
+      "pypi": "zdf-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/zdf-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "zdf-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "zdf_headlines",
+          "summary": "Latest ZDF heute headlines",
+          "summary_fa": "تازه‌ترین تیترهای ZDF heute",
+          "summary_de": "Aktuelle ZDF-heute-Schlagzeilen"
+        },
+        {
+          "name": "zdf_news_by_topic",
+          "summary": "ZDF heute news by topic",
+          "summary_fa": "اخبار ZDF heute بر اساس موضوع",
+          "summary_de": "ZDF-heute-Nachrichten nach Thema"
+        },
+        {
+          "name": "zdf_search_news",
+          "summary": "Search ZDF heute headlines by keyword",
+          "summary_fa": "جست‌وجوی تیترهای ZDF heute با کلیدواژه",
+          "summary_de": "ZDF-heute-Schlagzeilen nach Stichwort suchen"
+        },
+        {
+          "name": "zdf_get_article",
+          "summary": "Full text of a ZDF heute article",
+          "summary_fa": "متن کامل مقالهٔ ZDF heute",
+          "summary_de": "Volltext eines ZDF-heute-Artikels"
+        }
+      ]
+    },
+    {
+      "id": "ecb-mcp",
+      "name": "ecb-mcp",
+      "summary": "European Central Bank data via the official ECB SDMX API (free, no key, no login): euro exchange rates, key ECB interest rates, HICP inflation, M3 money supply and euro-area bond yields.",
+      "summary_fa": "داده‌های بانک مرکزی اروپا از API رسمی SDMX (رایگان، بدون کلید): نرخ‌های ارز یورو، نرخ‌های کلیدی بهره، تورم HICP، عرضهٔ پول M3 و بازده اوراق قرضهٔ منطقهٔ یورو.",
+      "summary_de": "Daten der Europäischen Zentralbank über die offizielle SDMX-API (kostenlos, kein Schlüssel, kein Login): Euro-Wechselkurse, EZB-Leitzinsen, HVPI-Inflation, Geldmenge M3 und Anleiherenditen des Euroraums.",
+      "category": "finance",
+      "tags": [
+        "finance",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 18,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/ecb-mcp",
+      "pypi": "ecb-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/ecb-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "ecb-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "ecb_exchange_rates",
+          "summary": "Euro exchange rates vs major currencies",
+          "summary_fa": "نرخ‌های ارز یورو در برابر ارزهای اصلی",
+          "summary_de": "Euro-Wechselkurse gegenüber wichtigen Währungen"
+        },
+        {
+          "name": "ecb_interest_rates",
+          "summary": "Key ECB interest rates (MRO, deposit, marginal lending)",
+          "summary_fa": "نرخ‌های کلیدی بهرهٔ بانک مرکزی اروپا",
+          "summary_de": "EZB-Leitzinsen (Hauptrefinanzierung, Einlage, Spitzenrefinanzierung)"
+        },
+        {
+          "name": "ecb_inflation",
+          "summary": "HICP inflation, euro area and Germany",
+          "summary_fa": "تورم HICP منطقهٔ یورو و آلمان",
+          "summary_de": "HVPI-Inflation, Euroraum und Deutschland"
+        },
+        {
+          "name": "ecb_money_supply",
+          "summary": "Euro-area money supply (M1, M2, M3)",
+          "summary_fa": "عرضهٔ پول منطقهٔ یورو (M1، M2، M3)",
+          "summary_de": "Geldmenge des Euroraums (M1, M2, M3)"
+        },
+        {
+          "name": "ecb_bond_yields",
+          "summary": "Euro-area government bond yields by maturity",
+          "summary_fa": "بازده اوراق قرضهٔ دولتی منطقهٔ یورو بر اساس سررسید",
+          "summary_de": "Staatsanleiherenditen des Euroraums nach Laufzeit"
+        }
+      ]
+    },
+    {
+      "id": "wg-gesucht-mcp",
+      "name": "wg-gesucht-mcp",
+      "summary": "WG-Gesucht flatshare listings from wg-gesucht.de (free, no key, no login): WG rooms and flats in 34 German-speaking cities, with price, size, availability and full listing details.",
+      "summary_fa": "آگهی‌های مسکن WG-Gesucht از wg-gesucht.de (رایگان، بدون کلید): اتاق‌های اشتراکی و آپارتمان در ۳۴ شهر آلمانی‌زبان، با قیمت، متراژ، تاریخ در دسترس بودن و جزئیات کامل آگهی.",
+      "summary_de": "WG-Gesucht-Angebote von wg-gesucht.de (kostenlos, kein Schlüssel, kein Login): WG-Zimmer und Wohnungen in 34 deutschsprachigen Städten, mit Preis, Größe, Verfügbarkeit und vollständigen Anzeigendetails.",
+      "category": "housing",
+      "tags": [
+        "housing",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 19,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp",
+      "pypi": "wg-gesucht-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/wg-gesucht-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "wg-gesucht-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "wg_search_rooms",
+          "summary": "Search WG rooms in a city",
+          "summary_fa": "جست‌وجوی اتاق اشتراکی در یک شهر",
+          "summary_de": "WG-Zimmer in einer Stadt suchen"
+        },
+        {
+          "name": "wg_search_flats",
+          "summary": "Search flats in a city",
+          "summary_fa": "جست‌وجوی آپارتمان در یک شهر",
+          "summary_de": "Wohnungen in einer Stadt suchen"
+        },
+        {
+          "name": "wg_listing_detail",
+          "summary": "Full details of one listing",
+          "summary_fa": "جزئیات کامل یک آگهی",
+          "summary_de": "Vollständige Details einer Anzeige"
+        },
+        {
+          "name": "wg_cities",
+          "summary": "List supported cities",
+          "summary_fa": "فهرست شهرهای پشتیبانی‌شده",
+          "summary_de": "Unterstützte Städte auflisten"
+        }
+      ]
+    },
+    {
+      "id": "uba-mcp",
+      "name": "uba-mcp",
+      "summary": "UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks.",
+      "summary_fa": "کیفیت هوای آلمان از API نسخهٔ ۴ داده‌های هوای UBA (بدون کلید): اندازه‌گیری‌های ساعتی از بیش از ۴۰۰ ایستگاه آلمان، آلاینده‌ها، شاخص LQI و شبکه‌های اندازه‌گیری.",
+      "summary_de": "Deutsche Luftqualität über die UBA Air Data API v4 (kein Schlüssel): stündliche Messwerte von über 400 deutschen Stationen, Schadstoffe, LQI-Klassen und Messnetze.",
+      "category": "health",
+      "tags": [
+        "health",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 20,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/uba-mcp",
+      "pypi": "uba-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/uba-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "uba-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "uba_list_stations",
+          "summary": "Measuring stations, filterable by city, state, type, area or name",
+          "summary_fa": "ایستگاه‌های اندازه‌گیری، قابل فیلتر بر اساس شهر، ایالت، نوع، منطقه یا نام",
+          "summary_de": "Messstationen, filterbar nach Stadt, Bundesland, Typ, Gebiet oder Name"
+        },
+        {
+          "name": "uba_station_detail",
+          "summary": "One station: address, coordinates, type, data window, recent pollutants",
+          "summary_fa": "جزئیات یک ایستگاه: آدرس، مختصات، نوع، بازهٔ داده‌ها، آلاینده‌های اخیر",
+          "summary_de": "Details einer Station: Adresse, Koordinaten, Typ, Datenzeitraum, aktuelle Schadstoffe"
+        },
+        {
+          "name": "uba_current_air_quality",
+          "summary": "Latest hourly values + LQI at a station (code, id or city name)",
+          "summary_fa": "آخرین مقادیر ساعتی + شاخص LQI در یک ایستگاه",
+          "summary_de": "Aktuelle Stundenwerte + LQI an einer Station"
+        },
+        {
+          "name": "uba_measurements",
+          "summary": "Hourly values over a date range (max 31 days) + min/max/mean & daily means",
+          "summary_fa": "مقادیر ساعتی در یک بازه + کمینه/بیشینه/میانگین و میانگین روزانه",
+          "summary_de": "Stundenwerte über einen Zeitraum + Min/Max/Mittel & Tagesmittel"
+        },
+        {
+          "name": "uba_list_components",
+          "summary": "All 12 pollutants: code, symbol, unit, name",
+          "summary_fa": "هر ۱۲ آلاینده: کد، نماد، واحد، نام",
+          "summary_de": "Alle 12 Schadstoffe: Code, Symbol, Einheit, Name"
+        },
+        {
+          "name": "uba_list_networks",
+          "summary": "The 17 measuring networks (16 Länder + UBA)",
+          "summary_fa": "شبکه‌های اندازه‌گیری (۱۶ ایالت + UBA)",
+          "summary_de": "Die Messnetze (16 Bundesländer + UBA)"
+        }
+      ]
+    },
+    {
+      "id": "openplz-mcp",
+      "name": "openplz-mcp",
+      "summary": "OpenPLZ API (no key): German postal codes — localities, streets, municipalities, districts & the 16 federal states.",
+      "summary_fa": "داده‌های پستی آلمان از OpenPLZ API (بدون کلید): کد پستی، شهرها، خیابان‌ها، شهرداری‌ها، بخش‌ها و ۱۶ ایالت فدرال.",
+      "summary_de": "Deutsche Postdaten über die OpenPLZ API (kein Schlüssel): Postleitzahlen, Orte, Straßen, Gemeinden, Kreise und die 16 Bundesländer.",
+      "category": "open-data",
+      "tags": [
+        "open-data",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 21,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/openplz-mcp",
+      "pypi": "openplz-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/openplz-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "openplz-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "openplz_lookup_postal_code",
+          "summary": "Which locality (or localities) a postal code belongs to",
+          "summary_fa": "کدام شهر (یا شهرها) متعلق به یک کد پستی است",
+          "summary_de": "Zu welchem Ort (oder welchen Orten) eine Postleitzahl gehört"
+        },
+        {
+          "name": "openplz_search_locality",
+          "summary": "Search localities by name, optionally within one postal code",
+          "summary_fa": "جست‌وجوی شهرها بر اساس نام، اختیاری درون یک کد پستی",
+          "summary_de": "Orte nach Namen suchen, optional innerhalb einer Postleitzahl"
+        },
+        {
+          "name": "openplz_search_street",
+          "summary": "Search streets by name, postal code and/or locality",
+          "summary_fa": "جست‌وجوی خیابان‌ها بر اساس نام، کد پستی و/یا شهر",
+          "summary_de": "Straßen nach Name, Postleitzahl und/oder Ort suchen"
+        },
+        {
+          "name": "openplz_full_text_search",
+          "summary": "Free-form street search across name, postal code and city",
+          "summary_fa": "جست‌وجوی آزاد در نام خیابان، کد پستی و شهر",
+          "summary_de": "Freitextsuche über Straßenname, Postleitzahl und Stadt"
+        },
+        {
+          "name": "openplz_list_federal_states",
+          "summary": "All 16 federal states with key + capital",
+          "summary_fa": "هر ۱۶ ایالت فدرال با کد + مرکز",
+          "summary_de": "Alle 16 Bundesländer mit Schlüssel + Hauptstadt"
+        },
+        {
+          "name": "openplz_admin_children",
+          "summary": "One step down the administrative tree (state → district → municipality)",
+          "summary_fa": "یک قدم پایین‌تر در درخت اداری (ایالت ← بخش ← شهرداری)",
+          "summary_de": "Einen Schritt im Verwaltungsbaum nach unten (Land → Kreis → Gemeinde)"
+        }
+      ]
+    },
+    {
+      "id": "feiertage-mcp",
+      "name": "feiertage-mcp",
+      "summary": "Feiertage — German public holidays via feiertage-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
+      "summary_fa": "تعطیلات رسمی آلمان از feiertage-api.de (API رایگان، بدون کلید): تعطیلات هر سال در هر ایالت فدرال، بررسی تعطیل بودن یک تاریخ، نزدیک‌ترین تعطیل و تعطیلات در یک بازه.",
+      "summary_de": "Deutsche Feiertage über feiertage-api.de (kostenlose API, kein Schlüssel): Feiertage pro Jahr und Bundesland, Ist-es-ein-Feiertag-Prüfung, nächster Feiertag und Feiertage in einem Zeitraum.",
+      "category": "open-data",
+      "tags": [
+        "open-data",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 22,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/feiertage-mcp",
+      "pypi": "feiertage-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/feiertage-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "feiertage-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "feiertage_list_holidays",
+          "summary": "Public holidays of one year in one federal state (optional month filter)",
+          "summary_fa": "تعطیلات رسمی یک سال در یک ایالت فدرال (با فیلتر اختیاری ماه)",
+          "summary_de": "Feiertage eines Jahres in einem Bundesland (optional nach Monat gefiltert)"
+        },
+        {
+          "name": "feiertage_is_holiday",
+          "summary": "Is a date a public holiday in one state?",
+          "summary_fa": "آیا یک تاریخ در یک ایالت تعطیل رسمی است؟",
+          "summary_de": "Ist ein Datum ein Feiertag in einem Bundesland?"
+        },
+        {
+          "name": "feiertage_next_holiday",
+          "summary": "The next public holiday on or after a date",
+          "summary_fa": "نزدیک‌ترین تعطیل رسمی از یک تاریخ به بعد",
+          "summary_de": "Der nächste Feiertag ab einem Datum"
+        },
+        {
+          "name": "feiertage_holidays_between",
+          "summary": "Public holidays in a date range (max ~2 years)",
+          "summary_fa": "تعطیلات رسمی در یک بازهٔ زمانی (حداکثر حدود ۲ سال)",
+          "summary_de": "Feiertage in einem Zeitraum (max. ca. 2 Jahre)"
+        },
+        {
+          "name": "feiertage_list_states",
+          "summary": "All 16 federal states + NATIONAL (nationwide holidays)",
+          "summary_fa": "هر ۱۶ ایالت فدرال + NATIONAL (تعطیلات سراسری)",
+          "summary_de": "Alle 16 Bundesländer + NATIONAL (bundesweite Feiertage)"
+        }
+      ]
+    },
+    {
+      "id": "ferien-mcp",
+      "name": "ferien-mcp",
+      "summary": "Ferien — German school holidays via ferien-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
+      "summary_fa": "تعطیلات مدارس آلمان از ferien-api.de (API رایگان، بدون کلید): تعطیلات هر سال در هر ایالت فدرال، بررسی اینکه یک تاریخ در تعطیلات مدارس است یا نه، نزدیک‌ترین تعطیلات و تعطیلات در یک بازه.",
+      "summary_de": "Deutsche Schulferien über ferien-api.de (kostenlose API, kein Schlüssel): Ferien pro Jahr und Bundesland, Ist-es-ein-Ferientag-Prüfung, nächste Ferien und Ferien in einem Zeitraum.",
+      "category": "open-data",
+      "tags": [
+        "open-data",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 23,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/ferien-mcp",
+      "pypi": "ferien-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/ferien-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "ferien-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "ferien_list_holidays",
+          "summary": "School holidays of one year in one federal state (optional month filter)",
+          "summary_fa": "تعطیلات مدارس یک سال در یک ایالت فدرال (با فیلتر اختیاری ماه)",
+          "summary_de": "Schulferien eines Jahres in einem Bundesland (optional nach Monat gefiltert)"
+        },
+        {
+          "name": "ferien_is_holiday",
+          "summary": "Is a date inside the school holidays in one state?",
+          "summary_fa": "آیا یک تاریخ در تعطیلات مدارس یک ایالت است؟",
+          "summary_de": "Liegt ein Datum in den Schulferien eines Bundeslandes?"
+        },
+        {
+          "name": "ferien_next_holiday",
+          "summary": "The next school holiday on or after a date",
+          "summary_fa": "نزدیک‌ترین تعطیلات مدارس از یک تاریخ به بعد",
+          "summary_de": "Die nächsten Schulferien ab einem Datum"
+        },
+        {
+          "name": "ferien_holidays_between",
+          "summary": "School holidays overlapping a date range (max ~2 years)",
+          "summary_fa": "تعطیلات مدارس در یک بازهٔ زمانی (حداکثر حدود ۲ سال)",
+          "summary_de": "Schulferien in einem Zeitraum (max. ca. 2 Jahre)"
+        },
+        {
+          "name": "ferien_list_states",
+          "summary": "All 16 German federal states",
+          "summary_fa": "هر ۱۶ ایالت فدرال",
+          "summary_de": "Alle 16 Bundesländer"
+        }
+      ]
+    },
+    {
+      "id": "spiegel-mcp",
+      "name": "spiegel-mcp",
+      "summary": "Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly).",
+      "summary_fa": "اخبار اشپیگل از spiegel.de (فیدهای رسمی RSS، بدون کلید): تیترهای برتر، اخبار ۱۳ بخش، جست‌وجوی کلیدواژه، جدیدترین ویدیوها و متن مقاله‌ها (مقاله‌های پولی SPIEGEL+ صادقانه مشخص می‌شوند).",
+      "summary_de": "DER SPIEGEL über spiegel.de (offizielle RSS-Feeds, kein Schlüssel): Top-Schlagzeilen, 13 Ressorts, Stichwortsuche, neueste Videos und Artikeltexte (SPIEGEL+-Artikel werden ehrlich gekennzeichnet).",
+      "category": "news",
+      "tags": [
+        "news",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 24,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/spiegel-mcp",
+      "pypi": "spiegel-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/spiegel-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "spiegel-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "spiegel_headlines",
+          "summary": "Top headlines (Schlagzeilen), newest first",
+          "summary_fa": "تیترهای برتر (Schlagzeilen)، جدیدترین اول",
+          "summary_de": "Top-Schlagzeilen, neueste zuerst"
+        },
+        {
+          "name": "spiegel_news_by_section",
+          "summary": "Newest news of one of 13 sections",
+          "summary_fa": "جدیدترین اخبار یکی از ۱۳ بخش",
+          "summary_de": "Neueste Nachrichten eines von 13 Ressorts"
+        },
+        {
+          "name": "spiegel_search_news",
+          "summary": "Search news by keyword across all feeds",
+          "summary_fa": "جست‌وجوی اخبار با کلیدواژه در همهٔ فیدها",
+          "summary_de": "Nachrichtensuche nach Stichwort über alle Feeds"
+        },
+        {
+          "name": "spiegel_get_article",
+          "summary": "Article text of one spiegel.de article (paywall flagged)",
+          "summary_fa": "متن یک مقالهٔ spiegel.de (پولی بودن مشخص می‌شود)",
+          "summary_de": "Artikeltext eines spiegel.de-Artikels (Paywall wird gekennzeichnet)"
+        },
+        {
+          "name": "spiegel_latest_videos",
+          "summary": "Latest SPIEGEL videos, newest first",
+          "summary_fa": "جدیدترین ویدیوهای اشپیگل، جدیدترین اول",
+          "summary_de": "Neueste SPIEGEL-Videos, neueste zuerst"
+        }
+      ]
+    },
+    {
+      "id": "heise-mcp",
+      "name": "heise-mcp",
+      "summary": "Heise — heise.de IT news via the official RSS feed (no key): top headlines, 7 sections, keyword search, top stories, c't & article text (heise+ flagged honestly).",
+      "summary_fa": "اخبار فناوری اطلاعات هایزه از heise.de (فید رسمی RSS، بدون کلید): تیترهای برتر، اخبار ۷ بخش، جست‌وجوی کلیدواژه، خبرهای برتر صفحهٔ اصلی، مقاله‌های مجلهٔ c't و متن مقاله‌ها (مقاله‌های پولی heise+ صادقانه مشخص می‌شوند).",
+      "summary_de": "heise online über heise.de (offizieller RSS-Feed, kein Schlüssel): Top-Schlagzeilen, 7 Ressorts, Stichwortsuche, Top-Meldungen der Startseite, c't-Artikel und Artikeltexte (heise+-Artikel werden ehrlich gekennzeichnet).",
+      "category": "news",
+      "tags": [
+        "news",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 25,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/heise-mcp",
+      "pypi": "heise-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/heise-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "heise-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "heise_headlines",
+          "summary": "Top headlines (main RSS feed), newest first",
+          "summary_fa": "تیترهای برتر (فید اصلی RSS)، جدیدترین اول",
+          "summary_de": "Top-Schlagzeilen (Haupt-RSS-Feed), neueste zuerst"
+        },
+        {
+          "name": "heise_search_news",
+          "summary": "Search news by keyword in the main feed",
+          "summary_fa": "جست‌وجوی اخبار با کلیدواژه در فید اصلی",
+          "summary_de": "Nachrichtensuche nach Stichwort im Haupt-Feed"
+        },
+        {
+          "name": "heise_news_by_section",
+          "summary": "Newest news of one of 7 sections",
+          "summary_fa": "جدیدترین اخبار یکی از ۷ بخش",
+          "summary_de": "Neueste Nachrichten eines von 7 Ressorts"
+        },
+        {
+          "name": "heise_top_stories",
+          "summary": "Front-page top stories, in page order",
+          "summary_fa": "خبرهای برتر صفحهٔ اصلی، به ترتیب صفحه",
+          "summary_de": "Top-Meldungen der Startseite, in Seitenreihenfolge"
+        },
+        {
+          "name": "heise_ct",
+          "summary": "Latest c't magazine articles",
+          "summary_fa": "جدیدترین مقاله‌های مجلهٔ c't",
+          "summary_de": "Neueste Artikel aus der c't"
+        },
+        {
+          "name": "heise_get_article",
+          "summary": "Article text of one heise.de article (paywall flagged)",
+          "summary_fa": "متن یک مقالهٔ heise.de (پولی بودن مشخص می‌شود)",
+          "summary_de": "Artikeltext eines heise.de-Artikels (Paywall wird gekennzeichnet)"
+        }
+      ]
+    },
+    {
+      "id": "zeit-mcp",
+      "name": "zeit-mcp",
+      "summary": "Zeit — DIE ZEIT news via the official RSS feeds (no key): top headlines, 10 sections, keyword search (main feed + all sections) & section list.",
+      "summary_fa": "اخبار روزنامهٔ تسایت (DIE ZEIT) از فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار ۱۰ بخش، جست‌وجوی کلیدواژه در فید اصلی و همهٔ بخش‌ها، و فهرست بخش‌ها.",
+      "summary_de": "DIE ZEIT über die offiziellen RSS-Feeds (kein Schlüssel): Top-Schlagzeilen, Nachrichten aus 10 Ressorts, Stichwortsuche im Haupt-Feed und über alle Ressorts sowie die Ressortliste.",
+      "category": "news",
+      "tags": [
+        "news",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 26,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/zeit-mcp",
+      "pypi": "zeit-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/zeit-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "zeit-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "zeit_headlines",
+          "summary": "Top headlines (main RSS feed), newest first",
+          "summary_fa": "تیترهای برتر (فید اصلی RSS)، جدیدترین اول",
+          "summary_de": "Top-Schlagzeilen (Haupt-RSS-Feed), neueste zuerst"
+        },
+        {
+          "name": "zeit_news_by_section",
+          "summary": "Newest news of one of 10 sections",
+          "summary_fa": "جدیدترین اخبار یکی از ۱۰ بخش",
+          "summary_de": "Neueste Nachrichten eines von 10 Ressorts"
+        },
+        {
+          "name": "zeit_search_news",
+          "summary": "Search news by keyword in the main feed",
+          "summary_fa": "جست‌وجوی اخبار با کلیدواژه در فید اصلی",
+          "summary_de": "Nachrichtensuche nach Stichwort im Haupt-Feed"
+        },
+        {
+          "name": "zeit_search_all_sections",
+          "summary": "Search news by keyword across all 10 section feeds",
+          "summary_fa": "جست‌وجوی اخبار با کلیدواژه در همهٔ فیدهای بخش‌ها",
+          "summary_de": "Nachrichtensuche nach Stichwort über alle Ressort-Feeds"
+        },
+        {
+          "name": "zeit_sections",
+          "summary": "The 10 sections with RSS feeds",
+          "summary_fa": "فهرست ۱۰ بخش دارای فید RSS",
+          "summary_de": "Liste der 10 Ressorts mit RSS-Feed"
+        }
+      ]
+    },
+    {
+      "id": "welt-mcp",
+      "name": "welt-mcp",
+      "summary": "Welt — WELT news via the official RSS feed (no key): top headlines, news by topic, keyword search, latest videos & full article text (WELT+ honestly flagged).",
+      "summary_fa": "اخبار روزنامهٔ ولت (WELT) از فید رسمی RSS و صفحات مقالات (بدون کلید): تیترهای برتر، اخبار بر اساس موضوع، جست‌وجوی کلیدواژه، جدیدترین ویدیوها و متن کامل مقاله‌ها (مقاله‌های پولی WELT+ صادقانه مشخص می‌شوند).",
+      "summary_de": "WELT über den offiziellen RSS-Feed und Artikelseiten (kein Schlüssel): Top-Schlagzeilen, Nachrichten nach Thema, Stichwortsuche, neueste Videos und Artikeltexte (WELT+-Artikel werden ehrlich gekennzeichnet).",
+      "category": "news",
+      "tags": [
+        "news",
+        "read-only",
+        "uvx",
+        "no-api-key"
+      ],
+      "source": "germany-mcp",
+      "featured": false,
+      "added": 27,
+      "health": "verified",
+      "lastChecked": "2026-11-18",
+      "repo": "https://github.com/mohammad-abbasi-sh/welt-mcp",
+      "pypi": "welt-mcp",
+      "url": "https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/welt-mcp",
+      "install": {
+        "transport": "stdio",
+        "command": "uvx",
+        "args": [
+          "welt-mcp"
+        ]
+      },
+      "tools": [
+        {
+          "name": "welt_headlines",
+          "summary": "Top headlines (official RSS feed), newest first",
+          "summary_fa": "تیترهای برتر (فید رسمی RSS)، جدیدترین اول",
+          "summary_de": "Top-Schlagzeilen (offizieller RSS-Feed), neueste zuerst"
+        },
+        {
+          "name": "welt_news_by_topic",
+          "summary": "Newest news of one topic (Deutschland, Ausland, Fußball, Kultur, ...)",
+          "summary_fa": "جدیدترین اخبار یک موضوع (آلمان، خارج، فوتبال، فرهنگ و …)",
+          "summary_de": "Neueste Nachrichten zu einem Thema (Deutschland, Ausland, Fußball, Kultur, …)"
+        },
+        {
+          "name": "welt_search_news",
+          "summary": "Search news by keyword in the feed",
+          "summary_fa": "جست‌وجوی اخبار با کلیدواژه در فید",
+          "summary_de": "Nachrichtensuche nach Stichwort im Feed"
+        },
+        {
+          "name": "welt_latest_videos",
+          "summary": "Latest video items from the feed",
+          "summary_fa": "جدیدترین ویدیوهای ولت، جدیدترین اول",
+          "summary_de": "Neueste WELT-Videos, neueste zuerst"
+        },
+        {
+          "name": "welt_get_article",
+          "summary": "Full text of a WELT article (WELT+ paywall flagged)",
+          "summary_fa": "متن یک مقالهٔ welt.de (پولی بودن مشخص می‌شود)",
+          "summary_de": "Artikeltext eines welt.de-Artikels (Paywall wird gekennzeichnet)"
+        }
+      ]
+    }
+  ]
+}

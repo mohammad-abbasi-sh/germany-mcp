@@ -1,0 +1,432 @@
+# Germany MCP — full catalog
+
+Generated 2026-11-18T14:52:04Z. 27 read-only MCP servers (132 tools) for German web services. Every server runs locally with uvx, no API key, no account.
+
+## bundesliga-mcp
+
+Bundesliga, 2./3. Liga, DFB-Pokal & DEL via OpenLigaDB (free API, no key): fixtures, live scores, tables, top scorers.
+
+- Category: sports
+- Repository: https://github.com/mohammad-abbasi-sh/bundesliga-mcp
+- PyPI: https://pypi.org/project/bundesliga-mcp/
+- Install: `claude mcp add --transport stdio --scope user bundesliga -- uvx bundesliga-mcp`
+- Tools (6):
+
+  - `bundesliga_list_leagues`: Leagues with their current season
+  - `bundesliga_get_fixtures`: One matchday's fixtures and results
+  - `bundesliga_get_live_scores`: Current matchday scores and status
+  - `bundesliga_get_table`: League table
+  - `bundesliga_get_top_scorers`: Top scorers of a season
+  - `bundesliga_get_match_detail`: Full detail of one match
+
+## mediathek-mcp
+
+ARD, ZDF, 3sat, ARTE, Phoenix & more via MediathekViewWeb (free API, no key): search programmes, latest broadcasts, by channel/topic, programme detail.
+
+- Category: media
+- Repository: https://github.com/mohammad-abbasi-sh/mediathek-mcp
+- PyPI: https://pypi.org/project/mediathek-mcp/
+- Install: `claude mcp add --transport stdio --scope user mediathek -- uvx mediathek-mcp`
+- Tools (6):
+
+  - `mediathek_search_programmes`: Search programmes by title, topic or description
+  - `mediathek_latest_broadcasts`: Newest programmes across all channels
+  - `mediathek_by_channel`: Newest programmes of one channel
+  - `mediathek_by_topic`: All episodes of one show or series
+  - `mediathek_programme_detail`: Full detail of one programme (video URLs, subtitles)
+  - `mediathek_list_channels`: Channels in the film list
+
+## tagesschau-mcp
+
+tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text.
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/tagesschau-mcp
+- PyPI: https://pypi.org/project/tagesschau-mcp/
+- Install: `claude mcp add --transport stdio --scope user tagesschau -- uvx tagesschau-mcp`
+- Tools (6):
+
+  - `tagesschau_headlines`: Top headlines, newest first
+  - `tagesschau_news_by_section`: Newest news of one section
+  - `tagesschau_search_news`: Search news by keyword
+  - `tagesschau_get_article`: Full text of one article
+  - `tagesschau_latest_videos`: Latest videos, newest first
+  - `tagesschau_regional_news`: Regional news of one Bundesland
+
+## dwd-mcp
+
+DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen.
+
+- Category: weather
+- Repository: https://github.com/mohammad-abbasi-sh/dwd-mcp
+- PyPI: https://pypi.org/project/dwd-mcp/
+- Install: `claude mcp add --transport stdio --scope user dwd -- uvx dwd-mcp`
+- Tools (5):
+
+  - `dwd_forecast`: ICON-model forecast for a German place (hourly + daily)
+  - `dwd_current_weather`: Current conditions for a German place
+  - `dwd_warnings`: Official DWD severe-weather warnings, filterable by state
+  - `dwd_pollen`: Pollen counts for a German place (CAMS via Open-Meteo)
+  - `dwd_find_place`: Find German places (name → coordinates)
+
+## autobahn-mcp
+
+German Autobahn data from the official verkehr.autobahn.de API (no key): roadworks, closures, warnings, truck/car parking and EV charging stations per motorway.
+
+- Category: transport
+- Repository: https://github.com/mohammad-abbasi-sh/autobahn-mcp
+- PyPI: https://pypi.org/project/autobahn-mcp/
+- Install: `claude mcp add --transport stdio --scope user autobahn -- uvx autobahn-mcp`
+- Tools (5):
+
+  - `autobahn_roadworks`: Roadworks on one motorway
+  - `autobahn_closures`: Closures on one motorway
+  - `autobahn_warnings`: Warnings on one motorway
+  - `autobahn_parking`: Truck/car parking areas on one motorway
+  - `autobahn_ev_charging`: EV charging stations on one motorway
+
+## dw-mcp
+
+Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages.
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/dw-mcp
+- PyPI: https://pypi.org/project/dw-mcp/
+- Install: `claude mcp add --transport stdio --scope user dw -- uvx dw-mcp`
+- Tools (5):
+
+  - `dw_headlines`: Latest DW headlines in one language
+  - `dw_search_news`: Search recent DW headlines by keyword
+  - `dw_latest_articles`: Latest DW articles in one language
+  - `dw_get_article`: Full text of one DW article
+  - `dw_topics`: DW topic pages matching a word
+
+## ntv-mcp
+
+n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text.
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/ntv-mcp
+- PyPI: https://pypi.org/project/ntv-mcp/
+- Install: `claude mcp add --transport stdio --scope user ntv -- uvx ntv-mcp`
+- Tools (5):
+
+  - `ntv_headlines`: Latest n-tv headlines by section
+  - `ntv_markets`: Latest n-tv market news
+  - `ntv_videos`: Latest n-tv videos
+  - `ntv_search_news`: Search recent n-tv headlines by keyword
+  - `ntv_get_article`: Full text of one n-tv article
+
+## dnb-mcp
+
+Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup.
+
+- Category: open-data
+- Repository: https://github.com/mohammad-abbasi-sh/dnb-mcp
+- PyPI: https://pypi.org/project/dnb-mcp/
+- Install: `claude mcp add --transport stdio --scope user dnb -- uvx dnb-mcp`
+- Tools (5):
+
+  - `dnb_search_books`: Keyword search across the DNB catalogue
+  - `dnb_search_by_title`: Search the DNB catalogue by title
+  - `dnb_search_by_author`: Search the DNB catalogue by author
+  - `dnb_by_isbn`: Look up one book by ISBN
+  - `dnb_get_record`: Full record by DNB identifier
+
+## govdata-mcp
+
+Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details.
+
+- Category: open-data
+- Repository: https://github.com/mohammad-abbasi-sh/govdata-mcp
+- PyPI: https://pypi.org/project/govdata-mcp/
+- Install: `claude mcp add --transport stdio --scope user govdata -- uvx govdata-mcp`
+- Tools (5):
+
+  - `govdata_search_datasets`: Search govdata.de datasets
+  - `govdata_get_dataset`: Full details of one dataset
+  - `govdata_list_publishers`: Publishing organisations, most datasets first
+  - `govdata_recent_datasets`: Most recently updated datasets
+  - `govdata_get_resource`: Details of one dataset resource
+
+## deutschlandfunk-mcp
+
+Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link.
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/deutschlandfunk-mcp
+- PyPI: https://pypi.org/project/deutschlandfunk-mcp/
+- Install: `claude mcp add --transport stdio --scope user deutschlandfunk -- uvx deutschlandfunk-mcp`
+- Tools (6):
+
+  - `dlf_latest_news`: Rolling DLF news headlines
+  - `dlf_latest_contributions`: Latest DLF contributions
+  - `dlf_news_by_topic`: DLF news by topic
+  - `dlf_search_news`: Search recent DLF items by keyword
+  - `dlf_get_article`: Full text of one DLF article
+  - `dlf_listen_live`: Deutschlandfunk live stream link
+
+## duden-mcp
+
+Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation.
+
+- Category: language
+- Repository: https://github.com/mohammad-abbasi-sh/duden-mcp
+- PyPI: https://pypi.org/project/duden-mcp/
+- Install: `claude mcp add --transport stdio --scope user duden -- uvx duden-mcp`
+- Tools (6):
+
+  - `duden_lookup_word`: Look up a German word: meanings, word type & grammar
+  - `duden_synonyms`: Synonyms of a German word
+  - `duden_spelling`: Spelling & hyphenation of a German word
+  - `duden_grammar`: Grammar notes for a German word
+  - `duden_conjugate`: Full conjugation table of a German verb
+  - `duden_search`: Search Duden headwords
+
+## dictcc-mcp
+
+dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes.
+
+- Category: language
+- Repository: https://github.com/mohammad-abbasi-sh/dictcc-mcp
+- PyPI: https://pypi.org/project/dictcc-mcp/
+- Install: `claude mcp add --transport stdio --scope user dictcc -- uvx dictcc-mcp`
+- Tools (2):
+
+  - `dictcc_translate`: Translate a word with dict.cc (23 pairs)
+  - `dictcc_search`: Find dict.cc headwords matching a query
+
+## bundeswahlleiter-mcp
+
+Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025.
+
+- Category: open-data
+- Repository: https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp
+- PyPI: https://pypi.org/project/bundeswahlleiter-mcp/
+- Install: `claude mcp add --transport stdio --scope user bundeswahlleiter -- uvx bundeswahlleiter-mcp`
+- Tools (5):
+
+  - `bwl_national_results`: National results of a Bundestag election
+  - `bwl_party_results`: Results of one party, nationally and by Land
+  - `bwl_constituency_results`: Results of one constituency
+  - `bwl_constituencies`: List constituencies with winner and turnout
+  - `bwl_turnout`: Voter turnout by Land and nationally
+
+## flixtrain-mcp
+
+FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability.
+
+- Category: transport
+- Repository: https://github.com/mohammad-abbasi-sh/flixtrain-mcp
+- PyPI: https://pypi.org/project/flixtrain-mcp/
+- Install: `claude mcp add --transport stdio --scope user flixtrain -- uvx flixtrain-mcp`
+- Tools (2):
+
+  - `flixtrain_search_trains`: Search FlixTrain departures between two cities
+  - `flixtrain_search_cities`: Find cities by name
+
+## billiger-mcp
+
+German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals.
+
+- Category: shopping
+- Repository: https://github.com/mohammad-abbasi-sh/billiger-mcp
+- PyPI: https://pypi.org/project/billiger-mcp/
+- Install: `claude mcp add --transport stdio --scope user billiger -- uvx billiger-mcp`
+- Tools (3):
+
+  - `billiger_search_prices`: Search products with best prices
+  - `billiger_product_offers`: Compare shop offers for a product
+  - `billiger_best_deals`: Today's deals from the home page
+
+## fernsehserien-mcp
+
+German TV series from fernsehserien.de (free, no key, no login): search series, series details, episode guides and upcoming air dates.
+
+- Category: media
+- Repository: https://github.com/mohammad-abbasi-sh/fernsehserien-mcp
+- PyPI: https://pypi.org/project/fernsehserien-mcp/
+- Install: `claude mcp add --transport stdio --scope user fernsehserien -- uvx fernsehserien-mcp`
+- Tools (4):
+
+  - `fs_search_series`: Search TV series by name
+  - `fs_series_detail`: Series details and seasons
+  - `fs_episodes`: Episode guide for one season
+  - `fs_air_dates`: Upcoming air dates for a series
+
+## zdf-mcp
+
+ZDF heute news from zdfheute.de (free, no key, no login): latest headlines, news by topic, keyword search and full article text.
+
+- Category: media
+- Repository: https://github.com/mohammad-abbasi-sh/zdf-mcp
+- PyPI: https://pypi.org/project/zdf-mcp/
+- Install: `claude mcp add --transport stdio --scope user zdf -- uvx zdf-mcp`
+- Tools (4):
+
+  - `zdf_headlines`: Latest ZDF heute headlines
+  - `zdf_news_by_topic`: ZDF heute news by topic
+  - `zdf_search_news`: Search ZDF heute headlines by keyword
+  - `zdf_get_article`: Full text of a ZDF heute article
+
+## ecb-mcp
+
+European Central Bank data via the official ECB SDMX API (free, no key, no login): euro exchange rates, key ECB interest rates, HICP inflation, M3 money supply and euro-area bond yields.
+
+- Category: finance
+- Repository: https://github.com/mohammad-abbasi-sh/ecb-mcp
+- PyPI: https://pypi.org/project/ecb-mcp/
+- Install: `claude mcp add --transport stdio --scope user ecb -- uvx ecb-mcp`
+- Tools (5):
+
+  - `ecb_exchange_rates`: Euro exchange rates vs major currencies
+  - `ecb_interest_rates`: Key ECB interest rates (MRO, deposit, marginal lending)
+  - `ecb_inflation`: HICP inflation, euro area and Germany
+  - `ecb_money_supply`: Euro-area money supply (M1, M2, M3)
+  - `ecb_bond_yields`: Euro-area government bond yields by maturity
+
+## wg-gesucht-mcp
+
+WG-Gesucht flatshare listings from wg-gesucht.de (free, no key, no login): WG rooms and flats in 34 German-speaking cities, with price, size, availability and full listing details.
+
+- Category: housing
+- Repository: https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp
+- PyPI: https://pypi.org/project/wg-gesucht-mcp/
+- Install: `claude mcp add --transport stdio --scope user wg-gesucht -- uvx wg-gesucht-mcp`
+- Tools (4):
+
+  - `wg_search_rooms`: Search WG rooms in a city
+  - `wg_search_flats`: Search flats in a city
+  - `wg_listing_detail`: Full details of one listing
+  - `wg_cities`: List supported cities
+
+## uba-mcp
+
+UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks.
+
+- Category: health
+- Repository: https://github.com/mohammad-abbasi-sh/uba-mcp
+- PyPI: https://pypi.org/project/uba-mcp/
+- Install: `claude mcp add --transport stdio --scope user uba -- uvx uba-mcp`
+- Tools (6):
+
+  - `uba_list_stations`: Measuring stations, filterable by city, state, type, area or name
+  - `uba_station_detail`: One station: address, coordinates, type, data window, recent pollutants
+  - `uba_current_air_quality`: Latest hourly values + LQI at a station (code, id or city name)
+  - `uba_measurements`: Hourly values over a date range (max 31 days) + min/max/mean & daily means
+  - `uba_list_components`: All 12 pollutants: code, symbol, unit, name
+  - `uba_list_networks`: The 17 measuring networks (16 Länder + UBA)
+
+## openplz-mcp
+
+OpenPLZ API (no key): German postal codes — localities, streets, municipalities, districts & the 16 federal states.
+
+- Category: open-data
+- Repository: https://github.com/mohammad-abbasi-sh/openplz-mcp
+- PyPI: https://pypi.org/project/openplz-mcp/
+- Install: `claude mcp add --transport stdio --scope user openplz -- uvx openplz-mcp`
+- Tools (6):
+
+  - `openplz_lookup_postal_code`: Which locality (or localities) a postal code belongs to
+  - `openplz_search_locality`: Search localities by name, optionally within one postal code
+  - `openplz_search_street`: Search streets by name, postal code and/or locality
+  - `openplz_full_text_search`: Free-form street search across name, postal code and city
+  - `openplz_list_federal_states`: All 16 federal states with key + capital
+  - `openplz_admin_children`: One step down the administrative tree (state → district → municipality)
+
+## feiertage-mcp
+
+Feiertage — German public holidays via feiertage-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.
+
+- Category: open-data
+- Repository: https://github.com/mohammad-abbasi-sh/feiertage-mcp
+- PyPI: https://pypi.org/project/feiertage-mcp/
+- Install: `claude mcp add --transport stdio --scope user feiertage -- uvx feiertage-mcp`
+- Tools (5):
+
+  - `feiertage_list_holidays`: Public holidays of one year in one federal state (optional month filter)
+  - `feiertage_is_holiday`: Is a date a public holiday in one state?
+  - `feiertage_next_holiday`: The next public holiday on or after a date
+  - `feiertage_holidays_between`: Public holidays in a date range (max ~2 years)
+  - `feiertage_list_states`: All 16 federal states + NATIONAL (nationwide holidays)
+
+## ferien-mcp
+
+Ferien — German school holidays via ferien-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.
+
+- Category: open-data
+- Repository: https://github.com/mohammad-abbasi-sh/ferien-mcp
+- PyPI: https://pypi.org/project/ferien-mcp/
+- Install: `claude mcp add --transport stdio --scope user ferien -- uvx ferien-mcp`
+- Tools (5):
+
+  - `ferien_list_holidays`: School holidays of one year in one federal state (optional month filter)
+  - `ferien_is_holiday`: Is a date inside the school holidays in one state?
+  - `ferien_next_holiday`: The next school holiday on or after a date
+  - `ferien_holidays_between`: School holidays overlapping a date range (max ~2 years)
+  - `ferien_list_states`: All 16 German federal states
+
+## spiegel-mcp
+
+Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/spiegel-mcp
+- PyPI: https://pypi.org/project/spiegel-mcp/
+- Install: `claude mcp add --transport stdio --scope user spiegel -- uvx spiegel-mcp`
+- Tools (5):
+
+  - `spiegel_headlines`: Top headlines (Schlagzeilen), newest first
+  - `spiegel_news_by_section`: Newest news of one of 13 sections
+  - `spiegel_search_news`: Search news by keyword across all feeds
+  - `spiegel_get_article`: Article text of one spiegel.de article (paywall flagged)
+  - `spiegel_latest_videos`: Latest SPIEGEL videos, newest first
+
+## heise-mcp
+
+Heise — heise.de IT news via the official RSS feed (no key): top headlines, 7 sections, keyword search, top stories, c't & article text (heise+ flagged honestly).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/heise-mcp
+- PyPI: https://pypi.org/project/heise-mcp/
+- Install: `claude mcp add --transport stdio --scope user heise -- uvx heise-mcp`
+- Tools (6):
+
+  - `heise_headlines`: Top headlines (main RSS feed), newest first
+  - `heise_search_news`: Search news by keyword in the main feed
+  - `heise_news_by_section`: Newest news of one of 7 sections
+  - `heise_top_stories`: Front-page top stories, in page order
+  - `heise_ct`: Latest c't magazine articles
+  - `heise_get_article`: Article text of one heise.de article (paywall flagged)
+
+## zeit-mcp
+
+Zeit — DIE ZEIT news via the official RSS feeds (no key): top headlines, 10 sections, keyword search (main feed + all sections) & section list.
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/zeit-mcp
+- PyPI: https://pypi.org/project/zeit-mcp/
+- Install: `claude mcp add --transport stdio --scope user zeit -- uvx zeit-mcp`
+- Tools (5):
+
+  - `zeit_headlines`: Top headlines (main RSS feed), newest first
+  - `zeit_news_by_section`: Newest news of one of 10 sections
+  - `zeit_search_news`: Search news by keyword in the main feed
+  - `zeit_search_all_sections`: Search news by keyword across all 10 section feeds
+  - `zeit_sections`: The 10 sections with RSS feeds
+
+## welt-mcp
+
+Welt — WELT news via the official RSS feed (no key): top headlines, news by topic, keyword search, latest videos & full article text (WELT+ honestly flagged).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/welt-mcp
+- PyPI: https://pypi.org/project/welt-mcp/
+- Install: `claude mcp add --transport stdio --scope user welt -- uvx welt-mcp`
+- Tools (5):
+
+  - `welt_headlines`: Top headlines (official RSS feed), newest first
+  - `welt_news_by_topic`: Newest news of one topic (Deutschland, Ausland, Fußball, Kultur, ...)
+  - `welt_search_news`: Search news by keyword in the feed
+  - `welt_latest_videos`: Latest video items from the feed
+  - `welt_get_article`: Full text of a WELT article (WELT+ paywall flagged)

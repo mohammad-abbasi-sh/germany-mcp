@@ -69,3 +69,11 @@ Dieser Katalog bietet KI-Agenten Live-Zugriff auf deutsche Dienste — Fußball,
 ### فارسی
 
 این کاتالوگ به ایجنت‌های هوش مصنوعی دسترسی زنده به سرویس‌های آلمان می‌دهد — فوتبال، خبر، رسانه، هواشناسی، حمل‌ونقل، دیتای باز — با سرورهای کوچک، تست‌شده و فقط‌خواندنی. هر سرور تست، فیکسچر و مستندات سه‌زبانه (انگلیسی، آلمانی، فارسی) دارد.
+
+## Cite this project
+
+If you use germany-mcp, build on it, or write about it, please credit the source:
+
+> Abbasi, Mohammad. *Germany MCP Catalog*. 2026. https://github.com/mohammad-abbasi-sh/germany-mcp
+
+A ready-to-copy citation is also available from GitHub's **Cite this repository** button (see `CITATION.cff`). Commercial use needs a separate license — see [LICENSE](LICENSE).

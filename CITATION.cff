@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use germany-mcp, please cite it as below."
+authors:
+  - family-names: "Abbasi"
+    given-names: "Mohammad"
+title: "Germany MCP Catalog"
+url: "https://github.com/mohammad-abbasi-sh/germany-mcp"
+repository-code: "https://github.com/mohammad-abbasi-sh/germany-mcp"
+license: PolyForm-Noncommercial-1.0.0
+type: software

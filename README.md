@@ -38,8 +38,9 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [heise-mcp](https://github.com/mohammad-abbasi-sh/heise-mcp) | Heise — Germany's #1 IT news portal: headlines, 7 sections, search, top stories & c't | 6 | `uvx heise-mcp==0.1.0` |
 | [zeit-mcp](https://github.com/mohammad-abbasi-sh/zeit-mcp) | Zeit — DIE ZEIT news: headlines, 10 sections, search & section list | 5 | `uvx zeit-mcp==0.1.0` |
 | [welt-mcp](https://github.com/mohammad-abbasi-sh/welt-mcp) | Welt — WELT news: headlines, topics, search, videos & article text | 5 | `uvx welt-mcp==0.1.0` |
+| [ndr-mcp](https://github.com/mohammad-abbasi-sh/ndr-mcp) | NDR — public broadcaster for northern Germany: headlines, 4 regions, sections, search & article text | 5 | `uvx ndr-mcp==0.1.0` |
 
-*One new server every day. Each server ships with tests, fixtures and trilingual docs. 27 servers live — and the queue keeps growing (see the build queue).*
+*One new server every day. Each server ships with tests, fixtures and trilingual docs. 28 servers live — and the queue keeps growing (see the build queue).*
 
 ## For AI agents
 
@@ -69,11 +70,3 @@ Dieser Katalog bietet KI-Agenten Live-Zugriff auf deutsche Dienste — Fußball,
 ### فارسی
 
 این کاتالوگ به ایجنت‌های هوش مصنوعی دسترسی زنده به سرویس‌های آلمان می‌دهد — فوتبال، خبر، رسانه، هواشناسی، حمل‌ونقل، دیتای باز — با سرورهای کوچک، تست‌شده و فقط‌خواندنی. هر سرور تست، فیکسچر و مستندات سه‌زبانه (انگلیسی، آلمانی، فارسی) دارد.
-
-## Cite this project
-
-If you use germany-mcp, build on it, or write about it, please credit the source:
-
-> Abbasi, Mohammad. *Germany MCP Catalog*. 2026. https://github.com/mohammad-abbasi-sh/germany-mcp
-
-A ready-to-copy citation is also available from GitHub's **Cite this repository** button (see `CITATION.cff`). Commercial use needs a separate license — see [LICENSE](LICENSE).

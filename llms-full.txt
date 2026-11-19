@@ -1,6 +1,6 @@
 # Germany MCP — full catalog
 
-Generated 2026-11-18T14:52:04Z. 27 read-only MCP servers (132 tools) for German web services. Every server runs locally with uvx, no API key, no account.
+Generated 2026-11-19T10:28:02Z. 28 read-only MCP servers (137 tools) for German web services. Every server runs locally with uvx, no API key, no account.
 
 ## bundesliga-mcp
 
@@ -430,3 +430,19 @@ Welt — WELT news via the official RSS feed (no key): top headlines, news by to
   - `welt_search_news`: Search news by keyword in the feed
   - `welt_latest_videos`: Latest video items from the feed
   - `welt_get_article`: Full text of a WELT article (WELT+ paywall flagged)
+
+## ndr-mcp
+
+NDR — public broadcaster for northern Germany via the official RSS feeds (no key): top headlines, regional news for the four states, news by section, keyword search & full article text (kultur via SSR, video pages flagged).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/ndr-mcp
+- PyPI: https://pypi.org/project/ndr-mcp/
+- Install: `claude mcp add --transport stdio --scope user ndr -- uvx ndr-mcp`
+- Tools (5):
+
+  - `ndr_headlines`: Top headlines (official RSS feed), newest first
+  - `ndr_news_by_region`: Newest news from one of the four broadcast states
+  - `ndr_news_by_section`: Newest news of one section (nachrichten, kultur, sport, ...)
+  - `ndr_search_news`: Search news by keyword in the main feed
+  - `ndr_get_article`: Full text of an NDR article (JSON-LD or SSR; video pages flagged)

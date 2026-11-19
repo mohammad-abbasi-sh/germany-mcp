@@ -161,6 +161,12 @@
       "args": [
         "welt-mcp"
       ]
+    },
+    "ndr": {
+      "command": "uvx",
+      "args": [
+        "ndr-mcp"
+      ]
     }
   }
 }

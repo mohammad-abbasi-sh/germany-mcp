@@ -829,6 +829,40 @@
      "summary": "Full text of an NDR article (JSON-LD or SSR; video pages flagged)"
     }
    ]
+  },
+  {
+   "description": "BR — Bavarian public broadcaster via the official RSS feeds (no key): BR24 ticker, news by category, keyword search, full article text, Bayern 1/2 radio stories & traffic reports.",
+   "name": "br-mcp",
+   "pypi": "br-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/br-mcp",
+   "title": "BR — Bayerischer Rundfunk news, radio & traffic",
+   "title_de": "BR — Ticker, Kategorien, Suche, Artikel, Radio & Verkehr",
+   "tools": [
+    {
+     "name": "br_headlines",
+     "summary": "Top BR24 ticker items (official RSS feed), newest first"
+    },
+    {
+     "name": "br_news_by_category",
+     "summary": "Newest news of one category (bayern, wissen, sport, kultur, wirtschaft)"
+    },
+    {
+     "name": "br_search_news",
+     "summary": "Search news by keyword across the ticker and all category feeds"
+    },
+    {
+     "name": "br_get_article",
+     "summary": "Full text of a BR article (server-rendered <article> paragraphs)"
+    },
+    {
+     "name": "br_radio",
+     "summary": "Latest stories from a BR radio station (bayern1 or bayern2)"
+    },
+    {
+     "name": "br_traffic",
+     "summary": "Current Verkehrsmeldungen (traffic reports) from BR"
+    }
+   ]
   }
  ]
 }

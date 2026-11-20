@@ -39,8 +39,9 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [zeit-mcp](https://github.com/mohammad-abbasi-sh/zeit-mcp) | Zeit — DIE ZEIT news: headlines, 10 sections, search & section list | 5 | `uvx zeit-mcp==0.1.0` |
 | [welt-mcp](https://github.com/mohammad-abbasi-sh/welt-mcp) | Welt — WELT news: headlines, topics, search, videos & article text | 5 | `uvx welt-mcp==0.1.0` |
 | [ndr-mcp](https://github.com/mohammad-abbasi-sh/ndr-mcp) | NDR — public broadcaster for northern Germany: headlines, 4 regions, sections, search & article text | 5 | `uvx ndr-mcp==0.1.0` |
+| [br-mcp](https://github.com/mohammad-abbasi-sh/br-mcp) | BR — Bavarian public broadcaster: BR24 ticker, news by category, search, article text, radio & traffic | 6 | `uvx br-mcp==0.1.0` |
 
-*One new server every day. Each server ships with tests, fixtures and trilingual docs. 28 servers live — and the queue keeps growing (see the build queue).*
+*One new server every day. Each server ships with tests, fixtures and trilingual docs. 29 servers live — and the queue keeps growing (see the build queue).*
 
 ## For AI agents
 

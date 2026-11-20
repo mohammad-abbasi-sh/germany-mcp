@@ -167,6 +167,12 @@
       "args": [
         "ndr-mcp"
       ]
+    },
+    "br": {
+      "command": "uvx",
+      "args": [
+        "br-mcp"
+      ]
     }
   }
 }

@@ -19,7 +19,8 @@ numbers). When the factory adds a server: add its entry to SERVER_META
 (cat/color/letter/featured) and TRANSLATIONS, then re-run this script.
 
 Usage: python3 update_platform.py
-Output: platform/index.html (+ versioned copy platform/index-v1-20261109.html)
+Output: platform/index.html (+ versioned copy) + .mcp.json, llms.txt,
+llms-full.txt, catalog.json, search.json, sitemap.xml, robots.txt at root
 """
 import datetime
 import json
@@ -90,6 +91,12 @@ SERVER_META = {
                  "featured": False, "added": 26},
     "welt-mcp": {"cat": "news", "color": "#0F172A", "letter": "🌍",
                  "featured": False, "added": 27},
+    "ndr-mcp": {"cat": "news", "color": "#003A70", "letter": "📡",
+                "featured": False, "added": 28},
+    "br-mcp": {"cat": "news", "color": "#0B5FA5", "letter": "📻",
+               "featured": False, "added": 29},
+    "focus-online-mcp": {"cat": "news", "color": "#E30613", "letter": "📰",
+               "featured": False, "added": 30},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -361,6 +368,38 @@ TRANSLATIONS = {
   "welt_latest_videos": ("جدیدترین ویدیوهای ولت، جدیدترین اول", "Neueste WELT-Videos, neueste zuerst"),
   "welt_get_article": ("متن یک مقالهٔ welt.de (پولی بودن مشخص می‌شود)", "Artikeltext eines welt.de-Artikels (Paywall wird gekennzeichnet)"),
  }},
+"ndr-mcp": {
+ "desc_fa": "اخبار NDR، رسانهٔ عمومی شمال آلمان، از فیدهای رسمی RSS (بدون کلید): تیترهای برتر، اخبار منطقه‌ای چهار ایالت، اخبار بر اساس بخش، جست‌وجوی کلیدواژه و متن کامل مقالات (بخش kultur از طریق SSR، صفحات ویدیویی مشخص می‌شوند).",
+ "desc_de": "NDR über die offiziellen RSS-Feeds (kein Schlüssel): Top-Schlagzeilen, Regionalnachrichten für die vier Länder, Nachrichten nach Ressort, Stichwortsuche und Artikeltexte (kultur per SSR, Videoseiten werden gekennzeichnet).",
+ "tools": {
+  "ndr_headlines": ("تیترهای برتر (فید رسمی RSS)، جدیدترین اول", "Top-Schlagzeilen (offizieller RSS-Feed), neueste zuerst"),
+  "ndr_news_by_region": ("تازه‌ترین اخبار یکی از چهار ایالت پخش", "Neueste Nachrichten aus einem der vier Sendeländer"),
+  "ndr_news_by_section": ("تازه‌ترین اخبار یک بخش (اخبار، فرهنگ، ورزش و …)", "Neueste Nachrichten eines Ressorts (nachrichten, kultur, sport, …)"),
+  "ndr_search_news": ("جست‌وجوی اخبار با کلیدواژه در فید اصلی", "Nachrichtensuche nach Stichwort im Haupt-Feed"),
+  "ndr_get_article": ("متن یک مقالهٔ ndr.de (JSON-LD یا SSR؛ ویدیویی بودن مشخص می‌شود)", "Artikeltext eines ndr.de-Artikels (JSON-LD oder SSR; Video wird gekennzeichnet)"),
+ }},
+"br-mcp": {
+ "desc_fa": "اخبار BR، رسانهٔ عمومی بایرن، از فیدهای رسمی RSS (بدون کلید): تیکر خبری BR24، اخبار بر اساس دسته (بایرن، دانش، ورزش، فرهنگ، اقتصاد)، جست‌وجوی کلیدواژه، متن کامل مقالات، مطالب رادیویی Bayern 1 و Bayern 2 و گزارش‌های ترافیک.",
+ "desc_de": "BR über die offiziellen RSS-Feeds (kein Schlüssel): BR24-Ticker, Nachrichten nach Kategorie (Bayern, Wissen, Sport, Kultur, Wirtschaft), Stichwortsuche, Artikeltexte, Bayern-1-/Bayern-2-Geschichten und Verkehrsmeldungen.",
+ "tools": {
+  "br_headlines": ("تیترهای برتر تیکر BR24 (فید رسمی RSS)، جدیدترین اول", "Top-Meldungen des BR24-Tickers (offizieller RSS-Feed), neueste zuerst"),
+  "br_news_by_category": ("تازه‌ترین اخبار یک دسته (بایرن، دانش، ورزش، فرهنگ، اقتصاد)", "Neueste Nachrichten einer Kategorie (bayern, wissen, sport, kultur, wirtschaft)"),
+  "br_search_news": ("جست‌وجوی اخبار با کلیدواژه در تیکر و فیدهای دسته", "Nachrichtensuche nach Stichwort über Ticker und Kategorien-Feeds"),
+  "br_get_article": ("متن کامل یک مقالهٔ br.de (پاراگراف‌های <article> رندرشده در سرور)", "Volltext eines br.de-Artikels (serverseitig gerenderte <article>-Absätze)"),
+  "br_radio": ("تازه‌ترین مطالب یک ایستگاه رادیویی BR (bayern1 یا bayern2)", "Neueste Geschichten eines BR-Radiosenders (bayern1 oder bayern2)"),
+  "br_traffic": ("گزارش‌های جاری ترافیک BR", "Aktuelle Verkehrsmeldungen des BR"),
+ }},
+"focus-online-mcp": {
+ "desc_fa": "اخبار FOCUS online، یکی از بزرگ‌ترین مجله‌های خبری آلمان، از فید رسمی RSS (بدون کلید): تیترهای برتر، اخبار بر اساس بخش، فهرست بخش‌ها، جست‌وجوی کلیدواژه و متن کامل مقالات (لایوتیکرها مشخص می‌شوند).",
+ "desc_de": "FOCUS online, eines der größten Nachrichtenmagazine Deutschlands, über den offiziellen RSS-Feed (kein Schlüssel): Top-Schlagzeilen, Nachrichten nach Ressort, Ressort-Übersicht, Stichwortsuche und Artikeltexte (Live-Ticker werden gekennzeichnet).",
+ "tools": {
+  "focus_headlines": ("تیترهای برتر (فید رسمی RSS با حدود ۴۰۰ مورد)، جدیدترین اول", "Top-Schlagzeilen (offizieller RSS-Feed, ~400 Einträge), neueste zuerst"),
+  "focus_news_by_section": ("تازه‌ترین اخبار یک بخش (سیاست، فرهنگ، ورزش، اقتصاد و …)", "Neueste Nachrichten eines Ressorts (politik, kultur, sport, finanzen, …)"),
+  "focus_sections": ("بخش‌های فید امروز با تعداد موارد هرکدام", "Ressorts im heutigen Feed mit ihren Eintragszahlen"),
+  "focus_search_news": ("جست‌وجوی اخبار با کلیدواژه در کل فید رسمی", "Nachrichtensuche nach Stichwort im gesamten offiziellen RSS-Feed"),
+  "focus_get_article": ("متن کامل یک مقالهٔ focus.de (پاراگراف‌های <article> رندرشده در سرور؛ لایوتیکر مشخص می‌شود)", "Volltext eines focus.de-Artikels (serverseitig gerenderte <article>-Absätze; Live-Ticker wird gekennzeichnet)"),
+  "focus_health": ("بررسی دسترسی به فید RSS", "Erreichbarkeitsprüfung des RSS-Feeds"),
+ }},
 }
 
 FA_DIGITS = str.maketrans("0123456789", "۰۱۲۳۴۵۶۷۸۹")
@@ -405,17 +444,24 @@ def build_entry(name):
 
 
 def write_agent_files(order):
-    """Regenerate .mcp.json + llms.txt at the project root (pushed to the
-    catalog repo root so Pages serves them; the Connect page links both).
-    NOTE: the factory cron must push these two files after each regen —
+    """Regenerate .mcp.json + llms.txt + llms-full.txt + catalog.json +
+    search.json + sitemap.xml + robots.txt at the project root (pushed to
+    the catalog repo root so Pages serves them; the Connect page links
+    llms.txt, the footer links catalog.json/search.json, the palette
+    fetches search.json).
+    NOTE: the factory cron must push these files after each regen —
     update_platform.py only writes them locally."""
     servers = [BY_ID[n] for n in order]
+    today = datetime.date.today().isoformat()
+    now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    site = "https://mohammad-abbasi-sh.github.io/germany-mcp"
     mcp = {"mcpServers": {
         s["name"].replace("-mcp", ""): {"command": "uvx", "args": [s["pypi"]]}
         for s in servers}}
     (HERE / ".mcp.json").write_text(
         json.dumps(mcp, indent=2, ensure_ascii=False) + "\n")
     n_tools = sum(len(s["tools"]) for s in servers)
+    # --- llms.txt (with detail-page links + data files) ---
     lines = [
         "# Germany MCP",
         "",
@@ -424,11 +470,19 @@ def write_agent_files(order):
         "more. Every server runs locally with uvx, no API key, no account."
         % (len(servers), n_tools),
         "",
+        "## Servers",
+        "",
     ]
     for s in servers:
-        lines.append("- [%s](%s): %s (%d tools)" % (
-            s["name"], s["repository"], s["description"], len(s["tools"])))
+        lines.append("- [%s](%s): %s (%d tools) — details + Markdown version: %s/#/en/tool/%s" % (
+            s["name"], s["repository"], s["description"], len(s["tools"]), site, s["name"]))
     lines += [
+        "",
+        "## Data files",
+        "",
+        "- Full catalog JSON: %s/catalog.json" % site,
+        "- Search index: %s/search.json" % site,
+        "- Full catalog text: %s/llms-full.txt" % site,
         "",
         "## Install",
         "",
@@ -439,18 +493,121 @@ def write_agent_files(order):
         "- All servers at once: clone "
         "https://github.com/mohammad-abbasi-sh/germany-mcp and open it in "
         "Claude Code — `.mcp.json` registers every server.",
+        "- Profile builder (pick servers, get a ready config): "
+        "%s/#/en/builder" % site,
         "",
         "## Links",
         "",
-        "- Catalog: https://mohammad-abbasi-sh.github.io/germany-mcp/",
-        "- Ask (find the right server): "
-        "https://mohammad-abbasi-sh.github.io/germany-mcp/#/ask/",
+        "- Catalog: %s/" % site,
+        "- Ask (find the right server): %s/#/ask/" % site,
         "- GitHub: https://github.com/mohammad-abbasi-sh/germany-mcp",
         "",
     ]
     (HERE / "llms.txt").write_text("\n".join(lines))
-    print("wrote .mcp.json + llms.txt:", len(servers), "servers")
-
+    # --- llms-full.txt: full catalog text in one file ---
+    full = [
+        "# Germany MCP — full catalog",
+        "",
+        "Generated %s. %d read-only MCP servers (%d tools) for German web "
+        "services. Every server runs locally with uvx, no API key, no "
+        "account." % (now, len(servers), n_tools),
+        "",
+    ]
+    for s in servers:
+        meta = SERVER_META[s["name"]]
+        full += ["## %s" % s["name"], "", s["description"], "",
+                 "- Category: %s" % meta["cat"],
+                 "- Repository: %s" % s["repository"],
+                 "- PyPI: https://pypi.org/project/%s/" % s["pypi"],
+                 "- Install: `claude mcp add --transport stdio --scope user %s -- uvx %s`" % (s["name"].replace("-mcp", ""), s["pypi"]),
+                 "- Tools (%d):" % len(s["tools"]), ""]
+        for t in s["tools"]:
+            full.append("  - `%s`: %s" % (t["name"], t["summary"]))
+        full.append("")
+    (HERE / "llms-full.txt").write_text("\n".join(full))
+    # --- catalog.json: public machine-readable catalog ---
+    catalog = {
+        "catalog": "germany-mcp",
+        "generatedAt": now,
+        "count": {"servers": len(servers), "tools": n_tools},
+        "servers": [],
+    }
+    for s in servers:
+        meta = SERVER_META[s["name"]]
+        tr = TRANSLATIONS[s["name"]]
+        catalog["servers"].append({
+            "id": s["name"],
+            "name": s["name"],
+            "summary": s["description"],
+            "summary_fa": tr["desc_fa"],
+            "summary_de": tr["desc_de"],
+            "category": meta["cat"],
+            "tags": [meta["cat"], "read-only", "uvx", "no-api-key"],
+            "source": "germany-mcp",
+            "featured": bool(meta["featured"]),
+            "added": meta["added"],
+            "health": "verified",
+            "lastChecked": today,
+            "repo": s["repository"],
+            "pypi": s["pypi"],
+            "url": "%s/#/en/tool/%s" % (site, s["name"]),
+            "install": {"transport": "stdio", "command": "uvx",
+                        "args": [s["pypi"]]},
+            "tools": [{"name": t["name"], "summary": t["summary"],
+                       "summary_fa": tr["tools"][t["name"]][0],
+                       "summary_de": tr["tools"][t["name"]][1]}
+                      for t in s["tools"]],
+        })
+    (HERE / "catalog.json").write_text(
+        json.dumps(catalog, indent=2, ensure_ascii=False) + "\n")
+    # --- search.json: client-side search index ---
+    search = []
+    for s in servers:
+        meta = SERVER_META[s["name"]]
+        tr = TRANSLATIONS[s["name"]]
+        hay = " ".join([
+            s["name"], s["title"], s.get("title_de", ""), s["description"],
+            tr["desc_fa"], tr["desc_de"], meta["cat"],
+            " ".join(t["name"] + " " + t["summary"] + " "
+                     + tr["tools"][t["name"]][0] + " "
+                     + tr["tools"][t["name"]][1] for t in s["tools"]),
+        ])
+        search.append({"id": s["name"],
+                       "url": "%s/#/en/tool/%s" % (site, s["name"]),
+                       "name": s["title"].split(" — ")[0],
+                       "en": s["name"], "kind": "mcp", "s": hay})
+    (HERE / "search.json").write_text(
+        json.dumps(search, indent=2, ensure_ascii=False) + "\n")
+    # --- sitemap.xml (home + hash routes + per-server pages + data files) ---
+    pages = ["", "marketplace", "builder", "demo", "status", "guide",
+             "submit", "connect", "ask", "about", "categories", "skills",
+             "tutorials", "blog", "favorites", "my", "privacy", "terms"]
+    urls = [site + "/"]
+    for lang in ("en", "de", "fa"):
+        for p in pages[1:]:
+            urls.append("%s/#/%s/%s" % (site, lang, p))
+        for s in servers:
+            urls.append("%s/#/%s/tool/%s" % (site, lang, s["name"]))
+    for f in ("llms.txt", "llms-full.txt", "catalog.json", "search.json",
+              ".mcp.json", "submission-guide.md"):
+        urls.append("%s/%s" % (site, f))
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>',
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u in urls:
+        sm.append('  <url><loc>%s</loc><lastmod>%s</lastmod>'
+                  '<changefreq>weekly</changefreq></url>' % (u, today))
+    sm.append('</urlset>')
+    (HERE / "sitemap.xml").write_text("\n".join(sm) + "\n")
+    # --- robots.txt (explicit allow for AI crawlers) ---
+    robots = ["User-agent: *", "Allow: /", ""]
+    for bot in ("GPTBot", "ClaudeBot", "Claude-SearchBot", "OAI-SearchBot",
+                "ChatGPT-User", "PerplexityBot", "Google-Extended"):
+        robots += ["User-agent: %s" % bot, "Allow: /", ""]
+    robots.append("Sitemap: %s/sitemap.xml" % site)
+    (HERE / "robots.txt").write_text("\n".join(robots) + "\n")
+    print("wrote .mcp.json + llms.txt + llms-full.txt + catalog.json + "
+          "search.json + sitemap.xml + robots.txt:",
+          len(servers), "servers")
 
 def main():
     base_path = HERE / "platform" / "base.html"
@@ -498,6 +655,15 @@ def main():
     # --- Validation ---
     assert "__COUNTS_" not in html, "unfilled count token left"
     assert "__BUILD_DATE__" not in html, "unfilled build-date token left"
+    # all-mcp (2026-11-18): the META object legitimately names the Turkey
+    # catalog ("Turkey 32" in its pitch) — it is the meta-server over all
+    # three catalogs, not a Turkey migration leftover. Strip the marked
+    # META block before the leftover scan; the guard still covers
+    # everything else.
+    check_html = re.sub(
+        r"/\* META-EXEMPT-START \*/.*?/\* META-EXEMPT-END \*/",
+        "", html, flags=re.S)
+    assert check_html != html, "META exempt block missing from base.html"
     bad = [s for s in ("Turkey", "Türkiye", "Türkçe", "Turkish", "tcmb",
                        "Hepsiburada", "obilet", "arabam", "emlakjet", "armut",
                        "n11", "ciceksepeti", "biletall", "secretcv", "biletix",
@@ -506,7 +672,7 @@ def main():
                        "cineverse", "trthaber",
                        '"tr"', "'tr'", "tr:", "title_tr", "desc_tr",
                        "tag_tr", "gap_tr", "ترکیه")
-           if s in html]
+           if s in check_html]
     # NOTE 2026-11-14: "111 tools" was removed from this list — it was a
     # stale-count canary from the Turkey platform, but 111 is now the
     # legitimate tool count (23 servers). Same false-positive as

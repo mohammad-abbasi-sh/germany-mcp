@@ -173,6 +173,12 @@
       "args": [
         "br-mcp"
       ]
+    },
+    "focus-online": {
+      "command": "uvx",
+      "args": [
+        "focus-online-mcp"
+      ]
     }
   }
 }

@@ -179,6 +179,12 @@
       "args": [
         "focus-online-mcp"
       ]
+    },
+    "bundesregierung": {
+      "command": "uvx",
+      "args": [
+        "bundesregierung-mcp"
+      ]
     }
   }
 }

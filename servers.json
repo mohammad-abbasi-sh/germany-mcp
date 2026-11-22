@@ -897,6 +897,40 @@
      "summary": "Reachability probe of the FOCUS online RSS feed"
     }
    ]
+  },
+  {
+   "description": "Bundesregierung — the German federal government's official site (no key): latest press releases, articles, speeches & press conferences, keyword search & full document text (incl. official English translations).",
+   "name": "bundesregierung-mcp",
+   "pypi": "bundesregierung-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/bundesregierung-mcp",
+   "title": "Bundesregierung — press releases, articles, speeches & search",
+   "title_de": "Bundesregierung — Pressemitteilungen, Artikel, Reden & Suche",
+   "tools": [
+    {
+     "name": "breg_press_releases",
+     "summary": "Latest press releases of the German federal government, newest first"
+    },
+    {
+     "name": "breg_articles",
+     "summary": "Latest articles / Meldungen from bundesregierung.de, newest first"
+    },
+    {
+     "name": "breg_speeches",
+     "summary": "Latest speeches, press statements & press conferences (mostly full transcripts)"
+    },
+    {
+     "name": "breg_search",
+     "summary": "Search bundesregierung.de by keyword across the whole site"
+    },
+    {
+     "name": "breg_get_document",
+     "summary": "Full text of a press release, article or speech (incl. official English translation when present)"
+    },
+    {
+     "name": "breg_health",
+     "summary": "Reachability probe of the press-releases listing"
+    }
+   ]
   }
  ]
 }

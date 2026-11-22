@@ -1,6 +1,6 @@
 # Germany MCP — full catalog
 
-Generated 2026-11-21T10:33:00Z. 30 read-only MCP servers (149 tools) for German web services. Every server runs locally with uvx, no API key, no account.
+Generated 2026-11-22T10:41:20Z. 31 read-only MCP servers (155 tools) for German web services. Every server runs locally with uvx, no API key, no account.
 
 ## bundesliga-mcp
 
@@ -480,3 +480,20 @@ FOCUS online — one of Germany's biggest news magazines — via the official RS
   - `focus_search_news`: Search news by keyword across the whole official RSS feed (~400 items)
   - `focus_get_article`: Full text of a FOCUS online article (server-rendered <article> paragraphs)
   - `focus_health`: Reachability probe of the FOCUS online RSS feed
+
+## bundesregierung-mcp
+
+Bundesregierung — the German federal government's official site (no key): latest press releases, articles, speeches & press conferences, keyword search & full document text (incl. official English translations).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/bundesregierung-mcp
+- PyPI: https://pypi.org/project/bundesregierung-mcp/
+- Install: `claude mcp add --transport stdio --scope user bundesregierung -- uvx bundesregierung-mcp`
+- Tools (6):
+
+  - `breg_press_releases`: Latest press releases of the German federal government, newest first
+  - `breg_articles`: Latest articles / Meldungen from bundesregierung.de, newest first
+  - `breg_speeches`: Latest speeches, press statements & press conferences (mostly full transcripts)
+  - `breg_search`: Search bundesregierung.de by keyword across the whole site
+  - `breg_get_document`: Full text of a press release, article or speech (incl. official English translation when present)
+  - `breg_health`: Reachability probe of the press-releases listing

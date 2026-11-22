@@ -97,6 +97,8 @@ SERVER_META = {
                "featured": False, "added": 29},
     "focus-online-mcp": {"cat": "news", "color": "#E30613", "letter": "📰",
                "featured": False, "added": 30},
+    "bundesregierung-mcp": {"cat": "news", "color": "#111827", "letter": "🏛️",
+               "featured": False, "added": 31},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -399,6 +401,17 @@ TRANSLATIONS = {
   "focus_search_news": ("جست‌وجوی اخبار با کلیدواژه در کل فید رسمی", "Nachrichtensuche nach Stichwort im gesamten offiziellen RSS-Feed"),
   "focus_get_article": ("متن کامل یک مقالهٔ focus.de (پاراگراف‌های <article> رندرشده در سرور؛ لایوتیکر مشخص می‌شود)", "Volltext eines focus.de-Artikels (serverseitig gerenderte <article>-Absätze; Live-Ticker wird gekennzeichnet)"),
   "focus_health": ("بررسی دسترسی به فید RSS", "Erreichbarkeitsprüfung des RSS-Feeds"),
+ }},
+"bundesregierung-mcp": {
+ "desc_fa": "وب‌سایت رسمی دولت فدرال آلمان (بدون کلید): جدیدترین بیانیه‌های مطبوعاتی، مقاله‌ها، سخنرانی‌ها و کنفرانس‌های مطبوعاتی، جست‌وجوی کلیدواژه و متن کامل اسناد (با ترجمهٔ رسمی انگلیسی در صورت وجود).",
+ "desc_de": "Die offizielle Website der Bundesregierung (kein Schlüssel): neueste Pressemitteilungen, Artikel, Reden und Pressekonferenzen, Stichwortsuche und Volltexte (mit offizieller englischer Übersetzung, sofern vorhanden).",
+ "tools": {
+  "breg_press_releases": ("جدیدترین بیانیه‌های مطبوعاتی دولت فدرال آلمان، جدیدترین اول", "Neueste Pressemitteilungen der Bundesregierung, neueste zuerst"),
+  "breg_articles": ("جدیدترین مقاله‌ها / Meldungen از bundesregierung.de، جدیدترین اول", "Neueste Artikel / Meldungen von bundesregierung.de, neueste zuerst"),
+  "breg_speeches": ("جدیدترین سخنرانی‌ها، بیانیه‌ها و کنفرانس‌های مطبوعاتی (بیشتر رونوشت کامل)", "Neueste Reden, Pressestatements und Pressekonferenzen (meist vollständige Mitschriften)"),
+  "breg_search": ("جست‌وجوی کلیدواژه در کل سایت bundesregierung.de", "Stichwortsuche auf der gesamten Website bundesregierung.de"),
+  "breg_get_document": ("متن کامل یک بیانیه، مقاله یا سخنرانی (با ترجمهٔ رسمی انگلیسی در صورت وجود)", "Volltext einer Pressemitteilung, eines Artikels oder einer Rede (mit offizieller englischer Übersetzung, sofern vorhanden)"),
+  "breg_health": ("بررسی دسترس‌پذیری فهرست بیانیه‌های مطبوعاتی", "Erreichbarkeits-Check der Pressemitteilungs-Liste"),
  }},
 }
 

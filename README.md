@@ -42,8 +42,9 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [br-mcp](https://github.com/mohammad-abbasi-sh/br-mcp) | BR — Bavarian public broadcaster: BR24 ticker, news by category, search, article text, radio & traffic | 6 | `uvx br-mcp==0.1.0` |
 | [focus-online-mcp](https://github.com/mohammad-abbasi-sh/focus-online-mcp) | FOCUS online — one of Germany's biggest news magazines: headlines, sections, search & article text | 6 | `uvx focus-online-mcp==0.1.0` |
 | [bundesregierung-mcp](https://github.com/mohammad-abbasi-sh/bundesregierung-mcp) | Bundesregierung — German federal government: press releases, articles, speeches, search & full text | 6 | `uvx bundesregierung-mcp==0.1.0` |
+| [mdr-mcp](https://github.com/mohammad-abbasi-sh/mdr-mcp) | MDR — Mitteldeutscher Rundfunk: headlines, news by state, city & section, search & full text | 6 | `uvx mdr-mcp==0.1.0` |
 
-*One new server every day. Each server ships with tests, fixtures and trilingual docs. 31 servers live — and the queue keeps growing (see the build queue).*
+*One new server every day. Each server ships with tests, fixtures and trilingual docs. 32 servers live — and the queue keeps growing (see the build queue).*
 
 ## For AI agents
 

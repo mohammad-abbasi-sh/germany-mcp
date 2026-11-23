@@ -185,6 +185,12 @@
       "args": [
         "bundesregierung-mcp"
       ]
+    },
+    "mdr": {
+      "command": "uvx",
+      "args": [
+        "mdr-mcp"
+      ]
     }
   }
 }

@@ -99,6 +99,10 @@ SERVER_META = {
                "featured": False, "added": 30},
     "bundesregierung-mcp": {"cat": "news", "color": "#111827", "letter": "🏛️",
                "featured": False, "added": 31},
+    "mdr-mcp": {"cat": "news", "color": "#1E3A5F", "letter": "🎙️",
+               "featured": False, "added": 32},
+    "bild-mcp": {"cat": "news", "color": "#C00000", "letter": "📰",
+               "featured": False, "added": 33},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -412,6 +416,28 @@ TRANSLATIONS = {
   "breg_search": ("جست‌وجوی کلیدواژه در کل سایت bundesregierung.de", "Stichwortsuche auf der gesamten Website bundesregierung.de"),
   "breg_get_document": ("متن کامل یک بیانیه، مقاله یا سخنرانی (با ترجمهٔ رسمی انگلیسی در صورت وجود)", "Volltext einer Pressemitteilung, eines Artikels oder einer Rede (mit offizieller englischer Übersetzung, sofern vorhanden)"),
   "breg_health": ("بررسی دسترس‌پذیری فهرست بیانیه‌های مطبوعاتی", "Erreichbarkeits-Check der Pressemitteilungs-Liste"),
+ }},
+"mdr-mcp": {
+ "desc_fa": "MDR — رادیو-تلویزیون آلمان مرکزی، رسانهٔ عمومی زاکسن، زاکسن-آنهالت و تورینگن (بدون کلید): تیترهای برتر، اخبار بر اساس ایالت، شهر و بخش، جست‌وجوی کلیدواژه و متن کامل مقالات (لایوتیکرها مشخص می‌شوند).",
+ "desc_de": "MDR — Mitteldeutscher Rundfunk, öffentlich-rechtlicher Sender für Sachsen, Sachsen-Anhalt und Thüringen (kein Schlüssel): Top-Schlagzeilen, Nachrichten nach Bundesland, Stadt und Ressort, Stichwortsuche und Artikeltexte (Live-Ticker werden gekennzeichnet).",
+ "tools": {
+  "mdr_headlines": ("تیترهای برتر MDR Aktuell، جدیدترین اول", "Top-Schlagzeilen von MDR Aktuell, neueste zuerst"),
+  "mdr_regional_news": ("تازه‌ترین اخبار MDR برای یک ایالت فدرال (زاکسن، زاکسن-آنهالت، تورینگن)", "Neueste MDR-Nachrichten eines Bundeslands (Sachsen, Sachsen-Anhalt, Thüringen)"),
+  "mdr_local_news": ("تازه‌ترین اخبار MDR برای یک شهر (لایپزیگ، درسدن، کمنیتس، ماگدبورگ، هاله)", "Neueste MDR-Nachrichten einer Stadt (Leipzig, Dresden, Chemnitz, Magdeburg, Halle)"),
+  "mdr_section_news": ("تازه‌ترین اخبار MDR در یک بخش (آلمان، فرهنگ، دانش، ورزش)", "Neueste MDR-Nachrichten eines Ressorts (Deutschland, Kultur, Wissen, Sport)"),
+  "mdr_search_news": ("جست‌وجوی اخبار MDR با کلیدواژه در همهٔ فیدها", "Nachrichtensuche nach Stichwort in allen MDR-Feeds"),
+  "mdr_get_article": ("متن کامل یک مقالهٔ MDR (لایوتیکر مشخص می‌شود)", "Volltext eines MDR-Artikels (Live-Ticker wird gekennzeichnet)"),
+ }},
+"bild-mcp": {
+ "desc_fa": "BILD — بزرگ‌ترین روزنامهٔ زرد و برند خبری دیجیتال آلمان (بدون کلید): تیترهای برتر، اخبار هر بخش، جست‌وجوی کلیدواژه، داستان‌های ویدیویی، داستان‌های BILDplus و متن کامل مقالات (BILDplus با پرچم پولی مشخص می‌شود).",
+ "desc_de": "BILD — Deutschlands größte Boulevardzeitung und digitale Nachrichtenmarke (kein Schlüssel): Top-Schlagzeilen, Nachrichten nach Ressort, Stichwortsuche, Video-Geschichten, BILDplus-Geschichten und Artikeltexte (BILDplus wird als Paywall gekennzeichnet).",
+ "tools": {
+  "bild_headlines": ("تیترهای برتر BILD، جدیدترین اول", "Top-Schlagzeilen von BILD, neueste zuerst"),
+  "bild_section_news": ("تازه‌ترین اخبار BILD در یک بخش (سیاست، ورزش، سرگرمی، دیجیتال، خودرو، سفر، پول)", "Neueste BILD-Nachrichten eines Ressorts (Politik, Sport, Unterhaltung, Digital, Auto, Reise, Geld)"),
+  "bild_search_news": ("جست‌وجوی اخبار BILD با کلیدواژه در همهٔ فیدها", "Nachrichtensuche nach Stichwort in allen BILD-Feeds"),
+  "bild_videos": ("تازه‌ترین داستان‌های BILD با ویدیوی داخلی", "Neueste BILD-Geschichten mit eingebettetem Video"),
+  "bild_premium_news": ("تازه‌ترین داستان‌های BILDplus (پشت پی‌وال)", "Neueste BILDplus-Geschichten (hinter der Paywall)"),
+  "bild_get_article": ("متن کامل یک مقالهٔ BILD (BILDplus با پرچم پولی مشخص می‌شود)", "Volltext eines BILD-Artikels (BILDplus wird als Paywall gekennzeichnet)"),
  }},
 }
 

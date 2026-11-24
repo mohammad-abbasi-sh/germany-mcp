@@ -965,6 +965,40 @@
           "summary": "Full text of an MDR article (live tickers flagged)"
         }
       ]
+    },
+    {
+      "description": "BILD — Germany's largest tabloid / digital news brand (no key): headlines, news by section, search, video stories, BILDplus stories & full article text (BILDplus flagged paywalled).",
+      "name": "bild-mcp",
+      "pypi": "bild-mcp",
+      "repository": "https://github.com/mohammad-abbasi-sh/bild-mcp",
+      "title": "BILD — headlines, news by section, search & article text",
+      "title_de": "BILD — Schlagzeilen, Nachrichten nach Ressort, Suche & Artikeltexte",
+      "tools": [
+        {
+          "name": "bild_headlines",
+          "summary": "Top BILD headlines, newest first"
+        },
+        {
+          "name": "bild_section_news",
+          "summary": "Newest BILD news of one section (Politik, Sport, Unterhaltung, Digital, Auto, Reise, Geld)"
+        },
+        {
+          "name": "bild_search_news",
+          "summary": "Search BILD news by keyword across all feeds"
+        },
+        {
+          "name": "bild_videos",
+          "summary": "Newest BILD stories with an embedded video"
+        },
+        {
+          "name": "bild_premium_news",
+          "summary": "Newest BILDplus stories (behind the paywall)"
+        },
+        {
+          "name": "bild_get_article",
+          "summary": "Full text of a BILD article (BILDplus flagged paywalled)"
+        }
+      ]
     }
   ]
 }

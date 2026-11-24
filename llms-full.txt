@@ -1,6 +1,6 @@
 # Germany MCP — full catalog
 
-Generated 2026-11-23T10:36:47Z. 32 read-only MCP servers (161 tools) for German web services. Every server runs locally with uvx, no API key, no account.
+Generated 2026-11-24T10:33:02Z. 33 read-only MCP servers (167 tools) for German web services. Every server runs locally with uvx, no API key, no account.
 
 ## bundesliga-mcp
 
@@ -514,3 +514,20 @@ MDR — the Mitteldeutscher Rundfunk, public broadcaster for Saxony, Saxony-Anha
   - `mdr_section_news`: Newest MDR news of one section (Deutschland, Kultur, Wissen, Sport)
   - `mdr_search_news`: Search MDR news by keyword across all feeds
   - `mdr_get_article`: Full text of an MDR article (live tickers flagged)
+
+## bild-mcp
+
+BILD — Germany's largest tabloid / digital news brand (no key): headlines, news by section, search, video stories, BILDplus stories & full article text (BILDplus flagged paywalled).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/bild-mcp
+- PyPI: https://pypi.org/project/bild-mcp/
+- Install: `claude mcp add --transport stdio --scope user bild -- uvx bild-mcp`
+- Tools (6):
+
+  - `bild_headlines`: Top BILD headlines, newest first
+  - `bild_section_news`: Newest BILD news of one section (Politik, Sport, Unterhaltung, Digital, Auto, Reise, Geld)
+  - `bild_search_news`: Search BILD news by keyword across all feeds
+  - `bild_videos`: Newest BILD stories with an embedded video
+  - `bild_premium_news`: Newest BILDplus stories (behind the paywall)
+  - `bild_get_article`: Full text of a BILD article (BILDplus flagged paywalled)

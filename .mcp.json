@@ -191,6 +191,12 @@
       "args": [
         "mdr-mcp"
       ]
+    },
+    "bild": {
+      "command": "uvx",
+      "args": [
+        "bild-mcp"
+      ]
     }
   }
 }

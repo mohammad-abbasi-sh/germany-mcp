@@ -1,6 +1,6 @@
 # Germany MCP
 
-> 33 read-only MCP servers (167 tools) for German web services — news, weather, transport, open data, finance, housing, sports and more. Every server runs locally with uvx, no API key, no account.
+> 34 read-only MCP servers (172 tools) for German web services — news, weather, transport, open data, finance, housing, sports and more. Every server runs locally with uvx, no API key, no account.
 
 ## Servers
 
@@ -37,6 +37,7 @@
 - [bundesregierung-mcp](https://github.com/mohammad-abbasi-sh/bundesregierung-mcp): Bundesregierung — the German federal government's official site (no key): latest press releases, articles, speeches & press conferences, keyword search & full document text (incl. official English translations). (6 tools) — details + Markdown version: https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/bundesregierung-mcp
 - [mdr-mcp](https://github.com/mohammad-abbasi-sh/mdr-mcp): MDR — the Mitteldeutscher Rundfunk, public broadcaster for Saxony, Saxony-Anhalt and Thuringia (no key): top headlines, news by state, city and section, keyword search & full article text (live tickers flagged). (6 tools) — details + Markdown version: https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/mdr-mcp
 - [bild-mcp](https://github.com/mohammad-abbasi-sh/bild-mcp): BILD — Germany's largest tabloid / digital news brand (no key): headlines, news by section, search, video stories, BILDplus stories & full article text (BILDplus flagged paywalled). (6 tools) — details + Markdown version: https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/bild-mcp
+- [taz-mcp](https://github.com/mohammad-abbasi-sh/taz-mcp): taz — die tageszeitung, Germany's left-liberal national daily (no key): headlines, search, stories by author, authors in today's feed & full article text (section from breadcrumbs). (5 tools) — details + Markdown version: https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/taz-mcp
 
 ## Data files
 

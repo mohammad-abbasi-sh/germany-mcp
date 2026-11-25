@@ -1,1004 +1,1034 @@
 {
-  "catalog": "germany-mcp",
-  "description": "Unofficial read-only MCP servers for German web services (EN/DE/FA)",
-  "servers": [
+ "catalog": "germany-mcp",
+ "description": "Unofficial read-only MCP servers for German web services (EN/DE/FA)",
+ "servers": [
+  {
+   "description": "Bundesliga, 2./3. Liga, DFB-Pokal & DEL via OpenLigaDB (free API, no key): fixtures, live scores, tables, top scorers.",
+   "name": "bundesliga-mcp",
+   "pypi": "bundesliga-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/bundesliga-mcp",
+   "title": "Bundesliga — German football fixtures, tables & scorers",
+   "title_de": "Bundesliga — Spielpläne, Tabellen & Torschützen",
+   "tools": [
     {
-      "description": "Bundesliga, 2./3. Liga, DFB-Pokal & DEL via OpenLigaDB (free API, no key): fixtures, live scores, tables, top scorers.",
-      "name": "bundesliga-mcp",
-      "pypi": "bundesliga-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/bundesliga-mcp",
-      "title": "Bundesliga — German football fixtures, tables & scorers",
-      "title_de": "Bundesliga — Spielpläne, Tabellen & Torschützen",
-      "tools": [
-        {
-          "name": "bundesliga_list_leagues",
-          "summary": "Leagues with their current season"
-        },
-        {
-          "name": "bundesliga_get_fixtures",
-          "summary": "One matchday's fixtures and results"
-        },
-        {
-          "name": "bundesliga_get_live_scores",
-          "summary": "Current matchday scores and status"
-        },
-        {
-          "name": "bundesliga_get_table",
-          "summary": "League table"
-        },
-        {
-          "name": "bundesliga_get_top_scorers",
-          "summary": "Top scorers of a season"
-        },
-        {
-          "name": "bundesliga_get_match_detail",
-          "summary": "Full detail of one match"
-        }
-      ]
+     "name": "bundesliga_list_leagues",
+     "summary": "Leagues with their current season"
     },
     {
-      "description": "ARD, ZDF, 3sat, ARTE, Phoenix & more via MediathekViewWeb (free API, no key): search programmes, latest broadcasts, by channel/topic, programme detail.",
-      "name": "mediathek-mcp",
-      "pypi": "mediathek-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/mediathek-mcp",
-      "title": "Mediathek — German public broadcasters' programmes",
-      "title_de": "Mediathek — Sendungen der öffentlich-rechtlichen Sender",
-      "tools": [
-        {
-          "name": "mediathek_search_programmes",
-          "summary": "Search programmes by title, topic or description"
-        },
-        {
-          "name": "mediathek_latest_broadcasts",
-          "summary": "Newest programmes across all channels"
-        },
-        {
-          "name": "mediathek_by_channel",
-          "summary": "Newest programmes of one channel"
-        },
-        {
-          "name": "mediathek_by_topic",
-          "summary": "All episodes of one show or series"
-        },
-        {
-          "name": "mediathek_programme_detail",
-          "summary": "Full detail of one programme (video URLs, subtitles)"
-        },
-        {
-          "name": "mediathek_list_channels",
-          "summary": "Channels in the film list"
-        }
-      ]
+     "name": "bundesliga_get_fixtures",
+     "summary": "One matchday's fixtures and results"
     },
     {
-      "description": "tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text.",
-      "name": "tagesschau-mcp",
-      "pypi": "tagesschau-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/tagesschau-mcp",
-      "title": "tagesschau — Germany's most-watched TV news",
-      "title_de": "tagesschau — Deutschlands meistgesehene Fernsehnachrichten",
-      "tools": [
-        {
-          "name": "tagesschau_headlines",
-          "summary": "Top headlines, newest first"
-        },
-        {
-          "name": "tagesschau_news_by_section",
-          "summary": "Newest news of one section"
-        },
-        {
-          "name": "tagesschau_search_news",
-          "summary": "Search news by keyword"
-        },
-        {
-          "name": "tagesschau_get_article",
-          "summary": "Full text of one article"
-        },
-        {
-          "name": "tagesschau_latest_videos",
-          "summary": "Latest videos, newest first"
-        },
-        {
-          "name": "tagesschau_regional_news",
-          "summary": "Regional news of one Bundesland"
-        }
-      ]
+     "name": "bundesliga_get_live_scores",
+     "summary": "Current matchday scores and status"
     },
     {
-      "description": "DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen.",
-      "name": "dwd-mcp",
-      "pypi": "dwd-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/dwd-mcp",
-      "title": "DWD — German weather: DWD ICON forecasts, current conditions, official warnings & pollen",
-      "title_de": "DWD — Deutsches Wetter: ICON-Vorhersagen, aktuelles Wetter, amtliche Warnungen & Pollen",
-      "tools": [
-        {
-          "name": "dwd_forecast",
-          "summary": "ICON-model forecast for a German place (hourly + daily)"
-        },
-        {
-          "name": "dwd_current_weather",
-          "summary": "Current conditions for a German place"
-        },
-        {
-          "name": "dwd_warnings",
-          "summary": "Official DWD severe-weather warnings, filterable by state"
-        },
-        {
-          "name": "dwd_pollen",
-          "summary": "Pollen counts for a German place (CAMS via Open-Meteo)"
-        },
-        {
-          "name": "dwd_find_place",
-          "summary": "Find German places (name → coordinates)"
-        }
-      ]
+     "name": "bundesliga_get_table",
+     "summary": "League table"
     },
     {
-      "description": "German Autobahn data from the official verkehr.autobahn.de API (no key): roadworks, closures, warnings, truck/car parking and EV charging stations per motorway.",
-      "name": "autobahn-mcp",
-      "pypi": "autobahn-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/autobahn-mcp",
-      "title": "Autobahn — German motorway roadworks, closures, warnings, parking & EV charging",
-      "title_de": "Autobahn — Baustellen, Sperrungen, Warnungen, Parken & E-Laden",
-      "tools": [
-        {
-          "name": "autobahn_roadworks",
-          "summary": "Roadworks on one motorway"
-        },
-        {
-          "name": "autobahn_closures",
-          "summary": "Closures on one motorway"
-        },
-        {
-          "name": "autobahn_warnings",
-          "summary": "Warnings on one motorway"
-        },
-        {
-          "name": "autobahn_parking",
-          "summary": "Truck/car parking areas on one motorway"
-        },
-        {
-          "name": "autobahn_ev_charging",
-          "summary": "EV charging stations on one motorway"
-        }
-      ]
+     "name": "bundesliga_get_top_scorers",
+     "summary": "Top scorers of a season"
     },
     {
-      "description": "Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages.",
-      "name": "dw-mcp",
-      "pypi": "dw-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/dw-mcp",
-      "title": "Deutsche Welle — DW news in 31 languages: headlines, search, articles & topics",
-      "title_de": "Deutsche Welle — DW-Nachrichten in 31 Sprachen: Schlagzeilen, Suche, Artikel & Themen",
-      "tools": [
-        {
-          "name": "dw_headlines",
-          "summary": "Latest DW headlines in one language"
-        },
-        {
-          "name": "dw_search_news",
-          "summary": "Search recent DW headlines by keyword"
-        },
-        {
-          "name": "dw_latest_articles",
-          "summary": "Latest DW articles in one language"
-        },
-        {
-          "name": "dw_get_article",
-          "summary": "Full text of one DW article"
-        },
-        {
-          "name": "dw_topics",
-          "summary": "DW topic pages matching a word"
-        }
-      ]
-    },
-    {
-      "description": "n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text.",
-      "name": "ntv-mcp",
-      "pypi": "ntv-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/ntv-mcp",
-      "title": "n-tv — German TV news: headlines by section, markets, videos & articles",
-      "title_de": "n-tv — Deutsche Fernsehnachrichten: Schlagzeilen, Börse, Videos & Artikel",
-      "tools": [
-        {
-          "name": "ntv_headlines",
-          "summary": "Latest n-tv headlines by section"
-        },
-        {
-          "name": "ntv_markets",
-          "summary": "Latest n-tv market news"
-        },
-        {
-          "name": "ntv_videos",
-          "summary": "Latest n-tv videos"
-        },
-        {
-          "name": "ntv_search_news",
-          "summary": "Search recent n-tv headlines by keyword"
-        },
-        {
-          "name": "ntv_get_article",
-          "summary": "Full text of one n-tv article"
-        }
-      ]
-    },
-    {
-      "description": "Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup.",
-      "name": "dnb-mcp",
-      "pypi": "dnb-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/dnb-mcp",
-      "title": "DNB — Deutsche Nationalbibliothek catalogue: books, authors & ISBN lookup",
-      "title_de": "DNB — Katalog der Deutschen Nationalbibliothek: Bücher, Autoren & ISBN",
-      "tools": [
-        {
-          "name": "dnb_search_books",
-          "summary": "Keyword search across the DNB catalogue"
-        },
-        {
-          "name": "dnb_search_by_title",
-          "summary": "Search the DNB catalogue by title"
-        },
-        {
-          "name": "dnb_search_by_author",
-          "summary": "Search the DNB catalogue by author"
-        },
-        {
-          "name": "dnb_by_isbn",
-          "summary": "Look up one book by ISBN"
-        },
-        {
-          "name": "dnb_get_record",
-          "summary": "Full record by DNB identifier"
-        }
-      ]
-    },
-    {
-      "description": "Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details.",
-      "name": "govdata-mcp",
-      "pypi": "govdata-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/govdata-mcp",
-      "title": "GovData — Germany's open-data portal: search 163,000+ datasets, publishers & resources",
-      "title_de": "GovData — Deutschlands Open-Data-Portal: 163.000+ Datensätze, Herausgeber & Ressourcen",
-      "tools": [
-        {
-          "name": "govdata_search_datasets",
-          "summary": "Search govdata.de datasets"
-        },
-        {
-          "name": "govdata_get_dataset",
-          "summary": "Full details of one dataset"
-        },
-        {
-          "name": "govdata_list_publishers",
-          "summary": "Publishing organisations, most datasets first"
-        },
-        {
-          "name": "govdata_recent_datasets",
-          "summary": "Most recently updated datasets"
-        },
-        {
-          "name": "govdata_get_resource",
-          "summary": "Details of one dataset resource"
-        }
-      ]
-    },
-    {
-      "description": "Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link.",
-      "name": "deutschlandfunk-mcp",
-      "pypi": "deutschlandfunk-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/deutschlandfunk-mcp",
-      "title": "Deutschlandfunk — German public radio news: rolling news, topics, articles & live stream",
-      "title_de": "Deutschlandfunk — Nachrichten des deutschen öffentlich-rechtlichen Radios: Meldungen, Themen, Artikel & Livestream",
-      "tools": [
-        {
-          "name": "dlf_latest_news",
-          "summary": "Rolling DLF news headlines"
-        },
-        {
-          "name": "dlf_latest_contributions",
-          "summary": "Latest DLF contributions"
-        },
-        {
-          "name": "dlf_news_by_topic",
-          "summary": "DLF news by topic"
-        },
-        {
-          "name": "dlf_search_news",
-          "summary": "Search recent DLF items by keyword"
-        },
-        {
-          "name": "dlf_get_article",
-          "summary": "Full text of one DLF article"
-        },
-        {
-          "name": "dlf_listen_live",
-          "summary": "Deutschlandfunk live stream link"
-        }
-      ]
-    },
-    {
-      "description": "Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation.",
-      "name": "duden-mcp",
-      "pypi": "duden-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/duden-mcp",
-      "title": "Duden — Germany's standard dictionary: word meanings, synonyms, spelling & grammar",
-      "title_de": "Duden — Das Standardwörterbuch der deutschen Sprache: Bedeutungen, Synonyme, Rechtschreibung & Grammatik",
-      "tools": [
-        {
-          "name": "duden_lookup_word",
-          "summary": "Look up a German word: meanings, word type & grammar"
-        },
-        {
-          "name": "duden_synonyms",
-          "summary": "Synonyms of a German word"
-        },
-        {
-          "name": "duden_spelling",
-          "summary": "Spelling & hyphenation of a German word"
-        },
-        {
-          "name": "duden_grammar",
-          "summary": "Grammar notes for a German word"
-        },
-        {
-          "name": "duden_conjugate",
-          "summary": "Full conjugation table of a German verb"
-        },
-        {
-          "name": "duden_search",
-          "summary": "Search Duden headwords"
-        }
-      ]
-    },
-    {
-      "description": "dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes.",
-      "name": "dictcc-mcp",
-      "pypi": "dictcc-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/dictcc-mcp",
-      "title": "dict.cc — German-English & 22 more pairs: translations with word class, gender & votes",
-      "title_de": "dict.cc — Deutsch-Englisch und 22 weitere Sprachenpaare: Übersetzungen mit Wortart, Genus & Stimmen",
-      "tools": [
-        {
-          "name": "dictcc_translate",
-          "summary": "Translate a word with dict.cc (23 pairs)"
-        },
-        {
-          "name": "dictcc_search",
-          "summary": "Find dict.cc headwords matching a query"
-        }
-      ]
-    },
-    {
-      "description": "Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025.",
-      "name": "bundeswahlleiter-mcp",
-      "pypi": "bundeswahlleiter-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp",
-      "title": "Bundeswahlleiterin — German federal election results: Bundestag elections 2017–2025",
-      "title_de": "Die Bundeswahlleiterin — Ergebnisse der Bundestagswahlen 2017–2025",
-      "tools": [
-        {
-          "name": "bwl_national_results",
-          "summary": "National results of a Bundestag election"
-        },
-        {
-          "name": "bwl_party_results",
-          "summary": "Results of one party, nationally and by Land"
-        },
-        {
-          "name": "bwl_constituency_results",
-          "summary": "Results of one constituency"
-        },
-        {
-          "name": "bwl_constituencies",
-          "summary": "List constituencies with winner and turnout"
-        },
-        {
-          "name": "bwl_turnout",
-          "summary": "Voter turnout by Land and nationally"
-        }
-      ]
-    },
-    {
-      "description": "FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability.",
-      "name": "flixtrain-mcp",
-      "pypi": "flixtrain-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/flixtrain-mcp",
-      "title": "FlixTrain — train times, stations & prices between German cities",
-      "title_de": "FlixTrain — Zugzeiten, Bahnhöfe & Preise zwischen deutschen Städten",
-      "tools": [
-        {
-          "name": "flixtrain_search_trains",
-          "summary": "Search FlixTrain departures between two cities"
-        },
-        {
-          "name": "flixtrain_search_cities",
-          "summary": "Find cities by name"
-        }
-      ]
-    },
-    {
-      "description": "German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals.",
-      "name": "billiger-mcp",
-      "pypi": "billiger-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/billiger-mcp",
-      "title": "billiger.de — German price comparison: best prices, shop offers & deals",
-      "title_de": "billiger.de — Deutscher Preisvergleich: Bestpreise, Shop-Angebote & Deals",
-      "tools": [
-        {
-          "name": "billiger_search_prices",
-          "summary": "Search products with best prices"
-        },
-        {
-          "name": "billiger_product_offers",
-          "summary": "Compare shop offers for a product"
-        },
-        {
-          "name": "billiger_best_deals",
-          "summary": "Today's deals from the home page"
-        }
-      ]
-    },
-    {
-      "description": "German TV series from fernsehserien.de (free, no key, no login): search series, series details, episode guides and upcoming air dates.",
-      "name": "fernsehserien-mcp",
-      "pypi": "fernsehserien-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/fernsehserien-mcp",
-      "title": "fernsehserien.de — German TV series: search, details, episodes & air dates",
-      "title_de": "fernsehserien.de — Deutsche TV-Serien: Suche, Details, Episoden & Sendetermine",
-      "tools": [
-        {
-          "name": "fs_search_series",
-          "summary": "Search TV series by name"
-        },
-        {
-          "name": "fs_series_detail",
-          "summary": "Series details and seasons"
-        },
-        {
-          "name": "fs_episodes",
-          "summary": "Episode guide for one season"
-        },
-        {
-          "name": "fs_air_dates",
-          "summary": "Upcoming air dates for a series"
-        }
-      ]
-    },
-    {
-      "description": "ZDF heute news from zdfheute.de (free, no key, no login): latest headlines, news by topic, keyword search and full article text.",
-      "name": "zdf-mcp",
-      "pypi": "zdf-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/zdf-mcp",
-      "title": "ZDF heute news — headlines, topics, search & articles",
-      "title_de": "ZDF heute — Nachrichten, Themen, Suche & Artikel",
-      "tools": [
-        {
-          "name": "zdf_headlines",
-          "summary": "Latest ZDF heute headlines"
-        },
-        {
-          "name": "zdf_news_by_topic",
-          "summary": "ZDF heute news by topic"
-        },
-        {
-          "name": "zdf_search_news",
-          "summary": "Search ZDF heute headlines by keyword"
-        },
-        {
-          "name": "zdf_get_article",
-          "summary": "Full text of a ZDF heute article"
-        }
-      ]
-    },
-    {
-      "description": "European Central Bank data via the official ECB SDMX API (free, no key, no login): euro exchange rates, key ECB interest rates, HICP inflation, M3 money supply and euro-area bond yields.",
-      "name": "ecb-mcp",
-      "pypi": "ecb-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/ecb-mcp",
-      "title": "ECB euro data — exchange rates, key rates, inflation, money supply & bond yields",
-      "title_de": "EZB-Eurodaten — Wechselkurse, Leitzinsen, Inflation, Geldmenge & Anleiherenditen",
-      "tools": [
-        {
-          "name": "ecb_exchange_rates",
-          "summary": "Euro exchange rates vs major currencies"
-        },
-        {
-          "name": "ecb_interest_rates",
-          "summary": "Key ECB interest rates (MRO, deposit, marginal lending)"
-        },
-        {
-          "name": "ecb_inflation",
-          "summary": "HICP inflation, euro area and Germany"
-        },
-        {
-          "name": "ecb_money_supply",
-          "summary": "Euro-area money supply (M1, M2, M3)"
-        },
-        {
-          "name": "ecb_bond_yields",
-          "summary": "Euro-area government bond yields by maturity"
-        }
-      ]
-    },
-    {
-      "description": "WG-Gesucht flatshare listings from wg-gesucht.de (free, no key, no login): WG rooms and flats in 34 German-speaking cities, with price, size, availability and full listing details.",
-      "name": "wg-gesucht-mcp",
-      "pypi": "wg-gesucht-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp",
-      "title": "WG-Gesucht housing — rooms & flats in German cities",
-      "title_de": "WG-Gesucht — WG-Zimmer & Wohnungen in deutschen Städten",
-      "tools": [
-        {
-          "name": "wg_search_rooms",
-          "summary": "Search WG rooms in a city"
-        },
-        {
-          "name": "wg_search_flats",
-          "summary": "Search flats in a city"
-        },
-        {
-          "name": "wg_listing_detail",
-          "summary": "Full details of one listing"
-        },
-        {
-          "name": "wg_cities",
-          "summary": "List supported cities"
-        }
-      ]
-    },
-    {
-      "description": "UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks.",
-      "name": "uba-mcp",
-      "pypi": "uba-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/uba-mcp",
-      "title": "UBA — German air quality: hourly PM10, NO2, O3 values + LQI from 400+ stations",
-      "title_de": "UBA — Deutsche Luftqualität: stündliche PM10-, NO2-, O3-Werte + LQI von über 400 Stationen",
-      "tools": [
-        {
-          "name": "uba_list_stations",
-          "summary": "Measuring stations, filterable by city, state, type, area or name"
-        },
-        {
-          "name": "uba_station_detail",
-          "summary": "One station: address, coordinates, type, data window, recent pollutants"
-        },
-        {
-          "name": "uba_current_air_quality",
-          "summary": "Latest hourly values + LQI at a station (code, id or city name)"
-        },
-        {
-          "name": "uba_measurements",
-          "summary": "Hourly values over a date range (max 31 days) + min/max/mean & daily means"
-        },
-        {
-          "name": "uba_list_components",
-          "summary": "All 12 pollutants: code, symbol, unit, name"
-        },
-        {
-          "name": "uba_list_networks",
-          "summary": "The 17 measuring networks (16 Länder + UBA)"
-        }
-      ]
-    },
-    {
-      "description": "OpenPLZ API (no key): German postal codes — localities, streets, municipalities, districts & the 16 federal states.",
-      "name": "openplz-mcp",
-      "pypi": "openplz-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/openplz-mcp",
-      "title": "OpenPLZ — German postal codes: PLZ lookup, streets & admin tree",
-      "title_de": "OpenPLZ — Deutsche Postleitzahlen: PLZ-Suche, Straßen & Verwaltungsbaum",
-      "tools": [
-        {
-          "name": "openplz_lookup_postal_code",
-          "summary": "Which locality (or localities) a postal code belongs to"
-        },
-        {
-          "name": "openplz_search_locality",
-          "summary": "Search localities by name, optionally within one postal code"
-        },
-        {
-          "name": "openplz_search_street",
-          "summary": "Search streets by name, postal code and/or locality"
-        },
-        {
-          "name": "openplz_full_text_search",
-          "summary": "Free-form street search across name, postal code and city"
-        },
-        {
-          "name": "openplz_list_federal_states",
-          "summary": "All 16 federal states with key + capital"
-        },
-        {
-          "name": "openplz_admin_children",
-          "summary": "One step down the administrative tree (state → district → municipality)"
-        }
-      ]
-    },
-    {
-      "description": "Feiertage — German public holidays via feiertage-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
-      "name": "feiertage-mcp",
-      "pypi": "feiertage-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/feiertage-mcp",
-      "title": "Feiertage — German public holidays: by year & state, is-it-a-holiday, next holiday",
-      "title_de": "Feiertage — Deutsche Feiertage nach Jahr & Bundesland, Ist-es-ein-Feiertag, nächster Feiertag",
-      "tools": [
-        {
-          "name": "feiertage_list_holidays",
-          "summary": "Public holidays of one year in one federal state (optional month filter)"
-        },
-        {
-          "name": "feiertage_is_holiday",
-          "summary": "Is a date a public holiday in one state?"
-        },
-        {
-          "name": "feiertage_next_holiday",
-          "summary": "The next public holiday on or after a date"
-        },
-        {
-          "name": "feiertage_holidays_between",
-          "summary": "Public holidays in a date range (max ~2 years)"
-        },
-        {
-          "name": "feiertage_list_states",
-          "summary": "All 16 federal states + NATIONAL (nationwide holidays)"
-        }
-      ]
-    },
-    {
-      "description": "Ferien — German school holidays via ferien-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
-      "name": "ferien-mcp",
-      "pypi": "ferien-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/ferien-mcp",
-      "title": "Ferien — German school holidays: by year & state, is-it-a-holiday, next holiday",
-      "title_de": "Ferien — Deutsche Schulferien nach Jahr & Bundesland, Ist-es-ein-Ferientag, nächste Ferien",
-      "tools": [
-        {
-          "name": "ferien_list_holidays",
-          "summary": "School holidays of one year in one federal state (optional month filter)"
-        },
-        {
-          "name": "ferien_is_holiday",
-          "summary": "Is a date inside the school holidays in one state?"
-        },
-        {
-          "name": "ferien_next_holiday",
-          "summary": "The next school holiday on or after a date"
-        },
-        {
-          "name": "ferien_holidays_between",
-          "summary": "School holidays overlapping a date range (max ~2 years)"
-        },
-        {
-          "name": "ferien_list_states",
-          "summary": "All 16 German federal states"
-        }
-      ]
-    },
-    {
-      "description": "Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly).",
-      "name": "spiegel-mcp",
-      "pypi": "spiegel-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/spiegel-mcp",
-      "title": "Spiegel — DER SPIEGEL news: headlines, 13 sections, search & videos",
-      "title_de": "Spiegel — DER SPIEGEL: Schlagzeilen, 13 Ressorts, Suche & Videos",
-      "tools": [
-        {
-          "name": "spiegel_headlines",
-          "summary": "Top headlines (Schlagzeilen), newest first"
-        },
-        {
-          "name": "spiegel_news_by_section",
-          "summary": "Newest news of one of 13 sections"
-        },
-        {
-          "name": "spiegel_search_news",
-          "summary": "Search news by keyword across all feeds"
-        },
-        {
-          "name": "spiegel_get_article",
-          "summary": "Article text of one spiegel.de article (paywall flagged)"
-        },
-        {
-          "name": "spiegel_latest_videos",
-          "summary": "Latest SPIEGEL videos, newest first"
-        }
-      ]
-    },
-    {
-      "description": "Heise — heise.de IT news via the official RSS feed (no key): top headlines, 7 sections, keyword search, top stories, c't & article text (heise+ flagged honestly).",
-      "name": "heise-mcp",
-      "pypi": "heise-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/heise-mcp",
-      "title": "Heise — Germany's #1 IT news portal: headlines, sections, search & c't",
-      "title_de": "heise — Deutschlands #1-IT-Nachrichtenportal: Schlagzeilen, Ressorts, Suche & c't",
-      "tools": [
-        {
-          "name": "heise_headlines",
-          "summary": "Top headlines (main RSS feed), newest first"
-        },
-        {
-          "name": "heise_search_news",
-          "summary": "Search news by keyword in the main feed"
-        },
-        {
-          "name": "heise_news_by_section",
-          "summary": "Newest news of one of 7 sections"
-        },
-        {
-          "name": "heise_top_stories",
-          "summary": "Front-page top stories, in page order"
-        },
-        {
-          "name": "heise_ct",
-          "summary": "Latest c't magazine articles"
-        },
-        {
-          "name": "heise_get_article",
-          "summary": "Article text of one heise.de article (paywall flagged)"
-        }
-      ]
-    },
-    {
-      "description": "Zeit — DIE ZEIT news via the official RSS feeds (no key): top headlines, 10 sections, keyword search (main feed + all sections) & section list.",
-      "name": "zeit-mcp",
-      "pypi": "zeit-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/zeit-mcp",
-      "title": "Zeit — DIE ZEIT: Germany's biggest weekly newspaper",
-      "title_de": "DIE ZEIT — Deutschlands größte Wochenzeitung: Schlagzeilen, Ressorts & Suche",
-      "tools": [
-        {
-          "name": "zeit_headlines",
-          "summary": "Top headlines (main RSS feed), newest first"
-        },
-        {
-          "name": "zeit_news_by_section",
-          "summary": "Newest news of one of 10 sections"
-        },
-        {
-          "name": "zeit_search_news",
-          "summary": "Search news by keyword in the main feed"
-        },
-        {
-          "name": "zeit_search_all_sections",
-          "summary": "Search news by keyword across all 10 section feeds"
-        },
-        {
-          "name": "zeit_sections",
-          "summary": "The 10 sections with RSS feeds"
-        }
-      ]
-    },
-    {
-      "description": "Welt — WELT news via the official RSS feed (no key): top headlines, news by topic, keyword search, latest videos & full article text (WELT+ honestly flagged).",
-      "name": "welt-mcp",
-      "pypi": "welt-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/welt-mcp",
-      "title": "Welt — WELT: one of Germany's biggest daily newspapers",
-      "title_de": "WELT — eine der größten Tageszeitungen Deutschlands: Schlagzeilen, Themen, Videos & Artikeltexte",
-      "tools": [
-        {
-          "name": "welt_headlines",
-          "summary": "Top headlines (official RSS feed), newest first"
-        },
-        {
-          "name": "welt_news_by_topic",
-          "summary": "Newest news of one topic (Deutschland, Ausland, Fußball, Kultur, ...)"
-        },
-        {
-          "name": "welt_search_news",
-          "summary": "Search news by keyword in the feed"
-        },
-        {
-          "name": "welt_latest_videos",
-          "summary": "Latest video items from the feed"
-        },
-        {
-          "name": "welt_get_article",
-          "summary": "Full text of a WELT article (WELT+ paywall flagged)"
-        }
-      ]
-    },
-    {
-      "description": "NDR — public broadcaster for northern Germany via the official RSS feeds (no key): top headlines, regional news for the four states, news by section, keyword search & full article text (kultur via SSR, video pages flagged).",
-      "name": "ndr-mcp",
-      "pypi": "ndr-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/ndr-mcp",
-      "title": "NDR — public broadcaster for northern Germany",
-      "title_de": "NDR — Schlagzeilen, Regionalnachrichten, Ressorts & Artikeltexte",
-      "tools": [
-        {
-          "name": "ndr_headlines",
-          "summary": "Top headlines (official RSS feed), newest first"
-        },
-        {
-          "name": "ndr_news_by_region",
-          "summary": "Newest news from one of the four broadcast states"
-        },
-        {
-          "name": "ndr_news_by_section",
-          "summary": "Newest news of one section (nachrichten, kultur, sport, ...)"
-        },
-        {
-          "name": "ndr_search_news",
-          "summary": "Search news by keyword in the main feed"
-        },
-        {
-          "name": "ndr_get_article",
-          "summary": "Full text of an NDR article (JSON-LD or SSR; video pages flagged)"
-        }
-      ]
-    },
-    {
-      "description": "BR — Bavarian public broadcaster via the official RSS feeds (no key): BR24 ticker, news by category, keyword search, full article text, Bayern 1/2 radio stories & traffic reports.",
-      "name": "br-mcp",
-      "pypi": "br-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/br-mcp",
-      "title": "BR — Bayerischer Rundfunk news, radio & traffic",
-      "title_de": "BR — Ticker, Kategorien, Suche, Artikel, Radio & Verkehr",
-      "tools": [
-        {
-          "name": "br_headlines",
-          "summary": "Top BR24 ticker items (official RSS feed), newest first"
-        },
-        {
-          "name": "br_news_by_category",
-          "summary": "Newest news of one category (bayern, wissen, sport, kultur, wirtschaft)"
-        },
-        {
-          "name": "br_search_news",
-          "summary": "Search news by keyword across the ticker and all category feeds"
-        },
-        {
-          "name": "br_get_article",
-          "summary": "Full text of a BR article (server-rendered <article> paragraphs)"
-        },
-        {
-          "name": "br_radio",
-          "summary": "Latest stories from a BR radio station (bayern1 or bayern2)"
-        },
-        {
-          "name": "br_traffic",
-          "summary": "Current Verkehrsmeldungen (traffic reports) from BR"
-        }
-      ]
-    },
-    {
-      "description": "FOCUS online — one of Germany's biggest news magazines — via the official RSS feed (no key): top headlines, news by section, section overview, keyword search & full article text.",
-      "name": "focus-online-mcp",
-      "pypi": "focus-online-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/focus-online-mcp",
-      "title": "FOCUS online — headlines, sections, search & article text",
-      "title_de": "FOCUS online — Schlagzeilen, Ressorts, Suche & Artikeltexte",
-      "tools": [
-        {
-          "name": "focus_headlines",
-          "summary": "Top FOCUS online headlines (official RSS feed, ~400 items), newest first"
-        },
-        {
-          "name": "focus_news_by_section",
-          "summary": "Newest news of one section (politik, kultur, panorama, sport, finanzen, earth, ...)"
-        },
-        {
-          "name": "focus_sections",
-          "summary": "Sections in today's feed with their item counts"
-        },
-        {
-          "name": "focus_search_news",
-          "summary": "Search news by keyword across the whole official RSS feed (~400 items)"
-        },
-        {
-          "name": "focus_get_article",
-          "summary": "Full text of a FOCUS online article (server-rendered <article> paragraphs)"
-        },
-        {
-          "name": "focus_health",
-          "summary": "Reachability probe of the FOCUS online RSS feed"
-        }
-      ]
-    },
-    {
-      "description": "Bundesregierung — the German federal government's official site (no key): latest press releases, articles, speeches & press conferences, keyword search & full document text (incl. official English translations).",
-      "name": "bundesregierung-mcp",
-      "pypi": "bundesregierung-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/bundesregierung-mcp",
-      "title": "Bundesregierung — press releases, articles, speeches & search",
-      "title_de": "Bundesregierung — Pressemitteilungen, Artikel, Reden & Suche",
-      "tools": [
-        {
-          "name": "breg_press_releases",
-          "summary": "Latest press releases of the German federal government, newest first"
-        },
-        {
-          "name": "breg_articles",
-          "summary": "Latest articles / Meldungen from bundesregierung.de, newest first"
-        },
-        {
-          "name": "breg_speeches",
-          "summary": "Latest speeches, press statements & press conferences (mostly full transcripts)"
-        },
-        {
-          "name": "breg_search",
-          "summary": "Search bundesregierung.de by keyword across the whole site"
-        },
-        {
-          "name": "breg_get_document",
-          "summary": "Full text of a press release, article or speech (incl. official English translation when present)"
-        },
-        {
-          "name": "breg_health",
-          "summary": "Reachability probe of the press-releases listing"
-        }
-      ]
-    },
-    {
-      "description": "MDR — the Mitteldeutscher Rundfunk, public broadcaster for Saxony, Saxony-Anhalt and Thuringia (no key): top headlines, news by state, city and section, keyword search & full article text (live tickers flagged).",
-      "name": "mdr-mcp",
-      "pypi": "mdr-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/mdr-mcp",
-      "title": "MDR — headlines, news by state, city & section",
-      "title_de": "MDR — Schlagzeilen, Nachrichten nach Bundesland, Stadt & Ressort",
-      "tools": [
-        {
-          "name": "mdr_headlines",
-          "summary": "Top MDR Aktuell headlines, newest first"
-        },
-        {
-          "name": "mdr_regional_news",
-          "summary": "Newest MDR news for one federal state (Sachsen, Sachsen-Anhalt, Thüringen)"
-        },
-        {
-          "name": "mdr_local_news",
-          "summary": "Newest MDR news for one city (Leipzig, Dresden, Chemnitz, Magdeburg, Halle)"
-        },
-        {
-          "name": "mdr_section_news",
-          "summary": "Newest MDR news of one section (Deutschland, Kultur, Wissen, Sport)"
-        },
-        {
-          "name": "mdr_search_news",
-          "summary": "Search MDR news by keyword across all feeds"
-        },
-        {
-          "name": "mdr_get_article",
-          "summary": "Full text of an MDR article (live tickers flagged)"
-        }
-      ]
-    },
-    {
-      "description": "BILD — Germany's largest tabloid / digital news brand (no key): headlines, news by section, search, video stories, BILDplus stories & full article text (BILDplus flagged paywalled).",
-      "name": "bild-mcp",
-      "pypi": "bild-mcp",
-      "repository": "https://github.com/mohammad-abbasi-sh/bild-mcp",
-      "title": "BILD — headlines, news by section, search & article text",
-      "title_de": "BILD — Schlagzeilen, Nachrichten nach Ressort, Suche & Artikeltexte",
-      "tools": [
-        {
-          "name": "bild_headlines",
-          "summary": "Top BILD headlines, newest first"
-        },
-        {
-          "name": "bild_section_news",
-          "summary": "Newest BILD news of one section (Politik, Sport, Unterhaltung, Digital, Auto, Reise, Geld)"
-        },
-        {
-          "name": "bild_search_news",
-          "summary": "Search BILD news by keyword across all feeds"
-        },
-        {
-          "name": "bild_videos",
-          "summary": "Newest BILD stories with an embedded video"
-        },
-        {
-          "name": "bild_premium_news",
-          "summary": "Newest BILDplus stories (behind the paywall)"
-        },
-        {
-          "name": "bild_get_article",
-          "summary": "Full text of a BILD article (BILDplus flagged paywalled)"
-        }
-      ]
+     "name": "bundesliga_get_match_detail",
+     "summary": "Full detail of one match"
     }
-  ]
+   ]
+  },
+  {
+   "description": "ARD, ZDF, 3sat, ARTE, Phoenix & more via MediathekViewWeb (free API, no key): search programmes, latest broadcasts, by channel/topic, programme detail.",
+   "name": "mediathek-mcp",
+   "pypi": "mediathek-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/mediathek-mcp",
+   "title": "Mediathek — German public broadcasters' programmes",
+   "title_de": "Mediathek — Sendungen der öffentlich-rechtlichen Sender",
+   "tools": [
+    {
+     "name": "mediathek_search_programmes",
+     "summary": "Search programmes by title, topic or description"
+    },
+    {
+     "name": "mediathek_latest_broadcasts",
+     "summary": "Newest programmes across all channels"
+    },
+    {
+     "name": "mediathek_by_channel",
+     "summary": "Newest programmes of one channel"
+    },
+    {
+     "name": "mediathek_by_topic",
+     "summary": "All episodes of one show or series"
+    },
+    {
+     "name": "mediathek_programme_detail",
+     "summary": "Full detail of one programme (video URLs, subtitles)"
+    },
+    {
+     "name": "mediathek_list_channels",
+     "summary": "Channels in the film list"
+    }
+   ]
+  },
+  {
+   "description": "tagesschau.de (ARD) via official RSS feeds (no key): headlines, news by section, regional news for all 16 states, latest videos & full article text.",
+   "name": "tagesschau-mcp",
+   "pypi": "tagesschau-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/tagesschau-mcp",
+   "title": "tagesschau — Germany's most-watched TV news",
+   "title_de": "tagesschau — Deutschlands meistgesehene Fernsehnachrichten",
+   "tools": [
+    {
+     "name": "tagesschau_headlines",
+     "summary": "Top headlines, newest first"
+    },
+    {
+     "name": "tagesschau_news_by_section",
+     "summary": "Newest news of one section"
+    },
+    {
+     "name": "tagesschau_search_news",
+     "summary": "Search news by keyword"
+    },
+    {
+     "name": "tagesschau_get_article",
+     "summary": "Full text of one article"
+    },
+    {
+     "name": "tagesschau_latest_videos",
+     "summary": "Latest videos, newest first"
+    },
+    {
+     "name": "tagesschau_regional_news",
+     "summary": "Regional news of one Bundesland"
+    }
+   ]
+  },
+  {
+   "description": "DWD (Deutscher Wetterdienst) via Open-Meteo ICON model (no key): forecasts, current weather, official warnings & pollen.",
+   "name": "dwd-mcp",
+   "pypi": "dwd-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/dwd-mcp",
+   "title": "DWD — German weather: DWD ICON forecasts, current conditions, official warnings & pollen",
+   "title_de": "DWD — Deutsches Wetter: ICON-Vorhersagen, aktuelles Wetter, amtliche Warnungen & Pollen",
+   "tools": [
+    {
+     "name": "dwd_forecast",
+     "summary": "ICON-model forecast for a German place (hourly + daily)"
+    },
+    {
+     "name": "dwd_current_weather",
+     "summary": "Current conditions for a German place"
+    },
+    {
+     "name": "dwd_warnings",
+     "summary": "Official DWD severe-weather warnings, filterable by state"
+    },
+    {
+     "name": "dwd_pollen",
+     "summary": "Pollen counts for a German place (CAMS via Open-Meteo)"
+    },
+    {
+     "name": "dwd_find_place",
+     "summary": "Find German places (name → coordinates)"
+    }
+   ]
+  },
+  {
+   "description": "German Autobahn data from the official verkehr.autobahn.de API (no key): roadworks, closures, warnings, truck/car parking and EV charging stations per motorway.",
+   "name": "autobahn-mcp",
+   "pypi": "autobahn-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/autobahn-mcp",
+   "title": "Autobahn — German motorway roadworks, closures, warnings, parking & EV charging",
+   "title_de": "Autobahn — Baustellen, Sperrungen, Warnungen, Parken & E-Laden",
+   "tools": [
+    {
+     "name": "autobahn_roadworks",
+     "summary": "Roadworks on one motorway"
+    },
+    {
+     "name": "autobahn_closures",
+     "summary": "Closures on one motorway"
+    },
+    {
+     "name": "autobahn_warnings",
+     "summary": "Warnings on one motorway"
+    },
+    {
+     "name": "autobahn_parking",
+     "summary": "Truck/car parking areas on one motorway"
+    },
+    {
+     "name": "autobahn_ev_charging",
+     "summary": "EV charging stations on one motorway"
+    }
+   ]
+  },
+  {
+   "description": "Deutsche Welle news in 31 languages from DW's official sitemaps (no key): latest headlines, keyword search, latest articles, full article text and topic pages.",
+   "name": "dw-mcp",
+   "pypi": "dw-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/dw-mcp",
+   "title": "Deutsche Welle — DW news in 31 languages: headlines, search, articles & topics",
+   "title_de": "Deutsche Welle — DW-Nachrichten in 31 Sprachen: Schlagzeilen, Suche, Artikel & Themen",
+   "tools": [
+    {
+     "name": "dw_headlines",
+     "summary": "Latest DW headlines in one language"
+    },
+    {
+     "name": "dw_search_news",
+     "summary": "Search recent DW headlines by keyword"
+    },
+    {
+     "name": "dw_latest_articles",
+     "summary": "Latest DW articles in one language"
+    },
+    {
+     "name": "dw_get_article",
+     "summary": "Full text of one DW article"
+    },
+    {
+     "name": "dw_topics",
+     "summary": "DW topic pages matching a word"
+    }
+   ]
+  },
+  {
+   "description": "n-tv news from its official RSS feeds (no key): latest headlines by section, market news, latest videos, keyword search and full article text.",
+   "name": "ntv-mcp",
+   "pypi": "ntv-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/ntv-mcp",
+   "title": "n-tv — German TV news: headlines by section, markets, videos & articles",
+   "title_de": "n-tv — Deutsche Fernsehnachrichten: Schlagzeilen, Börse, Videos & Artikel",
+   "tools": [
+    {
+     "name": "ntv_headlines",
+     "summary": "Latest n-tv headlines by section"
+    },
+    {
+     "name": "ntv_markets",
+     "summary": "Latest n-tv market news"
+    },
+    {
+     "name": "ntv_videos",
+     "summary": "Latest n-tv videos"
+    },
+    {
+     "name": "ntv_search_news",
+     "summary": "Search recent n-tv headlines by keyword"
+    },
+    {
+     "name": "ntv_get_article",
+     "summary": "Full text of one n-tv article"
+    }
+   ]
+  },
+  {
+   "description": "Deutsche Nationalbibliothek catalogue via its official SRU API (no key): keyword, title and author search, ISBN and DNB-ID lookup.",
+   "name": "dnb-mcp",
+   "pypi": "dnb-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/dnb-mcp",
+   "title": "DNB — Deutsche Nationalbibliothek catalogue: books, authors & ISBN lookup",
+   "title_de": "DNB — Katalog der Deutschen Nationalbibliothek: Bücher, Autoren & ISBN",
+   "tools": [
+    {
+     "name": "dnb_search_books",
+     "summary": "Keyword search across the DNB catalogue"
+    },
+    {
+     "name": "dnb_search_by_title",
+     "summary": "Search the DNB catalogue by title"
+    },
+    {
+     "name": "dnb_search_by_author",
+     "summary": "Search the DNB catalogue by author"
+    },
+    {
+     "name": "dnb_by_isbn",
+     "summary": "Look up one book by ISBN"
+    },
+    {
+     "name": "dnb_get_record",
+     "summary": "Full record by DNB identifier"
+    }
+   ]
+  },
+  {
+   "description": "Germany's national open-data portal govdata.de via its official CKAN API (no key): search 163,000+ datasets, dataset details, publishers, recent datasets and resource details.",
+   "name": "govdata-mcp",
+   "pypi": "govdata-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/govdata-mcp",
+   "title": "GovData — Germany's open-data portal: search 163,000+ datasets, publishers & resources",
+   "title_de": "GovData — Deutschlands Open-Data-Portal: 163.000+ Datensätze, Herausgeber & Ressourcen",
+   "tools": [
+    {
+     "name": "govdata_search_datasets",
+     "summary": "Search govdata.de datasets"
+    },
+    {
+     "name": "govdata_get_dataset",
+     "summary": "Full details of one dataset"
+    },
+    {
+     "name": "govdata_list_publishers",
+     "summary": "Publishing organisations, most datasets first"
+    },
+    {
+     "name": "govdata_recent_datasets",
+     "summary": "Most recently updated datasets"
+    },
+    {
+     "name": "govdata_get_resource",
+     "summary": "Details of one dataset resource"
+    }
+   ]
+  },
+  {
+   "description": "Deutschlandfunk news & radio from its official RSS feeds (no key): rolling news, latest contributions, topic feeds, keyword search, full article text and the live stream link.",
+   "name": "deutschlandfunk-mcp",
+   "pypi": "deutschlandfunk-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/deutschlandfunk-mcp",
+   "title": "Deutschlandfunk — German public radio news: rolling news, topics, articles & live stream",
+   "title_de": "Deutschlandfunk — Nachrichten des deutschen öffentlich-rechtlichen Radios: Meldungen, Themen, Artikel & Livestream",
+   "tools": [
+    {
+     "name": "dlf_latest_news",
+     "summary": "Rolling DLF news headlines"
+    },
+    {
+     "name": "dlf_latest_contributions",
+     "summary": "Latest DLF contributions"
+    },
+    {
+     "name": "dlf_news_by_topic",
+     "summary": "DLF news by topic"
+    },
+    {
+     "name": "dlf_search_news",
+     "summary": "Search recent DLF items by keyword"
+    },
+    {
+     "name": "dlf_get_article",
+     "summary": "Full text of one DLF article"
+    },
+    {
+     "name": "dlf_listen_live",
+     "summary": "Deutschlandfunk live stream link"
+    }
+   ]
+  },
+  {
+   "description": "Duden dictionary lookup from duden.de (free, no key, no login): word meanings, synonyms, spelling with hyphenation, grammar notes and full verb conjugation.",
+   "name": "duden-mcp",
+   "pypi": "duden-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/duden-mcp",
+   "title": "Duden — Germany's standard dictionary: word meanings, synonyms, spelling & grammar",
+   "title_de": "Duden — Das Standardwörterbuch der deutschen Sprache: Bedeutungen, Synonyme, Rechtschreibung & Grammatik",
+   "tools": [
+    {
+     "name": "duden_lookup_word",
+     "summary": "Look up a German word: meanings, word type & grammar"
+    },
+    {
+     "name": "duden_synonyms",
+     "summary": "Synonyms of a German word"
+    },
+    {
+     "name": "duden_spelling",
+     "summary": "Spelling & hyphenation of a German word"
+    },
+    {
+     "name": "duden_grammar",
+     "summary": "Grammar notes for a German word"
+    },
+    {
+     "name": "duden_conjugate",
+     "summary": "Full conjugation table of a German verb"
+    },
+    {
+     "name": "duden_search",
+     "summary": "Search Duden headwords"
+    }
+   ]
+  },
+  {
+   "description": "dict.cc translations from dict.cc (free, no key, no login): German-English plus 22 more pairs, with word class, gender, usage notes and community votes.",
+   "name": "dictcc-mcp",
+   "pypi": "dictcc-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/dictcc-mcp",
+   "title": "dict.cc — German-English & 22 more pairs: translations with word class, gender & votes",
+   "title_de": "dict.cc — Deutsch-Englisch und 22 weitere Sprachenpaare: Übersetzungen mit Wortart, Genus & Stimmen",
+   "tools": [
+    {
+     "name": "dictcc_translate",
+     "summary": "Translate a word with dict.cc (23 pairs)"
+    },
+    {
+     "name": "dictcc_search",
+     "summary": "Find dict.cc headwords matching a query"
+    }
+   ]
+  },
+  {
+   "description": "Official Bundestag election results from bundeswahlleiterin.de (free open data, no key, no login): national results, party results, constituencies and turnout for 2017, 2021 and 2025.",
+   "name": "bundeswahlleiter-mcp",
+   "pypi": "bundeswahlleiter-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/bundeswahlleiter-mcp",
+   "title": "Bundeswahlleiterin — German federal election results: Bundestag elections 2017–2025",
+   "title_de": "Die Bundeswahlleiterin — Ergebnisse der Bundestagswahlen 2017–2025",
+   "tools": [
+    {
+     "name": "bwl_national_results",
+     "summary": "National results of a Bundestag election"
+    },
+    {
+     "name": "bwl_party_results",
+     "summary": "Results of one party, nationally and by Land"
+    },
+    {
+     "name": "bwl_constituency_results",
+     "summary": "Results of one constituency"
+    },
+    {
+     "name": "bwl_constituencies",
+     "summary": "List constituencies with winner and turnout"
+    },
+    {
+     "name": "bwl_turnout",
+     "summary": "Voter turnout by Land and nationally"
+    }
+   ]
+  },
+  {
+   "description": "FlixTrain times & prices from the FlixBus shop search API (free, no key, no login): train-only departures between German cities, with stations, duration, price and seat availability.",
+   "name": "flixtrain-mcp",
+   "pypi": "flixtrain-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/flixtrain-mcp",
+   "title": "FlixTrain — train times, stations & prices between German cities",
+   "title_de": "FlixTrain — Zugzeiten, Bahnhöfe & Preise zwischen deutschen Städten",
+   "tools": [
+    {
+     "name": "flixtrain_search_trains",
+     "summary": "Search FlixTrain departures between two cities"
+    },
+    {
+     "name": "flixtrain_search_cities",
+     "summary": "Find cities by name"
+    }
+   ]
+  },
+  {
+   "description": "German price comparison from billiger.de (free, no key, no login): search products with best prices, compare shop offers, and today's deals.",
+   "name": "billiger-mcp",
+   "pypi": "billiger-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/billiger-mcp",
+   "title": "billiger.de — German price comparison: best prices, shop offers & deals",
+   "title_de": "billiger.de — Deutscher Preisvergleich: Bestpreise, Shop-Angebote & Deals",
+   "tools": [
+    {
+     "name": "billiger_search_prices",
+     "summary": "Search products with best prices"
+    },
+    {
+     "name": "billiger_product_offers",
+     "summary": "Compare shop offers for a product"
+    },
+    {
+     "name": "billiger_best_deals",
+     "summary": "Today's deals from the home page"
+    }
+   ]
+  },
+  {
+   "description": "German TV series from fernsehserien.de (free, no key, no login): search series, series details, episode guides and upcoming air dates.",
+   "name": "fernsehserien-mcp",
+   "pypi": "fernsehserien-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/fernsehserien-mcp",
+   "title": "fernsehserien.de — German TV series: search, details, episodes & air dates",
+   "title_de": "fernsehserien.de — Deutsche TV-Serien: Suche, Details, Episoden & Sendetermine",
+   "tools": [
+    {
+     "name": "fs_search_series",
+     "summary": "Search TV series by name"
+    },
+    {
+     "name": "fs_series_detail",
+     "summary": "Series details and seasons"
+    },
+    {
+     "name": "fs_episodes",
+     "summary": "Episode guide for one season"
+    },
+    {
+     "name": "fs_air_dates",
+     "summary": "Upcoming air dates for a series"
+    }
+   ]
+  },
+  {
+   "description": "ZDF heute news from zdfheute.de (free, no key, no login): latest headlines, news by topic, keyword search and full article text.",
+   "name": "zdf-mcp",
+   "pypi": "zdf-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/zdf-mcp",
+   "title": "ZDF heute news — headlines, topics, search & articles",
+   "title_de": "ZDF heute — Nachrichten, Themen, Suche & Artikel",
+   "tools": [
+    {
+     "name": "zdf_headlines",
+     "summary": "Latest ZDF heute headlines"
+    },
+    {
+     "name": "zdf_news_by_topic",
+     "summary": "ZDF heute news by topic"
+    },
+    {
+     "name": "zdf_search_news",
+     "summary": "Search ZDF heute headlines by keyword"
+    },
+    {
+     "name": "zdf_get_article",
+     "summary": "Full text of a ZDF heute article"
+    }
+   ]
+  },
+  {
+   "description": "European Central Bank data via the official ECB SDMX API (free, no key, no login): euro exchange rates, key ECB interest rates, HICP inflation, M3 money supply and euro-area bond yields.",
+   "name": "ecb-mcp",
+   "pypi": "ecb-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/ecb-mcp",
+   "title": "ECB euro data — exchange rates, key rates, inflation, money supply & bond yields",
+   "title_de": "EZB-Eurodaten — Wechselkurse, Leitzinsen, Inflation, Geldmenge & Anleiherenditen",
+   "tools": [
+    {
+     "name": "ecb_exchange_rates",
+     "summary": "Euro exchange rates vs major currencies"
+    },
+    {
+     "name": "ecb_interest_rates",
+     "summary": "Key ECB interest rates (MRO, deposit, marginal lending)"
+    },
+    {
+     "name": "ecb_inflation",
+     "summary": "HICP inflation, euro area and Germany"
+    },
+    {
+     "name": "ecb_money_supply",
+     "summary": "Euro-area money supply (M1, M2, M3)"
+    },
+    {
+     "name": "ecb_bond_yields",
+     "summary": "Euro-area government bond yields by maturity"
+    }
+   ]
+  },
+  {
+   "description": "WG-Gesucht flatshare listings from wg-gesucht.de (free, no key, no login): WG rooms and flats in 34 German-speaking cities, with price, size, availability and full listing details.",
+   "name": "wg-gesucht-mcp",
+   "pypi": "wg-gesucht-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/wg-gesucht-mcp",
+   "title": "WG-Gesucht housing — rooms & flats in German cities",
+   "title_de": "WG-Gesucht — WG-Zimmer & Wohnungen in deutschen Städten",
+   "tools": [
+    {
+     "name": "wg_search_rooms",
+     "summary": "Search WG rooms in a city"
+    },
+    {
+     "name": "wg_search_flats",
+     "summary": "Search flats in a city"
+    },
+    {
+     "name": "wg_listing_detail",
+     "summary": "Full details of one listing"
+    },
+    {
+     "name": "wg_cities",
+     "summary": "List supported cities"
+    }
+   ]
+  },
+  {
+   "description": "UBA (Umweltbundesamt) Air Data API v4 (no key): hourly air-quality measurements from 400+ German stations, pollutants, LQI classes & networks.",
+   "name": "uba-mcp",
+   "pypi": "uba-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/uba-mcp",
+   "title": "UBA — German air quality: hourly PM10, NO2, O3 values + LQI from 400+ stations",
+   "title_de": "UBA — Deutsche Luftqualität: stündliche PM10-, NO2-, O3-Werte + LQI von über 400 Stationen",
+   "tools": [
+    {
+     "name": "uba_list_stations",
+     "summary": "Measuring stations, filterable by city, state, type, area or name"
+    },
+    {
+     "name": "uba_station_detail",
+     "summary": "One station: address, coordinates, type, data window, recent pollutants"
+    },
+    {
+     "name": "uba_current_air_quality",
+     "summary": "Latest hourly values + LQI at a station (code, id or city name)"
+    },
+    {
+     "name": "uba_measurements",
+     "summary": "Hourly values over a date range (max 31 days) + min/max/mean & daily means"
+    },
+    {
+     "name": "uba_list_components",
+     "summary": "All 12 pollutants: code, symbol, unit, name"
+    },
+    {
+     "name": "uba_list_networks",
+     "summary": "The 17 measuring networks (16 Länder + UBA)"
+    }
+   ]
+  },
+  {
+   "description": "OpenPLZ API (no key): German postal codes — localities, streets, municipalities, districts & the 16 federal states.",
+   "name": "openplz-mcp",
+   "pypi": "openplz-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/openplz-mcp",
+   "title": "OpenPLZ — German postal codes: PLZ lookup, streets & admin tree",
+   "title_de": "OpenPLZ — Deutsche Postleitzahlen: PLZ-Suche, Straßen & Verwaltungsbaum",
+   "tools": [
+    {
+     "name": "openplz_lookup_postal_code",
+     "summary": "Which locality (or localities) a postal code belongs to"
+    },
+    {
+     "name": "openplz_search_locality",
+     "summary": "Search localities by name, optionally within one postal code"
+    },
+    {
+     "name": "openplz_search_street",
+     "summary": "Search streets by name, postal code and/or locality"
+    },
+    {
+     "name": "openplz_full_text_search",
+     "summary": "Free-form street search across name, postal code and city"
+    },
+    {
+     "name": "openplz_list_federal_states",
+     "summary": "All 16 federal states with key + capital"
+    },
+    {
+     "name": "openplz_admin_children",
+     "summary": "One step down the administrative tree (state → district → municipality)"
+    }
+   ]
+  },
+  {
+   "description": "Feiertage — German public holidays via feiertage-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
+   "name": "feiertage-mcp",
+   "pypi": "feiertage-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/feiertage-mcp",
+   "title": "Feiertage — German public holidays: by year & state, is-it-a-holiday, next holiday",
+   "title_de": "Feiertage — Deutsche Feiertage nach Jahr & Bundesland, Ist-es-ein-Feiertag, nächster Feiertag",
+   "tools": [
+    {
+     "name": "feiertage_list_holidays",
+     "summary": "Public holidays of one year in one federal state (optional month filter)"
+    },
+    {
+     "name": "feiertage_is_holiday",
+     "summary": "Is a date a public holiday in one state?"
+    },
+    {
+     "name": "feiertage_next_holiday",
+     "summary": "The next public holiday on or after a date"
+    },
+    {
+     "name": "feiertage_holidays_between",
+     "summary": "Public holidays in a date range (max ~2 years)"
+    },
+    {
+     "name": "feiertage_list_states",
+     "summary": "All 16 federal states + NATIONAL (nationwide holidays)"
+    }
+   ]
+  },
+  {
+   "description": "Ferien — German school holidays via ferien-api.de (free API, no key): holidays by year & state, is-it-a-holiday, next holiday & date ranges.",
+   "name": "ferien-mcp",
+   "pypi": "ferien-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/ferien-mcp",
+   "title": "Ferien — German school holidays: by year & state, is-it-a-holiday, next holiday",
+   "title_de": "Ferien — Deutsche Schulferien nach Jahr & Bundesland, Ist-es-ein-Ferientag, nächste Ferien",
+   "tools": [
+    {
+     "name": "ferien_list_holidays",
+     "summary": "School holidays of one year in one federal state (optional month filter)"
+    },
+    {
+     "name": "ferien_is_holiday",
+     "summary": "Is a date inside the school holidays in one state?"
+    },
+    {
+     "name": "ferien_next_holiday",
+     "summary": "The next school holiday on or after a date"
+    },
+    {
+     "name": "ferien_holidays_between",
+     "summary": "School holidays overlapping a date range (max ~2 years)"
+    },
+    {
+     "name": "ferien_list_states",
+     "summary": "All 16 German federal states"
+    }
+   ]
+  },
+  {
+   "description": "Spiegel — DER SPIEGEL news via spiegel.de (official RSS feeds, no key): top headlines, 13 sections, keyword search, latest videos & article text (SPIEGEL+ flagged honestly).",
+   "name": "spiegel-mcp",
+   "pypi": "spiegel-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/spiegel-mcp",
+   "title": "Spiegel — DER SPIEGEL news: headlines, 13 sections, search & videos",
+   "title_de": "Spiegel — DER SPIEGEL: Schlagzeilen, 13 Ressorts, Suche & Videos",
+   "tools": [
+    {
+     "name": "spiegel_headlines",
+     "summary": "Top headlines (Schlagzeilen), newest first"
+    },
+    {
+     "name": "spiegel_news_by_section",
+     "summary": "Newest news of one of 13 sections"
+    },
+    {
+     "name": "spiegel_search_news",
+     "summary": "Search news by keyword across all feeds"
+    },
+    {
+     "name": "spiegel_get_article",
+     "summary": "Article text of one spiegel.de article (paywall flagged)"
+    },
+    {
+     "name": "spiegel_latest_videos",
+     "summary": "Latest SPIEGEL videos, newest first"
+    }
+   ]
+  },
+  {
+   "description": "Heise — heise.de IT news via the official RSS feed (no key): top headlines, 7 sections, keyword search, top stories, c't & article text (heise+ flagged honestly).",
+   "name": "heise-mcp",
+   "pypi": "heise-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/heise-mcp",
+   "title": "Heise — Germany's #1 IT news portal: headlines, sections, search & c't",
+   "title_de": "heise — Deutschlands #1-IT-Nachrichtenportal: Schlagzeilen, Ressorts, Suche & c't",
+   "tools": [
+    {
+     "name": "heise_headlines",
+     "summary": "Top headlines (main RSS feed), newest first"
+    },
+    {
+     "name": "heise_search_news",
+     "summary": "Search news by keyword in the main feed"
+    },
+    {
+     "name": "heise_news_by_section",
+     "summary": "Newest news of one of 7 sections"
+    },
+    {
+     "name": "heise_top_stories",
+     "summary": "Front-page top stories, in page order"
+    },
+    {
+     "name": "heise_ct",
+     "summary": "Latest c't magazine articles"
+    },
+    {
+     "name": "heise_get_article",
+     "summary": "Article text of one heise.de article (paywall flagged)"
+    }
+   ]
+  },
+  {
+   "description": "Zeit — DIE ZEIT news via the official RSS feeds (no key): top headlines, 10 sections, keyword search (main feed + all sections) & section list.",
+   "name": "zeit-mcp",
+   "pypi": "zeit-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/zeit-mcp",
+   "title": "Zeit — DIE ZEIT: Germany's biggest weekly newspaper",
+   "title_de": "DIE ZEIT — Deutschlands größte Wochenzeitung: Schlagzeilen, Ressorts & Suche",
+   "tools": [
+    {
+     "name": "zeit_headlines",
+     "summary": "Top headlines (main RSS feed), newest first"
+    },
+    {
+     "name": "zeit_news_by_section",
+     "summary": "Newest news of one of 10 sections"
+    },
+    {
+     "name": "zeit_search_news",
+     "summary": "Search news by keyword in the main feed"
+    },
+    {
+     "name": "zeit_search_all_sections",
+     "summary": "Search news by keyword across all 10 section feeds"
+    },
+    {
+     "name": "zeit_sections",
+     "summary": "The 10 sections with RSS feeds"
+    }
+   ]
+  },
+  {
+   "description": "Welt — WELT news via the official RSS feed (no key): top headlines, news by topic, keyword search, latest videos & full article text (WELT+ honestly flagged).",
+   "name": "welt-mcp",
+   "pypi": "welt-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/welt-mcp",
+   "title": "Welt — WELT: one of Germany's biggest daily newspapers",
+   "title_de": "WELT — eine der größten Tageszeitungen Deutschlands: Schlagzeilen, Themen, Videos & Artikeltexte",
+   "tools": [
+    {
+     "name": "welt_headlines",
+     "summary": "Top headlines (official RSS feed), newest first"
+    },
+    {
+     "name": "welt_news_by_topic",
+     "summary": "Newest news of one topic (Deutschland, Ausland, Fußball, Kultur, ...)"
+    },
+    {
+     "name": "welt_search_news",
+     "summary": "Search news by keyword in the feed"
+    },
+    {
+     "name": "welt_latest_videos",
+     "summary": "Latest video items from the feed"
+    },
+    {
+     "name": "welt_get_article",
+     "summary": "Full text of a WELT article (WELT+ paywall flagged)"
+    }
+   ]
+  },
+  {
+   "description": "NDR — public broadcaster for northern Germany via the official RSS feeds (no key): top headlines, regional news for the four states, news by section, keyword search & full article text (kultur via SSR, video pages flagged).",
+   "name": "ndr-mcp",
+   "pypi": "ndr-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/ndr-mcp",
+   "title": "NDR — public broadcaster for northern Germany",
+   "title_de": "NDR — Schlagzeilen, Regionalnachrichten, Ressorts & Artikeltexte",
+   "tools": [
+    {
+     "name": "ndr_headlines",
+     "summary": "Top headlines (official RSS feed), newest first"
+    },
+    {
+     "name": "ndr_news_by_region",
+     "summary": "Newest news from one of the four broadcast states"
+    },
+    {
+     "name": "ndr_news_by_section",
+     "summary": "Newest news of one section (nachrichten, kultur, sport, ...)"
+    },
+    {
+     "name": "ndr_search_news",
+     "summary": "Search news by keyword in the main feed"
+    },
+    {
+     "name": "ndr_get_article",
+     "summary": "Full text of an NDR article (JSON-LD or SSR; video pages flagged)"
+    }
+   ]
+  },
+  {
+   "description": "BR — Bavarian public broadcaster via the official RSS feeds (no key): BR24 ticker, news by category, keyword search, full article text, Bayern 1/2 radio stories & traffic reports.",
+   "name": "br-mcp",
+   "pypi": "br-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/br-mcp",
+   "title": "BR — Bayerischer Rundfunk news, radio & traffic",
+   "title_de": "BR — Ticker, Kategorien, Suche, Artikel, Radio & Verkehr",
+   "tools": [
+    {
+     "name": "br_headlines",
+     "summary": "Top BR24 ticker items (official RSS feed), newest first"
+    },
+    {
+     "name": "br_news_by_category",
+     "summary": "Newest news of one category (bayern, wissen, sport, kultur, wirtschaft)"
+    },
+    {
+     "name": "br_search_news",
+     "summary": "Search news by keyword across the ticker and all category feeds"
+    },
+    {
+     "name": "br_get_article",
+     "summary": "Full text of a BR article (server-rendered <article> paragraphs)"
+    },
+    {
+     "name": "br_radio",
+     "summary": "Latest stories from a BR radio station (bayern1 or bayern2)"
+    },
+    {
+     "name": "br_traffic",
+     "summary": "Current Verkehrsmeldungen (traffic reports) from BR"
+    }
+   ]
+  },
+  {
+   "description": "FOCUS online — one of Germany's biggest news magazines — via the official RSS feed (no key): top headlines, news by section, section overview, keyword search & full article text.",
+   "name": "focus-online-mcp",
+   "pypi": "focus-online-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/focus-online-mcp",
+   "title": "FOCUS online — headlines, sections, search & article text",
+   "title_de": "FOCUS online — Schlagzeilen, Ressorts, Suche & Artikeltexte",
+   "tools": [
+    {
+     "name": "focus_headlines",
+     "summary": "Top FOCUS online headlines (official RSS feed, ~400 items), newest first"
+    },
+    {
+     "name": "focus_news_by_section",
+     "summary": "Newest news of one section (politik, kultur, panorama, sport, finanzen, earth, ...)"
+    },
+    {
+     "name": "focus_sections",
+     "summary": "Sections in today's feed with their item counts"
+    },
+    {
+     "name": "focus_search_news",
+     "summary": "Search news by keyword across the whole official RSS feed (~400 items)"
+    },
+    {
+     "name": "focus_get_article",
+     "summary": "Full text of a FOCUS online article (server-rendered <article> paragraphs)"
+    },
+    {
+     "name": "focus_health",
+     "summary": "Reachability probe of the FOCUS online RSS feed"
+    }
+   ]
+  },
+  {
+   "description": "Bundesregierung — the German federal government's official site (no key): latest press releases, articles, speeches & press conferences, keyword search & full document text (incl. official English translations).",
+   "name": "bundesregierung-mcp",
+   "pypi": "bundesregierung-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/bundesregierung-mcp",
+   "title": "Bundesregierung — press releases, articles, speeches & search",
+   "title_de": "Bundesregierung — Pressemitteilungen, Artikel, Reden & Suche",
+   "tools": [
+    {
+     "name": "breg_press_releases",
+     "summary": "Latest press releases of the German federal government, newest first"
+    },
+    {
+     "name": "breg_articles",
+     "summary": "Latest articles / Meldungen from bundesregierung.de, newest first"
+    },
+    {
+     "name": "breg_speeches",
+     "summary": "Latest speeches, press statements & press conferences (mostly full transcripts)"
+    },
+    {
+     "name": "breg_search",
+     "summary": "Search bundesregierung.de by keyword across the whole site"
+    },
+    {
+     "name": "breg_get_document",
+     "summary": "Full text of a press release, article or speech (incl. official English translation when present)"
+    },
+    {
+     "name": "breg_health",
+     "summary": "Reachability probe of the press-releases listing"
+    }
+   ]
+  },
+  {
+   "description": "MDR — the Mitteldeutscher Rundfunk, public broadcaster for Saxony, Saxony-Anhalt and Thuringia (no key): top headlines, news by state, city and section, keyword search & full article text (live tickers flagged).",
+   "name": "mdr-mcp",
+   "pypi": "mdr-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/mdr-mcp",
+   "title": "MDR — headlines, news by state, city & section",
+   "title_de": "MDR — Schlagzeilen, Nachrichten nach Bundesland, Stadt & Ressort",
+   "tools": [
+    {
+     "name": "mdr_headlines",
+     "summary": "Top MDR Aktuell headlines, newest first"
+    },
+    {
+     "name": "mdr_regional_news",
+     "summary": "Newest MDR news for one federal state (Sachsen, Sachsen-Anhalt, Thüringen)"
+    },
+    {
+     "name": "mdr_local_news",
+     "summary": "Newest MDR news for one city (Leipzig, Dresden, Chemnitz, Magdeburg, Halle)"
+    },
+    {
+     "name": "mdr_section_news",
+     "summary": "Newest MDR news of one section (Deutschland, Kultur, Wissen, Sport)"
+    },
+    {
+     "name": "mdr_search_news",
+     "summary": "Search MDR news by keyword across all feeds"
+    },
+    {
+     "name": "mdr_get_article",
+     "summary": "Full text of an MDR article (live tickers flagged)"
+    }
+   ]
+  },
+  {
+   "description": "BILD — Germany's largest tabloid / digital news brand (no key): headlines, news by section, search, video stories, BILDplus stories & full article text (BILDplus flagged paywalled).",
+   "name": "bild-mcp",
+   "pypi": "bild-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/bild-mcp",
+   "title": "BILD — headlines, news by section, search & article text",
+   "title_de": "BILD — Schlagzeilen, Nachrichten nach Ressort, Suche & Artikeltexte",
+   "tools": [
+    {
+     "name": "bild_headlines",
+     "summary": "Top BILD headlines, newest first"
+    },
+    {
+     "name": "bild_section_news",
+     "summary": "Newest BILD news of one section (Politik, Sport, Unterhaltung, Digital, Auto, Reise, Geld)"
+    },
+    {
+     "name": "bild_search_news",
+     "summary": "Search BILD news by keyword across all feeds"
+    },
+    {
+     "name": "bild_videos",
+     "summary": "Newest BILD stories with an embedded video"
+    },
+    {
+     "name": "bild_premium_news",
+     "summary": "Newest BILDplus stories (behind the paywall)"
+    },
+    {
+     "name": "bild_get_article",
+     "summary": "Full text of a BILD article (BILDplus flagged paywalled)"
+    }
+   ]
+  },
+  {
+   "description": "taz — die tageszeitung, Germany's left-liberal national daily (no key): headlines, search, stories by author, authors in today's feed & full article text (section from breadcrumbs).",
+   "name": "taz-mcp",
+   "pypi": "taz-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/taz-mcp",
+   "title": "taz — headlines, search, stories by author & article text",
+   "title_de": "taz — Schlagzeilen, Suche, Artikel nach Autor:in & Artikeltexte",
+   "tools": [
+    {
+     "name": "taz_headlines",
+     "summary": "Top taz headlines, newest first"
+    },
+    {
+     "name": "taz_search_news",
+     "summary": "Search taz news by keyword across the feed"
+    },
+    {
+     "name": "taz_by_author",
+     "summary": "Newest taz stories by one author"
+    },
+    {
+     "name": "taz_authors",
+     "summary": "Authors in today's taz feed, with story counts"
+    },
+    {
+     "name": "taz_get_article",
+     "summary": "Full text of a taz article (section from breadcrumbs)"
+    }
+   ]
+  }
+ ]
 }

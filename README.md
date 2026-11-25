@@ -44,8 +44,9 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [bundesregierung-mcp](https://github.com/mohammad-abbasi-sh/bundesregierung-mcp) | Bundesregierung — German federal government: press releases, articles, speeches, search & full text | 6 | `uvx bundesregierung-mcp==0.1.0` |
 | [mdr-mcp](https://github.com/mohammad-abbasi-sh/mdr-mcp) | MDR — Mitteldeutscher Rundfunk: headlines, news by state, city & section, search & full text | 6 | `uvx mdr-mcp==0.1.0` |
 | [bild-mcp](https://github.com/mohammad-abbasi-sh/bild-mcp) | BILD — Germany's largest tabloid: headlines, sections, search, videos, BILDplus & article text | 6 | `uvx bild-mcp==0.1.0` |
+| [taz-mcp](https://github.com/mohammad-abbasi-sh/taz-mcp) | taz — die tageszeitung: headlines, search, stories by author, authors & article text | 5 | `uvx taz-mcp==0.1.0` |
 
-*One new server every day. Each server ships with tests, fixtures and trilingual docs. 33 servers live — and the queue keeps growing (see the build queue).*
+*One new server every day. Each server ships with tests, fixtures and trilingual docs. 34 servers live — and the queue keeps growing (see the build queue).*
 
 ## For AI agents
 

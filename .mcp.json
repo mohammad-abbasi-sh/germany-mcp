@@ -197,6 +197,12 @@
       "args": [
         "bild-mcp"
       ]
+    },
+    "taz": {
+      "command": "uvx",
+      "args": [
+        "taz-mcp"
+      ]
     }
   }
 }

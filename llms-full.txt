@@ -1,6 +1,6 @@
 # Germany MCP — full catalog
 
-Generated 2026-11-24T10:33:02Z. 33 read-only MCP servers (167 tools) for German web services. Every server runs locally with uvx, no API key, no account.
+Generated 2026-11-25T10:27:21Z. 34 read-only MCP servers (172 tools) for German web services. Every server runs locally with uvx, no API key, no account.
 
 ## bundesliga-mcp
 
@@ -531,3 +531,19 @@ BILD — Germany's largest tabloid / digital news brand (no key): headlines, new
   - `bild_videos`: Newest BILD stories with an embedded video
   - `bild_premium_news`: Newest BILDplus stories (behind the paywall)
   - `bild_get_article`: Full text of a BILD article (BILDplus flagged paywalled)
+
+## taz-mcp
+
+taz — die tageszeitung, Germany's left-liberal national daily (no key): headlines, search, stories by author, authors in today's feed & full article text (section from breadcrumbs).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/taz-mcp
+- PyPI: https://pypi.org/project/taz-mcp/
+- Install: `claude mcp add --transport stdio --scope user taz -- uvx taz-mcp`
+- Tools (5):
+
+  - `taz_headlines`: Top taz headlines, newest first
+  - `taz_search_news`: Search taz news by keyword across the feed
+  - `taz_by_author`: Newest taz stories by one author
+  - `taz_authors`: Authors in today's taz feed, with story counts
+  - `taz_get_article`: Full text of a taz article (section from breadcrumbs)

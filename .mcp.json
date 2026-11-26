@@ -203,6 +203,12 @@
       "args": [
         "taz-mcp"
       ]
+    },
+    "t3n": {
+      "command": "uvx",
+      "args": [
+        "t3n-mcp"
+      ]
     }
   }
 }

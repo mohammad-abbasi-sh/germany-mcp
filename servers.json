@@ -1029,6 +1029,36 @@
      "summary": "Full text of a taz article (section from breadcrumbs)"
     }
    ]
+  },
+  {
+   "description": "t3n — digital pioneers, Germany's well-known tech magazine (no key): latest news, search, stories by topic, topics in today's feeds & full article text (section from articleSection).",
+   "name": "t3n-mcp",
+   "pypi": "t3n-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/t3n-mcp",
+   "title": "t3n — latest news, search, stories by topic & article text",
+   "title_de": "t3n — neueste Meldungen, Suche, Artikel nach Thema & Artikeltexte",
+   "tools": [
+    {
+     "name": "t3n_latest",
+     "summary": "Latest t3n news, newest first"
+    },
+    {
+     "name": "t3n_search_news",
+     "summary": "Search t3n news by keyword across both feeds"
+    },
+    {
+     "name": "t3n_by_topic",
+     "summary": "Newest t3n stories on one topic tag"
+    },
+    {
+     "name": "t3n_topics",
+     "summary": "Topic tags in today's t3n feeds, with story counts"
+    },
+    {
+     "name": "t3n_get_article",
+     "summary": "Full text of a t3n article (section from articleSection)"
+    }
+   ]
   }
  ]
 }

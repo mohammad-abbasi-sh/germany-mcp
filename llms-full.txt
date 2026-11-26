@@ -1,6 +1,6 @@
 # Germany MCP — full catalog
 
-Generated 2026-11-25T10:27:21Z. 34 read-only MCP servers (172 tools) for German web services. Every server runs locally with uvx, no API key, no account.
+Generated 2026-11-26T10:29:12Z. 35 read-only MCP servers (177 tools) for German web services. Every server runs locally with uvx, no API key, no account.
 
 ## bundesliga-mcp
 
@@ -547,3 +547,19 @@ taz — die tageszeitung, Germany's left-liberal national daily (no key): headli
   - `taz_by_author`: Newest taz stories by one author
   - `taz_authors`: Authors in today's taz feed, with story counts
   - `taz_get_article`: Full text of a taz article (section from breadcrumbs)
+
+## t3n-mcp
+
+t3n — digital pioneers, Germany's well-known tech magazine (no key): latest news, search, stories by topic, topics in today's feeds & full article text (section from articleSection).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/t3n-mcp
+- PyPI: https://pypi.org/project/t3n-mcp/
+- Install: `claude mcp add --transport stdio --scope user t3n -- uvx t3n-mcp`
+- Tools (5):
+
+  - `t3n_latest`: Latest t3n news, newest first
+  - `t3n_search_news`: Search t3n news by keyword across both feeds
+  - `t3n_by_topic`: Newest t3n stories on one topic tag
+  - `t3n_topics`: Topic tags in today's t3n feeds, with story counts
+  - `t3n_get_article`: Full text of a t3n article (section from articleSection)

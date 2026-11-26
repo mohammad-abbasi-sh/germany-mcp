@@ -103,6 +103,10 @@ SERVER_META = {
                "featured": False, "added": 32},
     "bild-mcp": {"cat": "news", "color": "#C00000", "letter": "📰",
                "featured": False, "added": 33},
+    "taz-mcp": {"cat": "news", "color": "#A6192E", "letter": "📰",
+               "featured": False, "added": 34},
+    "t3n-mcp": {"cat": "news", "color": "#F9423A", "letter": "💻",
+               "featured": False, "added": 35},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -438,6 +442,26 @@ TRANSLATIONS = {
   "bild_videos": ("تازه‌ترین داستان‌های BILD با ویدیوی داخلی", "Neueste BILD-Geschichten mit eingebettetem Video"),
   "bild_premium_news": ("تازه‌ترین داستان‌های BILDplus (پشت پی‌وال)", "Neueste BILDplus-Geschichten (hinter der Paywall)"),
   "bild_get_article": ("متن کامل یک مقالهٔ BILD (BILDplus با پرچم پولی مشخص می‌شود)", "Volltext eines BILD-Artikels (BILDplus wird als Paywall gekennzeichnet)"),
+ }},
+"taz-mcp": {
+ "desc_fa": "taz — دی تاگس‌تسایتونگ، روزنامهٔ سراسری چپ‌میانهٔ آلمان (بدون کلید): تیترهای برتر، جست‌وجوی کلیدواژه، مقاله‌ها بر اساس نویسنده، نویسندگان فید امروز و متن کامل مقالات (بخش از breadcrumb صفحه).",
+ "desc_de": "taz — die tageszeitung, Deutschlands linksliberale überregionale Tageszeitung (kein Schlüssel): Top-Schlagzeilen, Stichwortsuche, Artikel nach Autor:in, Autor:innen des heutigen Feeds und Artikeltexte (Ressort aus den Breadcrumbs).",
+ "tools": {
+  "taz_headlines": ("تیترهای برتر taz، جدیدترین اول", "Top-Schlagzeilen der taz, neueste zuerst"),
+  "taz_search_news": ("جست‌وجوی اخبار taz با کلیدواژه در فید", "Nachrichtensuche nach Stichwort im Feed"),
+  "taz_by_author": ("تازه‌ترین مقاله‌های taz از یک نویسنده", "Neueste taz-Artikel einer Autorin / eines Autors"),
+  "taz_authors": ("نویسندگان فید امروز taz با تعداد مقاله‌ها", "Autor:innen des heutigen taz-Feeds mit Artikelzahlen"),
+  "taz_get_article": ("متن کامل یک مقالهٔ taz (بخش از breadcrumb صفحه)", "Volltext eines taz-Artikels (Ressort aus den Breadcrumbs)"),
+ }},
+"t3n-mcp": {
+ "desc_fa": "t3n — مجلهٔ فناوری شناخته‌شدهٔ آلمان (بدون کلید): تازه‌ترین اخبار، جست‌وجوی کلیدواژه، مقاله‌ها بر اساس برچسب موضوعی، موضوع‌های فیدهای امروز و متن کامل مقالات (بخش از articleSection صفحه).",
+ "desc_de": "t3n — Deutschlands bekanntes Tech-Magazin (kein Schlüssel): neueste Meldungen, Stichwortsuche, Artikel nach Themen-Tag, Themen der heutigen Feeds und Artikeltexte (Ressort aus der articleSection).",
+ "tools": {
+  "t3n_latest": ("تازه‌ترین اخبار t3n، جدیدترین اول", "Neueste t3n-Meldungen, neueste zuerst"),
+  "t3n_search_news": ("جست‌وجوی اخبار t3n با کلیدواژه در هر دو فید", "Nachrichtensuche nach Stichwort in beiden t3n-Feeds"),
+  "t3n_by_topic": ("تازه‌ترین مقاله‌های t3n درباره یک برچسب موضوعی", "Neueste t3n-Artikel zu einem Themen-Tag"),
+  "t3n_topics": ("برچسب‌های موضوعی فیدهای امروز t3n با تعداد مقاله‌ها", "Themen-Tags der heutigen t3n-Feeds mit Artikelzahlen"),
+  "t3n_get_article": ("متن کامل یک مقالهٔ t3n (بخش از articleSection صفحه)", "Volltext eines t3n-Artikels (Ressort aus der articleSection)"),
  }},
 }
 

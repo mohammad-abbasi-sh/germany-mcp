@@ -1,6 +1,6 @@
 # Germany MCP
 
-> 35 read-only MCP servers (177 tools) for German web services — news, weather, transport, open data, finance, housing, sports and more. Every server runs locally with uvx, no API key, no account.
+> 36 read-only MCP servers (183 tools) for German web services — news, weather, transport, open data, finance, housing, sports and more. Every server runs locally with uvx, no API key, no account.
 
 ## Servers
 
@@ -39,6 +39,7 @@
 - [bild-mcp](https://github.com/mohammad-abbasi-sh/bild-mcp): BILD — Germany's largest tabloid / digital news brand (no key): headlines, news by section, search, video stories, BILDplus stories & full article text (BILDplus flagged paywalled). (6 tools) — details + Markdown version: https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/bild-mcp
 - [taz-mcp](https://github.com/mohammad-abbasi-sh/taz-mcp): taz — die tageszeitung, Germany's left-liberal national daily (no key): headlines, search, stories by author, authors in today's feed & full article text (section from breadcrumbs). (5 tools) — details + Markdown version: https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/taz-mcp
 - [t3n-mcp](https://github.com/mohammad-abbasi-sh/t3n-mcp): t3n — digital pioneers, Germany's well-known tech magazine (no key): latest news, search, stories by topic, topics in today's feeds & full article text (section from articleSection). (5 tools) — details + Markdown version: https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/t3n-mcp
+- [faz-mcp](https://github.com/mohammad-abbasi-sh/faz-mcp): FAZ — Frankfurter Allgemeine Zeitung, one of Germany's biggest quality daily newspapers (no key): latest news, search, stories by section and author, sections & full article text (FAZ+ flagged paywalled). (6 tools) — details + Markdown version: https://mohammad-abbasi-sh.github.io/germany-mcp/#/en/tool/faz-mcp
 
 ## Data files
 

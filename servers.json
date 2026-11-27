@@ -1059,6 +1059,40 @@
      "summary": "Full text of a t3n article (section from articleSection)"
     }
    ]
+  },
+  {
+   "description": "FAZ — Frankfurter Allgemeine Zeitung, one of Germany's biggest quality daily newspapers (no key): latest news, search, stories by section and author, sections & full article text (FAZ+ flagged paywalled).",
+   "name": "faz-mcp",
+   "pypi": "faz-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/faz-mcp",
+   "title": "FAZ.NET — latest news, search, sections, authors & article text",
+   "title_de": "FAZ.NET — neueste Meldungen, Suche, Ressorts, Autor:innen & Artikeltexte",
+   "tools": [
+    {
+     "name": "faz_latest",
+     "summary": "Latest FAZ news, newest first"
+    },
+    {
+     "name": "faz_search_news",
+     "summary": "Search FAZ news by keyword across the main feed"
+    },
+    {
+     "name": "faz_by_section",
+     "summary": "Newest FAZ stories from one section feed"
+    },
+    {
+     "name": "faz_sections",
+     "summary": "Sections in today's FAZ main feed, with story counts"
+    },
+    {
+     "name": "faz_by_author",
+     "summary": "Newest FAZ stories by one author"
+    },
+    {
+     "name": "faz_get_article",
+     "summary": "Full text of a FAZ article (FAZ+ flagged paywalled)"
+    }
+   ]
   }
  ]
 }

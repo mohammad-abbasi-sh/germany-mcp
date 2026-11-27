@@ -209,6 +209,12 @@
       "args": [
         "t3n-mcp"
       ]
+    },
+    "faz": {
+      "command": "uvx",
+      "args": [
+        "faz-mcp"
+      ]
     }
   }
 }

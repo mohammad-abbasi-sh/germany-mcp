@@ -1,6 +1,6 @@
 # Germany MCP — full catalog
 
-Generated 2026-11-26T10:29:12Z. 35 read-only MCP servers (177 tools) for German web services. Every server runs locally with uvx, no API key, no account.
+Generated 2026-11-27T10:36:47Z. 36 read-only MCP servers (183 tools) for German web services. Every server runs locally with uvx, no API key, no account.
 
 ## bundesliga-mcp
 
@@ -563,3 +563,20 @@ t3n — digital pioneers, Germany's well-known tech magazine (no key): latest ne
   - `t3n_by_topic`: Newest t3n stories on one topic tag
   - `t3n_topics`: Topic tags in today's t3n feeds, with story counts
   - `t3n_get_article`: Full text of a t3n article (section from articleSection)
+
+## faz-mcp
+
+FAZ — Frankfurter Allgemeine Zeitung, one of Germany's biggest quality daily newspapers (no key): latest news, search, stories by section and author, sections & full article text (FAZ+ flagged paywalled).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/faz-mcp
+- PyPI: https://pypi.org/project/faz-mcp/
+- Install: `claude mcp add --transport stdio --scope user faz -- uvx faz-mcp`
+- Tools (6):
+
+  - `faz_latest`: Latest FAZ news, newest first
+  - `faz_search_news`: Search FAZ news by keyword across the main feed
+  - `faz_by_section`: Newest FAZ stories from one section feed
+  - `faz_sections`: Sections in today's FAZ main feed, with story counts
+  - `faz_by_author`: Newest FAZ stories by one author
+  - `faz_get_article`: Full text of a FAZ article (FAZ+ flagged paywalled)

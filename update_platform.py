@@ -107,6 +107,8 @@ SERVER_META = {
                "featured": False, "added": 34},
     "t3n-mcp": {"cat": "news", "color": "#F9423A", "letter": "💻",
                "featured": False, "added": 35},
+    "faz-mcp": {"cat": "news", "color": "#7C2D12", "letter": "🗞️",
+               "featured": False, "added": 36},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -462,6 +464,17 @@ TRANSLATIONS = {
   "t3n_by_topic": ("تازه‌ترین مقاله‌های t3n درباره یک برچسب موضوعی", "Neueste t3n-Artikel zu einem Themen-Tag"),
   "t3n_topics": ("برچسب‌های موضوعی فیدهای امروز t3n با تعداد مقاله‌ها", "Themen-Tags der heutigen t3n-Feeds mit Artikelzahlen"),
   "t3n_get_article": ("متن کامل یک مقالهٔ t3n (بخش از articleSection صفحه)", "Volltext eines t3n-Artikels (Ressort aus der articleSection)"),
+ }},
+"faz-mcp": {
+ "desc_fa": "FAZ — فرانکفورتر آلگماینه تسایتونگ، یکی از بزرگ‌ترین روزنامه‌های کیفی آلمان (بدون کلید): تازه‌ترین اخبار، جست‌وجوی کلیدواژه، مقاله‌ها بر اساس بخش و نویسنده، بخش‌های فید امروز و متن کامل مقالات (FAZ+ با پرچم پولی مشخص می‌شود).",
+ "desc_de": "FAZ — Frankfurter Allgemeine Zeitung, eine der größten deutschen Qualitätszeitungen (kein Schlüssel): neueste Meldungen, Stichwortsuche, Artikel nach Ressort und Autor:in, Ressorts des heutigen Feeds und Artikeltexte (FAZ+ wird als Paywall gekennzeichnet).",
+ "tools": {
+  "faz_latest": ("تازه‌ترین اخبار FAZ، جدیدترین اول", "Neueste FAZ-Meldungen, neueste zuerst"),
+  "faz_search_news": ("جست‌وجوی اخبار FAZ با کلیدواژه در فید اصلی", "Nachrichtensuche nach Stichwort im FAZ-Hauptfeed"),
+  "faz_by_section": ("تازه‌ترین مقاله‌های FAZ از یک فید بخش", "Neueste FAZ-Artikel eines Ressort-Feeds"),
+  "faz_sections": ("بخش‌های فید اصلی امروز FAZ با تعداد مقاله‌ها", "Ressorts des heutigen FAZ-Hauptfeeds mit Artikelzahlen"),
+  "faz_by_author": ("تازه‌ترین مقاله‌های FAZ از یک نویسنده", "Neueste FAZ-Artikel einer Autorin / eines Autors"),
+  "faz_get_article": ("متن کامل یک مقالهٔ FAZ (FAZ+ با پرچم پولی مشخص می‌شود)", "Volltext eines FAZ-Artikels (FAZ+ wird als Paywall gekennzeichnet)"),
  }},
 }
 

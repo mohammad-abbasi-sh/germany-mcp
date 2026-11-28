@@ -109,6 +109,8 @@ SERVER_META = {
                "featured": False, "added": 35},
     "faz-mcp": {"cat": "news", "color": "#7C2D12", "letter": "🗞️",
                "featured": False, "added": 36},
+    "computerbase-mcp": {"cat": "news", "color": "#1B3A5C", "letter": "🖥️",
+               "featured": False, "added": 37},
 }
 
 # FA/DE authorship: desc_fa, desc_de, and per-tool (sf, st) keyed by tool name.
@@ -475,6 +477,19 @@ TRANSLATIONS = {
   "faz_sections": ("بخش‌های فید اصلی امروز FAZ با تعداد مقاله‌ها", "Ressorts des heutigen FAZ-Hauptfeeds mit Artikelzahlen"),
   "faz_by_author": ("تازه‌ترین مقاله‌های FAZ از یک نویسنده", "Neueste FAZ-Artikel einer Autorin / eines Autors"),
   "faz_get_article": ("متن کامل یک مقالهٔ FAZ (FAZ+ با پرچم پولی مشخص می‌شود)", "Volltext eines FAZ-Artikels (FAZ+ wird als Paywall gekennzeichnet)"),
+ }},
+"computerbase-mcp": {
+ "desc_fa": "ComputerBase — یکی از بزرگ‌ترین سایت‌های فناوری آلمان (بدون کلید): تازه‌ترین اخبار فناوری، جست‌وجوی کلیدواژه، مقاله‌ها بر اساس موضوع و نویسنده، موضوع‌ها و نویسنده‌های فید امروز، تازه‌ترین دانلودهای نرم‌افزار و متن کامل مقالات (Plus با پرچم پولی مشخص می‌شود).",
+ "desc_de": "ComputerBase — eine der größten deutschen Tech-Seiten (kein Schlüssel): neueste Tech-Meldungen, Stichwortsuche, Artikel nach Thema und Autor:in, Themen und Autor:innen des heutigen Feeds, neueste Software-Downloads und Artikeltexte (Plus wird als Paywall gekennzeichnet).",
+ "tools": {
+  "computerbase_latest": ("تازه‌ترین اخبار فناوری ComputerBase، جدیدترین اول", "Neueste ComputerBase-Tech-Meldungen, neueste zuerst"),
+  "computerbase_search_news": ("جست‌وجوی اخبار ComputerBase با کلیدواژه در فید اصلی", "Nachrichtensuche nach Stichwort im ComputerBase-Hauptfeed"),
+  "computerbase_by_topic": ("تازه‌ترین مقاله‌های ComputerBase در یک موضوع", "Neueste ComputerBase-Artikel zu einem Thema"),
+  "computerbase_topics": ("موضوع‌های فید اصلی امروز ComputerBase با تعداد مقاله‌ها", "Themen des heutigen ComputerBase-Hauptfeeds mit Artikelzahlen"),
+  "computerbase_by_author": ("تازه‌ترین مقاله‌های ComputerBase از یک نویسنده", "Neueste ComputerBase-Artikel einer Autorin / eines Autors"),
+  "computerbase_authors": ("نویسنده‌های فید اصلی امروز ComputerBase با تعداد مقاله‌ها", "Autor:innen des heutigen ComputerBase-Hauptfeeds mit Artikelzahlen"),
+  "computerbase_downloads": ("تازه‌ترین دانلودهای نرم‌افزار ComputerBase", "Neueste Software-Downloads von ComputerBase"),
+  "computerbase_get_article": ("متن کامل یک مقالهٔ ComputerBase (Plus با پرچم پولی مشخص می‌شود)", "Volltext eines ComputerBase-Artikels (Plus wird als Paywall gekennzeichnet)"),
  }},
 }
 

@@ -1,6 +1,6 @@
 # Germany MCP — full catalog
 
-Generated 2026-11-27T10:36:47Z. 36 read-only MCP servers (183 tools) for German web services. Every server runs locally with uvx, no API key, no account.
+Generated 2026-11-28T10:36:06Z. 37 read-only MCP servers (191 tools) for German web services. Every server runs locally with uvx, no API key, no account.
 
 ## bundesliga-mcp
 
@@ -580,3 +580,22 @@ FAZ — Frankfurter Allgemeine Zeitung, one of Germany's biggest quality daily n
   - `faz_sections`: Sections in today's FAZ main feed, with story counts
   - `faz_by_author`: Newest FAZ stories by one author
   - `faz_get_article`: Full text of a FAZ article (FAZ+ flagged paywalled)
+
+## computerbase-mcp
+
+ComputerBase — one of Germany's biggest tech sites (no key): latest tech news, search, stories by topic and author, topics & authors, software downloads & full article text (Plus flagged paywalled).
+
+- Category: news
+- Repository: https://github.com/mohammad-abbasi-sh/computerbase-mcp
+- PyPI: https://pypi.org/project/computerbase-mcp/
+- Install: `claude mcp add --transport stdio --scope user computerbase -- uvx computerbase-mcp`
+- Tools (8):
+
+  - `computerbase_latest`: Latest ComputerBase tech news, newest first
+  - `computerbase_search_news`: Search ComputerBase news by keyword across the main feed
+  - `computerbase_by_topic`: Newest ComputerBase stories on one topic
+  - `computerbase_topics`: Topics in today's ComputerBase main feed, with story counts
+  - `computerbase_by_author`: Newest ComputerBase stories by one author
+  - `computerbase_authors`: Authors in today's ComputerBase main feed, with story counts
+  - `computerbase_downloads`: Latest software downloads from ComputerBase
+  - `computerbase_get_article`: Full text of a ComputerBase article (Plus flagged paywalled)

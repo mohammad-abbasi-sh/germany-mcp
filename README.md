@@ -47,8 +47,9 @@ Agents can't use what they can't reach. This catalog gives AI agents live access
 | [taz-mcp](https://github.com/mohammad-abbasi-sh/taz-mcp) | taz — die tageszeitung: headlines, search, stories by author, authors & article text | 5 | `uvx taz-mcp==0.1.0` |
 | [t3n-mcp](https://github.com/mohammad-abbasi-sh/t3n-mcp) | t3n — Germany's well-known tech magazine: latest news, search, stories by topic, topics & article text | 5 | `uvx t3n-mcp==0.1.0` |
 | [faz-mcp](https://github.com/mohammad-abbasi-sh/faz-mcp) | FAZ — Frankfurter Allgemeine Zeitung: latest news, search, stories by section & author, sections & article text | 6 | `uvx faz-mcp==0.1.0` |
+| [computerbase-mcp](https://github.com/mohammad-abbasi-sh/computerbase-mcp) | ComputerBase — one of Germany's biggest tech sites: latest news, search, stories by topic & author, topics, downloads & article text | 8 | `uvx computerbase-mcp==0.1.0` |
 
-*One new server every day. Each server ships with tests, fixtures and trilingual docs. 36 servers live — and the queue keeps growing (see the build queue).*
+*One new server every day. Each server ships with tests, fixtures and trilingual docs. 37 servers live — and the queue keeps growing (see the build queue).*
 
 ## For AI agents
 

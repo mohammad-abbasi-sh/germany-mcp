@@ -215,6 +215,12 @@
       "args": [
         "faz-mcp"
       ]
+    },
+    "computerbase": {
+      "command": "uvx",
+      "args": [
+        "computerbase-mcp"
+      ]
     }
   }
 }

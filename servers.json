@@ -1093,6 +1093,48 @@
      "summary": "Full text of a FAZ article (FAZ+ flagged paywalled)"
     }
    ]
+  },
+  {
+   "description": "ComputerBase — one of Germany's biggest tech sites (no key): latest tech news, search, stories by topic and author, topics & authors, software downloads & full article text (Plus flagged paywalled).",
+   "name": "computerbase-mcp",
+   "pypi": "computerbase-mcp",
+   "repository": "https://github.com/mohammad-abbasi-sh/computerbase-mcp",
+   "title": "ComputerBase — latest tech news, search, topics, downloads & article text",
+   "title_de": "ComputerBase — neueste Tech-Meldungen, Suche, Themen, Downloads & Artikeltexte",
+   "tools": [
+    {
+     "name": "computerbase_latest",
+     "summary": "Latest ComputerBase tech news, newest first"
+    },
+    {
+     "name": "computerbase_search_news",
+     "summary": "Search ComputerBase news by keyword across the main feed"
+    },
+    {
+     "name": "computerbase_by_topic",
+     "summary": "Newest ComputerBase stories on one topic"
+    },
+    {
+     "name": "computerbase_topics",
+     "summary": "Topics in today's ComputerBase main feed, with story counts"
+    },
+    {
+     "name": "computerbase_by_author",
+     "summary": "Newest ComputerBase stories by one author"
+    },
+    {
+     "name": "computerbase_authors",
+     "summary": "Authors in today's ComputerBase main feed, with story counts"
+    },
+    {
+     "name": "computerbase_downloads",
+     "summary": "Latest software downloads from ComputerBase"
+    },
+    {
+     "name": "computerbase_get_article",
+     "summary": "Full text of a ComputerBase article (Plus flagged paywalled)"
+    }
+   ]
   }
  ]
 }
